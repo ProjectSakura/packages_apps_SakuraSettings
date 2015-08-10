@@ -78,4 +78,8 @@
     <string name="qs_panel_alpha_title">Quick Settings opacity</string>
     <string name="qs_panel_alpha_summary">Configure opacity of background</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
 </resources>
