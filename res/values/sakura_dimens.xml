@@ -22,4 +22,7 @@
     <dimen name="card_margin_bottom">2dp</dimen>
     <dimen name="card_margin_right">2dp</dimen>
     <dimen name="card_margin_left">2dp</dimen>
+
+    <!-- Color Picker -->
+    <dimen name="picker_circle_preview_size">26dp</dimen>
 </resources>
