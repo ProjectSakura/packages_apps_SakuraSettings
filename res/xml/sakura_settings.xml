@@ -22,14 +22,14 @@
 
     <PreferenceCategory
             android:key="about rom"
-            android:title="About ROM" >
+            android:title="Sakura Customizations" >
    
-        <!-- Status Bar -->
+        <!-- Animation -->
         <com.sakura.settings.preferences.CardviewPreference
-            android:key="statusbar_category"
-            android:title="@string/statusbar_title"
-            android:fragment="com.sakura.settings.fragments.StatusbarSettings"
-            android:icon="@drawable/ic_settings_statusbar"/>
+            android:key="animations_category" 
+            android:title="@string/animations_title" 
+            android:fragment="com.sakura.settings.fragments.Animations" 
+            android:icon="@drawable/ic_settings_animations"/>
 
         <!-- Quick Settings panel -->
         <com.sakura.settings.preferences.CardviewPreference
@@ -58,20 +58,6 @@
             android:title="@string/gestures_title"
             android:fragment="com.sakura.settings.fragments.GestureSettings"
             android:icon="@drawable/ic_settings_gestures"/>
-
-        <!-- Lock Screen -->
-        <com.sakura.settings.preferences.CardviewPreference
-            android:key="lockscreen_category"
-            android:title="@string/lockscreen_title"
-            android:fragment="com.sakura.settings.fragments.LockscreenSettings"
-            android:icon="@drawable/ic_settings_lockscreen"/>
-
-        <!-- Power Menu -->
-        <com.sakura.settings.preferences.CardviewPreference
-            android:key="powermenu__category"
-            android:title="@string/powermenu_title"
-            android:fragment="com.sakura.settings.fragments.PowermenuSettings"
-            android:icon="@drawable/ic_settings_powermenu"/>
 
         <!-- Notifications -->
         <com.sakura.settings.preferences.CardviewPreference
