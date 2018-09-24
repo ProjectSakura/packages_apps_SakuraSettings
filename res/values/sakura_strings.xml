@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright © 2018 Superior OS Project
+    Copyright © 2018 The Superior OS Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -18,4 +18,16 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="sakura_settings_title">Sakura Configs</string>
     <string name="sakura_dashboard_summary">Lets bring spring for you.</string>
+
+    <!-- Categories -->
+    <string name="button_title">Buttons</string>
+    <string name="gestures_title">Gestures</string>
+    <string name="lockscreen_title">Lock Screen</string>
+    <string name="misc_title">Miscellaneous</string>
+    <string name="navbar_title">Navigation Bar</string>
+    <string name="powermenu_title">Power Menu</string>
+    <string name="quicksettings_title">Quick Settings</string>
+    <string name="recents_title">Recents Apps</string>
+    <string name="statusbar_title">Status Bar</string>
+    <string name="notifications_title">Notifications</string>
 </resources>
