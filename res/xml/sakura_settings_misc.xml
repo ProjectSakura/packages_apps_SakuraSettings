@@ -19,4 +19,10 @@
     android:title="@string/misc_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.sakura.settings.preferences.GlobalSettingSwitchPreference
+        android:key="allow_signature_fake"
+        android:title="@string/allow_signature_fake"
+        android:summary="@string/allow_signature_fake_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
