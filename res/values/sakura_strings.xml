@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright © 2018 The Superior OS Project
+    Copyright © 2018-19 The Superior OS Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -19,6 +19,11 @@
     <string name="sakura_settings_title">Sakura Configs</string>
     <string name="sakura_dashboard_summary">Lets bring spring for you.</string>
 
+    <!-- ROM Info -->
+    <string name="sakura_about_info">About Project</string>
+    <string name="sakura_about_info_summary_title">About Team</string>
+    <string name="sakura_about_info_summary">A customised Lineage OS.</string>
+	
     <!-- Categories -->
     <string name="button_title">Buttons</string>
     <string name="gestures_title">Gestures</string>
@@ -27,7 +32,6 @@
     <string name="navbar_title">Navigation Bar</string>
     <string name="powermenu_title">Power Menu</string>
     <string name="quicksettings_title">Quick Settings</string>
-    <string name="recents_title">Recents Apps</string>
     <string name="statusbar_title">Status Bar</string>
     <string name="notifications_title">Notifications</string>
 	

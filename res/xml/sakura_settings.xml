@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright © 2018 Superior OS Project
+    Copyright © 2018-19 Superior OS Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -20,69 +20,73 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/sakura_settings_title" >
 
-<<<<<<< HEAD:res/xml/sakura_settings.xml
-=======
+    <PreferenceCategory
+            android:key="about rom"
+            android:title="About ROM" >
+   
         <!-- Status Bar -->
-        <com.superior.settings.preferences.CardviewPreference
+        <com.sakura.settings.preferences.CardviewPreference
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
-            android:fragment="com.superior.settings.fragments.StatusbarSettings"
+            android:fragment="com.sakura.settings.fragments.StatusbarSettings"
             android:icon="@drawable/ic_settings_statusbar"/>
 
         <!-- Quick Settings panel -->
-        <com.superior.settings.preferences.CardviewPreference
+        <com.sakura.settings.preferences.CardviewPreference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
             android:fragment="com.superior.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
         <!-- Buttons -->
-        <com.superior.settings.preferences.CardviewPreference
+        <com.sakura.settings.preferences.CardviewPreference
             android:key="buttonsettings_category"
             android:title="@string/button_title"
             android:fragment="com.superior.settings.fragments.ButtonSettings"
             android:icon="@drawable/ic_settings_buttons"/>
 
         <!-- Navigation Bar -->
-        <com.superior.settings.preferences.CardviewPreference
+        <com.sakura.settings.preferences.CardviewPreference
             android:key="navigationbar_category"
             android:title="@string/navbar_title"
             android:fragment="com.superior.settings.fragments.NavbarSettings"
             android:icon="@drawable/ic_settings_navbar"/>
+			
+        <!-- Gestures -->
+        <com.sakura.settings.preferences.CardviewPreference
+            android:key="gestures_category"
+            android:title="@string/gestures_title"
+            android:fragment="com.superior.settings.fragments.GestureSettings"
+            android:icon="@drawable/ic_settings_gestures"/>
 
         <!-- Lock Screen -->
-        <com.superior.settings.preferences.CardviewPreference
+        <com.sakura.settings.preferences.CardviewPreference
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title"
             android:fragment="com.superior.settings.fragments.LockscreenSettings"
             android:icon="@drawable/ic_settings_lockscreen"/>
 
         <!-- Power Menu -->
-        <com.superior.settings.preferences.CardviewPreference
+        <com.sakura.settings.preferences.CardviewPreference
             android:key="powermenu__category"
             android:title="@string/powermenu_title"
             android:fragment="com.superior.settings.fragments.PowermenuSettings"
             android:icon="@drawable/ic_settings_powermenu"/>
 
-        <!-- Recents -->
-        <com.superior.settings.preferences.CardviewPreference
-            android:key="recents_category"
-            android:title="@string/recents_title"
-            android:fragment="com.superior.settings.fragments.RecentsSettings"
-            android:icon="@drawable/ic_settings_recents"/>
-
         <!-- Notifications -->
-        <com.superior.settings.preferences.CardviewPreference
+        <com.sakura.settings.preferences.CardviewPreference
             android:key="notifications_category"
             android:title="@string/notifications_title"
             android:fragment="com.superior.settings.fragments.NotificationSettings"
             android:icon="@drawable/ic_settings_notifications"/>
 
         <!-- Misc -->
-        <com.superior.settings.preferences.CardviewPreference
+        <com.sakura.settings.preferences.CardviewPreference
             android:key="misc_category"
             android:title="@string/misc_title"
             android:fragment="com.superior.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_misc"/>
->>>>>>> 88fb13d... Just Tabs:res/xml/superior_settings.xml
+
+
+    </PreferenceCategory>
 </PreferenceScreen>
