@@ -19,8 +19,8 @@ package com.android.settings.custom;
 
 import android.os.Bundle;
 import com.android.settings.SettingsPreferenceFragment;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
 import com.android.settings.R;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
