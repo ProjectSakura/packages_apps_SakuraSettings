@@ -25,4 +25,9 @@
         <attr name="value_popup_view_bg" format="color" />
     </declare-styleable>
 
+    <!-- FOD icon picker -->
+    <dimen name="fod_picker_item_margin">20dp</dimen>
+    <dimen name="fod_picker_item_size">100dp</dimen>
+    <dimen name="fod_picker_item_padding">20dp</dimen>
+
 </resources>
