@@ -149,4 +149,7 @@
     <string name="theme_type_baked_green">Baked Green</string>
     <string name="theme_type_choco_x">Choco Colt</string>
 
+    <!--QS blur toggle -->
+    <string name="blur_quicksettings">Blur behind quick settings (beta)</string>
+    <string name="blur_quicksettings_subtitle">blurs darkened background behind quick settings</string>
 </resources>

@@ -27,6 +27,13 @@
         android:max="100"
         settings:min="0"
         android:persistent="false" />
+   
+    <!-- QS blur toggle-->
+     <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_blur"
+            android:title="@string/blur_quicksettings"
+            android:summary="@string/blur_quicksettings_subtitle"
+            android:defaultValue="true" />
 
     <!-- Custom headers -->
     <PreferenceCategory
