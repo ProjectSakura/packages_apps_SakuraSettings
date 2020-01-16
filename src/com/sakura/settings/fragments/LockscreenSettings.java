@@ -19,6 +19,7 @@ package com.sakura.settings.fragments;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
@@ -34,16 +35,31 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
 import com.sakura.settings.R;
+import lineageos.app.LineageContextConstants;
 
 public class LockscreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String FOD_ICON_PICKER_CATEGORY = "fod_icon_picker";
+
+    private PreferenceCategory mFODIconPickerCategory;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.sakura_settings_lockscreen);
+        PreferenceScreen prefSet = getPreferenceScreen();
+        Context mContext = getContext();
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        PackageManager packageManager = mContext.getPackageManager();
+        boolean hasFod = packageManager.hasSystemFeature(LineageContextConstants.Features.FOD);
+
+        mFODIconPickerCategory = (PreferenceCategory) findPreference(FOD_ICON_PICKER_CATEGORY);
+        if (mFODIconPickerCategory != null && !hasFod) {
+            prefSet.removePreference(mFODIconPickerCategory);
+        }
 
     }
 
