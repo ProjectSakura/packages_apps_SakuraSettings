@@ -30,14 +30,20 @@ import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.content.om.IOverlayManager;
+import android.content.om.OverlayInfo;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import androidx.preference.PreferenceManager;
 import java.util.Objects;
-
-import com.android.internal.util.colt.ThemesUtils;
-import com.android.internal.util.colt.ColtUtils;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.os.RemoteException;
+import android.os.SystemProperties;
+import android.os.ServiceManager;
+import android.os.UserHandle;
+import com.android.internal.util.sakura.ThemesUtils;
+import com.android.internal.util.sakura.Utils;
 
 import static android.os.UserHandle.USER_SYSTEM;
 import android.app.UiModeManager;
@@ -50,6 +56,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String PREF_THEME_SWITCH = "theme_switch";
+    private IOverlayManager mOverlayService;
     private UiModeManager mUiModeManager;
     private ListPreference mThemeSwitch;
 
@@ -69,11 +76,11 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     private void setupThemeSwitchPref() {
         mThemeSwitch = (ListPreference) findPreference(PREF_THEME_SWITCH);
         mThemeSwitch.setOnPreferenceChangeListener(this);
-	if (ColtUtils.isThemeEnabled("com.android.theme.chocox.system")) {
+	if (Utils.isThemeEnabled("com.android.theme.chocox.system")) {
             mThemeSwitch.setValue("5");
-        } else if (ColtUtils.isThemeEnabled("com.android.theme.bakedgreen.system")) {
+        } else if (Utils.isThemeEnabled("com.android.theme.bakedgreen.system")) {
             mThemeSwitch.setValue("4");
-        } else if (ColtUtils.isThemeEnabled("com.android.theme.solarizeddark.system")) {
+        } else if (Utils.isThemeEnabled("com.android.theme.solarizeddark.system")) {
             mThemeSwitch.setValue("3");
         } else if (mUiModeManager.getNightMode() == UiModeManager.MODE_NIGHT_YES) {
             mThemeSwitch.setValue("2");
@@ -114,7 +121,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
     if (preference == mThemeSwitch) {
-            String theme_switch = (String) objValue;
+            String theme_switch = (String) newValue;
             final Context context = getContext();
             switch (theme_switch) {
                 case "1":
@@ -149,7 +156,9 @@ public class MiscSettings extends SettingsPreferenceFragment implements
                  mOverlayService.reloadAssets("com.android.systemui", UserHandle.USER_CURRENT);
              } catch (RemoteException ignored) {
              }
-        return false;
-    }
+        
+            }
+             return false;
+     }
 }
 
