@@ -252,6 +252,8 @@
     <string name="fod_icon_picker_footer">In order to add your own icon, select the top left icon and use the OnePlus 6T FP Customizer app to select the icon you want.</string>
     <string name="fod_wallpaper_color">Use wallpaper color for FOD icon</string>
     <string name="fod_wallpaper_color_summary">Uses adjusted primary wallpaper color for FOD icon\nNOTE: might look good only with some wallpapers</string>
+    <string name="fod_recog_animation">FOD recognizing animation</string>
+    <string name="fod_recog_animation_summary">Shows animation while reading your finger</string>
 
     <!-- FOD pressed state behavior -->
     <string name="fod_pressed_state_title">FOD pressed state behavior</string>
@@ -260,5 +262,5 @@
     <string name="fod_pressed_state_icon">Icon (usually Cyan)</string>
     <string name="fod_pressed_state_icon_white">Icon (White)</string>
     <string name="fod_pressed_state_solid_color">Solid color (usually Green)</string>
-
+    
 </resources>
