@@ -25,18 +25,18 @@ import com.android.settings.R;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-public class SuperiorDevsInfoFragment extends SettingsPreferenceFragment {
+public class sakuraDevsInfoFragment extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.superior_devs_info);
+        addPreferencesFromResource(R.xml.sakura_devs_info);
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.SUPERIOR;
+        return MetricsEvent.SAKURA;
     }
 
 }

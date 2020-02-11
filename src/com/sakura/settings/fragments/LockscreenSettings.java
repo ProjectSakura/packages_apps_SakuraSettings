@@ -49,7 +49,7 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
+        return MetricsProto.MetricsEvent.SAKURA;
     }
 
     @Override

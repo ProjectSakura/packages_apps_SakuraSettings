@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.superior.settings.preferences;
+package com.sakura.settings.preferences;
 
 import android.app.Activity;
 import android.content.Context;
@@ -39,7 +39,7 @@ import android.view.Surface;
 import android.view.WindowManager;
 
 public final class Utils {
-    private static final String TAG = "SUPERIORSettingsUtils";
+    private static final String TAG = "SAKURASettingsUtils";
 
     // Device types
     private static final int DEVICE_PHONE = 0;

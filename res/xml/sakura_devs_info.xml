@@ -21,94 +21,33 @@
         android:title="Superior OS">
 		
 		<!-- Header -->
-        <Preference android:key="superior_logo"
+        <Preference android:key="sakura_logo"
                     android:enabled="false"
-                    android:layout="@layout/about_superior_header" />
+                    android:layout="@layout/about_sakura_header" />
 
 <PreferenceCategory
               android:key="about"
-              android:title="@string/superior_about_info" >
+              android:title="@string/sakura_about_info" >
 
         <Preference
                android:summary="@string/superior_about_info_summary" 
                android:icon="@drawable/ic_devs_info" >
         <intent
                android:action="android.intent.action.VIEW"
-               android:data="https://paypal.me/Sipun?locale.x=en_GB" />
+               android:data="ahem." />
         </Preference>
 </PreferenceCategory>
 
 <PreferenceCategory
-            android:key="superior_dev"
+            android:key="sakura_dev"
             android:title="@string/devs_header" >
 
-        <Preference
-            android:title="@string/dev_1"
-            android:summary="@string/dev1_description"
-            android:icon="@drawable/ic_code" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Darkstar085" />
-        </Preference>
-
-        <Preference
-            android:title="@string/dev_2"
-            android:summary="@string/dev2_description"
-            android:icon="@drawable/ic_code" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/JD1811" />
-        </Preference>
-
-		<Preference
-            android:title="@string/dev_3"
-            android:summary="@string/dev3_description"
-            android:icon="@drawable/ic_design" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Advertpavan" />
-        </Preference>
-		
-		<Preference
-            android:title="@string/dev_4"
-            android:summary="@string/dev4_description"
-            android:icon="@drawable/ic_design" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Senseijtitus" />
-        </Preference>
-
-        <Preference
-            android:title="@string/dev_6"
-            android:summary="@string/dev6_description"
-            android:icon="@drawable/ic_devs_mention">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/aryanata_andi" />
-        </Preference>
-
-        <Preference
-            android:title="@string/dev_5"
-            android:summary="@string/dev5_description"
-            android:icon="@drawable/ic_devs_pc" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/SoniSins" />
-        </Preference>
 </PreferenceCategory>
 
 <PreferenceCategory
     android:key="honorable_mentions"
     android:title="@string/mentions_header">
 
-        <Preference
-            android:title="@string/mentions_sam"
-            android:summary="@string/mentions_sam_description"
-            android:icon="@drawable/ic_devs_mention">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Reapergod35" />
-        </Preference>
 </PreferenceCategory>
 
 <PreferenceCategory
@@ -118,9 +57,6 @@
         <Preference
             android:summary="@string/maintainers_header_summary" 
             android:icon="@drawable/ic_devs_info" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://www.github.com/SuperiorOS-Devices" />
         </Preference>
 </PreferenceCategory>
 

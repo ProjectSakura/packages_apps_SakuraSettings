@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The Superior OS Project
+ * Copyright (C) 2018 The sakura OS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.superior.settings.fragments;
+package com.sakura.settings.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -34,7 +34,7 @@ import android.view.ViewGroup;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
-import com.superior.settings.R;
+import com.sakura.settings.R;
 
 public class GestureSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -42,14 +42,14 @@ public class GestureSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.superior_settings_gestures);
+        addPreferencesFromResource(R.xml.sakura_settings_gestures);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
+        return MetricsProto.MetricsEvent.SAKURA;
     }
 
     @Override
