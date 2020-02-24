@@ -19,6 +19,15 @@
     android:title="@string/quicksettings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!--QS panel opacity-->
+    <com.derpquest.settings.preferences.CustomSeekBarPreference
+        android:key="qs_panel_alpha"
+        android:title="@string/qs_panel_alpha_title"
+        android:summary="@string/qs_panel_alpha_summary"
+        android:max="100"
+        settings:min="0"
+        android:persistent="false" />
+
     <!-- Custom headers -->
     <PreferenceCategory
         android:key="category_custom_header"

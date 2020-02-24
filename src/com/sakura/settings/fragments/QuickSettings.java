@@ -60,9 +60,10 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String CUSTOM_HEADER_PROVIDER = "custom_header_provider";
     private static final String STATUS_BAR_CUSTOM_HEADER = "status_bar_custom_header";
     private static final String FILE_HEADER_SELECT = "file_header_select";
-
+    private static final String KEY_QS_PANEL_ALPHA = "qs_panel_alpha";
     private static final int REQUEST_PICK_IMAGE = 0;
 
+    private CustomSeekBarPreference mQsPanelAlpha;
     private Preference mHeaderBrowse;
     private ListPreference mDaylightHeaderPack;
     private CustomSeekBarPreference mHeaderShadow;
@@ -85,6 +86,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
         mHeaderEnabled = (SystemSettingSwitchPreference) findPreference(STATUS_BAR_CUSTOM_HEADER);
         mHeaderEnabled.setOnPreferenceChangeListener(this);
+
+        mQsPanelAlpha = (CustomSeekBarPreference) findPreference(KEY_QS_PANEL_ALPHA);
+        int qsPanelAlpha = Settings.System.getInt(getContentResolver(),
+                Settings.System.QS_PANEL_BG_ALPHA, 221);
+        mQsPanelAlpha.setValue((int)(((double) qsPanelAlpha / 255) * 100));
+        mQsPanelAlpha.setOnPreferenceChangeListener(this);
 
         mDaylightHeaderPack = (ListPreference) findPreference(DAYLIGHT_HEADER_PACK);
 
@@ -164,8 +171,14 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         } else if (preference == mHeaderEnabled) {
             Boolean headerEnabled = (Boolean) newValue;
             updateHeaderProviderSummary(headerEnabled);
+        } else if (preference == mQsPanelAlpha) {
+            int bgAlpha = (Integer) newValue;
+            int trueValue = (int) (((double) bgAlpha / 100) * 255);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.QS_PANEL_BG_ALPHA, trueValue);
+            return true;
         }
-        return true;
+         return true;
     }
 
     private boolean isBrowseWallsAvailable() {
