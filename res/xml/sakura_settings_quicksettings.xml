@@ -20,7 +20,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <!--QS panel opacity-->
-    <com.derpquest.settings.preferences.CustomSeekBarPreference
+    <com.sakura.settings.preferences.CustomSeekBarPreference
         android:key="qs_panel_alpha"
         android:title="@string/qs_panel_alpha_title"
         android:summary="@string/qs_panel_alpha_summary"
