@@ -1,7 +1,8 @@
-Sakura Configs
+**Sakura Configs**
 
 Credits:
 -------
+ * Superior OS ROM.
  * [**Alexey Derendyaev**](https://github.com/alexxxdev) - For the Base.
  * [**Max**](https://github.com/xyyx) - For the Idea about tabs & drawables.
  * [**Rohit Poroli**](https://github.com/rohitporoli) - For the About ROM Tab.
