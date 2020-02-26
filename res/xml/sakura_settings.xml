@@ -45,12 +45,12 @@
             android:fragment="com.sakura.settings.fragments.ButtonSettings"
             android:icon="@drawable/ic_settings_buttons"/>
 
-        <!-- Navigation Bar -->
+        <!-- Lock Screen -->
         <com.sakura.settings.preferences.CardviewPreference
-            android:key="navigationbar_category"
-            android:title="@string/navbar_title"
-            android:fragment="com.sakura.settings.fragments.NavbarSettings"
-            android:icon="@drawable/ic_settings_navbar"/>
+            android:key="lockscreen_category"
+            android:title="@string/lockscreen_title"
+            android:fragment="com.sakura.settings.fragments.LockscreenSettings"
+            android:icon="@drawable/ic_settings_lockscreen"/>
 			
         <!-- Gestures -->
         <com.sakura.settings.preferences.CardviewPreference

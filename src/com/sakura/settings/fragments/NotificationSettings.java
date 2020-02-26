@@ -94,5 +94,6 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
                     Settings.System.PULSE_AMBIENT_LIGHT_COLOR, intHex);
             return true;
         }
-    }  return false;
+       return false;
+    }
 }
