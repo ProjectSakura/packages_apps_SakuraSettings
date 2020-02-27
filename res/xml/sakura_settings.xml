@@ -21,11 +21,10 @@
     android:title="@string/sakura_settings_title" >
 
     <PreferenceCategory
-            android:key="about rom"
-            android:title="Sakura Features" >
- 
-        <!-- About Devs -->
-        <com.sakura.settings.preferences.CardviewPreference
+           android:title="Sakura Features" >
+  
+       <!-- About Devs -->
+       <Preference
             android:key="dev_info"
             android:title="@string/sakura_about_info"
             android:summary="@string/sakura_about_info_summary_title"
@@ -56,7 +55,7 @@
             android:fragment="com.sakura.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
-        <!-- lockscreen -->
+        <!-- Lock Screen -->
         <com.sakura.settings.preferences.CardviewPreference
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title"
@@ -70,7 +69,7 @@
             android:title="@string/gestures_title"
             android:summary="@string/sakura_gesture_summary_title"
             android:fragment="com.sakura.settings.fragments.GestureSettings"
-            android:icon="@drawable/ic_settings_gestures"/>
+            android:icon="@drawable/ic_settings_gest"/>
 
         <!-- Power Menu
         <com.sakura.settings.preferences.CardviewPreference

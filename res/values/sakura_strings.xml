@@ -23,6 +23,18 @@
     <string name="sakura_about_info">About Project</string>
     <string name="sakura_about_info_summary_title">About Team</string>
     <string name="sakura_about_info_summary">A customised Lineage OS.</string>
+
+    <!-- Dev Info -->
+    <string name="devs_header">Developers</string>
+    <string name="dev_1">LordShenron</string>
+    <string name="dev1_description">Founder/Developer</string>
+
+    <!-- Maintainer Info -->
+    <string name="maintainers_header">Maintainers</string>
+    <string name="maintainers_header_summary">These are the Official Devices Maintainers...</string>
+    <string name="device_asus">Asus</string>
+    <string name="device_X00T">ZenFone Max Pro M1</string>
+    <string name="device_X00T_description">X00T\nPriyanshu</string>
 	
     <!-- Categories -->
     <string name="button_title">Buttons</string>
