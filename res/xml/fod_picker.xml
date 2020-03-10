@@ -20,8 +20,8 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/fod_icon_picker_title">
 
-    <!-- Preview -->
-    <com.crdroid.settings.fragments.lockscreen.FODIconPicker
+    <!-- fod preview -->
+    <com.sakura.settings.fragments.lockscreen.FODIconPicker
             android:key="fod_icon"
             android:layout="@layout/fod_picker_preference"
             android:selectable="false"/>
