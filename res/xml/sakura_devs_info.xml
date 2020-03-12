@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2016 The AOSP-RRO Project
      Copyright (C) 2018-19 The Superior OS Project
+     Copyright (C) 2020 Direwolf INC for Project Sakura
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -48,6 +49,21 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/LordShenron" />
         </Preference>
+        <Preference
+            android:title="@string/dev_2"
+            android:summary="@string/dev2_description">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/ChaitanayaMittal" />
+        </Preference>
+        <Preference
+            android:title="@string/dev_3"
+            android:summary="@string/dev3_description">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://telegram.me/uditkarode"/>
+        </Preference>
+
 </PreferenceCategory>
 
 <PreferenceCategory
