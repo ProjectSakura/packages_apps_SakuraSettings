@@ -20,11 +20,6 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="Project Sakura">
-		
-		<!-- Header -->
-        <Preference android:key="sakura_logo"
-                    android:enabled="false"
-                    android:layout="@layout/about_sakura_header" />
 
 <PreferenceCategory
               android:key="about"
