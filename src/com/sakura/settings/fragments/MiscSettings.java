@@ -33,11 +33,25 @@ import android.view.ViewGroup;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
+import androidx.preference.PreferenceManager;
+import java.util.Objects;
+
+import com.android.internal.util.colt.ThemesUtils;
+import com.android.internal.util.colt.ColtUtils;
+
+import static android.os.UserHandle.USER_SYSTEM;
+import android.app.UiModeManager;
+
+
 
 import com.sakura.settings.R;
 
 public class MiscSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String PREF_THEME_SWITCH = "theme_switch";
+    private UiModeManager mUiModeManager;
+    private ListPreference mThemeSwitch;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,6 +59,42 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.sakura_settings_misc);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+    mUiModeManager = getContext().getSystemService(UiModeManager.class);
+    mOverlayService = IOverlayManager.Stub
+                .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
+	setupThemeSwitchPref();
+    }
+
+    private void setupThemeSwitchPref() {
+        mThemeSwitch = (ListPreference) findPreference(PREF_THEME_SWITCH);
+        mThemeSwitch.setOnPreferenceChangeListener(this);
+	if (ColtUtils.isThemeEnabled("com.android.theme.chocox.system")) {
+            mThemeSwitch.setValue("5");
+        } else if (ColtUtils.isThemeEnabled("com.android.theme.bakedgreen.system")) {
+            mThemeSwitch.setValue("4");
+        } else if (ColtUtils.isThemeEnabled("com.android.theme.solarizeddark.system")) {
+            mThemeSwitch.setValue("3");
+        } else if (mUiModeManager.getNightMode() == UiModeManager.MODE_NIGHT_YES) {
+            mThemeSwitch.setValue("2");
+        } else {
+            mThemeSwitch.setValue("1");
+        }
+    }
+
+    private void handleBackgrounds(Boolean state, Context context, int mode, String[] overlays) {
+        if (context != null) {
+            Objects.requireNonNull(context.getSystemService(UiModeManager.class))
+                    .setNightMode(mode);
+        }
+        for (int i = 0; i < overlays.length; i++) {
+            String background = overlays[i];
+            try {
+                mOverlayService.setEnabled(background, state, USER_SYSTEM);
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override
@@ -63,6 +113,43 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+    if (preference == mThemeSwitch) {
+            String theme_switch = (String) objValue;
+            final Context context = getContext();
+            switch (theme_switch) {
+                case "1":
+                    handleBackgrounds(false, context, UiModeManager.MODE_NIGHT_NO, ThemesUtils.SOLARIZED_DARK);
+		    handleBackgrounds(false, context, UiModeManager.MODE_NIGHT_NO, ThemesUtils.BAKED_GREEN);
+                    handleBackgrounds(false, context, UiModeManager.MODE_NIGHT_NO, ThemesUtils.CHOCO_X);
+                    break;
+                case "2":
+                    handleBackgrounds(false, context, UiModeManager.MODE_NIGHT_YES, ThemesUtils.SOLARIZED_DARK);
+		    handleBackgrounds(false, context, UiModeManager.MODE_NIGHT_YES, ThemesUtils.BAKED_GREEN);
+                    handleBackgrounds(false, context, UiModeManager.MODE_NIGHT_YES, ThemesUtils.CHOCO_X);
+                    break;
+                case "3":
+                    handleBackgrounds(true, context, UiModeManager.MODE_NIGHT_YES, ThemesUtils.SOLARIZED_DARK);
+		    handleBackgrounds(false, context, UiModeManager.MODE_NIGHT_YES, ThemesUtils.BAKED_GREEN);
+                    handleBackgrounds(false, context, UiModeManager.MODE_NIGHT_YES, ThemesUtils.CHOCO_X);
+                    break;
+                case "4":
+                    handleBackgrounds(false, context, UiModeManager.MODE_NIGHT_YES, ThemesUtils.SOLARIZED_DARK);
+                    handleBackgrounds(true, context, UiModeManager.MODE_NIGHT_YES, ThemesUtils.BAKED_GREEN);
+                    handleBackgrounds(false, context, UiModeManager.MODE_NIGHT_YES, ThemesUtils.CHOCO_X);
+                    break;
+                case "5":
+                    handleBackgrounds(false, context, UiModeManager.MODE_NIGHT_YES, ThemesUtils.SOLARIZED_DARK);
+                    handleBackgrounds(false, context, UiModeManager.MODE_NIGHT_YES, ThemesUtils.BAKED_GREEN);
+                    handleBackgrounds(true, context, UiModeManager.MODE_NIGHT_YES, ThemesUtils.CHOCO_X);
+                    break;
+            }
+            try {
+                 mOverlayService.reloadAndroidAssets(UserHandle.USER_CURRENT);
+                 mOverlayService.reloadAssets("com.android.settings", UserHandle.USER_CURRENT);
+                 mOverlayService.reloadAssets("com.android.systemui", UserHandle.USER_CURRENT);
+             } catch (RemoteException ignored) {
+             }
         return false;
     }
 }
+
