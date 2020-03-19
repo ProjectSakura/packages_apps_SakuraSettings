@@ -144,10 +144,10 @@
     <string name="theme_type_title">Sakura themes</string>
     <string name="theme_type_summary">Select theme</string>
     <string name="theme_type_light">Light</string>
-    <string name="theme_type_pitch_black">Pitch black</string>
+    <string name="theme_type_pitch_black">Slate Grey</string>
     <string name="theme_type_solarized_dark">Solarized dark</string>
     <string name="theme_type_baked_green">Baked Green</string>
-    <string name="theme_type_choco_x">Choco Colt</string>
+    <string name="theme_type_choco_x">Dark Choco</string>
 
     <!--QS blur toggle -->
     <string name="blur_quicksettings">Blur behind quick settings (beta)</string>
