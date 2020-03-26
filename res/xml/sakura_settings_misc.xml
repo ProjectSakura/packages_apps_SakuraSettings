@@ -25,11 +25,17 @@
         android:summary="@string/allow_signature_fake_summary"
         android:defaultValue="false" />
 
+    <!-- Enable/Disable Screenshot sound -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+          android:key="screenshot_sound"
+          android:title="@string/screenshot_sound_title"
+          android:defaultValue="false" />
+
     <com.sakura.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_datausage"
             android:title="@string/qs_datausage_title"
             android:summary="@string/qs_datausage_subtitle"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
     <ListPreference
         android:key="theme_switch"

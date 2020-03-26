@@ -106,7 +106,7 @@ public class BatterybarSettings extends SettingsPreferenceFragment implements
         mBatteryBarChargingColor.setNewPreviewColor(intColor);
         mBatteryBarChargingColor.setAlphaSliderEnabled(true);
 
-        mBatteryBarBatteryLowColorWarn = (ColorPickerPreference) findPreference(PREF_BATT_BAR_BATTERY_LOW_COLOR_WARNING);
+        mBatteryBarBatteryLowColorWarn = (ColorPickerPreference) findPreference(PREF_BATT_BAR_LOW_COLOR_WARNING);
         mBatteryBarBatteryLowColorWarn.setOnPreferenceChangeListener(this);
         intColor = Settings.System.getInt(resolver,
                  "battery_bar_battery_low_color_warning", 0xFFFF6600);

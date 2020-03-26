@@ -183,5 +183,9 @@
     <string name="battery_bar_gradient_color_summary">Use gradient color as a scale for the battery level</string>
     <string name="battery_bar_high_color">High level color"</string>
     <string name="battery_bar_low_color">Low level color"</string>
+    <string name="battery_bar_battery_low_color_warning">Battery bar low battery color</string>
+
+    <!-- Enable/Disable Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sounds</string>
 
 </resources>
