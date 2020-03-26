@@ -176,5 +176,8 @@
     <string name="battery_bar_bottomnav">Bottom of navbar</string>
     <string name="battery_bar_reg">Regular</string>
     <string name="battery_bar_center">Center-mirrored</string>
+    <string name="battery_bar_charging_color">Battery bar charging color</string>
+    <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
+    <string name="battery_bar_reversed">Reversed</string>
 
 </resources>
