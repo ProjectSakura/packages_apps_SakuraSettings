@@ -188,4 +188,8 @@
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sounds</string>
 
+    <!--qs tint toggle-->
+    <string name="qs_bg_use_new_tint">QS tint toggle</string>
+    <string name="qs_bg_use_new_tint_summary">Use accent color for qs tile icons and background</string>
+
 </resources>

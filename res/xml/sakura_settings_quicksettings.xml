@@ -34,6 +34,13 @@
             android:title="@string/blur_quicksettings"
             android:summary="@string/blur_quicksettings_subtitle"
             android:defaultValue="true" />
+ 
+    <!--QS tint toggle-->   
+     <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_panel_bg_use_new_tint"
+            android:title="@string/qs_bg_use_new_tint"
+            android:summary="@string/qs_bg_use_new_tint_summary"
+            android:defaultValue="true" />
 
     <!-- Custom headers -->
     <PreferenceCategory
