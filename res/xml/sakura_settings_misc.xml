@@ -37,6 +37,15 @@
             android:summary="@string/qs_datausage_subtitle"
             android:defaultValue="true" />
 
+    <PreferenceScreen
+             android:key="hide_app_from_recents"
+             android:title="@string/hide_apps_from_recents_title"
+             android:summary="@string/hide_apps_from_recents_summary" >
+             <intent android:action="android.intent.action.MAIN"
+                 android:targetPackage="com.android.settings"
+                 android:targetClass="com.sakura.settings.fragments.HAFRAppListActivity" />
+    </PreferenceScreen>
+
     <ListPreference
         android:key="theme_switch"
         android:title="@string/theme_type_title"

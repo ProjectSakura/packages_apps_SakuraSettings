@@ -192,4 +192,9 @@
     <string name="qs_bg_use_new_tint">QS tint toggle</string>
     <string name="qs_bg_use_new_tint_summary">Use accent color for qs tile icons and background</string>
 
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Hidden apps</string>
+    <string name="hide_from_recents_add_app">Add App</string>
+    <string name="hide_apps_from_recents_summary">Pick which apps to exclude from the recents panel</string>
+
 </resources>
