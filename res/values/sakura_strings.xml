@@ -193,8 +193,12 @@
     <string name="qs_bg_use_new_tint_summary">Use accent color for qs tile icons and background</string>
 
     <!-- Hide Apps from Recents -->
-    <string name="hide_apps_from_recents_title">Hidden apps</string>
-    <string name="hide_from_recents_add_app">Add App</string>
-    <string name="hide_apps_from_recents_summary">Pick which apps to exclude from the recents panel</string>
+    <string name="hide_apps_from_recents_title">Hide apps from recents</string>
+    <string name="hide_apps_from_recents_summary">These apps will be automatically hide from recents screen when they are opened next time</string>
+    <string name="hide_from_recents_add_app">Add app to Hide list</string>
+    <string name="hide_from_recents_picker_title">Automatically hide for these apps</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
 
 </resources>

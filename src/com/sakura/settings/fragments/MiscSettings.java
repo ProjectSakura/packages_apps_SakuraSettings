@@ -44,7 +44,7 @@ import android.os.ServiceManager;
 import android.os.UserHandle;
 import com.android.internal.util.sakura.ThemesUtils;
 import com.android.internal.util.sakura.Utils;
-
+import com.sakura.settings.fragments.misc.HAFRSettings;
 import static android.os.UserHandle.USER_SYSTEM;
 import android.app.UiModeManager;
 
@@ -107,6 +107,11 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.SAKURA;
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        HAFRSettings.reset(mContext);
     }
 
     @Override
