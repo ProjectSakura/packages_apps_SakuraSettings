@@ -39,6 +39,9 @@
     <string name="device_asus">Asus</string>
     <string name="device_X00T">ZenFone Max Pro M1</string>
     <string name="device_X00T_description">X00T\nPriyanshu</string>
+    <string name="device_xiaomi">Xiaomi</string>
+    <string name="device_mido">Redmi Note 4X</string>
+    <string name="device_mido_description">mido\nJigen</string>
 	
     <!-- Categories -->
     <string name="button_title">Buttons</string>
