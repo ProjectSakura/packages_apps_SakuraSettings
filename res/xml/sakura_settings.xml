@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright © 2018-19 sakura OS Project
+    Copyright © 2020 Project Sakura
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -94,12 +94,14 @@
             android:fragment="com.sakura.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_misc"/>
 
-        <!--Updater
+        <!--Updater-->
         <com.sakura.settings.preferences.CardviewPreference
             android:key="updater_category"
             android:title="@string/updater_title"
             android:summary="@string/sakura_updater_summary_title"
             android:fragment="com.sakura.settings.fragments.UpdaterSettings"
-            android:icon="@drawable/ic_settings_ota"/> -->
+            android:icon="@drawable/ic_settings_ota"/>
+
     </PreferenceCategory>
+
 </PreferenceScreen>
