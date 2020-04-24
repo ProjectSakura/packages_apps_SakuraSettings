@@ -58,8 +58,8 @@
     <string name="sakura_animation_summary_title">Opening and closing animations</string>        
     <string name="notifications_title">Notifications</string>
     <string name="sakura_notifications_summary_title">Edge lighting, heads up</string>        
-    <string name="updater_title">Sakura Updater</string>
     <string name="sakura_updater_summary_title">OTA updates</string>        
+    <string name="updater_title">Sakura Updates</string>
 	
     <!-- General strings -->
     <string name="ok">OK</string>
