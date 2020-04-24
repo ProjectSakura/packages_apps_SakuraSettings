@@ -79,7 +79,14 @@
             android:title="@string/misc_title"
             android:fragment="com.sakura.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_misc"/>
-
+       
+        <!--Updater -->   
+        <com.sakura.settings.preferences.CardviewPreference
+            android:key="updater_category"
+            android:title="@string/updater_title"
+            android:fragment="com.sakura.settings.fragments.UpdaterSettings"
+            android:icon="@drawable/ic_settings_misc"/>
 
     </PreferenceCategory>
+
 </PreferenceScreen>
