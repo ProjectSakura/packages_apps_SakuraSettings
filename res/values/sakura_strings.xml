@@ -51,7 +51,7 @@
     <string name="statusbar_title">Status Bar</string>
     <string name="animations_title">Animations</string>
     <string name="notifications_title">Notifications</string>
-    <string name="updater_title">Sakura Updates</string>
+    <string name="updater_title">Sakura OTA</string>
 	
     <!-- General strings -->
     <string name="ok">OK</string>
