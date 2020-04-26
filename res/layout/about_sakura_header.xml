@@ -16,12 +16,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center" >
+    android:gravity="center" 
+    android:orientation="horizontal">
 
         <ImageView
-           android:layout_width="625dp"
+           android:layout_width="match_parent"
            android:layout_height="100dp"
-           android:src="@drawable/sakura"
+           android:src="@drawable/sakura_settings"
            android:scaleType="centerInside"
+           android:tint="?android:attr/colorAccent"
            android:adjustViewBounds="true" />
 </LinearLayout>

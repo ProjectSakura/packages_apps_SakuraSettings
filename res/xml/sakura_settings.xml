@@ -20,12 +20,17 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/sakura_settings_title" >
 
-    <PreferenceCategory
+      <!-- Header -->
+     <Preference android:key="sakura_logo"
+                    android:enabled="false"
+                    android:layout="@layout/about_sakura_header" />
+
+     <PreferenceCategory
             android:key="about rom"
             android:title="About ROM" >
  
       <!-- About Devs -->
-      <com.sakura.settings.ui.BlissPreference
+      <com.sakura.settings.ui.SakuraPreference
             android:key="dev_info"
             android:title="@string/sakura_about_info"
             android:summary="@string/sakura_about_info_summary_title"
@@ -39,53 +44,53 @@
             android:title="Sakura Customizations" >
    
         <!-- Animation -->
-        <com.sakura.settings.ui.BlissPreference
+        <com.sakura.settings.ui.SakuraPreference
             android:key="animations_category" 
             android:title="@string/animations_title" 
             android:fragment="com.sakura.settings.fragments.Animations" 
             android:icon="@drawable/ic_settings_animations"/>
 
         <!-- Quick Settings panel -->
-        <com.sakura.settings.ui.BlissPreference
+        <com.sakura.settings.ui.SakuraPreference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
             android:fragment="com.sakura.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
         <!-- Lock Screen -->
-        <com.sakura.settings.ui.BlissPreference
+        <com.sakura.settings.ui.SakuraPreference
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title"
             android:fragment="com.sakura.settings.fragments.LockscreenSettings"
             android:icon="@drawable/ic_settings_lockscreen"/>
 			
         <!-- Gestures -->
-        <com.sakura.settings.ui.BlissPreference
+        <com.sakura.settings.ui.SakuraPreference
             android:key="gestures_category"
             android:title="@string/gestures_title"
             android:fragment="com.sakura.settings.fragments.GestureSettings"
             android:icon="@drawable/ic_settings_gest"/>
 
         <!-- Notifications -->
-        <com.sakura.settings.ui.BlissPreference
+        <com.sakura.settings.ui.SakuraPreference
             android:key="notifications_category"
             android:title="@string/notifications_title"
             android:fragment="com.sakura.settings.fragments.NotificationSettings"
             android:icon="@drawable/ic_settings_notifications"/>
 
         <!-- Misc -->
-        <com.sakura.settings.ui.BlissPreference
+        <com.sakura.settings.ui.SakuraPreference
             android:key="misc_category"
             android:title="@string/misc_title"
             android:fragment="com.sakura.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_misc"/>
        
         <!--Updater -->   
-        <com.sakura.settings.ui.BlissPreference
+        <com.sakura.settings.ui.SakuraPreference
             android:key="updater_category"
             android:title="@string/updater_title"
             android:fragment="com.sakura.settings.fragments.UpdaterSettings"
-            android:icon="@drawable/ic_settings_misc"/>
+            android:icon="@drawable/ic_settings_updater"/>
 
     </PreferenceCategory>
 
