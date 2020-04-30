@@ -30,7 +30,6 @@ import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.hardware.fingerprint.FingerprintManager;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -38,10 +37,6 @@ import com.sakura.settings.R;
 
 public class LockscreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
-
-    private FingerprintManager mFingerprintManager;
-    private SwitchPreference mFingerprintVib;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,29 +44,10 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.sakura_settings_lockscreen);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
-    
 
-        Resources resources = getResources();
-
-        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
-        mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
-        if (!mFingerprintManager.isHardwareDetected()){
-            prefScreen.removePreference(mFingerprintVib);
-        } else {
-            mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
-                Settings.System.FINGERPRINT_SUCCESS_VIB, 1) == 1));
-            mFingerprintVib.setOnPreferenceChangeListener(this);
-        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mFingerprintVib) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.FINGERPRINT_SUCCESS_VIB, value ? 1 : 0);
-            return true;
-        }
         return false;
     }
 
