@@ -42,6 +42,8 @@
     <string name="device_xiaomi">Xiaomi</string>
     <string name="device_mido">Redmi Note 4X</string>
     <string name="device_mido_description">mido\nJigen</string>
+    <string name="device_riva">Redmi 5A</string>
+    <string name="device_riva_description">riva\nSunny Raj</string>
 	
     <!-- Categories -->
     <string name="button_title">Buttons</string>
