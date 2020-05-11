@@ -20,11 +20,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/sakura_settings_title" >
 
-      <!-- Header -->
-     <Preference android:key="sakura_logo"
-                    android:enabled="false"
-                    android:layout="@layout/about_sakura_header" />
-
      <PreferenceCategory
             android:key="about rom"
             android:title="About ROM" >
