@@ -42,6 +42,13 @@
             android:summary="@string/qs_bg_use_new_tint_summary"
             android:defaultValue="true" />
 
+    <!--OOS dismiss all -->
+     <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="dismiss_all_button"
+            android:title="@string/enable_clear_all_button"
+            android:summary="@string/enable_clear_all_button_summary"
+            android:defaultValue="true" />
+
     <!-- Custom headers -->
     <PreferenceCategory
         android:key="category_custom_header"
