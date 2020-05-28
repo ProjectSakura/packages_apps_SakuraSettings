@@ -100,13 +100,7 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/jigen_was_here" />
     </Preference>
-</PreferenceCategory>
-
-<PreferenceCategory
-        android:key="maintainer"
-        android:title="@string/device_xiaomi" >
-
-    <Preference
+        <Preference
         android:title="@string/device_riva"
         android:summary="@string/device_riva_description"
         android:icon="@drawable/ic_devs_phone">
@@ -114,6 +108,15 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/sunnyraj84348" />
     </Preference>
+    <Preference
+        android:title="@string/device_wayne"
+        android:summary="@string/device_wayne_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/sunnyraj84348" />
+    </Preference>
+    
 </PreferenceCategory>
 
 </PreferenceScreen>
