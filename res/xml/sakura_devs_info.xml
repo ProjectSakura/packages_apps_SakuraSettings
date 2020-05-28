@@ -51,14 +51,6 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/ChaitanayaMittal" />
         </Preference>
-        <Preference
-            android:title="@string/dev_3"
-            android:summary="@string/dev3_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://telegram.me/uditkarode"/>
-        </Preference>
-
 </PreferenceCategory>
 
 <PreferenceCategory
@@ -114,7 +106,7 @@
         android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/sunnyraj84348" />
+            android:data="https://t.me/Lokodetoddyn" />
     </Preference>
     
 </PreferenceCategory>

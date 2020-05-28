@@ -55,7 +55,7 @@
     <string name="navbar_title">Navigation Bar</string>
     <string name="powermenu_title">Power Menu</string>
     <string name="quicksettings_title">Quick Settings</string>
-    <string name="statusbar_title">Status Bar</string>
+    <string name="interface_title">Interface</string>
     <string name="animations_title">Animations</string>
     <string name="notifications_title">Notifications</string>
     <string name="updater_title">Sakura OTA</string>
