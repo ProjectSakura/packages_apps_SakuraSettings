@@ -44,19 +44,4 @@
         android:summary="@string/hide_apps_from_recents_summary"
         android:fragment="com.sakura.settings.fragments.misc.HAFRSettings" />
 
-    <ListPreference
-        android:key="theme_switch"
-        android:title="@string/theme_type_title"
-	android:summary="%s"
-        android:dialogTitle="@string/theme_type_summary"
-        android:entries="@array/theme_type_titles"
-        android:entryValues="@array/theme_type_values"
-        android:defaultValue="1"/>
-
-       <Preference
-            android:key="batterybar_settings"
-            android:title="@string/battery_bar_title"
-            android:summary="@string/battery_bar_summary"
-            android:fragment="com.sakura.settings.fragments.BatterybarSettings" />
-
 </PreferenceScreen>

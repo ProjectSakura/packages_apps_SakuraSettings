@@ -16,7 +16,25 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/powermenu_title"
+    android:title="@string/interface_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+<!--Sakura Theming-->
+    <ListPreference
+        android:key="theme_switch"
+        android:title="@string/theme_type_title"
+	android:summary="%s"
+        android:dialogTitle="@string/theme_type_summary"
+        android:entries="@array/theme_type_titles"
+        android:entryValues="@array/theme_type_values"
+        android:defaultValue="1"/>
+
+<!--Batttery bar-->
+    <Preference
+            android:key="batterybar_settings"
+            android:title="@string/battery_bar_title"
+            android:summary="@string/battery_bar_summary"
+            android:fragment="com.sakura.settings.fragments.BatterybarSettings" />
+
 
 </PreferenceScreen>
