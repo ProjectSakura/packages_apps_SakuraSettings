@@ -19,7 +19,7 @@
     android:title="@string/interface_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-<!--Sakura Theming-->
+    <!--Sakura Theming-->
     <ListPreference
         android:key="theme_switch"
         android:title="@string/theme_type_title"
@@ -29,12 +29,18 @@
         android:entryValues="@array/theme_type_values"
         android:defaultValue="1"/>
 
-<!--Batttery bar-->
+    <!--Batttery bar-->
     <Preference
             android:key="batterybar_settings"
             android:title="@string/battery_bar_title"
             android:summary="@string/battery_bar_summary"
             android:fragment="com.sakura.settings.fragments.BatterybarSettings" />
 
+    <!-- Rounded Corners -->
+    <PreferenceScreen
+            android:key="rounded_corners"
+            android:title="@string/corners_title"
+            android:summary="@string/corners_summary"
+            android:fragment="com.sakura.settings.fragments.RoundedCorners" />
 
 </PreferenceScreen>
