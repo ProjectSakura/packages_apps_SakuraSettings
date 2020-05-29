@@ -218,4 +218,13 @@
     <!-- OOS Clear all button -->
     <string name="enable_clear_all_button">OOS Styled clear all button</string>
     <string name="enable_clear_all_button_summary">Show clear all notifications button in quick settings instead of default text one</string>
+
+    <!-- Rounded corners -->
+    <string name="corners_title">Rounded corners</string>
+    <string name="corners_summary">Allow customized rounded corners</string>
+    <string name="corner_radius">Rounded corner radius</string>
+    <string name="content_padding">Corner content padding</string>
+    <string name="status_bar_padding">Statusbar extra padding</string>
+    <string name="corner_fwvals">Use default values</string>
+
 </resources>
