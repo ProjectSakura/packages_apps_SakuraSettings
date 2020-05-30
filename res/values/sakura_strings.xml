@@ -220,6 +220,7 @@
     <string name="enable_clear_all_button_summary">Show clear all notifications button in quick settings instead of default text one</string>
 
     <!-- Rounded corners -->
+    <string name="unit_pixels">dp</string>
     <string name="corners_title">Rounded corners</string>
     <string name="corners_summary">Allow customized rounded corners</string>
     <string name="corner_radius">Rounded corner radius</string>
