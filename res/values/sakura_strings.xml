@@ -228,4 +228,8 @@
     <string name="status_bar_padding">Statusbar extra padding</string>
     <string name="corner_fwvals">Use default values</string>
 
+    <!-- Sensor block per-package -->
+    <string name="sensor_block_title">Sensor block per-package</string>
+    <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
+
 </resources>
