@@ -38,6 +38,18 @@
             android:defaultValue="true" />
 
     <PreferenceCategory
+        android:title="@string/notification_category"
+        android:key="noti_category"
+        settings:allowDividerAbove="true" >
+
+        <Preference
+            android:key="notifications"
+            android:title="@string/heads_up"
+            android:summary="@string/heads_up_summary"
+            android:fragment="com.sakura.settings.fragments.Notifications" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="notification_screen"
         android:title="@string/notification_screen_title">
 
