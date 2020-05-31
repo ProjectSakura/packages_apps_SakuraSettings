@@ -1,3 +1,4 @@
+
 /*
  * Copyright (C) Tipsyos
  *
@@ -25,7 +26,6 @@ import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
-
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
@@ -34,16 +34,13 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
-
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 import com.android.settingslib.search.SearchIndexable;
-
 import com.android.settings.carbon.CustomSeekBarPreference;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
@@ -52,23 +49,22 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
-
 @SearchIndexable
 public class Notifications extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener, Indexable {
 
     private static final String PREF_HEADS_UP_SNOOZE_TIME = "heads_up_snooze_time";
+    private static final String PREF_HEADS_UP_TIME_OUT = "heads_up_time_out"; 
 
     private ListPreference mHeadsUpSnoozeTime;
+    private ListPreference mHeadsUpTimeOut;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-
         addPreferencesFromResource(R.xml.notifications);
         PreferenceScreen prefSet = getPreferenceScreen();
         final ContentResolver resolver = getActivity().getContentResolver();
-
         Resources systemUiResources;
         try {
             systemUiResources = getPackageManager().getResourcesForApplication("com.android.systemui");
@@ -84,6 +80,15 @@ public class Notifications extends SettingsPreferenceFragment implements
                 Settings.System.HEADS_UP_NOTIFICATION_SNOOZE, defaultSnooze);
         mHeadsUpSnoozeTime.setValue(String.valueOf(headsUpSnooze));
         updateHeadsUpSnoozeTimeSummary(headsUpSnooze);
+
+        int defaultTimeOut = systemUiResources.getInteger(systemUiResources.getIdentifier(
+                    "com.android.systemui:integer/heads_up_notification_decay", null, null));
+        mHeadsUpTimeOut = (ListPreference) findPreference(PREF_HEADS_UP_TIME_OUT);
+        mHeadsUpTimeOut.setOnPreferenceChangeListener(this);
+        int headsUpTimeOut = Settings.System.getInt(getContentResolver(),
+                Settings.System.HEADS_UP_TIMEOUT, defaultTimeOut);
+        mHeadsUpTimeOut.setValue(String.valueOf(headsUpTimeOut));
+        updateHeadsUpTimeOutSummary(headsUpTimeOut);
     }
 
     @Override
@@ -93,6 +98,12 @@ public class Notifications extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.HEADS_UP_NOTIFICATION_SNOOZE, headsUpSnooze);
             updateHeadsUpSnoozeTimeSummary(headsUpSnooze);
+            return true;
+        } else if (preference == mHeadsUpTimeOut) {
+            int headsUpTimeOut = Integer.valueOf((String) objValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.HEADS_UP_TIMEOUT, headsUpTimeOut);
+            updateHeadsUpTimeOutSummary(headsUpTimeOut);
             return true;
         }
         return false;
@@ -109,6 +120,12 @@ public class Notifications extends SettingsPreferenceFragment implements
         }
     }
 
+    private void updateHeadsUpTimeOutSummary(int value) {
+        String summary = getResources().getString(R.string.heads_up_time_out_summary,
+                value / 1000);
+        mHeadsUpTimeOut.setSummary(summary);
+    }
+
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.SAKURA;
@@ -121,7 +138,6 @@ public class Notifications extends SettingsPreferenceFragment implements
                                                                             boolean enabled) {
                     ArrayList<SearchIndexableResource> result =
                             new ArrayList<SearchIndexableResource>();
-
                     SearchIndexableResource sir = new SearchIndexableResource(context);
                     sir.xmlResId = R.xml.notifications;
                     result.add(sir);
