@@ -37,7 +37,13 @@
             android:summary="@string/qs_datausage_subtitle"
             android:defaultValue="true" />
 
-        <!-- HAFR -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+        android:key="sensor_block"
+        android:title="@string/sensor_block_title"
+        android:summary="@string/sensor_block_summary"
+        android:defaultValue="false" />
+
+    <!-- HAFR -->
     <Preference
         android:icon="@drawable/ic_hafr"
         android:title="@string/hide_apps_from_recents_title"
