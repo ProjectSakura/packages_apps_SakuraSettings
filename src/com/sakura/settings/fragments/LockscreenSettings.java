@@ -34,6 +34,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import android.content.pm.PackageManager;
  
+import lineageos.app.LineageContextConstants; 
 import com.sakura.settings.R;
 
 public class LockscreenSettings extends SettingsPreferenceFragment implements
