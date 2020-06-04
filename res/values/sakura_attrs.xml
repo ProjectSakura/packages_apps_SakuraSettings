@@ -27,10 +27,9 @@
     <declare-styleable name="ColorPreference">
         <attr name="defaultColorValue" format="integer" />
     </declare-styleable>
-    
+
     <!--system setting list --> 
     <declare-styleable name="SystemSettingListPreference">
         <attr name="dependentValue" format="string"/>
     </declare-styleable>
-    
 </resources>

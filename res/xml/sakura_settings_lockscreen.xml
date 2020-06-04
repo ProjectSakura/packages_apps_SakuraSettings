@@ -67,6 +67,16 @@
             <Preference
                 android:summary="@string/fod_pressed_state_footer" />
 
+            <com.sakura.settings.preferences.SystemSettingListPreference
+                android:key="fod_anim"
+                android:icon="@drawable/ic_fp_animation"
+                android:title="@string/fod_recog_animation_effect_title"
+                android:summary="%s"
+                android:entries="@array/fod_recog_animation_entries"
+                android:entryValues="@array/fod_recog_animation_values"
+                android:defaultValue="0"
+                android:dependency="fod_recognizing_animation" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
