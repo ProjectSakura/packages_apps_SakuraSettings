@@ -66,6 +66,7 @@
         </Preference>
 </PreferenceCategory>
 
+<!--Asus-->
 <PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_asus" >
@@ -80,6 +81,7 @@
     </Preference>
 </PreferenceCategory>
 
+<!--Xiaomi-->
 <PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_xiaomi" >
@@ -107,6 +109,38 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/Lokodetoddyn" />
+    </Preference>
+    
+</PreferenceCategory>
+
+<!--samsung-->
+<PreferenceCategory
+        android:key="maintainer"
+        android:title="@string/device_samsung" >
+
+    <Preference
+        android:title="@string/device_dreamlte"
+        android:summary="@string/device_dreamlte_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Haridhayal" />
+    </Preference>
+        <Preference
+        android:title="@string/device_dream2lte"
+        android:summary="@string/device_dream2lte_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Haridhayal" />
+    </Preference>
+    <Preference
+        android:title="@string/device_greatlte"
+        android:summary="@string/device_greatlte_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Haridhayal" />
     </Preference>
     
 </PreferenceCategory>
