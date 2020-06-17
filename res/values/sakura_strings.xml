@@ -41,9 +41,13 @@
     <string name="device_X00T">ZenFone Max Pro M1</string>
     <string name="device_X00T_description">X00T\nPriyanshu</string>
 
-    <string name="device_asus">Huawei</string>
-    <string name="device_X00T">Nexus 6P</string>
-    <string name="device_X00T_description">angler\nAmartya</string>
+    <string name="device_huawei">Huawei</string>
+    <string name="device_angler">Nexus 6P</string>
+    <string name="device_angler_description">angler\nAmartya</string>
+
+    <string name="device_moto">Motorola</string>
+    <string name="device_ocean">G7 Power</string>
+    <string name="device_ocean_description">ocean\nVulkan-ops</string>
     
     <string name="device_samsung">Samsung</string>
     <string name="device_dreamlte">Galaxy S8</string>
@@ -60,6 +64,8 @@
     <string name="device_riva_description">riva\nSunny Raj</string>
     <string name="device_wayne">Mi 6x</string>
     <string name="device_wayne_description">wayne\nRoger W.</string>
+    <string name="device_beryllium">Pocophone F1</string>
+    <string name="device_beryllium_description">wayne\nHumanGlitch</string>
 
     <!-- Categories -->
     <string name="button_title">Buttons</string>
