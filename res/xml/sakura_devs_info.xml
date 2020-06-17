@@ -96,6 +96,21 @@
     </Preference>
 </PreferenceCategory>
 
+<!--Motorola-->
+<PreferenceCategory
+        android:key="maintainer"
+        android:title="@string/device_moto" >
+
+    <Preference
+        android:title="@string/device_ocean"
+        android:summary="@string/device_ocean_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Vulkan_4" />
+    </Preference>
+</PreferenceCategory>
+
 <!--samsung-->
 <PreferenceCategory
         android:key="maintainer"
@@ -156,6 +171,14 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/Lokodetoddyn" />
+    </Preference>
+    <Preference
+        android:title="@string/device_beryllium"
+        android:summary="@string/device_beryllium_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/human_glitch1_1" />
     </Preference>
     
 </PreferenceCategory>
