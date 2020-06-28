@@ -50,7 +50,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.sakura.settings.R;
-import com.skaura.settings.preferences.PackageListAdapter;
+import com.sakura.settings.preferences.PackageListAdapter;
 import com.sakura.settings.preferences.PackageListAdapter.PackageItem;
 
 import java.util.ArrayList;
@@ -264,12 +264,13 @@ public class GamingMode extends SettingsPreferenceFragment
                     // Do nothing
                 }
             }
+
+          // Keep these at the top
+          mAddGamingPref.setOrder(0);
+          // Add 'add' options
+          mGamingPrefList.addPreference(mAddGamingPref);
         }
 
-        // Keep these at the top
-        mAddGamingPref.setOrder(0);
-        // Add 'add' options
-        mGamingPrefList.addPreference(mAddGamingPref);
     }
 
     @Override
