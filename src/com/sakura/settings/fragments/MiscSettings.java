@@ -34,6 +34,7 @@ import android.view.ViewGroup;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.sakura.settings.fragments.misc.HAFRSettings;
+import com.sakura.settings.fragments.misc.GamingMode;
 import com.sakura.settings.R;
 
 public class MiscSettings extends SettingsPreferenceFragment implements
@@ -55,8 +56,9 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     public static void reset(Context mContext) {
         ContentResolver resolver = mContext.getContentResolver();
         HAFRSettings.reset(mContext);
+        GamingMode.reset(mContext);
     }
-    
+
     @Override
     public void onResume() {
         super.onResume();

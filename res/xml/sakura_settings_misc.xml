@@ -43,6 +43,14 @@
         android:summary="@string/sensor_block_summary"
         android:defaultValue="false" />
 
+    <!--Gaming mode -->
+    <Preference
+        android:key="gaming_mode"
+        android:icon="@drawable/ic_gaming"
+        android:title="@string/gaming_mode_title"
+        android:summary="@string/gaming_mode_summary"
+        android:fragment="com.sakura.settings.fragments.misc.GamingMode"/>
+ 
     <!-- HAFR -->
     <Preference
         android:icon="@drawable/ic_hafr"
