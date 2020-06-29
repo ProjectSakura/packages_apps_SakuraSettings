@@ -65,7 +65,7 @@
     <string name="device_wayne">Mi 6x</string>
     <string name="device_wayne_description">wayne\nRoger W.</string>
     <string name="device_beryllium">Pocophone F1</string>
-    <string name="device_beryllium_description">wayne\nHumanGlitch</string>
+    <string name="device_beryllium_description">beryllium\nHumanGlitch</string>
 
     <!-- Categories -->
     <string name="button_title">Buttons</string>
