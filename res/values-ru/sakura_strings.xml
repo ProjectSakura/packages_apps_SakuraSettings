@@ -246,4 +246,30 @@
     <string name="heads_up_time_out_title">Тайм-аут</string>
     <string name="heads_up_time_out_summary">Уведомления о времени просмотра будут отображаться для</string>
 
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Игровой режим</string>
+    <string name="gaming_mode_summary">Настройка параметров игрового режима</string>
+    <string name="gaming_mode_enabled_summary">Разрешить включение игрового режима</string>
+    <string name="gaming_mode_app_picker_title">Автоматически включить для этих приложений</string>
+    <string name="add_gaming_mode_package_title">Добавить приложения для игрового режима</string>
+    <string name="add_gaming_mode_package_summary">Игровой режим включается автоматически при открытии этих приложений и выключается при закрытии</string>
+    <string name="gaming_mode_headsup_title">Блокировать уведомления</string>
+    <string name="gaming_mode_headsup_summary">Звонки и уведомления будут отключены</string>
+    <string name="gaming_mode_hardware_keys_title">Блокировать кнопки</string>
+    <string name="gaming_mode_hardware_keys_summary">Когда игровой режим включен, кнопки будут заблокированы</string>
+    <string name="gaming_mode_brightness_title">Отключить автоматическую яркость</string>
+    <string name="gaming_mode_brightness_summary">Блокировка яркости экрана при включенном игровом режиме</string>
+    <string name="gaming_mode_ringer_title">Звонок в игровом режиме</string>
+    <string name="gaming_mode_ringer_off_title">Ничего</string>
+    <string name="gaming_mode_ringer_vibrate_title">Вибрировать</string>
+    <string name="gaming_mode_ringer_dnd_title">Не беспокоить</string>
+    <string name="gaming_mode_ringer_silent_title">Без звука</string>
+    <string name="gaming_mode_notifications_title">Индикация игрового режима</string>
+    <string name="gaming_mode_notifications_off_title">Отключить</string>
+    <string name="gaming_mode_notifications_notif_title">Показывать уведомления</string>
+    <string name="gaming_mode_notifications_toast_title">Показывать всплывающие уведомления</string>
+    <string name="gaming_mode_notifications_all_title">Показать всплывающие уведомления и обычные уведомления</string>
+    <string name="gaming_mode_dynamic_title">Динамический режим</string>
+    <string name="gaming_mode_dynamic_summary">Пробует найти и добавить игровые приложения автоматически</string>
+    
 </resources>
