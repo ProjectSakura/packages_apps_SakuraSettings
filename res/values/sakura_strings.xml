@@ -30,8 +30,8 @@
     <string name="dev1_description">Founder/Developer</string>
     <string name="dev_2">Chaitanaya Mittal</string>
     <string name="dev2_description">Developer</string>
-    <string name="dev_3">Udit Karode</string>
-    <string name="dev3_description">Designer</string>
+    <string name="dev_3">Arun Teltia</string>
+    <string name="dev3_description">Web Developer</string>
 
     <!-- Maintainer Info -->
     <string name="maintainers_header">Maintainers</string>
@@ -45,10 +45,24 @@
     <string name="device_angler">Nexus 6P</string>
     <string name="device_angler_description">angler\nAmartya</string>
 
+    <string name="device_leeco">LeEco</string>
+    <string name="device_le2">Le 2</string>
+    <string name="device_leeco_description">S2\nCakesTwix</string>
+
+    <string name="device_meizu">Meizu</string>
+    <string name="device_m1882">Meizu 16T and 16T</string>
+    <string name="device_meizu_description">m1882\nm1928\nTheDauke</string>
+
     <string name="device_moto">Motorola</string>
     <string name="device_ocean">G7 Power</string>
     <string name="device_ocean_description">ocean\nVulkan-ops</string>
-    
+    <string name="device_sanders">G5S Plus</string>
+    <string name="device_sanders_description">sanders\nArmSM</string>    
+
+    <string name="device_realme">Realme</string>
+    <string name="device_realme1">Realme 1</string>
+    <string name="device_realme1_description">CPH1859\nCyberJalagam</string>
+
     <string name="device_samsung">Samsung</string>
     <string name="device_dreamlte">Galaxy S8</string>
     <string name="device_dreamlte_description">dreamlte\nHaridhayal</string>
@@ -62,6 +76,8 @@
     <string name="device_mido_description">mido\nJigen</string>
     <string name="device_riva">Redmi 5A</string>
     <string name="device_riva_description">riva\nSunny Raj</string>
+    <string name="device_violet">Redmi Note 7 Pro</string>
+    <string name="device_violet_description">violet\nPrajwal and Nitish</string>
     <string name="device_wayne">Mi 6x</string>
     <string name="device_wayne_description">wayne\nRoger W.</string>
     <string name="device_beryllium">Pocophone F1</string>

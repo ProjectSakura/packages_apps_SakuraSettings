@@ -51,6 +51,13 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/ChaitanayaMittal" />
         </Preference>
+        <Preference
+            android:title="@string/dev_3"
+            android:summary="@string/dev3_description">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/T3rr0r1st" />
+        </Preference>        
 </PreferenceCategory>
 
 <PreferenceCategory
@@ -96,6 +103,36 @@
     </Preference>
 </PreferenceCategory>
 
+<!--LeEco-->
+<PreferenceCategory
+        android:key="maintainer"
+        android:title="@string/device_leeco" >
+
+    <Preference
+        android:title="@string/device_le2"
+        android:summary="@string/device_leeco_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/CakesTwix" />
+    </Preference>
+</PreferenceCategory>
+
+<!--Meizu-->
+<PreferenceCategory
+        android:key="maintainer"
+        android:title="@string/device_meizu" >
+
+    <Preference
+        android:title="@string/device_m1882"
+        android:summary="@string/device_meizu_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/THDAS" />
+    </Preference>
+</PreferenceCategory>
+
 <!--Motorola-->
 <PreferenceCategory
         android:key="maintainer"
@@ -109,8 +146,31 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/Vulkan_4" />
     </Preference>
+    <Preference
+        android:title="@string/device_sanders"
+        android:summary="@string/device_sanders_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/UsingtheName" />
+    </Preference>
 </PreferenceCategory>
 
+<!--Realme-->
+<PreferenceCategory
+        android:key="maintainer"
+        android:title="@string/device_realme" >
+
+    <Preference
+        android:title="@string/device_realme1"
+        android:summary="@string/device_realme1_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/CyberJalagam" />
+    </Preference>
+</PreferenceCategory>
+    
 <!--samsung-->
 <PreferenceCategory
         android:key="maintainer"
@@ -156,7 +216,7 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/jigen_was_here" />
     </Preference>
-        <Preference
+    <Preference
         android:title="@string/device_riva"
         android:summary="@string/device_riva_description"
         android:icon="@drawable/ic_devs_phone">
@@ -164,6 +224,14 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/sunnyraj84348" />
     </Preference>
+    <Preference
+        android:title="@string/device_violet"
+        android:summary="@string/device_violet_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Wally_West_The_Flash" />
+    </Preference>    
     <Preference
         android:title="@string/device_wayne"
         android:summary="@string/device_wayne_description"
