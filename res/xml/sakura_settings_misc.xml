@@ -31,11 +31,13 @@
           android:title="@string/screenshot_sound_title"
           android:defaultValue="false" />
 
-    <com.sakura.settings.preferences.SystemSettingSwitchPreference
-        android:key="sensor_block"
+    <!-- Sensor Block -->
+    <Preference
+        android:key="sensor_block_settings"
+        android:icon="@drawable/ic_remote"
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"
-        android:defaultValue="false" />
+        android:fragment="com.sakura.settings.fragments.misc.SensorBlock"/>
 
     <!--Gaming mode -->
     <Preference

@@ -35,6 +35,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.sakura.settings.fragments.misc.HAFRSettings;
 import com.sakura.settings.fragments.misc.GamingMode;
+import com.sakura.settings.fragments.misc.SensorBlock;
 import com.sakura.settings.R;
 
 public class MiscSettings extends SettingsPreferenceFragment implements
@@ -57,6 +58,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = mContext.getContentResolver();
         HAFRSettings.reset(mContext);
         GamingMode.reset(mContext);
+        SensorBlock.reset(mContext);
     }
 
     @Override
