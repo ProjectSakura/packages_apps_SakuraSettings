@@ -350,4 +350,8 @@
     <string name="lockscreen_status_bar_title">Status bar</string>
     <string name="lockscreen_status_bar_summary">Display status bar on the lockscreen</string>
 
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
+
 </resources>
