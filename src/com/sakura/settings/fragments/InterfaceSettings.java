@@ -60,6 +60,10 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
     private UiModeManager mUiModeManager;
     private ListPreference mThemeSwitch;
 
+    private static final String SMART_PIXELS = "smart_pixels";
+
+    private Preference mSmartPixels;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
