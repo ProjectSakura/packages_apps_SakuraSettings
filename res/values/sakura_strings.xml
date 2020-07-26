@@ -346,4 +346,8 @@
     <string name="smart_pixels_shift_times_30min">30 minutes</string>
     <string name="smart_pixels_shift_times_1h">1 hour</string>
 
+    <!-- Show Statusbar on Lockscreen -->
+    <string name="lockscreen_status_bar_title">Status bar</string>
+    <string name="lockscreen_status_bar_summary">Display status bar on the lockscreen</string>
+
 </resources>

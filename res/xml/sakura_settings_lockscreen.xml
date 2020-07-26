@@ -26,12 +26,22 @@
         android:summary="@string/fprint_sucess_vib_summary"
         android:persistent="false" />
 -->
+    <!--visualizer-->
     <com.sakura.settings.preferences.SecureSettingSwitchPreference
             android:key="lockscreen_visualizer_enabled"
             android:title="@string/lockscreen_visualizer_enable"
             android:summary="@string/lockscreen_visualizer_enable_summary"
             android:defaultValue="false" />
 
+    <!--hide statusbar-->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_status_bar"
+            android:icon="@drawable/ic_shapes"
+            android:title="@string/lockscreen_status_bar_title"
+            android:summary="@string/lockscreen_status_bar_summary"
+            android:defaultValue="true" />
+
+    <!--Fod icons-->
     <PreferenceCategory
             android:key="fod_icon_picker"
             android:title="@string/fod_icon_picker_category_title" >
