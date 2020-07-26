@@ -43,4 +43,11 @@
             android:summary="@string/corners_summary"
             android:fragment="com.sakura.settings.fragments.RoundedCorners" />
 
+    <!--Smart pixel-->
+    <Preference
+            android:key="smart_pixels"
+            android:title="@string/smart_pixels_title"
+            android:summary="@string/smart_pixels_summary"
+            android:fragment="com.sakura.settings.fragments.SmartPixels" />
+
 </PreferenceScreen>
