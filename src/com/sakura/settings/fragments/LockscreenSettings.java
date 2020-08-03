@@ -81,6 +81,8 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
                 Settings.System.LOCKSCREEN_STATUS_BAR, 1, UserHandle.USER_CURRENT);
         Settings.Global.putInt(resolver,
                 Settings.Global.LOCKSCREEN_ENABLE_POWER_MENU, 1);
+        Settings.Global.putInt(resolver,
+                Settings.Global.LOCKSCREEN_POWERMENU_SECURE, 0);
     }
 
     @Override

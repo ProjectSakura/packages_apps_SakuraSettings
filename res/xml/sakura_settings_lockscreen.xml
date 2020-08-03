@@ -43,9 +43,16 @@
     <!--Hide powermenu on lockscreen-->
     <com.sakura.settings.preferences.GlobalSettingSwitchPreference
                android:key="lockscreen_enable_power_menu"
-               android:icon="@drawable/ic_power"
                android:title="@string/lockscreen_enable_power_menu_title"
                android:summary="@string/lockscreen_enable_power_menu_summary"
+               android:defaultValue="true" />
+
+    <!-- ask for pin for reboot--> 
+    <com.sakura.settings.preferences.GlobalSettingSwitchPreference
+               android:key="lockscreen_powermenu_secure"
+               android:title="@string/lockscreen_secure_power_menu_title"
+               android:summary="@string/lockscreen_secure_power_menu_summary"
+               android:dependency="lockscreen_enable_power_menu"
                android:defaultValue="true" />
 
     <!--Fod icons-->
