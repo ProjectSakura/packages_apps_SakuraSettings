@@ -79,6 +79,8 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = mContext.getContentResolver();
         Settings.System.putIntForUser(resolver,
                 Settings.System.LOCKSCREEN_STATUS_BAR, 1, UserHandle.USER_CURRENT);
+        Settings.Global.putInt(resolver,
+                Settings.Global.LOCKSCREEN_ENABLE_POWER_MENU, 1);
     }
 
     @Override
