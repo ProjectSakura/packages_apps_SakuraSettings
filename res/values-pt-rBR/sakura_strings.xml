@@ -17,12 +17,12 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
 	<string name="sakura_settings_title">Configurações da Sakura</string>
-    <string name="sakura_dashboard_summary">Vamos trazer-lhe a primavera.</string>
+    <string name="sakura_dashboard_summary">É tipo a primavera</string>
     
 	<!-- ROM Info -->
     <string name="sakura_about_info">Sobre o Projeto</string>
     <string name="sakura_about_info_summary_title">Sobre a Equipe</string>
-    <string name="sakura_about_info_summary">A LineageOS customizada. Seu único propósito é fornecer uma plataforma que é baseada na LineageOS e é mais customizável do que a LineageOS.</string>
+    <string name="sakura_about_info_summary">Project Sakura é a LineageOS customizada. Seu único propósito é fornecer uma plataforma que é baseada na LineageOS e é mais customizável do que a LineageOS.</string>
     
 	<!-- Dev Info -->
     <string name="devs_header">Desenvolvedores</string>
@@ -67,13 +67,13 @@
     <string name="color_default">Padrão</string>
     
 	<!-- Custom headers -->
-    <string name="notification_title">Painel de Notificações</string>
+    <string name="notification_title">Painel de notificações</string>
     <string name="status_bar_custom_header_title">Habilitar</string>
     <string name="daylight_header_pack_title">Coleção de imagens de cabeçalho</string>
     <string name="status_bar_custom_header_shadow_title">Sombra da imagem do cabeçalho</string>
     <string name="status_bar_custom_header_shadow_summary">Para uma melhor visibilidade em imagens claras</string>
     <string name="unit_percent">\u0025</string>
-    <string name="static_header_provider_title">Imagem Estática</string>
+    <string name="static_header_provider_title">Imagem estática</string>
     <string name="daylight_header_provider_title">Coleção de imagens</string>
     <string name="custom_header_provider_title">Fornecedor no cabeçalho</string>
     <string name="custom_header_pick_title">Selecionar imagem do cabeçalho</string>
@@ -138,17 +138,17 @@
 	<!-- Themes -->
     <string name="theme_type_title">Temas da Sakura</string>
     <string name="theme_type_summary">Selecione um tema</string>
-    <string name="theme_type_light">Claro</string>
+    <string name="theme_type_light">Light</string>
     <string name="theme_type_pitch_black">Google Grey</string>
-    <string name="theme_type_solarized_dark">Solarized dark</string>
+    <string name="theme_type_solarized_dark">Solarized Dark</string>
     <string name="theme_type_baked_green">Baked Green</string>
     <string name="theme_type_choco_x">Choco X</string>
-    <string name="theme_type_du_pitchblack">Pitch black</string>
+    <string name="theme_type_du_pitchblack">Pitch Black</string>
     <string name="theme_type_material_ocean">Material Ocean</string>
     
 	<!--QS blur toggle -->
     <string name="blur_quicksettings">Desfoque nas configurações rápidas (beta)</string>
-    <string name="blur_quicksettings_subtitle">desfoca o fundo escurecido atrás das configurações rápidas</string>
+    <string name="blur_quicksettings_subtitle">Desfoca o fundo escurecido atrás das configurações rápidas</string>
     
 	<!-- Data usage-->
     <string name="qs_datausage_title">Mostrar uso de dados no cabeçalho das configurações rápidas</string>
@@ -159,7 +159,7 @@
     <string name="lockscreen_visualizer_enable_summary">Mostrar barras do visualizador durante a reprodução de música</string>
     
 	<!-- Battery Bar -->
-    <string name="battery_bar_title">Barra de Bateria</string>
+    <string name="battery_bar_title">Barra de bateria</string>
     <string name="battery_bar_summary">Decorar barra de bateria</string>
     <string name="battery_bar_location">Localização da barra da bateria</string>
     <string name="battery_bar_color">Cor da barra da bateria</string>
@@ -199,7 +199,7 @@
     <string name="dialog_delete_message">Remover item selecionado?</string>
     
 	<!-- R Notification headers -->
-    <string name="notification_headers_title">Mostrar Cabeçalhos de Notificação</string>
+    <string name="notification_headers_title">Mostrar cabeçalhos de notificação</string>
     <string name="notification_headers_summary">Mostrar cabeçalhos de notificação no estilo Android R (Necessita reinicialização da SystemUI)</string>
     
 	<!-- OOS Clear all button -->
