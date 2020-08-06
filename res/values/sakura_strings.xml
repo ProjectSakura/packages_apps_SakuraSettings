@@ -17,12 +17,12 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="sakura_settings_title">Sakura Configs</string>
-    <string name="sakura_dashboard_summary">Lets bring spring for you.</string>
+    <string name="sakura_dashboard_summary">Feels like spring</string>
 
     <!-- ROM Info -->
     <string name="sakura_about_info">About Project</string>
     <string name="sakura_about_info_summary_title">About Team</string>
-    <string name="sakura_about_info_summary">A customised Lineage OS. Its sole purpose is to provide a platform which is powered by Lineage and is more customisable than Lineage.</string>
+    <string name="sakura_about_info_summary">Project Sakura is a customized Lineage OS. Its sole purpose is to provide a platform which is powered by Lineage and is more customizable than Lineage.</string>
 
     <!-- Dev Info -->
     <string name="devs_header">Developers</string>
@@ -50,14 +50,20 @@
     <string name="device_leeco_description">S2\nCakesTwix</string>
 
     <string name="device_meizu">Meizu</string>
-    <string name="device_m1882">Meizu 16T and 16T</string>
-    <string name="device_meizu_description">m1882\nm1928\nTheDauke</string>
+    <string name="device_m1882">Meizu 16T</string>
+    <string name="device_m1882_description">m1882\nTheDauke</string>
+    <string name="device_m1928">Meizu 16TH</string>
+    <string name="device_m1928_description">m1928\nTheDauke</string>  
+    <string name="device_m1872">Meizu 16X</string>
+    <string name="device_m1872_description">m1872\nAlex/string</string>      
 
     <string name="device_moto">Motorola</string>
     <string name="device_ocean">G7 Power</string>
     <string name="device_ocean_description">ocean\nVulkan-ops</string>
     <string name="device_sanders">G5S Plus</string>
-    <string name="device_sanders_description">sanders\nArmSM</string>    
+    <string name="device_sanders_description">sanders\nArmSM</string>
+    <string name="device_merlin">G3 Turbo</string>
+    <string name="device_merlin_description">merlin\nCharlie</string>         
 
     <string name="device_realme">Realme</string>
     <string name="device_realme1">Realme 1</string>

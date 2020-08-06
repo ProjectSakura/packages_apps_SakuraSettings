@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2016 The AOSP-RRO Project
+     Copyright (C) 2020 Project Sakura
      Copyright (C) 2018-19 The Superior OS Project
-     Copyright (C) 2020 Direwolf INC for Project Sakura
-
+     
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -30,7 +30,7 @@
                android:icon="@drawable/ic_devs_info" >
         <intent
                android:action="android.intent.action.VIEW"
-               android:data="https://paypal.me/LordShen" />
+               android:data="https://projectsakura.github.io" />
         </Preference>
 </PreferenceCategory>
 
@@ -122,22 +122,36 @@
 <PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_meizu" >
-
     <Preference
         android:title="@string/device_m1882"
-        android:summary="@string/device_meizu_description"
+        android:summary="@string/device_m1882_description"
         android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/THDAS" />
     </Preference>
+    <Preference
+        android:title="@string/device_m1928"
+        android:summary="@string/device_m1928_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/THDAS" />
+    </Preference>
+    <Preference
+        android:title="@string/device_m1872"
+        android:summary="@string/device_m1872_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/c0nfid" />
+    </Preference>        
 </PreferenceCategory>
 
 <!--Motorola-->
 <PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_moto" >
-
     <Preference
         android:title="@string/device_ocean"
         android:summary="@string/device_ocean_description"
@@ -154,13 +168,20 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/UsingtheName" />
     </Preference>
+    <Preference
+        android:title="@string/device_merlin"
+        android:summary="@string/device_merlin_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/charlie255226" />
+    </Preference>    
 </PreferenceCategory>
 
 <!--Realme-->
 <PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_realme" >
-
     <Preference
         android:title="@string/device_realme1"
         android:summary="@string/device_realme1_description"
@@ -175,7 +196,6 @@
 <PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_samsung" >
-
     <Preference
         android:title="@string/device_dreamlte"
         android:summary="@string/device_dreamlte_description"
