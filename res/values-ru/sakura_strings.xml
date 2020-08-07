@@ -14,16 +14,13 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
-
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="sakura_settings_title">Настройки Сакуры</string>
     <string name="sakura_dashboard_summary">Давай принесем тебе весну.</string>
-
     <!-- ROM Info -->
     <string name="sakura_about_info">О проекте</string>
     <string name="sakura_about_info_summary_title">Про команду</string>
     <string name="sakura_about_info_summary">Индивидуальная LineageOS. Его единственная цель - предоставить платформу, работающую на Lineage и более настраиваемую, чем Lineage.</string>
-
     <!-- Dev Info -->
     <string name="devs_header">Разработчики</string>
     <string name="dev_1">LordShenron</string>
@@ -32,21 +29,53 @@
     <string name="dev2_description">Разработчик</string>
     <string name="dev_3">Udit Karode</string>
     <string name="dev3_description">Дизайнер</string>
-
     <!-- Maintainer Info -->
     <string name="maintainers_header">Сопровождающие</string>
     <string name="maintainers_header_summary">Это официальные устройства и их сопровождающие</string>
     <string name="device_asus">Asus</string>
     <string name="device_X00T">ZenFone Max Pro M1</string>
     <string name="device_X00T_description">X00T\nPriyanshu</string>
-    <string name="device_xiaomi">Xiaomi</string>
+    <string name="device_huawei">Huawei</string>
+    <string name="device_angler">Nexus 6P</string>
+    <string name="device_angler_description">angler\nAmartya</string>
+    <string name="device_leeco">LeEco</string>
+    <string name="device_le2">Le 2</string>
+    <string name="device_leeco_description">S2\nЧайникTwix</string>
+    <string name="device_meizu">Meizu</string>
+    <string name="device_m1882">Meizu 16T</string>
+    <string name="device_m1882_description">m1882\nTheDauke</string>
+    <string name="device_m1928">Meizu 16TH</string>
+    <string name="device_m1928_description">m1928\nTheDauke</string>
+    <string name="device_m1872">Meizu 16X</string>
+    <string name="device_m1872_description">m1872\nAlex/string</string>
+    <string name="device_moto">Motorola</string>
+    <string name="device_ocean">G7 Power</string>
+    <string name="device_ocean_description">ocean\nVulkan-ops</string>
+    <string name="device_sanders">G5S Plus</string>
+    <string name="device_sanders_description">sanders\nArmSM</string>
+    <string name="device_merlin">G3 Turbo</string>
+    <string name="device_merlin_description">merlin\nCharlie</string>
+    <string name="device_realme">Realme</string>
+    <string name="device_realme1">Realme 1</string>
+    <string name="device_realme1_description">CPH1859\nCyberJalagam</string>
+    <string name="device_samsung">Samsung</string>
+    <string name="device_dreamlte">Galaxy S8</string>
+    <string name="device_dreamlte_description">dreamlte\nHaridhayal</string>
+    <string name="device_dream2lte">Galaxy S8 Plus</string>
+    <string name="device_dream2lte_description">dream2lte\nHaridhayal</string>
+    <string name="device_greatlte">Note 8</string>
+    <string name="device_greatlte_description">greatlte\nHaridhayal</string>
+    <string name="device_xiaomi">Хлаоми</string>
     <string name="device_mido">Redmi Note 4X</string>
     <string name="device_mido_description">mido\nJigen</string>
     <string name="device_riva">Redmi 5A</string>
     <string name="device_riva_description">riva\nSunny Raj</string>
-    <string name="device_wayne">Mi 6x</string>
+    <string name="device_violet">Redmi Note 7 Pro</string>
+    <string name="device_violet_description">violet\nPrajwal and Nitish</string>
+    <string name="device_wayne">Mi 6Х</string>
     <string name="device_wayne_description">wayne\nRoger W.</string>
-	
+    <string name="device_beryllium">Pocophone F1</string>
+    <string name="device_beryllium_description">beryllium\nHumanGlitch</string>
     <!-- Categories -->
     <string name="button_title">Кнопки</string>
     <string name="gestures_title">Жесты</string>
@@ -59,13 +88,11 @@
     <string name="animations_title">Анимации</string>
     <string name="notifications_title">Уведомления</string>
     <string name="updater_title">Sakura OTA</string>
-	
     <!-- General strings -->
-    <string name="ok">OK</string>
+    <string name="ok">ОК</string>
     <string name="reset">Перезапустить</string>
     <string name="cancel">Отмена</string>
     <string name="save">Сохранить</string>
-
     <!-- Color Picker -->
     <string name="dialog_color_picker">Палитра цветов</string>
     <string name="press_color_to_apply">Нажмите на цвет ниже, чтобы применить</string>
@@ -75,16 +102,13 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Установить</string>
     <string name="color_default">По умолчанию</string>
-
-      <!-- Custom headers -->
+    <!-- Custom headers -->
     <string name="notification_title">Панель уведомлений</string>
     <string name="status_bar_custom_header_title">Включить</string>
     <string name="daylight_header_pack_title">Коллекция изображений</string>
     <string name="status_bar_custom_header_shadow_title">Затемнить изображение</string>
     <string name="status_bar_custom_header_shadow_summary">Для лучшей видимости на ярких изображениях</string>
     <string name="unit_percent">\u0025</string>
-    <string name="static_header_provider" translatable="false">static</string>
-    <string name="daylight_header_provider" translatable="false">daylight</string>
     <string name="static_header_provider_title">Статическое изображение</string>
     <string name="daylight_header_provider_title">Коллекция изображений</string>
     <string name="custom_header_provider_title">Заголовок провайдера</string>
@@ -97,38 +121,31 @@
     <string name="file_header_select_title">Выбрать локальные изображения</string>
     <string name="file_header_select_summary">Выбрать изображение из памяти телефона</string>
     <string name="file_header_provider_title">Одиночное изображение</string>
-    <string name="file_header_provider" translatable="false">file</string>
-
     <!-- QuickSettings Panel Transparency -->
     <string name="qs_panel_alpha_title">Непрозрачность быстрых настроек</string>
     <string name="qs_panel_alpha_summary">Настроить непрозрачность фона</string>
-
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Жест тремя пальцами</string>
     <string name="three_finger_gesture_summary">Свайп тремя пальцами для скриншота</string>
-
     <!-- Allow fake signature checkbox in developer settings -->
     <string name="allow_signature_fake">Разрешить подделку подписи</string>
     <string name="allow_signature_fake_summary">Разрешить приложениям обходить системы безопасности, выдавая себя за другое приложение</string>
-
     <!-- Force expanded notifications -->
     <string name="force_expanded_notifications_title">Принудительно расширенные уведомления</string>
     <string name="force_expanded_notifications_summary">Принудительное использование приложений, поддерживающих расширенные уведомления</string>
-
     <!-- Ambient edge lighting -->
     <string name="notification_screen_title">Экран</string>
     <string name="pulse_ambient_light_title">Краевое освещение</string>
     <string name="pulse_ambient_light_summary">Подсветка боковых краев экрана при уведомлении</string>
     <string name="pulse_ambient_light_color_title">Цвет освещения</string>
     <string name="default_string">По умолчанию</string>
-
     <!-- AOKP custom system animations -->
     <string name="system_animation_title">Система</string>
     <string name="activity_open_title">Анимация открытия</string>
     <string name="activity_close_title">Анимация закрытия</string>
-    <string name="task_open_title">Task open animation</string>
-    <string name="task_open_behind_title">Task open behind animation</string>
-    <string name="task_close_title">Task close animation</string>
+    <string name="task_open_title">Анимация открытия задачи</string>
+    <string name="task_open_behind_title">Анимация открытия задачи позади</string>
+    <string name="task_close_title">Анимация закрытия задачи</string>
     <string name="task_move_to_front_title">Переместить в переднюю анимацию</string>
     <string name="task_move_to_back_title">Переместить предыдущую анимацию</string>
     <string name="wallpaper_open_title">Анимация открытия обоев</string>
@@ -139,15 +156,9 @@
     <string name="title_animation_no_override">Предотвратить переопределение приложением</string>
     <string name="summary_animation_no_override">Запретить приложениям отменять переходы</string>
     <string name="animation_duration_default">По умолчанию</string>
-
-    <!-- Charging animation -->
-    <string name="charging_animation_title">Анимация зарядки</string>
-    <string name="charging_animation_summary">Отображать анимацию, когда устройство заряжается</string>
-
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Вибрация отпечатка пальца</string>
     <string name="fprint_sucess_vib_summary">Вибрация при успешной аутентификации по отпечатку пальца</string>
-
     <!-- Themes -->
     <string name="theme_type_title">Темы Сакуры</string>
     <string name="theme_type_summary">Выбрать тему</string>
@@ -157,21 +168,15 @@
     <string name="theme_type_baked_green">Запеченный зеленый</string>
     <string name="theme_type_choco_x">Choco X</string>
     <string name="theme_type_du_pitchblack">Pitch black</string>
-    <string name="theme_type_material_ocean">Material Ocean</string>
-
+    <string name="theme_type_material_ocean">Материальный океан</string>
+    <string name="theme_type_style_mizu">Mizu</string>
     <!--QS blur toggle -->
     <string name="blur_quicksettings">Размытие за быстрыми настройками (бета)</string>
     <string name="blur_quicksettings_subtitle">размывает затемненный фон за быстрыми настройками</string>
-
-    <!-- Data usage-->
-    <string name="qs_datausage_title">Показать использование данных в заголовке QS</string>
-    <string name="qs_datausage_subtitle">Показывает использование данных в заголовке быстрых настроек.</string>
-
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_enable">Визуализатор музыки</string>
     <string name="lockscreen_visualizer_enable_summary">Показывать панели визуализатора во время воспроизведения музыки</string>
-
-   <!-- Battery Bar -->
+    <!-- Battery Bar -->
     <string name="battery_bar_title">Строка батареи</string>
     <string name="battery_bar_summary">Изменить строку батареи</string>
     <string name="battery_bar_location">Местоположение строки батареи</string>
@@ -191,17 +196,14 @@
     <string name="battery_bar_reversed">Перевернутый</string>
     <string name="battery_bar_use_gradient_color">Использовать градиент цвета</string>
     <string name="battery_bar_gradient_color_summary">Используйте градиент цвета в качестве шкалы уровня заряда батареи</string>
-    <string name="battery_bar_high_color">High level color"</string>
-    <string name="battery_bar_low_color">Low level color"</string>
+    <string name="battery_bar_high_color">Высокоуровневый цвет \"</string>
+    <string name="battery_bar_low_color">Низкий уровень цвета \"</string>
     <string name="battery_bar_battery_low_color_warning">Цвет строки батареи, когда телефон разряжен</string>
-
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">Звук скриншота</string>
-
     <!--qs tint toggle-->
     <string name="qs_bg_use_new_tint">Переключить оттенок QS</string>
     <string name="qs_bg_use_new_tint_summary">Использовать цвет акцента для значков и фона плитки.</string>
-
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Скрыть последние приложения</string>
     <string name="hide_apps_from_recents_summary">Эти приложения будут автоматически скрываться на экране последних при следующем открытии.</string>
@@ -210,15 +212,12 @@
     <string name="profile_choose_app">Выбрать приложение</string>
     <string name="dialog_delete_title">Удалить</string>
     <string name="dialog_delete_message">Удалить выбранное приложение?</string>
-
     <!-- R Notification headers -->
     <string name="notification_headers_title">Показывать заголовки уведомлений</string>
     <string name="notification_headers_summary">Отображать ли заголовки уведомлений в стиле R (требуется перезапуск SystemUI)</string>
-
     <!-- OOS Clear all button -->
     <string name="enable_clear_all_button">Стилизованная под OOS кнопка очистки всех уведомлений</string>
     <string name="enable_clear_all_button_summary">Показывать кнопку очистки всех уведомлений в быстрых настройках вместо текста по умолчанию</string>
-
     <!-- Rounded corners -->
     <string name="unit_pixels">dp</string>
     <string name="corners_title">Закругленные углы</string>
@@ -227,25 +226,23 @@
     <string name="content_padding">Угловой отступ</string>
     <string name="status_bar_padding">Дополнительные отступы от строки состояния</string>
     <string name="corner_fwvals">Использовать значения по умолчанию</string>
-
     <!-- Sensor block per-package -->
     <string name="sensor_block_title">Блокировка сенсора</string>
     <string name="sensor_block_summary">Блокируйте доступ к определенным датчикам для некоторых приложений, чтобы сэкономить заряд батареи</string>
-
+    <string name="sensor_block_app_picker_title">Блокировать датчики для этих приложений</string>
+    <string name="add_sensor_block_package_title">Добавить приложения для блока датчиков</string>
+    <string name="add_sensor_block_package_summary">Значительное движение, акселерометр, линейные датчики ускорения будут заблокированы для этих приложений</string>
     <!-- Heads up snooze -->
     <string name="heads_up_settings_title">Настройки всплывающих уведомлений</string>
-    <string name="heads_up_snooze_title">Таймер повтора</string>  
+    <string name="heads_up_snooze_title">Таймер повтора</string>
     <string name="heads_up_snooze_summary">Свайп вверх по всплывающим уведомлениям, чтобы отключить уведомления этого приложения в течение данного времени</string>
-
     <!-- Notification cat -->
     <string name="notification_category">Уведомления</string>
-    <string name="heads_up">Heads up</string>
+    <string name="heads_up">Всплывающие уведомления</string>
     <string name="heads_up_summary">Варианты уведомлений</string>
-
     <!-- Heads up timeout -->
     <string name="heads_up_time_out_title">Тайм-аут</string>
     <string name="heads_up_time_out_summary">Уведомления о времени просмотра будут отображаться для</string>
-
     <!-- Gaming mode -->
     <string name="gaming_mode_title">Игровой режим</string>
     <string name="gaming_mode_summary">Настройка параметров игрового режима</string>
@@ -271,5 +268,53 @@
     <string name="gaming_mode_notifications_all_title">Показать всплывающие уведомления и обычные уведомления</string>
     <string name="gaming_mode_dynamic_title">Динамический режим</string>
     <string name="gaming_mode_dynamic_summary">Пробует найти и добавить игровые приложения автоматически</string>
-    
+    <!--FOD -->
+    <string name="fod_icon_picker_category_title">Настройки FOD</string>
+    <string name="fod_icon_picker_title">Выбор иконки FOD</string>
+    <string name="fod_icon_picker_summary">Выберите любимую иконку отпечатка пальца</string>
+    <string name="fod_icon_picker_footer">Чтобы добавить свой собственный значок, выберите верхний левый значок и используйте приложение OnePlus 6T FP Customizer, чтобы выбрать нужный значок.</string>
+    <string name="fod_wallpaper_color">Использовать цвет обоев для иконки FOD</string>
+    <string name="fod_wallpaper_color_summary">Использует скорректированный цвет первичных обоев для FOD значка\nПРИМЕЧАНИЕ: может выглядеть хорошим только с некоторыми обоями</string>
+    <string name="fod_recog_animation">Анимация распознавания FOD</string>
+    <string name="fod_recog_animation_summary">Показывает анимацию при чтении пальца</string>
+    <string name="fod_recog_animation_effect_title">Эффект анимации FOD</string>
+    <!-- FOD pressed state behavior -->
+    <string name="fod_pressed_state_title">Поведение при нажатии FOD</string>
+    <string name="fod_pressed_state_footer">Значки/цвета могут различаться в зависимости от используемого устройства.</string>
+    <string name="fod_pressed_state_icon">Иконка (обычно синий)</string>
+    <string name="fod_pressed_state_icon_white">Значок (белый)</string>
+    <string name="fod_pressed_state_solid_color">Сплошной цвет (обычно зеленый)</string>
+    <!-- Units -->
+    <string name="unit_seconds">секунд</string>
+    <string name="unit_milliseconds">миллисекунд</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Умные пиксели</string>
+    <string name="smart_pixels_warning_text">Умные пиксели - это функция энергосбережения. В зависимости от количества пикселей, которые вы решили выключить, вы можете видеть улучшения в жизни батареи.</string>
+    <string name="smart_pixels_summary">Настроить умные пиксели</string>
+    <string name="smart_pixels_enable_title">Включить умные пиксели</string>
+    <string name="smart_pixels_enable_summary">Отключите пиксели, чтобы уменьшить потребление энергии</string>
+    <string name="smart_pixels_on_power_save_title">Авто-включение энергосбережения</string>
+    <string name="smart_pixels_on_power_save_summary">Включить Smart Pixels при включенном энергосбережении</string>
+    <string name="smart_pixels_percent">Процент пикселей для отключения</string>
+    <string name="smart_pixels_shift">Предотвращать обгорение за счет смены пикселей каждые</string>
+    <string name="smart_pixels_shift_times_15s">15 секунд</string>
+    <string name="smart_pixels_shift_times_30s">30 секунд</string>
+    <string name="smart_pixels_shift_times_1min">1 минута</string>
+    <string name="smart_pixels_shift_times_2min">2 минуты</string>
+    <string name="smart_pixels_shift_times_5min">5 минут</string>
+    <string name="smart_pixels_shift_times_10min">10 минут</string>
+    <string name="smart_pixels_shift_times_20min">20 минут</string>
+    <string name="smart_pixels_shift_times_30min">30 минут</string>
+    <string name="smart_pixels_shift_times_1h">1 час</string>
+    <!-- Show Statusbar on Lockscreen -->
+    <string name="lockscreen_status_bar_title">Строка состояния</string>
+    <string name="lockscreen_status_bar_summary">Отображать строку состояния на экране блокировки</string>
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Приложения на весь экран</string>
+    <string name="display_cutout_force_fullscreen_summary">Принудительные приложения игнорировать пробел</string>
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Меню питания</string>
+    <string name="lockscreen_enable_power_menu_summary">Разрешить доступ к меню питания на защищенном экране блокировки</string>
+    <string name="lockscreen_secure_power_menu_title">Безопасное меню питания</string>
+    <string name="lockscreen_secure_power_menu_summary">Разрешить действие меню выключения только после аутентификации</string>
 </resources>
