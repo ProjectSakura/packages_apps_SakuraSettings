@@ -55,11 +55,13 @@
     <string name="device_m1928">Meizu 16TH</string>
     <string name="device_m1928_description">m1928\nTheDauke</string>  
     <string name="device_m1872">Meizu 16X</string>
-    <string name="device_m1872_description">m1872\nAlex/string</string>      
+    <string name="device_m1872_description">m1872\nAlex</string>      
 
     <string name="device_moto">Motorola</string>
     <string name="device_ocean">G7 Power</string>
     <string name="device_ocean_description">ocean\nVulkan-ops</string>
+    <string name="device_river">Moto G7</string>
+    <string name="device_river_description">river\nVulkan-ops</string>    
     <string name="device_sanders">G5S Plus</string>
     <string name="device_sanders_description">sanders\nArmSM</string>
     <string name="device_merlin">G3 Turbo</string>
