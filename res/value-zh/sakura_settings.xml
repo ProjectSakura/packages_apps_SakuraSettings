@@ -107,7 +107,7 @@
     <string name="status_bar_custom_header_shadow_summary">在明亮的图像上提高可见度</string>
     <string name="unit_percent">\u0025</string>
     <string name="static_header_provider_title">静态图像</string>
-    <string name="daylight_header_provider_title">图像收藏</string>
+    <string name="daylight_header_provider_title">内置图片</string>
     <string name="custom_header_provider_title">顶部提供商</string>
     <string name="custom_header_pick_title">选择顶部图像</string>
     <string name="custom_header_pick_summary">选择本地或远程图片</string>
@@ -160,12 +160,12 @@
     <string name="theme_type_title">Sakura 主题</string>
     <string name="theme_type_summary">选择主题</string>
     <string name="theme_type_light">亮色</string>
-    <string name="theme_type_pitch_black">谷歌灰度</string>
-    <string name="theme_type_solarized_dark">已破解的暗色</string>
+    <string name="theme_type_pitch_black">灰色</string>
+    <string name="theme_type_solarized_dark">暗青色</string>
     <string name="theme_type_baked_green">Baked Green</string>
     <string name="theme_type_choco_x">Choco X</string>
     <string name="theme_type_du_pitchblack">浮动黑色</string>
-    <string name="theme_type_material_ocean">Material Ocean</string>
+    <string name="theme_type_material_ocean">屎绿色，别用</string>
     <string name="theme_type_style_mizu">Mizu</string>
     <!--QS blur toggle -->
     <string name="blur_quicksettings">快速设置背面模糊</string>
@@ -214,21 +214,21 @@
     <string name="notification_headers_summary">是否显示 R 样式通知标题 (需要重启系统界面)</string>
     <!-- OOS Clear all button -->
     <string name="enable_clear_all_button">OOS 样式清除所有按钮</string>
-    <string name="enable_clear_all_button_summary">在快速设置中显示清除所有通知按钮，而不是默认文本</string>
+    <string name="enable_clear_all_button_summary">在状态栏中显示清除所有通知按钮</string>
     <!-- Rounded corners -->
     <string name="unit_pixels">dp</string>
     <string name="corners_title">圆角</string>
     <string name="corners_summary">允许自定义圆角</string>
     <string name="corner_radius">圆角半径</string>
-    <string name="content_padding">Corner content padding</string>
-    <string name="status_bar_padding">Statusbar extra padding</string>
+    <string name="content_padding">角内容填充</string>
+    <string name="status_bar_padding">状态栏额外的填充</string>
     <string name="corner_fwvals">使用默认值</string>
     <!-- Sensor block per-package -->
     <string name="sensor_block_title">传感器块每个软件包</string>
     <string name="sensor_block_summary">阻止某些应用访问某些传感器以节省电池</string>
     <string name="sensor_block_app_picker_title">屏蔽这些应用的传感器</string>
     <string name="add_sensor_block_package_title">为传感器块添加应用</string>
-    <string name="add_sensor_block_package_summary">这些应用的重要运动、 加速计、 线性加速度传感器将被阻止</string>
+    <string name="add_sensor_block_package_summary">这些应用将被阻止使用传感器</string>
     <!-- Heads up snooze -->
     <string name="heads_up_settings_title">浮动通知设置</string>
     <string name="heads_up_snooze_title">暂停计时器</string>
@@ -313,5 +313,5 @@
     <string name="lockscreen_enable_power_menu_title">电源菜单</string>
     <string name="lockscreen_enable_power_menu_summary">允许访问安全锁屏界面上的电源菜单</string>
     <string name="lockscreen_secure_power_menu_title">安全电源菜单</string>
-    <string name="lockscreen_secure_power_menu_summary">Allow power menu action only after authentication</string>
+    <string name="lockscreen_secure_power_menu_summary">完成验证后才可开启电源菜单</string>
 </resources>
