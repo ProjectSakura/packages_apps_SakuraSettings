@@ -39,7 +39,7 @@
             android:title="Sakura Customizations" >
    
         <!-- Themes -->
-        <com.sakura.settings.ui.SakuraPreference
+        <com.sakura.settings.preferences.CardviewPreference
             android:key="interface_category" 
             android:title="@string/interface_title" 
             android:fragment="com.sakura.settings.fragments.InterfaceSettings" 
