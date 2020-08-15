@@ -22,22 +22,16 @@
 
     <PreferenceCategory
             android:key="about rom"
-            android:title="About ROM" >
+            android:title="Sakura Features" >
  
-      <!-- About Devs -->
-      <Preference
+        <!-- About Devs -->
+        <com.sakura.settings.preferences.CardviewPreference
             android:key="dev_info"
             android:title="@string/sakura_about_info"
             android:summary="@string/sakura_about_info_summary_title"
             android:fragment="com.android.settings.custom.sakuraDevsInfoFragment"
             android:icon="@drawable/ic_sakura_about"/>
 
-    </PreferenceCategory>
-
-    <PreferenceCategory
-            android:key="features"
-            android:title="Sakura Customizations" >
-   
         <!-- Themes -->
         <com.sakura.settings.preferences.CardviewPreference
             android:key="interface_category" 
@@ -92,7 +86,7 @@
             android:key="updater_category"
             android:title="@string/updater_title"
             android:fragment="com.sakura.settings.fragments.UpdaterSettings"
-            android:icon="@drawable/ic_settings_misc"/>
+            android:icon="@drawable/ic_settings_ota"/>
 
     </PreferenceCategory>
 
