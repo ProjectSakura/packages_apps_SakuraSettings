@@ -25,6 +25,8 @@
     <string name="sakura_about_info_summary">A customised Lineage OS.</string>
 	
     <!-- Categories -->
+    <string name="animations_title">Animations</string>
+    <string name="interface_title">Interface</string>
     <string name="button_title">Buttons</string>
     <string name="gestures_title">Gestures</string>
     <string name="lockscreen_title">Lock Screen</string>
