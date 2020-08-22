@@ -34,20 +34,58 @@
             android:title="@string/blur_quicksettings"
             android:summary="@string/blur_quicksettings_subtitle"
             android:defaultValue="true" />
- 
-    <!--QS tint toggle-->   
+
+    <!--QS tint toggle -->   
      <com.sakura.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_panel_bg_use_new_tint"
             android:title="@string/qs_bg_use_new_tint"
             android:summary="@string/qs_bg_use_new_tint_summary"
             android:defaultValue="true" />
-
+     
     <!--OOS dismiss all -->
      <com.sakura.settings.preferences.SystemSettingSwitchPreference
             android:key="dismiss_all_button"
             android:title="@string/enable_clear_all_button"
             android:summary="@string/enable_clear_all_button_summary"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
+
+    <PreferenceCategory
+        android:key="qs_columns_rows_category"
+        android:title="@string/qs_layout_category">
+
+        <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_rows_portrait"
+            android:title="@string/qs_rows_portrait_title"
+            android:max="7"
+            android:min="1"
+            android:defaultValue="2"
+            settings:units="" />
+
+        <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_rows_landscape"
+            android:title="@string/qs_rows_landscape_title"
+            android:max="5"
+            android:min="1"
+            android:defaultValue="2"
+            settings:units="" />
+
+        <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_columns_portrait"
+            android:title="@string/qs_columns_portrait_title"
+            android:max="9"
+            android:min="1"
+            android:defaultValue="4"
+            settings:units="" />
+
+        <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_columns_landscape"
+            android:title="@string/qs_columns_landscape_title"
+            android:max="9"
+            android:min="1"
+            android:defaultValue="4"
+            settings:units="" />
+
+    </PreferenceCategory>
 
     <!-- Custom headers -->
     <PreferenceCategory
