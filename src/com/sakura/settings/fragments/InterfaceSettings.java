@@ -36,13 +36,13 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import com.sakura.settings.R;
 
-public class ButtonSettings extends SettingsPreferenceFragment implements
+public class InterfaceSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.sakura_settings_button);
+        addPreferencesFromResource(R.xml.sakura_settings_interface);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
     }

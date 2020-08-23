@@ -34,45 +34,43 @@
 
         <!-- Themes -->
         <com.sakura.settings.preferences.CardviewPreference
-            android:key="interface_category"
-            android:title="@string/interface_title"
-            android:fragment="com.sakura.settings.fragments.InterfaceSettings"
-            android:icon="@drawable/ic_settings_statusbar"/>
+            android:key="interface_category" 
+            android:title="@string/interface_title" 
+            android:summary="@string/sakura_interface_summary_title"
+            android:fragment="com.sakura.settings.fragments.InterfaceSettings" 
+            android:icon="@drawable/ic_settings_ui"/>
+               
+        <!-- Animation -->
+        <com.sakura.settings.preferences.CardviewPreference
+            android:key="animations_category" 
+            android:title="@string/animations_title" 
+            android:summary="@string/sakura_animation_summary_title"
+            android:fragment="com.sakura.settings.fragments.Animations" 
+            android:icon="@drawable/ic_settings_animations"/>
 
         <!-- Quick Settings panel -->
         <com.sakura.settings.preferences.CardviewPreference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
+            android:summary="@string/sakura_quicksettings_summary_title"
             android:fragment="com.sakura.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
-        <!-- Animations -->
+        <!-- lockscreen -->
         <com.sakura.settings.preferences.CardviewPreference
-            android:key="animationsettings_category"
-            android:title="@string/animation_title"
-            android:fragment="com.sakura.settings.fragments.AnimationsSettings"
-            android:icon="@drawable/ic_settings_buttons"/>
-
-        <!-- Navigation Bar
-        <com.sakura.settings.preferences.CardviewPreference
-            android:key="navigationbar_category"
-            android:title="@string/navbar_title"
-            android:fragment="com.sakura.settings.fragments.NavbarSettings"
-            android:icon="@drawable/ic_settings_navbar"/> -->
+            android:key="lockscreen_category"
+            android:title="@string/lockscreen_title"
+            android:summary="@string/sakura_lockscreen_summary_title"
+            android:fragment="com.sakura.settings.fragments.LockscreenSettings"
+            android:icon="@drawable/ic_settings_lockscreen"/>
 			
         <!-- Gestures -->
         <com.sakura.settings.preferences.CardviewPreference
             android:key="gestures_category"
             android:title="@string/gestures_title"
+            android:summary="@string/sakura_gesture_summary_title"
             android:fragment="com.sakura.settings.fragments.GestureSettings"
             android:icon="@drawable/ic_settings_gestures"/>
-
-        <!-- Lock Screen -->
-        <com.sakura.settings.preferences.CardviewPreference
-            android:key="lockscreen_category"
-            android:title="@string/lockscreen_title"
-            android:fragment="com.sakura.settings.fragments.LockscreenSettings"
-            android:icon="@drawable/ic_settings_lockscreen"/>
 
         <!-- Power Menu
         <com.sakura.settings.preferences.CardviewPreference
@@ -85,6 +83,7 @@
         <com.sakura.settings.preferences.CardviewPreference
             android:key="notifications_category"
             android:title="@string/notifications_title"
+            android:summary="@string/sakura_notifications_summary_title"
             android:fragment="com.sakura.settings.fragments.NotificationSettings"
             android:icon="@drawable/ic_settings_notifications"/>
 
@@ -92,6 +91,7 @@
         <com.sakura.settings.preferences.CardviewPreference
             android:key="misc_category"
             android:title="@string/misc_title"
+            android:summary="@string/sakura_misc_summary_title"
             android:fragment="com.sakura.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_misc"/>
 
@@ -99,6 +99,7 @@
         <com.sakura.settings.preferences.CardviewPreference
             android:key="updater_category"
             android:title="@string/updater_title"
+            android:summary="@string/sakura_updater_summary_title"
             android:fragment="com.sakura.settings.fragments.UpdaterSettings"
             android:icon="@drawable/ic_settings_ota"/> -->
     </PreferenceCategory>

@@ -36,13 +36,13 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import com.sakura.settings.R;
 
-public class PowermenuSettings extends SettingsPreferenceFragment implements
+public class Animations extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.sakura_settings_powermenu);
+        addPreferencesFromResource(R.xml.sakura_settings_animations);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
     }
