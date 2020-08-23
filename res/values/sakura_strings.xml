@@ -94,15 +94,23 @@
     <!-- Categories -->
     <string name="button_title">Buttons</string>
     <string name="gestures_title">Gestures</string>
+    <string name="sakura_gesture_summary_title">Three finger swipe</string>    
     <string name="lockscreen_title">Lock Screen</string>
+    <string name="sakura_lockscreen_summary_title">Visualizer, secure powermenu</string>        
     <string name="misc_title">Miscellaneous</string>
+    <string name="sakura_misc_summary_title">Gaming mode, sensor blocking</string>        
     <string name="navbar_title">Navigation Bar</string>
     <string name="powermenu_title">Power Menu</string>
     <string name="quicksettings_title">Quick Settings</string>
+    <string name="sakura_quicksettings_summary_title">Blur, header images, opacity</string>        
     <string name="interface_title">Interface</string>
+    <string name="sakura_interface_summary_title">Theming, battery bar, smartpixels</string>            
     <string name="animations_title">Animations</string>
+    <string name="sakura_animations_summary_title">Opening and closing animations</string>        
     <string name="notifications_title">Notifications</string>
-    <string name="updater_title">Sakura OTA</string>
+    <string name="sakura_notifications_summary_title">Edge lighting, heads up</string>        
+    <string name="updater_title">Sakura Updater</string>
+    <string name="sakura_updater_summary_title">OTA updates</string>        
 	
     <!-- General strings -->
     <string name="ok">OK</string>
