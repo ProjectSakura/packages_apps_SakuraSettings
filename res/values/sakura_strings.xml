@@ -399,4 +399,8 @@
     <string name="theming_settings_dashboard_icons_accent_bg_random">Icon Accent Bg Random</string>
     <string name="theming_settings_dashboard_icons_default_oneplus">OnePlus</string>
 
+    <!-- One ui actionbar -->
+    <string name="enable_oneui">OneUI</string>
+    <string name="enable_oneui_summary">Show spacer above settings actionbar for easier use with one hand\nNOTE: restart settings app to see effect</string>
+
 </resources>

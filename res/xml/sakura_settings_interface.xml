@@ -27,6 +27,13 @@
         android:entryValues="@array/theming_settings_dashboard_icons_values"
         android:defaultValue="0" />
 
+    <!--oneui spacer-->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+        android:key="settings_spacer"
+        android:title="@string/enable_oneui"
+        android:summary="@string/enable_oneui_summary"
+        android:defaultValue="false" />
+
     <!--Sakura Theming-->
     <ListPreference
         android:key="theme_switch"
