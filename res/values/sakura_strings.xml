@@ -397,5 +397,6 @@
     <string name="theming_settings_dashboard_icons_random">Random Icon</string>
     <string name="theming_settings_dashboard_icons_random_bg_accent">Icon Random Bg Accent</string>
     <string name="theming_settings_dashboard_icons_accent_bg_random">Icon Accent Bg Random</string>
+    <string name="theming_settings_dashboard_icons_default_oneplus">OnePlus</string>
 
 </resources>
