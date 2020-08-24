@@ -47,7 +47,6 @@
     <!-- Display cutout -->
     <com.sakura.settings.preferences.SecureSettingSwitchPreference
         android:key="sysui_display_cutout"
-        android:icon="@drawable/ic_cutout"
         android:title="@string/sysui_display_cutout_title"
         android:summary="@string/sysui_display_cutout_summary"
         android:defaultValue="true"/>
@@ -73,11 +72,18 @@
             android:summary="@string/smart_pixels_summary"
             android:fragment="com.sakura.settings.fragments.SmartPixels" />
 
+    <!--Notch-city-->
+    <Preference
+           android:key="cutout_settings"
+           android:title="@string/cutout_main"
+           android:summary="@string/cutout_main_summary"
+           android:fragment="com.sakura.settings.fragments.CutoutFragment"/>
+
     <!-- Display cutout options -->
     <Preference
-        android:key="display_cutout_force_fullscreen_settings"
-        android:title="@string/display_cutout_force_fullscreen_title"
-        android:summary="@string/display_cutout_force_fullscreen_summary"
-        android:fragment="com.sakura.settings.fragments.DisplayCutoutForceFullscreenSettings" />
+          android:key="display_cutout_force_fullscreen_settings"
+          android:title="@string/display_cutout_force_fullscreen_title"
+          android:summary="@string/display_cutout_force_fullscreen_summary"
+          android:fragment="com.sakura.settings.fragments.DisplayCutoutForceFullscreenSettings" />
 
 </PreferenceScreen>

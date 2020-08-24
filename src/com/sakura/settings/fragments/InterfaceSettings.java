@@ -60,7 +60,7 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
 
     private static final String SMART_PIXELS = "smart_pixels";
     private Preference mSmartPixels;
-
+    private static final String PREF_KEY_CUTOUT = "cutout_settings";
     private static final String DISPLAY_CUTOUT_FULL_SCREEN = "display_cutout_force_fullscreen_settings";
     private static final String DISPLAY_CUTOUT = "sysui_display_cutout";
     private Preference mDisplayCutoutFullScreen;
@@ -89,6 +89,9 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
         if (!hasDisplayCutout)
             prefScreen.removePreference(mDisplayCutout);
 
+    Preference mCutoutPref = (Preference) findPreference(PREF_KEY_CUTOUT);
+        if (!hasPhysicalDisplayCutout(getContext()))
+            getPreferenceScreen().removePreference(mCutoutPref);
     }
 
     private void setupThemeSwitchPref() {
@@ -131,6 +134,11 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.SAKURA;
+    }
+
+    private static boolean hasPhysicalDisplayCutout(Context context) {
+        return context.getResources().getBoolean(
+                com.android.internal.R.bool.config_physicalDisplayCutout);
     }
 
     public static void reset(Context mContext) {
