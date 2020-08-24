@@ -44,7 +44,9 @@ import android.os.ServiceManager;
 import android.os.UserHandle;
 import com.android.internal.util.sakura.ThemesUtils;
 import com.android.internal.util.sakura.Utils;
+import com.sakura.settings.utils.DeviceUtils;
 import com.sakura.settings.fragments.misc.HAFRSettings;
+import com.sakura.settings.fragments.CutoutSettings;
 import static android.os.UserHandle.USER_SYSTEM;
 import android.app.UiModeManager;
 
@@ -60,10 +62,7 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
 
     private static final String SMART_PIXELS = "smart_pixels";
     private Preference mSmartPixels;
-    private static final String PREF_KEY_CUTOUT = "cutout_settings";
-    private static final String DISPLAY_CUTOUT_FULL_SCREEN = "display_cutout_force_fullscreen_settings";
-    private static final String DISPLAY_CUTOUT = "sysui_display_cutout";
-    private Preference mDisplayCutoutFullScreen;
+    private static final String DISPLAY_CUTOUT = "cutout_settings";
     private Preference mDisplayCutout;
 
     @Override
@@ -72,26 +71,17 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.sakura_settings_interface);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        Context mContext = getActivity().getApplicationContext();
 
     mUiModeManager = getContext().getSystemService(UiModeManager.class);
     mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
 	setupThemeSwitchPref();
 
-    mDisplayCutoutFullScreen = (Preference) prefScreen.findPreference(DISPLAY_CUTOUT_FULL_SCREEN);
-        if (!DeviceUtils.hasNotch(mContext))
-            prefScreen.removePreference(mDisplayCutoutFullScreen);
-
-    boolean hasDisplayCutout = mContext.getResources().getBoolean(
-                com.android.internal.R.bool.config_fillMainBuiltInDisplayCutout);
-
     mDisplayCutout = (Preference) prefScreen.findPreference(DISPLAY_CUTOUT);
-        if (!hasDisplayCutout)
+        if (!DeviceUtils.hasNotch(mContext))
             prefScreen.removePreference(mDisplayCutout);
 
-    Preference mCutoutPref = (Preference) findPreference(PREF_KEY_CUTOUT);
-        if (!hasPhysicalDisplayCutout(getContext()))
-            getPreferenceScreen().removePreference(mCutoutPref);
     }
 
     private void setupThemeSwitchPref() {
@@ -136,15 +126,9 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
         return MetricsProto.MetricsEvent.SAKURA;
     }
 
-    private static boolean hasPhysicalDisplayCutout(Context context) {
-        return context.getResources().getBoolean(
-                com.android.internal.R.bool.config_physicalDisplayCutout);
-    }
-
     public static void reset(Context mContext) {
         ContentResolver resolver = mContext.getContentResolver();
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.SYSUI_DISPLAY_CUTOUT, 1, UserHandle.USER_CURRENT);
+        CutoutSettings.reset(mContext);
     }
 
     @Override

@@ -17,18 +17,24 @@
     android:title="@string/cutout_main"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="cutout_settings">
-
-    <ListPreference
-        android:key="display_cutout_style"
+  
+    <com.sakura.settings.preferences.SystemSettingListPreference
+        android:key="display_cutout_mode"
         android:title="@string/display_cutout_style_title"
-        android:persistent="false"
         android:entries="@array/display_cutout_style_entries"
-        android:entryValues="@array/display_cutout_style_values" />
+        android:entryValues="@array/display_cutout_style_values"
+        android:defaultValue="0" />
 
     <com.sakura.settings.preferences.SystemSettingSwitchPreference
         android:key="stock_statusbar_in_hide"
         android:title="@string/stock_statusbar_in_hide"
         android:summary="@string/stock_statusbar_in_hide_summary"
         android:defaultValue="true" />
+
+    <Preference
+        android:key="display_cutout_force_fullscreen_settings"
+        android:title="@string/display_cutout_force_fullscreen_title"
+        android:summary="@string/display_cutout_force_fullscreen_summary"
+        android:fragment="com.sakura.settings.fragments.DisplayCutoutForceFullscreenSettings" />
 
 </PreferenceScreen>
