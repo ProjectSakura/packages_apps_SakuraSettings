@@ -44,6 +44,14 @@
         android:entryValues="@array/theme_type_values"
         android:defaultValue="1"/>
 
+    <!-- Display cutout -->
+    <com.sakura.settings.preferences.SecureSettingSwitchPreference
+        android:key="sysui_display_cutout"
+        android:icon="@drawable/ic_cutout"
+        android:title="@string/sysui_display_cutout_title"
+        android:summary="@string/sysui_display_cutout_summary"
+        android:defaultValue="true"/>
+
     <!--Batttery bar-->
     <Preference
             android:key="batterybar_settings"

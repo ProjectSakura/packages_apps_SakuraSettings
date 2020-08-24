@@ -403,4 +403,8 @@
     <string name="enable_oneui">OneUI</string>
     <string name="enable_oneui_summary">Show spacer above settings actionbar for easier use with one hand\nNOTE: restart settings app to see effect</string>
 
+    <!-- Display cutout -->
+    <string name="sysui_display_cutout_title">Display cutout</string>
+    <string name="sysui_display_cutout_summary">Force the display cutout area to black</string>
+
 </resources>

@@ -48,8 +48,6 @@ import com.sakura.settings.fragments.misc.HAFRSettings;
 import static android.os.UserHandle.USER_SYSTEM;
 import android.app.UiModeManager;
 
-
-
 import com.sakura.settings.R;
 
 public class InterfaceSettings extends SettingsPreferenceFragment implements
@@ -61,8 +59,12 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
     private ListPreference mThemeSwitch;
 
     private static final String SMART_PIXELS = "smart_pixels";
-
     private Preference mSmartPixels;
+
+    private static final String DISPLAY_CUTOUT_FULL_SCREEN = "display_cutout_force_fullscreen_settings";
+    private static final String DISPLAY_CUTOUT = "sysui_display_cutout";
+    private Preference mDisplayCutoutFullScreen;
+    private Preference mDisplayCutout;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -75,6 +77,18 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
     mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
 	setupThemeSwitchPref();
+
+    mDisplayCutoutFullScreen = (Preference) prefScreen.findPreference(DISPLAY_CUTOUT_FULL_SCREEN);
+        if (!DeviceUtils.hasNotch(mContext))
+            prefScreen.removePreference(mDisplayCutoutFullScreen);
+
+    boolean hasDisplayCutout = mContext.getResources().getBoolean(
+                com.android.internal.R.bool.config_fillMainBuiltInDisplayCutout);
+
+    mDisplayCutout = (Preference) prefScreen.findPreference(DISPLAY_CUTOUT);
+        if (!hasDisplayCutout)
+            prefScreen.removePreference(mDisplayCutout);
+
     }
 
     private void setupThemeSwitchPref() {
@@ -117,6 +131,12 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.SAKURA;
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        Settings.Secure.putIntForUser(resolver,
+                Settings.Secure.SYSUI_DISPLAY_CUTOUT, 1, UserHandle.USER_CURRENT);
     }
 
     @Override
