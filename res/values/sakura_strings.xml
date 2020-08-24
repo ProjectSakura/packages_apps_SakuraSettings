@@ -106,7 +106,7 @@
     <string name="interface_title">Interface</string>
     <string name="sakura_interface_summary_title">Theming, battery bar, smartpixels</string>            
     <string name="animations_title">Animations</string>
-    <string name="sakura_animations_summary_title">Opening and closing animations</string>        
+    <string name="sakura_animation_summary_title">Opening and closing animations</string>        
     <string name="notifications_title">Notifications</string>
     <string name="sakura_notifications_summary_title">Edge lighting, heads up</string>        
     <string name="updater_title">Sakura Updater</string>
@@ -386,5 +386,12 @@
     <string name="qs_rows_landscape_title">Rows (Landscape)</string>
     <string name="qs_columns_portrait_title">Columns (Portrait)</string>
     <string name="qs_columns_landscape_title">Columns (Landscape)</string>
+
+    <!--dashboard icons-->
+    <string name="theming_settings_dashboard_icons_title">Settings dashboard icons</string>
+    <string name="theming_settings_dashboard_icons_default2">Default background</string>
+    <string name="theming_settings_dashboard_icons_default_accent2">Accent background</string>
+    <string name="theming_settings_dashboard_icons_plain">Plain</string>
+    <string name="theming_settings_dashboard_icons_plain_accent">Plain accent</string>
 
 </resources>

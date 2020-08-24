@@ -19,6 +19,14 @@
     android:title="@string/interface_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!--dashboard themes-->
+    <com.sakura.settings.preferences.SystemSettingListPreference
+        android:key="theming_settings_dashboard_icons"
+        android:title="@string/theming_settings_dashboard_icons_title"
+        android:entries="@array/theming_settings_dashboard_icons_entries"
+        android:entryValues="@array/theming_settings_dashboard_icons_values"
+        android:defaultValue="0" />
+
     <!--Sakura Theming-->
     <ListPreference
         android:key="theme_switch"
