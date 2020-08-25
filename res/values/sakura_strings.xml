@@ -35,15 +35,17 @@
 
     <!-- Maintainer Info -->
     <string name="maintainers_header">Maintainers</string>
-    <string name="maintainers_header_summary">These are the Official Devices Maintainers...</string>
+    <string name="maintainers_header_summary">These are the Official Devices Maintainers:</string>
     
     <string name="device_asus">Asus</string>
     <string name="device_X00T">ZenFone Max Pro M1</string>
     <string name="device_X00T_description">X00T\nPriyanshu</string>
 
-    <string name="device_huawei">Huawei</string>
-    <string name="device_angler">Nexus 6P</string>
-    <string name="device_angler_description">angler\nAmartya</string>
+    <string name="device_google">Google</string>
+    <string name="device_sailfish">Pixel</string>
+    <string name="device_sailfish_description">sailfish\nAndrzej</string>
+    <string name="device_marlin">Pixel XL</string>
+    <string name="device_marlin_description">marlin\nAndrzej</string>
 
     <string name="device_leeco">LeEco</string>
     <string name="device_le2">Le 2</string>
@@ -67,6 +69,10 @@
     <string name="device_merlin">G3 Turbo</string>
     <string name="device_merlin_description">merlin\nCharlie</string>         
 
+    <string name="device_oneplus">OnePlus</string>
+    <string name="device_oneplus3">3 and 3T</string>
+    <string name="device_oneplus3_description">oneplus3 and 3t\nDeepakJr</string>
+
     <string name="device_realme">Realme</string>
     <string name="device_realme1">Realme 1</string>
     <string name="device_realme1_description">CPH1859\nCyberJalagam</string>
@@ -84,8 +90,12 @@
     <string name="device_mido_description">mido\nJigen</string>
     <string name="device_riva">Redmi 5A</string>
     <string name="device_riva_description">riva\nSunny Raj</string>
+    <string name="device_whyred">Redmi Note 5 Pro</string>
+    <string name="device_whyred_description">whyred\nDarkstar</string>
     <string name="device_violet">Redmi Note 7 Pro</string>
     <string name="device_violet_description">violet\nPrajwal and Nitish</string>
+    <string name="device_ginkgo">Redmi Note 8 and 8T</string>
+    <string name="device_ginkgo_description">ginkgo and willow\nAmartya</string>
     <string name="device_wayne">Mi 6x</string>
     <string name="device_wayne_description">wayne\nRoger W.</string>
     <string name="device_beryllium">Pocophone F1</string>
