@@ -65,7 +65,7 @@
     <string name="device_dream2lte_description">dream2lte\nHaridhayal</string>
     <string name="device_greatlte">Note 8</string>
     <string name="device_greatlte_description">greatlte\nHaridhayal</string>
-    <string name="device_xiaomi">Хлаоми</string>
+    <string name="device_xiaomi">Xiaomi</string>
     <string name="device_mido">Redmi Note 4X</string>
     <string name="device_mido_description">mido\nJigen</string>
     <string name="device_riva">Redmi 5A</string>
@@ -150,8 +150,8 @@
     <string name="task_move_to_back_title">Переместить предыдущую анимацию</string>
     <string name="wallpaper_open_title">Анимация открытия обоев</string>
     <string name="wallpaper_close_title">Анимация закрытия обоев</string>
-    <string name="wallpaper_intra_open_title">Обои внутриоткрытой анимации</string>
-    <string name="wallpaper_intra_close_title">Обои внутри близкой анимации</string>
+    <string name="wallpaper_intra_open_title">Обои внутри открытой анимации</string>
+    <string name="wallpaper_intra_close_title">Обои внутри закрытой анимации</string>
     <string name="animation_duration_title">Продолжительность анимации</string>
     <string name="title_animation_no_override">Предотвратить переопределение приложением</string>
     <string name="summary_animation_no_override">Запретить приложениям отменять переходы</string>
@@ -177,32 +177,32 @@
     <string name="lockscreen_visualizer_enable">Визуализатор музыки</string>
     <string name="lockscreen_visualizer_enable_summary">Показывать панели визуализатора во время воспроизведения музыки</string>
     <!-- Battery Bar -->
-    <string name="battery_bar_title">Строка батареи</string>
+    <string name="battery_bar_title">Полоска батареи</string>
     <string name="battery_bar_summary">Изменить строку батареи</string>
-    <string name="battery_bar_location">Местоположение строки батареи</string>
-    <string name="battery_bar_color">Цвет строки батареи</string>
-    <string name="battery_bar_style_title">Стиль строки батареи</string>
-    <string name="battery_bar_thickness_title">Толщина строки батареи</string>
-    <string name="battery_bar_animate_title">Анимация строки батареи</string>
-    <string name="battery_bar_animate_summary">Анимация зарядки может привести к ухудшению работы устройства. Включать по своему усмотрению.</string>
+    <string name="battery_bar_location">Местоположение полоски батареи</string>
+    <string name="battery_bar_color">Цвет полоски батареи</string>
+    <string name="battery_bar_style_title">Стиль полоски батареи</string>
+    <string name="battery_bar_thickness_title">Толщина полоски батареи</string>
+    <string name="battery_bar_animate_title">Анимация полоски батареи</string>
+    <string name="battery_bar_animate_summary">Анимация зарядки</string>
     <string name="battery_bar_hide">Скрыть</string>
     <string name="battery_bar_statusbar">Строка состояния</string>
-    <string name="battery_bar_topnav">Верху навигационной панели</string>
-    <string name="battery_bar_bottomnav">Снизу навигационной панели</string>
+    <string name="battery_bar_topnav">Верх навигационной панели</string>
+    <string name="battery_bar_bottomnav">Низ навигационной панели</string>
     <string name="battery_bar_reg">Обычный</string>
     <string name="battery_bar_center">Центр (отзеркален)</string>
-    <string name="battery_bar_charging_color">Цвет строки батареи, когда заряжается</string>
-    <string name="battery_bar_battery_low_color">Цвет строки состояния когда разряжен</string>
+    <string name="battery_bar_charging_color">Цвет полоски батареи, когда заряжается</string>
+    <string name="battery_bar_battery_low_color">Цвет полоски состояния когда разряжен</string>
     <string name="battery_bar_reversed">Перевернутый</string>
     <string name="battery_bar_use_gradient_color">Использовать градиент цвета</string>
     <string name="battery_bar_gradient_color_summary">Используйте градиент цвета в качестве шкалы уровня заряда батареи</string>
     <string name="battery_bar_high_color">Высокоуровневый цвет \"</string>
     <string name="battery_bar_low_color">Низкий уровень цвета \"</string>
-    <string name="battery_bar_battery_low_color_warning">Цвет строки батареи, когда телефон разряжен</string>
+    <string name="battery_bar_battery_low_color_warning">Цвет полоски батареи, когда телефон разряжен</string>
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">Звук скриншота</string>
     <!--qs tint toggle-->
-    <string name="qs_bg_use_new_tint">Переключить оттенок QS</string>
+    <string name="qs_bg_use_new_tint">Переключить оттенок быстрых настроек</string>
     <string name="qs_bg_use_new_tint_summary">Использовать цвет акцента для значков и фона плитки.</string>
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Скрыть последние приложения</string>
@@ -227,11 +227,11 @@
     <string name="status_bar_padding">Дополнительные отступы от строки состояния</string>
     <string name="corner_fwvals">Использовать значения по умолчанию</string>
     <!-- Sensor block per-package -->
-    <string name="sensor_block_title">Блокировка сенсора</string>
-    <string name="sensor_block_summary">Блокируйте доступ к определенным датчикам для некоторых приложений, чтобы сэкономить заряд батареи</string>
+    <string name="sensor_block_title">Блокировка сенсоров</string>
+    <string name="sensor_block_summary">Блокировка доступа к определенным датчикам для некоторых приложений, чтобы сэкономить заряд батареи</string>
     <string name="sensor_block_app_picker_title">Блокировать датчики для этих приложений</string>
-    <string name="add_sensor_block_package_title">Добавить приложения для блока датчиков</string>
-    <string name="add_sensor_block_package_summary">Значительное движение, акселерометр, линейные датчики ускорения будут заблокированы для этих приложений</string>
+    <string name="add_sensor_block_package_title">Добавить приложения для блокировки датчиков</string>
+    <string name="add_sensor_block_package_summary">Акселерометр, линейные датчики будут заблокированы для этих приложений</string>
     <!-- Heads up snooze -->
     <string name="heads_up_settings_title">Настройки всплывающих уведомлений</string>
     <string name="heads_up_snooze_title">Таймер повтора</string>
@@ -242,7 +242,7 @@
     <string name="heads_up_summary">Варианты уведомлений</string>
     <!-- Heads up timeout -->
     <string name="heads_up_time_out_title">Тайм-аут</string>
-    <string name="heads_up_time_out_summary">Уведомления о времени просмотра будут отображаться для</string>
+    <string name="heads_up_time_out_summary">Уведомления о времени просмотра будут отображаться</string>
     <!-- Gaming mode -->
     <string name="gaming_mode_title">Игровой режим</string>
     <string name="gaming_mode_summary">Настройка параметров игрового режима</string>
@@ -296,7 +296,7 @@
     <string name="smart_pixels_on_power_save_title">Авто-включение энергосбережения</string>
     <string name="smart_pixels_on_power_save_summary">Включить Smart Pixels при включенном энергосбережении</string>
     <string name="smart_pixels_percent">Процент пикселей для отключения</string>
-    <string name="smart_pixels_shift">Предотвращать обгорение за счет смены пикселей каждые</string>
+    <string name="smart_pixels_shift">Предотвращать выгорание за счет смещения пикселей каждые</string>
     <string name="smart_pixels_shift_times_15s">15 секунд</string>
     <string name="smart_pixels_shift_times_30s">30 секунд</string>
     <string name="smart_pixels_shift_times_1min">1 минута</string>
@@ -311,10 +311,10 @@
     <string name="lockscreen_status_bar_summary">Отображать строку состояния на экране блокировки</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Приложения на весь экран</string>
-    <string name="display_cutout_force_fullscreen_summary">Принудительные приложения игнорировать пробел</string>
+    <string name="display_cutout_force_fullscreen_summary">Принудительно игнорировать вырез</string>
     <!-- Power menu on secure lockscreen -->
     <string name="lockscreen_enable_power_menu_title">Меню питания</string>
-    <string name="lockscreen_enable_power_menu_summary">Разрешить доступ к меню питания на защищенном экране блокировки</string>
-    <string name="lockscreen_secure_power_menu_title">Безопасное меню питания</string>
-    <string name="lockscreen_secure_power_menu_summary">Разрешить действие меню выключения только после аутентификации</string>
+    <string name="lockscreen_enable_power_menu_summary">Разрешить доступ к меню питания на экране блокировки</string>
+    <string name="lockscreen_secure_power_menu_title">Меню питания на экране блокировки</string>
+    <string name="lockscreen_secure_power_menu_summary">Разрешить действие меню только после аутентификации</string>
 </resources>
