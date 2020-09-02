@@ -191,14 +191,14 @@
     <string name="battery_bar_bottomnav">Низ навигационной панели</string>
     <string name="battery_bar_reg">Обычный</string>
     <string name="battery_bar_center">Центр (отзеркален)</string>
-    <string name="battery_bar_charging_color">Цвет строки батареи, когда заряжается</string>
-    <string name="battery_bar_battery_low_color">Цвет строки состояния когда разряжен</string>
+    <string name="battery_bar_charging_color">Цвет полоски батареи, когда заряжается</string>
+    <string name="battery_bar_battery_low_color">Цвет полоски состояния когда разряжен</string>
     <string name="battery_bar_reversed">Перевернутый</string>
     <string name="battery_bar_use_gradient_color">Использовать градиент цвета</string>
     <string name="battery_bar_gradient_color_summary">Используйте градиент цвета в качестве шкалы уровня заряда батареи</string>
     <string name="battery_bar_high_color">Высокоуровневый цвет \"</string>
     <string name="battery_bar_low_color">Низкий уровень цвета \"</string>
-    <string name="battery_bar_battery_low_color_warning">Цвет строки батареи, когда телефон разряжен</string>
+    <string name="battery_bar_battery_low_color_warning">Цвет полоски батареи, когда телефон разряжен</string>
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">Звук скриншота</string>
     <!--qs tint toggle-->
