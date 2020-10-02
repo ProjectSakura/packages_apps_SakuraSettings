@@ -96,6 +96,8 @@
     <string name="device_violet_description">violet\nPrajwal and Nitish</string>
     <string name="device_ginkgo">Redmi Note 8 and 8T</string>
     <string name="device_ginkgo_description">ginkgo and willow\nAmartya</string>
+    <string name="device_jasmine_sprout">Mi A2</string>
+    <string name="device_jasmine_sprout_description">jasmine_sprout\nRoger W.</string>
     <string name="device_wayne">Mi 6X</string>
     <string name="device_wayne_description">wayne\nRoger W.</string>
     <string name="device_beryllium">Pocophone F1</string>
