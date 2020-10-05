@@ -321,7 +321,15 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/human_glitch1_1" />
     </Preference>
-    
+    <Preference
+        android:title="@string/device_joyeuse"
+        android:summary="@string/device_joyeuse_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/a9ito" />
+    </Preference>
+	
 </PreferenceCategory>
 
 </PreferenceScreen>
