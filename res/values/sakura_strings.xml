@@ -102,6 +102,8 @@
     <string name="device_wayne_description">wayne\nRoger W.</string>
     <string name="device_beryllium">Pocophone F1</string>
     <string name="device_beryllium_description">beryllium\nHumanGlitch</string>
+    <string name="device_joyeuse">Redmi Note 9 pro (Global)</string>
+    <string name="device_joyeuse_description">joyeuse\nA9ito</string>
 
     <!-- Categories -->
     <string name="button_title">Buttons</string>
