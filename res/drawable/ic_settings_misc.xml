@@ -1,25 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2018-19 The Superior OS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-         http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-        android:width="24dp"
-        android:height="24dp"
-        android:viewportWidth="24.0"
-        android:viewportHeight="24.0">
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="vector"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
     <path
-        android:fillColor="?android:attr/colorControlNormal"
-        android:pathData="M19,4h-4L7.11,16.63 4.5,12 9,4H5L0.5,12 5,20h4l7.89,-12.63L19.5,12 15,20h4l4.5,-8z"/>
+        android:name="path"
+        android:pathData="M 14.17 13.71 L 15.57 11.29 C 15.66 11.14 15.62 10.95 15.49 10.84 L 14.01 9.68 C 14.04 9.46 14.06 9.23 14.06 9 C 14.06 8.77 14.04 8.54 14.01 8.31 L 15.49 7.15 C 15.62 7.04 15.66 6.85 15.57 6.7 L 14.17 4.28 C 14.08 4.13 13.9 4.07 13.74 4.13 L 12 4.83 C 11.64 4.55 11.25 4.32 10.82 4.14 L 10.56 2.29 C 10.53 2.13 10.38 2 10.21 2 L 7.41 2 C 7.24 2 7.09 2.13 7.06 2.3 L 6.8 4.15 C 6.38 4.33 5.98 4.56 5.62 4.84 L 3.88 4.14 C 3.72 4.08 3.54 4.14 3.45 4.29 L 2.05 6.71 C 1.96 6.86 2 7.05 2.13 7.16 L 3.61 8.32 C 3.58 8.54 3.56 8.77 3.56 9 C 3.56 9.23 3.58 9.46 3.61 9.69 L 2.13 10.85 C 2 10.96 1.96 11.15 2.05 11.3 L 3.45 13.72 C 3.54 13.87 3.72 13.93 3.88 13.87 L 5.62 13.17 C 5.98 13.45 6.37 13.68 6.8 13.86 L 7.06 15.71 C 7.09 15.87 7.24 16 7.41 16 L 10.21 16 C 10.38 16 10.53 15.87 10.56 15.7 L 10.82 13.85 C 11.24 13.67 11.64 13.44 12 13.16 L 13.74 13.86 C 13.9 13.92 14.08 13.86 14.17 13.71 Z M 8.81 11 C 7.71 11 6.81 10.1 6.81 9 C 6.81 7.9 7.71 7 8.81 7 C 9.91 7 10.81 7.9 10.81 9 C 10.81 10.1 9.91 11 8.81 11 Z M 21.92 18.67 L 20.96 17.93 C 20.98 17.79 21 17.64 21 17.49 C 21 17.34 20.99 17.19 20.96 17.05 L 21.91 16.31 C 21.99 16.24 22.02 16.12 21.96 16.02 L 21.06 14.47 C 21.01 14.37 20.89 14.34 20.78 14.37 L 19.67 14.82 C 19.44 14.64 19.19 14.49 18.91 14.38 L 18.74 13.2 C 18.73 13.08 18.63 13 18.53 13 L 16.74 13 C 16.63 13 16.53 13.08 16.52 13.19 L 16.35 14.37 C 16.08 14.49 15.82 14.63 15.59 14.81 L 14.48 14.36 C 14.38 14.32 14.26 14.36 14.2 14.46 L 13.3 16.01 C 13.25 16.11 13.26 16.23 13.35 16.3 L 14.3 17.04 C 14.28 17.18 14.27 17.33 14.27 17.48 C 14.27 17.63 14.28 17.78 14.3 17.92 L 13.35 18.66 C 13.27 18.73 13.24 18.85 13.3 18.95 L 14.2 20.5 C 14.25 20.6 14.37 20.63 14.48 20.6 L 15.59 20.15 C 15.82 20.33 16.07 20.48 16.35 20.59 L 16.52 21.77 C 16.54 21.88 16.63 21.96 16.74 21.96 L 18.53 21.96 C 18.64 21.96 18.74 21.88 18.75 21.77 L 18.92 20.59 C 19.19 20.47 19.45 20.33 19.67 20.15 L 20.79 20.6 C 20.89 20.64 21.01 20.6 21.07 20.5 L 21.97 18.95 C 22.03 18.86 22 18.74 21.92 18.67 Z M 17.63 18.83 C 16.89 18.83 16.28 18.23 16.28 17.48 C 16.28 16.73 16.88 16.13 17.63 16.13 C 18.38 16.13 18.98 16.73 18.98 17.48 C 18.98 18.23 18.37 18.83 17.63 18.83 Z"
+        android:fillColor="?android:attr/colorAccent"
+        android:strokeWidth="1"/>
 </vector>
+

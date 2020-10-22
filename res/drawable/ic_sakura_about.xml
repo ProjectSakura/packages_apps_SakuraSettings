@@ -1,26 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2018-19 The Superior OS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-         http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="vector"
     android:width="24dp"
     android:height="24dp"
     android:viewportWidth="24"
     android:viewportHeight="24">
-
     <path
-        android:fillColor="?android:attr/colorControlNormal"
-        android:pathData="M17,3 L7,3 L2,9.10156 L12,21 L22,9.10156 Z M16,5 L19.6016,9 L17,11.8984 C16.8008,10.6992,16,9.10156,13,9 C10.8008,8.89844,8,9.39844,8,8 C8,6.80078,10.1016,5.89844,12,6 C14.1016,6.10156,14.8008,7.19922,15,8 L18,8 C17.8984,6.39844,15.8984,5,12,5 Z M8,5 L12,5 C9.69922,5,6.30078,5.30078,5.69922,8.60156 C5.10156,11.5,7.80078,12,11,12 C11.5,12,12.6016,12,13,12 C14,12,14.8984,12.3984,15,13 C15.1992,14.8984,11.1016,16,10,14 L8.80078,14 L4.39844,9 Z M10.3984,15.8008 C11.3984,16.1016,12.5,16.1016,13.6016,15.8984 L12,17.6992 Z" />
+        android:name="path"
+        android:pathData="M 7 5 L 17 5 L 17 6 C 17 6.55 17.45 7 18 7 C 18.55 7 19 6.55 19 6 L 19 3 C 19 1.9 18.1 1.01 17 1.01 L 7 1 C 5.9 1 5 1.9 5 3 L 5 6 C 5 6.55 5.45 7 6 7 C 6.55 7 7 6.55 7 6 L 7 5 Z M 16.12 15.88 L 19.29 12.71 C 19.68 12.32 19.68 11.69 19.29 11.3 L 16.12 8.13 C 15.73 7.74 15.09 7.74 14.7 8.13 C 14.31 8.52 14.31 9.15 14.7 9.54 L 17.17 12 L 14.7 14.47 C 14.31 14.86 14.31 15.49 14.7 15.88 C 15.09 16.27 15.73 16.27 16.12 15.88 Z M 9.29 14.46 L 6.83 12 L 9.29 9.54 C 9.68 9.15 9.68 8.52 9.29 8.13 C 8.9 7.74 8.26 7.74 7.87 8.13 L 4.7 11.3 C 4.31 11.69 4.31 12.32 4.7 12.71 L 7.87 15.88 C 8.26 16.27 8.9 16.27 9.29 15.88 C 9.69 15.49 9.68 14.85 9.29 14.46 Z M 17 19 L 7 19 L 7 18 C 7 17.45 6.55 17 6 17 C 5.45 17 5 17.45 5 18 L 5 21 C 5 22.1 5.9 23 7 23 L 17 23 C 18.1 23 19 22.1 19 21 L 19 18 C 19 17.45 18.55 17 18 17 C 17.45 17 17 17.45 17 18 L 17 19 Z"
+        android:fillColor="?android:attr/colorAccent"
+        android:strokeWidth="1"/>
 </vector>
