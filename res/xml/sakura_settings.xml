@@ -24,7 +24,7 @@
            android:title="Sakura Features" >
   
        <!-- About Devs -->
-       <Preference
+       <com.sakura.settings.preferences.CardviewPreference
             android:key="dev_info"
             android:title="@string/sakura_about_info"
             android:summary="@string/sakura_about_info_summary_title"
