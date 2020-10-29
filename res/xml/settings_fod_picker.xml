@@ -21,10 +21,16 @@
     android:title="@string/fod_icon_picker_title">
 
     <!-- Preview -->
-    <com.superior.settings.preferences.FODIconPicker
+    <com.sakura.settings.preferences.FODIconPicker
         android:key="fod_icon"
         android:layout="@layout/fod_picker_preference"
         android:selectable="false"/>
 
+    <!-- FOD recognizing animation -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+        android:key="fod_recognizing_animation"
+        android:title="@string/fod_recog_animation"
+        android:summary="@string/fod_recog_animation_summary"
+        android:defaultValue="false" />
 
 </PreferenceScreen>
