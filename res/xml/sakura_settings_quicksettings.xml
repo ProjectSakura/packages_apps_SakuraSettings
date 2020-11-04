@@ -19,4 +19,42 @@
     android:title="@string/quicksettings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+        android:key="qs_columns_rows_category"
+        android:title="@string/qs_layout_category">
+
+        <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_rows_portrait"
+            android:title="@string/qs_rows_portrait_title"
+            android:max="7"
+            android:min="1"
+            android:defaultValue="2"
+            settings:units="" />
+
+        <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_rows_landscape"
+            android:title="@string/qs_rows_landscape_title"
+            android:max="5"
+            android:min="1"
+            android:defaultValue="2"
+            settings:units="" />
+
+        <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_columns_portrait"
+            android:title="@string/qs_columns_portrait_title"
+            android:max="9"
+            android:min="1"
+            android:defaultValue="4"
+            settings:units="" />
+
+        <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_columns_landscape"
+            android:title="@string/qs_columns_landscape_title"
+            android:max="9"
+            android:min="1"
+            android:defaultValue="4"
+            settings:units="" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
