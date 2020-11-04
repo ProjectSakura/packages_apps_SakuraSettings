@@ -25,6 +25,12 @@
             android:summary="@string/qs_tile_title_visibility_summary"
             android:defaultValue="true" />
 
+     <com.sakura.settings.preferences.SystemSettingSwitchPreference
+￼           android:key="quick_settings_vibrate"
+￼           android:title="@string/quick_settings_vibrate_title"
+￼           android:summary="@string/quick_settings_vibrate_summary"
+   ￼        android:defaultValue="false"/>
+
     <PreferenceCategory
         android:key="qs_columns_rows_category"
         android:title="@string/qs_layout_category">
