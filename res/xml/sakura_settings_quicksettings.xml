@@ -19,6 +19,12 @@
     android:title="@string/quicksettings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+     <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_tile_title_visibility"
+            android:title="@string/qs_tile_title_visibility_title"
+            android:summary="@string/qs_tile_title_visibility_summary"
+            android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="qs_columns_rows_category"
         android:title="@string/qs_layout_category">
