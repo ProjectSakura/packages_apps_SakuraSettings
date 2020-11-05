@@ -171,4 +171,8 @@
     <string name="summary_animation_no_override">Prevent apps from overriding transitions</string> 
     <string name="animation_duration_default">Default</string>
 
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Power menu</string>
+    <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lockscreen</string>
+
 </resources>

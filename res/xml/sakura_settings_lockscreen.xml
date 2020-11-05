@@ -19,4 +19,12 @@
     android:title="@string/lockscreen_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!--Hide powermenu on lockscreen-->
+    <com.sakura.settings.preferences.GlobalSettingSwitchPreference
+               android:key="lockscreen_enable_power_menu"
+               android:icon="@drawable/ic_power"
+               android:title="@string/lockscreen_enable_power_menu_title"
+               android:summary="@string/lockscreen_enable_power_menu_summary"
+               android:defaultValue="true" />
+
 </PreferenceScreen>
