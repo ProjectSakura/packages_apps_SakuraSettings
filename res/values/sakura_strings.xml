@@ -149,4 +149,8 @@
     <string name="file_header_provider_title">Single image</string>
     <string name="file_header_provider" translatable="false">file</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
 </resources>
