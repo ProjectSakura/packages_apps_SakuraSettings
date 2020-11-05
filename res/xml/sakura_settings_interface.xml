@@ -22,10 +22,8 @@
         <!-- Battery bar -->
         <PreferenceScreen
             android:key="batterybar"
-            android:icon="@drawable/ic_car_battery"
             android:title="@string/battery_bar_title"
             android:summary="@string/battery_bar_summary"
             android:fragment="com.sakura.settings.fragments.BatteryBar" />
-
 
 </PreferenceScreen>
