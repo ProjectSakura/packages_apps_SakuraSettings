@@ -19,4 +19,9 @@
     android:title="@string/notifications_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <Preference
+        android:key="heads_up_notifications"
+        android:title="@string/heads_up_notifications"
+        android:fragment="com.sakura.settings.fragments.HeadsUpSettings" />
+
 </PreferenceScreen>
