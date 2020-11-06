@@ -206,4 +206,12 @@
     <!-- AOSP Gestures -->
     <string name="aosp_gesture_title">AOSP Gestures Settings</string>
 
+    <!--dashboard icons-->
+    <string name="theming_settings_dashboard_icons_title">Settings dashboard icons</string>
+    <string name="theming_settings_dashboard_icons_default2">Default background</string>
+    <string name="theming_settings_dashboard_icons_default_accent2">Accent background</string>
+    <string name="theming_settings_dashboard_icons_plain">Plain</string>
+    <string name="theming_settings_dashboard_icons_plain_accent">Plain accent</string>
+    <string name="theming_settings_dashboard_icons_default_oneplus">OnePlus</string>
+
 </resources>
