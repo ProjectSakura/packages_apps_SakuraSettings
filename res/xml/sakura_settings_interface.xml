@@ -27,6 +27,12 @@
         android:entryValues="@array/theming_settings_dashboard_icons_values"
         android:defaultValue="0" />
 
+    <!--Network traffic -->
+    <Preference
+        android:key="network_traffic"
+        android:fragment="com.sakura.settings.fragments.NetworkTraffic"
+        android:title="@string/traffic_title" />
+
     <!-- Battery bar -->
     <PreferenceScreen
             android:key="batterybar"
