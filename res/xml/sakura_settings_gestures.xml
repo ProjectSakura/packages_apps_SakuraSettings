@@ -26,4 +26,10 @@
         android:summary="@string/three_finger_gesture_summary"
         android:defaultValue="false" />
 
+    <!-- aosp gesture -->
+    <Preference
+        android:key="gesture_settings"
+        android:title="@string/aosp_gesture_title"
+        android:fragment="com.android.settings.gestures.GestureSettings" />
+
 </PreferenceScreen>

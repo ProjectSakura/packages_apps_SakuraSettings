@@ -203,4 +203,7 @@
     <string name="less_boring_heads_up_title">Less boring heads up</string>
     <string name="less_boring_heads_up_summary">Show heads up only for dialer, messaging and alarm app</string>
 
+    <!-- AOSP Gestures -->
+    <string name="aosp_gesture_title">AOSP Gestures Settings</string>
+
 </resources>
