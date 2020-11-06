@@ -19,6 +19,13 @@
     android:title="@string/interface_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- volte icon toggle -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="show_volte_icon"
+            android:title="@string/volte_icon_title"
+            android:summary="@string/volte_icon_summary"
+            android:defaultValue="false"/>
+
     <!--dashboard themes-->
     <com.sakura.settings.preferences.SystemSettingListPreference
         android:key="theming_settings_dashboard_icons"
