@@ -227,9 +227,6 @@
     <string name="network_traffic_arrow">Hide arrows</string>
     <string name="network_traffic_arrow_summary">Hide the network traffic indicator arrows</string>
     <string name="network_traffic_type">Select net activity type</string>
-    <string name="show_network_traffic_up">Uplink</string>
-    <string name="show_network_traffic_down">Downlink</string>
-    <string name="show_network_traffic_all">Uplink and Downlink</string>
     <string name="show_network_traffic_combined">Combined (Upload + Download)</string>
     <string name="show_network_traffic_dynamic">Dynamic</string>
     <string name="show_network_traffic_up">Upload</string>
@@ -243,5 +240,9 @@
     <!-- volte icon toggle -->
     <string name="volte_icon_title">VoLTE icon</string>
     <string name="volte_icon_summary">Display VoLTE icon when available</string>
+
+    <!--bluetooth battery level -->
+    <string name="bluetooth_battery_title">Bluetooth battery status</string>
+    <string name="bluetooth_battery_summary">Display battery status for the connected bluetooth device, if available</string>
 
 </resources>

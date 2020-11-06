@@ -25,6 +25,13 @@
             android:title="@string/volte_icon_title"
             android:summary="@string/volte_icon_summary"
             android:defaultValue="false"/>
+   
+     <!-- bluetooth battery level -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="bluetooth_show_battery"
+            android:title="@string/bluetooth_battery_title"
+            android:summary="@string/bluetooth_battery_summary"
+            android:defaultValue="true"/>
 
     <!--dashboard themes-->
     <com.sakura.settings.preferences.SystemSettingListPreference

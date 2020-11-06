@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.UserHandle;
 import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -55,6 +56,12 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
     @Override
     public void onResume() {
         super.onResume();
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        Settings.System.putIntForUser(resolver,
+                Settings.System.BLUETOOTH_SHOW_BATTERY, 1, UserHandle.USER_CURRENT);
     }
 
     @Override
