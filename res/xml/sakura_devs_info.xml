@@ -87,4 +87,19 @@
             android:data="https://t.me/LordShenron" />
     </Preference>
 </PreferenceCategory>
+
+<PreferenceCategory
+        android:key="maintainer"
+        android:title="@string/device_xiaomi" >
+
+    <Preference
+        android:title="@string/device_violet"
+        android:summary="@string/device_violet_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Wally_West_The_Flash" />
+    </Preference> 
+
+</PreferenceCategory>
 </PreferenceScreen>
