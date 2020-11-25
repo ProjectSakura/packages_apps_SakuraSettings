@@ -269,11 +269,4 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         super.onPause();
     }
 
-    public static void reset(Context mContext) {
-        ContentResolver resolver = mContext.getContentResolver();
-        Resources res = null;
-
-        Settings.System.putIntForUser(resolver,
-           Settings.System.QS_TILE_TITLE_VISIBILITY, 1, UserHandle.USER_CURRENT);
-   }
 }
