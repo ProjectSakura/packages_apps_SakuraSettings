@@ -57,6 +57,12 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         super.onResume();
     }
 
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        Settings.System.putIntForUser(resolver,
+                Settings.System.SCREENSHOT_SOUND, 1, UserHandle.USER_CURRENT);
+    }
+
     @Override
     public void onPause() {
         super.onPause();
