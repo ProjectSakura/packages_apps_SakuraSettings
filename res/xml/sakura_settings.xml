@@ -86,13 +86,13 @@
             android:fragment="com.sakura.settings.fragments.NotificationSettings"
             android:icon="@drawable/ic_settings_notifications"/>
 
-        <!-- Misc
+        <!-- Misc -->
         <com.sakura.settings.preferences.CardviewPreference
             android:key="misc_category"
             android:title="@string/misc_title"
             android:summary="@string/sakura_misc_summary_title"
             android:fragment="com.sakura.settings.fragments.MiscSettings"
-            android:icon="@drawable/ic_settings_misc"/> -->
+            android:icon="@drawable/ic_settings_misc"/>
 
         <!--Updater-->
         <com.sakura.settings.preferences.CardviewPreference
