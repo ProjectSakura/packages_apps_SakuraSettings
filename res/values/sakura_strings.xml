@@ -253,4 +253,6 @@
     <string name="screenshot_sound_title">Screenshot sound</string>
     <string name="screenshot_sound_summary">Toggle sound played while taking screenshot</string>
 
+    <string name="audio_panel_view_timeout_title">Volume panel timeout</string>
+
 </resources>

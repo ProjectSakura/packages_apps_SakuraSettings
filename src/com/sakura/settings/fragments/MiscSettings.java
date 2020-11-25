@@ -61,6 +61,8 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = mContext.getContentResolver();
         Settings.System.putIntForUser(resolver,
                 Settings.System.SCREENSHOT_SOUND, 1, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.AUDIO_PANEL_VIEW_TIMEOUT, 3, UserHandle.USER_CURRENT);
     }
 
     @Override
