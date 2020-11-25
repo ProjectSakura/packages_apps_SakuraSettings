@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.UserHandle;
 import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -33,6 +34,7 @@ import android.view.ViewGroup;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
+import com.sakura.settings.fragments.misc.GamingMode;
 
 import com.android.settings.R;
 
@@ -63,6 +65,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
                 Settings.System.SCREENSHOT_SOUND, 1, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.AUDIO_PANEL_VIEW_TIMEOUT, 3, UserHandle.USER_CURRENT);
+        GamingMode.reset(mContext);
     }
 
     @Override

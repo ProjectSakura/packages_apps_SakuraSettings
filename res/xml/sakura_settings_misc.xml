@@ -35,4 +35,12 @@
         settings:min="1"
         settings:interval="1" />
 
+    <!--Gaming mode -->
+    <Preference
+        android:key="gaming_mode"
+        android:icon="@drawable/ic_gaming"
+        android:title="@string/gaming_mode_title"
+        android:summary="@string/gaming_mode_summary"
+        android:fragment="com.sakura.settings.fragments.misc.GamingMode"/>
+
 </PreferenceScreen>
