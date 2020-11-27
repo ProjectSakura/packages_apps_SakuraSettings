@@ -39,7 +39,23 @@
     <string name="device_asus">Asus</string>
     <string name="device_X00T">ZenFone Max Pro M1</string>
     <string name="device_X00T_description">X00T\nPriyanshu</string>
-	
+
+    <string name="device_samsung">Samsung</string>
+    <string name="device_a30">Galaxy A30</string>
+    <string name="device_a30_description">a30\nHaridhayal</string>
+
+    <string name="device_samsung">Samsung</string>
+    <string name="device_a40">Galaxy A40</string>
+    <string name="device_a40_description">a40\nHaridhayal</string>
+
+    <string name="device_samsung">Samsung</string>
+    <string name="device_m20lte">Galaxy M20</string>
+    <string name="device_m20lte_description">m20lte\nHaridhayal</string>
+
+    <string name="device_samsung">Samsung</string>
+    <string name="device_m30lte">Galaxy M30</string>
+    <string name="device_m30lte_description">m30lte\nHaridhayal</string>	
+
     <string name="device_xiaomi">Xiaomi</string>
     <string name="device_violet">Redmi Note 7 Pro</string>
     <string name="device_violet_description">violet\nPrajwal and Nitish</string>
