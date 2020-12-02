@@ -32,10 +32,10 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 import com.sakura.settings.preferences.CustomSeekBarPreference;
-import com.sakura.settungs.preferences.SystemSettingListPreference;
+import com.sakura.settings.preferences.SystemSettingListPreference;
 import com.sakura.settings.preferences.SystemSettingSwitchPreference;
 
-public class EdgeLightningSettings extends SettingsPreferenceFragment implements
+public class HorizonLightSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static String KEY_AMBIENT = "ambient_notification_light_enabled";
@@ -55,7 +55,7 @@ public class EdgeLightningSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.edge_lightning_settings);
+        addPreferencesFromResource(R.xml.horizon_light_settings);
         final ContentResolver resolver = getContentResolver();
         final int accentColor = getAccentColor();
 

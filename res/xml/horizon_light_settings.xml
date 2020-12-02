@@ -12,27 +12,27 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/pulse_ambient_light_title"
+    android:title="@string/horizon_light_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <com.sakura.settings.preferences.SystemSettingSwitchPreference
         android:key="ambient_notification_light_enabled"
-        android:title="@string/ambient_notification_light_enabled_title"
-        android:summary="@string/ambient_notification_light_enabled_summary"
+        android:title="@string/horizon_light_enabled_title"
+        android:summary="@string/horizon_light_enabled_summary"
         android:persistent="false"
         android:defaultValue="false" />
 
     <com.sakura.settings.preferences.SystemSettingSwitchPreference
         android:key="ambient_notification_light_hide_aod"
-        android:title="@string/ambient_notification_light_hide_aod_title"
-        android:summary="@string/ambient_notification_light_hide_aod_summary"
+        android:title="@string/horizon_light_hide_aod_title"
+        android:summary="@string/horizon_light_hide_aod_summary"
         android:defaultValue="false"
         android:dependency="ambient_notification_light_enabled" />
 
     <com.sakura.settings.preferences.CustomSeekBarPreference
         android:key="ambient_notification_light_duration"
-        android:title="@string/ambient_notification_light_duration_title"
-        android:summary="@string/ambient_notification_light_duration_summary"
+        android:title="@string/horizon_light_duration_title"
+        android:summary="@string/horizon_light_duration_summary"
         android:max="5"
         settings:min="1"
         settings:defaultValue="2"
@@ -40,28 +40,28 @@
 
     <com.sakura.settings.preferences.CustomSeekBarPreference
         android:key="ambient_notification_light_repeats"
-        android:title="@string/ambient_notification_light_repeats_title"
-        android:summary="@string/ambient_notification_light_repeats_summary"
+        android:title="@string/horizon_light_repeats_title"
+        android:summary="@string/horizon_light_repeats_summary"
         android:max="10"
         settings:min="0"
         settings:defaultValue="0" />
 
     <com.sakura.settings.preferences.SystemSettingListPreference
         android:key="ambient_notification_light_timeout"
-        android:title="@string/ambient_notification_light_timeout_title"
-        android:entries="@array/ambient_notification_light_timeout_entries"
-        android:entryValues="@array/ambient_notification_light_timeout_values"
+        android:title="@string/horizon_light_timeout_title"
+        android:entries="@array/horizon_light_timeout_entries"
+        android:entryValues="@array/horizon_light_timeout_values"
         android:defaultValue="0" />
 
     <com.sakura.settings.preferences.SystemSettingListPreference
         android:key="ambient_notification_color_mode"
-        android:title="@string/ambient_notification_color_mode_title"
-        android:entries="@array/ambient_notification_color_mode_entries"
-        android:entryValues="@array/ambient_notification_color_mode_values"
+        android:title="@string/horizon_color_mode_title"
+        android:entries="@array/horizon_color_mode_entries"
+        android:entryValues="@array/horizon_color_mode_values"
         android:defaultValue="0" />
 
-    <com.sakura.settings.preferences.colorpicker.ColorPickerPreference
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="ambient_notification_light_color"
-        android:title="@string/ambient_notification_light_color_title" />
+        android:title="@string/horizon_light_color_title" />
 
 </PreferenceScreen>
