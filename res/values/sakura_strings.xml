@@ -320,4 +320,8 @@
     <string name="horizon_color_mode_custom">@string/horizon_light_color_title</string>
     <string name="horizon_light_color_title">Custom color</string>
 
+    <!-- Oneui -->
+    <string name="enable_oneui">OneUI Settings Actionbar</string>
+    <string name="enable_oneui_summary">Show spacer above settings actionbar for easier use with one hand\nNOTE: restart settings app to see effect</string>
+
 </resources>
