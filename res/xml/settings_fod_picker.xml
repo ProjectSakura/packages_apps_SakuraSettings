@@ -26,6 +26,13 @@
         android:layout="@layout/fod_picker_preference"
         android:selectable="false"/>
 
+    <!-- screen off FOD -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+        android:key="fod_gesture"
+        android:title="@string/fod_gesture_title"
+        android:summary="@string/fod_gesture_summary"
+        android:defaultValue="false" />
+
     <!-- FOD recognizing animation -->
     <com.sakura.settings.preferences.SystemSettingSwitchPreference
         android:key="fod_recognizing_animation"

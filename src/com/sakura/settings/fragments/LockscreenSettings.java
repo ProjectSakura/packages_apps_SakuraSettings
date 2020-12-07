@@ -53,7 +53,7 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
 
         mFODIconPicker = (Preference) findPreference(FOD_ICON_PICKER_CATEGORY);
         if (mFODIconPicker != null
-                && !getResources().getBoolean(com.android.internal.R.bool.config_supportsInDisplayFingerprint)) {
+                && !getResources().getBoolean(com.android.internal.R.bool.config_needCustomFODView)) {
             prefScreen.removePreference(mFODIconPicker);
         }
     }
