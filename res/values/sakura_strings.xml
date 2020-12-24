@@ -336,4 +336,19 @@
     <string name="theme_type_material_ocean">Material Ocean</string>
     <string name="theme_type_style_mizu">Mizu</string>
 
+    <!-- gvisual mod -->
+    <string name="gvisual_title">Gvisual Mod ( Need Reboot )</string>
+    <string name="rounded_ui_title">Rounded corner</string>
+    <string name="rounded_ui_dialog_title">Select rounded corner model</string>
+    <string name="rounded_style_default">Default</string>
+    <string name="rounded_style_rectangle">Rectangle</string>
+    <string name="rounded_style_large">Large</string>
+    <string name="rounded_style_medium">Medium</string>
+    <string name="statusbar_height_title">Statusbar height</string>
+    <string name="statusbar_height_dialog_title">Select statusbar height model</string>
+    <string name="sb_height_default">Default</string>
+    <string name="sb_height_medium">Medium</string>
+    <string name="sb_height_large">Large</string>
+    <string name="sb_height_extralarge">Extra Large</string>
+
 </resources>
