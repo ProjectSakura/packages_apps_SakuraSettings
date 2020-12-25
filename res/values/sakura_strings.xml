@@ -351,4 +351,11 @@
     <string name="sb_height_large">Large</string>
     <string name="sb_height_extralarge">Extra Large</string>
 
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
+    <string name="screen_off_animation_summary">Crt and scaled animations for lockscreen</string>
+
 </resources>

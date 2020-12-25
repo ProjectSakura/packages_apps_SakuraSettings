@@ -19,6 +19,14 @@
     android:title="@string/animation_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.sakura.settings.preferences.SystemSettingListPreference
+        android:key="screen_off_animation"
+        android:title="@string/screen_off_animation_title"
+        android:entries="@array/screen_off_animation_entries"
+        android:entryValues="@array/screen_off_animation_values"
+        android:summary="@string/screen_off_animation_summary"
+        android:defaultValue="0" />
+
     <PreferenceCategory
         android:title="@string/system_animation_title">
 
