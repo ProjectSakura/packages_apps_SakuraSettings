@@ -38,13 +38,20 @@ import com.sakura.settings.preferences.CustomSeekBarPreference;
 import com.sakura.settings.preferences.SystemSettingListPreference;
 import com.sakura.settings.preferences.SystemSettingMasterSwitchPreference;
 import com.sakura.settings.preferences.SystemSettingSwitchPreference;
+import com.sakura.settings.utils.Utils;
 
 import com.android.settings.R;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class NotificationSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String KEY_EDGE_LIGHTNING = "pulse_ambient_light";
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
     private SystemSettingMasterSwitchPreference mEdgeLightning;
 
@@ -61,6 +68,11 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
                 KEY_EDGE_LIGHTNING, 0, UserHandle.USER_CURRENT) == 1;
         mEdgeLightning.setChecked(enabled);
         mEdgeLightning.setOnPreferenceChangeListener(this);
+
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!Utils.isVoiceCapable(getActivity())) {
+            prefScreen.removePreference(incallVibCategory);
+        }
     }
 
     @Override
