@@ -34,6 +34,7 @@
         </Preference>
 </PreferenceCategory>
 
+<!-- The best people in the world -->
 <PreferenceCategory
             android:key="sakura_dev"
             android:title="@string/devs_header" >
@@ -67,6 +68,7 @@
         </Preference>
 </PreferenceCategory>
 
+<!-- Asus -->
 <PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_asus" >
@@ -81,7 +83,37 @@
     </Preference>
 </PreferenceCategory>
 
-<!--Samsung-->
+<!-- Dead Leeco -->
+<PreferenceCategory
+        android:key="maintainer"
+        android:title="@string/device_leeco" >
+
+    <Preference
+        android:title="@string/device_s2"
+        android:summary="@string/device_s2_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/CakesTwix" />
+    </Preference>
+</PreferenceCategory>
+
+<!-- Realmeme -->
+<PreferenceCategory
+        android:key="maintainer"
+        android:title="@string/device_realme" >
+
+    <Preference
+        android:title="@string/device_cph1859"
+        android:summary="@string/device_cph1859_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/CyberJalagam" />
+    </Preference>
+</PreferenceCategory>
+
+<!--Lagsung-->
 <PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_samsung" >
@@ -119,6 +151,7 @@
     </Preference>
 </PreferenceCategory>
 
+<!-- Chinese Spy -->
 <PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_xiaomi" >
@@ -131,6 +164,14 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/Wally_West_The_Flash" />
     </Preference> 
-
+    <Preference
+        android:title="@string/device_begonia"
+        android:summary="@string/device_begonia_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/himanshu1802" />
+    </Preference>
+    
 </PreferenceCategory>
 </PreferenceScreen>

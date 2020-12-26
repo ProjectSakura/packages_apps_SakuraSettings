@@ -28,18 +28,29 @@
     <string name="devs_header">Developers</string>
     <string name="dev_1">LordShenron</string>
     <string name="dev1_description">Founder/Developer</string>
-    <string name="dev_2">Chaitanaya Mittal</string>
-    <string name="dev2_description">Developer</string>
     <string name="dev_3">Arun Teltia</string>
     <string name="dev3_description">Web Developer</string>
 
     <!-- Maintainer Info -->
     <string name="maintainers_header">Maintainers</string>
     <string name="maintainers_header_summary">These are the Official Devices Maintainers...</string>
+    
+    <!-- Asus -->
     <string name="device_asus">Asus</string>
     <string name="device_X00T">ZenFone Max Pro M1</string>
-    <string name="device_X00T_description">X00T\nPriyanshu</string>
+    <string name="device_X00T_description">X00T\nShen</string>
 
+    <!-- Dead LeEco -->
+    <string name="device_leeco">LeEco</string>
+    <string name="device_s2">LeEco Le 2 </string>
+    <string name="device_s2_description">S2\nCakesTwix</string>    
+
+    <!-- Realmeme -->
+    <string name="device_realme">Realme</string>
+    <string name="device_cph1859">Realme 1 </string>
+    <string name="device_cph1859_description">CPH1859\nCyberJalagam</string> 
+    
+    <!-- Lagsung -->
     <string name="device_samsung">Samsung</string>
     <string name="device_a30">Galaxy A30</string>
     <string name="device_a30_description">a30\nHaridhayal</string>
@@ -50,9 +61,12 @@
     <string name="device_m30lte">Galaxy M30</string>
     <string name="device_m30lte_description">m30lte\nHaridhayal</string>	
 
+    <!-- chinese spy -->
     <string name="device_xiaomi">Xiaomi</string>
     <string name="device_violet">Redmi Note 7 Pro</string>
     <string name="device_violet_description">violet\nPrajwal and Nitish</string>
+    <string name="device_begonia">Redmi Note 8 Pro</string>
+    <string name="device_begonia_description">begonia\nHimanshu</string>    
 	
     <!-- Categories -->
     <string name="gestures_title">Gestures</string>
