@@ -19,6 +19,10 @@
     android:title="@string/quicksettings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- misc QS options -->
+    <PreferenceCategory
+        android:title="@string/misc_qs_settings">
+        
      <!--QS panel opacity-->
      <com.sakura.settings.preferences.CustomSeekBarPreference
             android:key="qs_panel_alpha"
@@ -48,6 +52,8 @@
             android:title="@string/quick_settings_vibrate_title"
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
+
+    </PreferenceCategory>
 
      <!--QS rows and coloums -->
      <PreferenceCategory

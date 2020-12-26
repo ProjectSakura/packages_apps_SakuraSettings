@@ -19,6 +19,10 @@
     android:title="@string/interface_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!--Misc UI toggles -->
+    <PreferenceCategory
+        android:title="@string/misc_interface_settings">
+
     <!-- volte icon toggle -->
     <com.sakura.settings.preferences.SystemSettingSwitchPreference
             android:key="show_volte_icon"
@@ -33,6 +37,19 @@
             android:summary="@string/bluetooth_battery_summary"
             android:defaultValue="true"/>
 
+    <!--Network traffic -->
+    <Preference
+            android:key="network_traffic"
+            android:fragment="com.sakura.settings.fragments.NetworkTraffic"
+            android:summary="@string/traffic_summary"            
+            android:title="@string/traffic_title" />
+
+    </PreferenceCategory>
+
+    <!-- Themes and UI -->
+    <PreferenceCategory
+        android:title="@string/themes_ui_settings">
+        
     <!-- OneUI like settings actionbar -->
     <com.sakura.settings.preferences.SystemSettingSwitchPreference 
             android:key="settings_spacer" 
@@ -42,13 +59,13 @@
 
     <!-- Themes -->
     <ListPreference
-        android:key="theme_switch"
-        android:title="@string/theme_type_title"
-	android:summary="%s"
-        android:dialogTitle="@string/theme_type_summary"
-        android:entries="@array/theme_type_titles"
-        android:entryValues="@array/theme_type_values"
-        android:defaultValue="1"/>
+            android:key="theme_switch"
+            android:title="@string/theme_type_title"
+	        android:summary="%s"
+            android:dialogTitle="@string/theme_type_summary"
+            android:entries="@array/theme_type_titles"
+            android:entryValues="@array/theme_type_values"
+            android:defaultValue="1"/>
 
     <!--dashboard themes-->
     <com.sakura.settings.preferences.SystemSettingListPreference
@@ -58,18 +75,14 @@
             android:entryValues="@array/theming_settings_dashboard_icons_values"
             android:defaultValue="0" />
 
-    <!--Network traffic -->
-    <Preference
-            android:key="network_traffic"
-            android:fragment="com.sakura.settings.fragments.NetworkTraffic"
-            android:title="@string/traffic_title" />
-
     <!-- Battery bar -->
     <PreferenceScreen
             android:key="batterybar"
             android:title="@string/battery_bar_title"
             android:summary="@string/battery_bar_summary"
             android:fragment="com.sakura.settings.fragments.BatteryBar" />
+
+    </PreferenceCategory>
 
     <!-- Gvisual mod -->
     <PreferenceCategory

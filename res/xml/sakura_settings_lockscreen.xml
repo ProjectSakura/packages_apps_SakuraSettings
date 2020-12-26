@@ -19,13 +19,23 @@
     android:title="@string/lockscreen_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- lockscreen ui settings -->
+    <PreferenceCategory
+        android:title="@string/lockscreen_ui_settings">
+        
     <!--lockscreen charging info-->
     <com.sakura.settings.preferences.SystemSettingSwitchPreference
-   	       android:key="lockscreen_battery_info"
-	       android:title="@string/lockscreen_battery_info_title"
+   	           android:key="lockscreen_battery_info"
+	           android:title="@string/lockscreen_battery_info_title"
                android:summary="@string/lockscreen_battery_info_summary"
                android:defaultValue="true" />
 
+    </PreferenceCategory>
+
+    <!-- secure lockscreen changes -->
+    <PreferenceCategory
+        android:title="@string/secure_lockscreen_settings">
+        
     <!--Hide powermenu on lockscreen-->
     <com.sakura.settings.preferences.SystemSettingSwitchPreference
                android:key="lockscreen_enable_power_menu"
@@ -40,5 +50,7 @@
                android:summary="@string/lockscreen_secure_power_menu_summary"
                android:dependency="lockscreen_enable_power_menu"
                android:defaultValue="false" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

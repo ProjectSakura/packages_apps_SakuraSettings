@@ -19,6 +19,10 @@
     android:title="@string/animation_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Screen off animations -->
+    <PreferenceCategory
+        android:title="@string/screen_off_animation_title">
+        
     <com.sakura.settings.preferences.SystemSettingListPreference
         android:key="screen_off_animation"
         android:title="@string/screen_off_animation_title"
@@ -27,6 +31,9 @@
         android:summary="@string/screen_off_animation_summary"
         android:defaultValue="0" />
 
+    </PreferenceCategory>
+    
+    <!-- AOKP Animations -->
     <PreferenceCategory
         android:title="@string/system_animation_title">
 

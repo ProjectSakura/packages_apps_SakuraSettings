@@ -19,10 +19,15 @@
     android:title="@string/notifications_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Headsup -->
+    <PreferenceCategory
+        android:title="@string/headsup_settings">
+        
     <!--headsup -->
     <Preference
         android:key="heads_up_notifications"
         android:title="@string/heads_up_notifications"
+        android:summary="@string/heads_up_summary"        
         android:fragment="com.sakura.settings.fragments.HeadsUpSettings" />
 
     <!-- less boring heads -->
@@ -32,6 +37,12 @@
         android:summary="@string/less_boring_heads_up_summary"
         android:defaultValue="false" />
 
+    </PreferenceCategory>
+
+    <!-- Horizon Light -->
+    <PreferenceCategory
+        android:title="@string/horizon_light_settings">
+        
     <!-- Horizon notifications light -->
     <com.sakura.settings.preferences.SystemSettingMasterSwitchPreference
         android:key="pulse_ambient_light"
@@ -39,6 +50,8 @@
         android:summary="@string/horizon_light_summary"
         android:fragment="com.sakura.settings.fragments.HorizonLightSettings"
         android:defaultValue="false" />
+
+    </PreferenceCategory>
 
     <!-- incall vibs -->
     <PreferenceCategory

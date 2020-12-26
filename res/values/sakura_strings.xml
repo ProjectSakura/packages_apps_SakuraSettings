@@ -85,7 +85,16 @@
     <string name="sakura_notifications_summary_title">Heads up</string>        
     <string name="sakura_updater_summary_title">OTA updates</string>        
     <string name="updater_title">Sakura Updates</string>
-	
+    
+    <!-- sub categories -->
+    <string name="themes_ui_settings">Themes and UI settings</string>
+    <string name="misc_interface_settings">Misc UI settings</string>
+    <string name="lockscreen_ui_settings">Lockscreen UI</string>
+    <string name="secure_lockscreen_settings">Secure Lockscreen</string>    
+    <string name="headsup_settings">System Headsup</string>    
+    <string name="horizon_light_settings">AOD Notifications</string>
+    <string name="misc_qs_settings">Misc QS Options</string>          
+    
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
@@ -175,6 +184,7 @@
     <string name="file_header_provider" translatable="false">file</string>
 
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="screenshot_gestures">Screenshot Gesture</string>    
     <string name="three_finger_gesture">Three finger gesture</string>
     <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
 
@@ -213,6 +223,7 @@
 
     <!-- Heads up -->
     <string name="heads_up_notifications">Heads up</string>
+    <string name="heads_up_summary">Enable/Disable pop up notifications and control headsups</string>    
     <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
     <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
     <string name="add_heads_up_package">Add app</string>
@@ -229,7 +240,9 @@
     <string name="less_boring_heads_up_summary">Show heads up only for dialer, messaging and alarm app</string>
 
     <!-- AOSP Gestures -->
+    <string name="system_gestures">System Gestures</string>
     <string name="aosp_gesture_title">AOSP Gestures Settings</string>
+    <string name="aosp_gesture_summary">Aosp swipe gestures, 2 buttons, 3 button navigation and more</string>    
 
     <!--dashboard icons-->
     <string name="theming_settings_dashboard_icons_title">Settings dashboard icons</string>
@@ -241,6 +254,7 @@
 
     <!-- Statusbar net monitor -->
     <string name="traffic_title">Traffic indicators</string>
+    <string name="traffic_summary">Display Network traffic monitor in QS and statusbar</string>    
     <string name="network_traffic_state_title">Network traffic</string>
     <string name="network_traffic_state_summary">Show net activity in statusbar</string>
     <string name="network_traffic">Network traffic</string>
@@ -338,7 +352,7 @@
     <string name="enable_oneui">OneUI Settings Actionbar</string>
     <string name="enable_oneui_summary">Show spacer above settings actionbar for easier use with one hand\nNOTE: restart settings app to see effect</string>
 
-    <!-- Themes -->
+    <!-- Themes -->  
     <string name="theme_type_title">Sakura themes</string>
     <string name="theme_type_summary">Select theme</string>
     <string name="theme_type_light">Light</string>
