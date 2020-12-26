@@ -31,11 +31,12 @@ import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.content.Intent;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.sakura.settings.fragments.misc.GamingMode;
-
+import com.sakura.settings.fragments.misc.VolumeSteps;
 import com.android.settings.R;
 
 public class MiscSettings extends SettingsPreferenceFragment implements
