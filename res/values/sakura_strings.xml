@@ -43,7 +43,14 @@
     <!-- Dead LeEco -->
     <string name="device_leeco">LeEco</string>
     <string name="device_s2">LeEco Le 2 </string>
-    <string name="device_s2_description">S2\nCakesTwix</string>    
+    <string name="device_s2_description">S2\nCakesTwix</string> 
+    
+    <!-- No more flagship killer -->   
+    <string name="device_oneplus">OnePlus</string>
+    <string name="device_oneplus3">OnePlus 3 and 3T </string>
+    <string name="device_oneplus3_description">oneplus3\nDeepak Jr</string> 
+    <string name="device_instantnoods">OnePlus 8 </string>
+    <string name="device_instantnoods_description">instantnoodles\nJack</string>     
 
     <!-- Realmeme -->
     <string name="device_realme">Realme</string>
@@ -63,6 +70,8 @@
 
     <!-- chinese spy -->
     <string name="device_xiaomi">Xiaomi</string>
+    <string name="device_tucana">Mi Note 10</string>
+    <string name="device_tucana_description">tucana\nAlexander</string>    
     <string name="device_violet">Redmi Note 7 Pro</string>
     <string name="device_violet_description">violet\nPrajwal and Nitish</string>
     <string name="device_begonia">Redmi Note 8 Pro</string>
@@ -365,7 +374,7 @@
     <string name="theme_type_style_mizu">Mizu</string>
 
     <!-- gvisual mod -->
-    <string name="gvisual_title">Gvisual Mod ( Need Reboot )</string>
+    <string name="gvisual_title">Gvisual Mod</string>
     <string name="rounded_ui_title">Rounded corner</string>
     <string name="rounded_ui_dialog_title">Select rounded corner model</string>
     <string name="rounded_style_default">Default</string>

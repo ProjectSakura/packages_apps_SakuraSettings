@@ -98,6 +98,29 @@
     </Preference>
 </PreferenceCategory>
 
+<!-- No more flagship killers -->
+<PreferenceCategory
+        android:key="maintainer"
+        android:title="@string/device_oneplus" >
+
+    <Preference
+        android:title="@string/device_oneplus3"
+        android:summary="@string/device_oneplus3_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/The_real_Deepakjr" />
+    </Preference>
+    <Preference
+        android:title="@string/device_instantnoods"
+        android:summary="@string/device_instantnoods_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/jacks84_b" />
+    </Preference>    
+</PreferenceCategory>
+
 <!-- Realmeme -->
 <PreferenceCategory
         android:key="maintainer"
@@ -155,7 +178,15 @@
 <PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_xiaomi" >
-
+        
+    <Preference
+        android:title="@string/device_tucana"
+        android:summary="@string/device_tucana_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/alexander_baransky496" />
+    </Preference>
     <Preference
         android:title="@string/device_violet"
         android:summary="@string/device_violet_description"
