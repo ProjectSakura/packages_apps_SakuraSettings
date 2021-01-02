@@ -15,7 +15,7 @@
     limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sakura_settings_title">Configurações da Sakura</string>
+    <string name="sakura_settings_title">Sakura Configs</string>
     <string name="sakura_dashboard_summary">Lets bring spring for you.</string>
     <!-- ROM Info -->
     <string name="sakura_about_info">About Project</string>
