@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright © 2018-19 The Superior OS Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="sakura_settings_title">Sakura Configs</string>
+    <string name="sakura_dashboard_summary">Lets bring spring for you.</string>
+    <!-- ROM Info -->
+    <string name="sakura_about_info">About Project</string>
+    <string name="sakura_about_info_summary_title">About Team</string>
+    <string name="sakura_about_info_summary">A customised Lineage OS. Its sole purpose is to provide a platform which is powered by Lineage and is more customisable than Lineage.</string>
+    <!-- Dev Info -->
+    <string name="devs_header">Developers</string>
+    <string name="dev_1">LordShenron</string>
+    <string name="dev1_description">Founder/Developer</string>
+    <string name="dev_3">Arun Teltia</string>
+    <string name="dev3_description">Web Developer</string>
+    <!-- Maintainer Info -->
+    <string name="maintainers_header">Maintainers</string>
+    <string name="maintainers_header_summary">These are the Official Devices Maintainers...</string>
+    <!-- Asus -->
+    <string name="device_asus">Asus</string>
+    <string name="device_X00T">ZenFone Max Pro M1</string>
+    <string name="device_X00T_description">X00T\nShen</string>
+    <!-- Dead LeEco -->
+    <string name="device_leeco">LeEco</string>
+    <string name="device_s2">LeEco Le 2 </string>
+    <string name="device_s2_description">S2\nCakesTwix</string>
+    <!-- No more flagship killer -->
+    <string name="device_oneplus">OnePlus</string>
+    <string name="device_oneplus3">OnePlus 3 and 3T </string>
+    <string name="device_oneplus3_description">oneplus3\nDeepak Jr</string>
+    <string name="device_instantnoods">OnePlus 8 </string>
+    <string name="device_instantnoods_description">instantnoodles\nJack</string>
+    <!-- Realmeme -->
+    <string name="device_realme">Realme</string>
+    <string name="device_cph1859">Realme 1 </string>
+    <string name="device_cph1859_description">CPH1859\nCyberJalagam</string>
+    <!-- Lagsung -->
+    <string name="device_samsung">Samsung</string>
+    <string name="device_a30">Galaxy A30</string>
+    <string name="device_a30_description">a30\nHaridhayal</string>
+    <string name="device_a40">Galaxy A40</string>
+    <string name="device_a40_description">a40\nHaridhayal</string>
+    <string name="device_m20lte">Galaxy M20</string>
+    <string name="device_m20lte_description">m20lte\nHaridhayal</string>
+    <string name="device_m30lte">Galaxy M30</string>
+    <string name="device_m30lte_description">m30lte\nHaridhayal</string>
+    <!-- chinese spy -->
+    <string name="device_xiaomi">Xiaomi</string>
+    <string name="device_tucana">Mi Note 10</string>
+    <string name="device_tucana_description">tucana\nAlexander</string>
+    <string name="device_violet">Redmi Note 7 Pro</string>
+    <string name="device_violet_description">violet\nPrajwal and Nitish</string>
+    <string name="device_begonia">Redmi Note 8 Pro</string>
+    <string name="device_begonia_description">begonia\nHimanshu</string>
+    <!-- Categories -->
+    <string name="gestures_title">Gestures</string>
+    <string name="sakura_gesture_summary_title">Three finger swipe</string>
+    <string name="lockscreen_title">Lock Screen</string>
+    <string name="sakura_lockscreen_summary_title">secure lockscreen</string>
+    <string name="misc_title">Miscellaneous</string>
+    <string name="sakura_misc_summary_title">Gaming mode and misc options</string>
+    <string name="quicksettings_title">Quick Settings</string>
+    <string name="sakura_quicksettings_summary_title">Tile title, header images, opacity</string>
+    <string name="interface_title">Interface</string>
+    <string name="sakura_interface_summary_title">Theming, battery bar</string>
+    <string name="animation_title">Animations</string>
+    <string name="sakura_animation_summary_title">Opening and closing animations</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="sakura_notifications_summary_title">Heads up</string>
+    <string name="sakura_updater_summary_title">OTA updates</string>
+    <string name="updater_title">Sakura Updates</string>
+    <!-- sub categories -->
+    <string name="themes_ui_settings">Themes and UI settings</string>
+    <string name="misc_interface_settings">Misc UI settings</string>
+    <string name="lockscreen_ui_settings">Lockscreen UI</string>
+    <string name="secure_lockscreen_settings">Secure Lockscreen</string>
+    <string name="headsup_settings">System Headsup</string>
+    <string name="horizon_light_settings">AOD Notifications</string>
+    <string name="misc_qs_settings">Misc QS Options</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+    <!-- Battery Bar -->
+    <string name="battery_bar_title">Battery bar</string>
+    <string name="battery_bar_summary">Display and customize battery bar above status bar</string>
+    <string name="battery_bar">Location</string>
+    <string name="battery_bar_no_navbar">Location</string>
+    <string name="battery_bar_location_hide">Hide</string>
+    <string name="battery_bar_location_statusbar">Statusbar</string>
+    <string name="battery_bar_location_top_navbar">Top of navbar</string>
+    <string name="battery_bar_location_bottom_navbar">Bottom of navbar</string>
+    <string name="battery_bar_color">Color</string>
+    <string name="battery_bar_charging_color">Charging color</string>
+    <string name="battery_bar_battery_low_color">Low battery color</string>
+    <string name="battery_bar_cat">Style</string>
+    <string name="battery_bar_style_title">Alignment</string>
+    <string name="battery_bar_thickness_title">Thickness</string>
+    <string name="battery_bar_animate_title">Charging animation</string>
+    <string name="battery_bar_style_regular">Regular</string>
+    <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
+    <string name="battery_bar_style_reversed">Reversed</string>
+    <string name="battery_bar_use_charging_color">Custom charging color</string>
+    <string name="battery_bar_blend_color_title">Blend colors</string>
+    <string name="battery_bar_blend_color_summary">Blend full/empty colors corresponding to battery percentage</string>
+    <string name="battery_bar_blend_color_reverse_title">Reverse color direction</string>
+    <string name="battery_bar_blend_color_reverse_summary_off">Full &#8594; empty: red &#8592; green &#8592; blue &#8592; red</string>
+    <string name="battery_bar_blend_color_reverse_summary_on">Full &#8594; empty: red &#8594; green &#8594; blue &#8594; red</string>
+    <!-- QS rows and columns -->
+    <string name="sysui_qqs_count_title">Columns (Quickbar)</string>
+    <string name="qs_layout_category">Layout</string>
+    <string name="qs_column_rows_settings_title">QS panel settings</string>
+    <string name="qs_columns_rows_category_title">QS columns and rows</string>
+    <string name="qs_rows_columns_title">QS rows and columns</string>
+    <string name="qs_rows_portrait_title">Rows (Portrait)</string>
+    <string name="qs_rows_landscape_title">Rows (Landscape)</string>
+    <string name="qs_columns_portrait_title">Columns (Portrait)</string>
+    <string name="qs_columns_landscape_title">Columns (Landscape)</string>
+    <!--QS tile title visibility-->
+    <string name="qs_tile_title_visibility_title">Tile title</string>
+    <string name="qs_tile_title_visibility_summary">Display title below each tile</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching tiles</string>
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qs_panel_alpha_title">Quick Settings opacity</string>
+    <string name="qs_panel_alpha_summary">Configure opacity of background</string>
+    <!-- Custom headers -->
+    <string name="notification_title">Notification panel</string>
+    <string name="status_bar_custom_header_title">Enable</string>
+    <string name="daylight_header_pack_title">Header image collection</string>
+    <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
+    <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
+    <string name="unit_percent">\u0025</string>
+    <string name="static_header_provider_title">Static image</string>
+    <string name="daylight_header_provider_title">Image collection</string>
+    <string name="custom_header_provider_title">Header provider</string>
+    <string name="custom_header_pick_title">Select header image</string>
+    <string name="custom_header_pick_summary">Select a local or remote image</string>
+    <string name="style_enabled_summary">Custom header image is ON</string>
+    <string name="style_disabled_summary">Custom header image is OFF</string>
+    <string name="header_provider_disabled">Disabled</string>
+    <string name="custom_header_title">Custom header image</string>
+    <string name="file_header_select_title">Select local image</string>
+    <string name="file_header_select_summary">Select image from storage</string>
+    <string name="file_header_provider_title">Single image</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="screenshot_gestures">Screenshot Gesture</string>
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+    <!-- AOKP custom system animations -->
+    <string name="system_animation_title">System</string>
+    <string name="activity_open_title">Activity open animation</string>
+    <string name="activity_close_title">Activity close animation</string>
+    <string name="task_open_title">Task open animation</string>
+    <string name="task_open_behind_title">Task open behind animation</string>
+    <string name="task_close_title">Task close animation</string>
+    <string name="task_move_to_front_title">Move to front animation</string>
+    <string name="task_move_to_back_title">Move to back animation</string>
+    <string name="wallpaper_open_title">Wallpaper open animation</string>
+    <string name="wallpaper_close_title">Wallpaper close animation</string>
+    <string name="wallpaper_intra_open_title">Wallpaper intra open animation</string>
+    <string name="wallpaper_intra_close_title">Wallpaper intra close animation</string>
+    <string name="animation_duration_title">Animation duration</string>
+    <string name="title_animation_no_override">Prevent app overrides</string>
+    <string name="summary_animation_no_override">Prevent apps from overriding transitions</string>
+    <string name="animation_duration_default">Default</string>
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Power menu</string>
+    <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lockscreen</string>
+    <string name="lockscreen_secure_power_menu_title">Secure power menu</string>
+    <string name="lockscreen_secure_power_menu_summary">Allow power menu action only after authentication</string>
+    <!-- Units -->
+    <string name="unit_seconds">seconds</string>
+    <string name="unit_milliseconds">milliseconds</string>
+    <string name="unit_pixels">dp</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
+    <!-- Heads up -->
+    <string name="heads_up_notifications">Heads up</string>
+    <string name="heads_up_summary">Enable/Disable pop up notifications and control headsups</string>
+    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
+    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
+    <string name="add_heads_up_package">Add app</string>
+    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
+    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
+    <string name="heads_up_stoplist_title">Stoplist</string>
+    <string name="heads_up_blacklist_title">Blacklist</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Less boring heads up</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer, messaging and alarm app</string>
+    <!-- AOSP Gestures -->
+    <string name="system_gestures">System Gestures</string>
+    <string name="aosp_gesture_title">AOSP Gestures Settings</string>
+    <string name="aosp_gesture_summary">Aosp swipe gestures, 2 buttons, 3 button navigation and more</string>
+    <!--dashboard icons-->
+    <string name="theming_settings_dashboard_icons_title">Settings dashboard icons</string>
+    <string name="theming_settings_dashboard_icons_default2">Default background</string>
+    <string name="theming_settings_dashboard_icons_default_accent2">Accent background</string>
+    <string name="theming_settings_dashboard_icons_plain">Plain</string>
+    <string name="theming_settings_dashboard_icons_plain_accent">Plain accent</string>
+    <string name="theming_settings_dashboard_icons_default_oneplus">OnePlus</string>
+    <!-- Statusbar net monitor -->
+    <string name="traffic_title">Traffic indicators</string>
+    <string name="traffic_summary">Display Network traffic monitor in QS and statusbar</string>
+    <string name="network_traffic_state_title">Network traffic</string>
+    <string name="network_traffic_state_summary">Show net activity in statusbar</string>
+    <string name="network_traffic">Network traffic</string>
+    <string name="network_traffic_location">Traffic indicator placement</string>
+    <string name="traffic_disabled">Disabled</string>
+    <string name="traffic_statusbar">Statusbar</string>
+    <string name="traffic_expanded_statusbar">Expanded Header</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+    <string name="network_traffic_arrow">Hide arrows</string>
+    <string name="network_traffic_arrow_summary">Hide the network traffic indicator arrows</string>
+    <string name="network_traffic_type">Select net activity type</string>
+    <string name="show_network_traffic_combined">Combined (Upload + Download)</string>
+    <string name="show_network_traffic_dynamic">Dynamic</string>
+    <string name="show_network_traffic_up">Upload</string>
+    <string name="show_network_traffic_down">Download</string>
+    <string name="show_network_traffic_all">Both</string>
+    <string name="network_traffic_layout">Activity layout</string>
+    <string name="network_traffic_layout_h">Horizontal</string>
+    <string name="network_traffic_layout_v">Verticle</string>
+    <string name="nettraf_font_size">Single net font size</string>
+    <!-- volte icon toggle -->
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon when available</string>
+    <!--bluetooth battery level -->
+    <string name="bluetooth_battery_title">Bluetooth battery status</string>
+    <string name="bluetooth_battery_summary">Display battery status for the connected bluetooth device, if available</string>
+    <!-- Screenshot Sound  -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+    <string name="screenshot_sound_summary">Toggle sound played while taking screenshot</string>
+    <string name="audio_panel_view_timeout_title">Volume panel timeout</string>
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Gaming mode</string>
+    <string name="gaming_mode_summary">Customize Gaming mode preferences</string>
+    <string name="gaming_mode_enabled_summary">Allow turning on Gaming mode</string>
+    <string name="gaming_mode_app_picker_title">Automatically turn on for these apps</string>
+    <string name="add_gaming_mode_package_title">Add apps for Gaming mode</string>
+    <string name="add_gaming_mode_package_summary">Gaming mode will turn on automatically when these apps are opened and turn off when they are closed</string>
+    <string name="gaming_mode_headsup_title">Block notifications</string>
+    <string name="gaming_mode_headsup_summary">Calls and alarms are exempted</string>
+    <string name="gaming_mode_hardware_keys_title">Lock buttons</string>
+    <string name="gaming_mode_hardware_keys_summary">When Gaming mode is turned on, buttons will be locked</string>
+    <string name="gaming_mode_brightness_title">Disable automatic brightness</string>
+    <string name="gaming_mode_brightness_summary">Lock screen brightness when Gaming mode is turned on</string>
+    <string name="gaming_mode_ringer_title">Ringer in Gaming mode</string>
+    <string name="gaming_mode_ringer_off_title">Do not change</string>
+    <string name="gaming_mode_ringer_vibrate_title">Vibrate</string>
+    <string name="gaming_mode_ringer_dnd_title">Do Not Disturb</string>
+    <string name="gaming_mode_ringer_silent_title">Silent</string>
+    <string name="gaming_mode_notifications_title">Gaming mode indication</string>
+    <string name="gaming_mode_notifications_off_title">Disabled</string>
+    <string name="gaming_mode_notifications_notif_title">Show notification</string>
+    <string name="gaming_mode_notifications_toast_title">Show toasts</string>
+    <string name="gaming_mode_notifications_all_title">Show toasts and notification</string>
+    <string name="gaming_mode_dynamic_title">Dynamic mode</string>
+    <string name="gaming_mode_dynamic_summary">Try detecting and adding gaming apps automatically</string>
+    <!--qs tint toggle-->
+    <string name="qs_bg_use_new_tint">QS tint toggle</string>
+    <string name="qs_bg_use_new_tint_summary">Use accent color for qs tile icons and background (Requires systemui reboot)</string>
+    <!-- Horizon light -->
+    <string name="default_string">Default</string>
+    <string name="horizon_light_title">Horizon light</string>
+    <string name="horizon_light_summary">Light ambient edges for pulsing notifications</string>
+    <string name="horizon_light_enabled_title">Show on AOD</string>
+    <string name="aod_disabled">AOD is disabled</string>
+    <string name="horizon_light_enabled_summary">Keep showing horizon light on AOD</string>
+    <string name="horizon_light_hide_aod_title">Hide AOD content</string>
+    <string name="horizon_light_hide_aod_summary">Hide AOD content when edges are lighted</string>
+    <string name="horizon_light_duration_title">Duration</string>
+    <string name="horizon_light_duration_summary">Time it takes for each animation to complete</string>
+    <string name="horizon_light_repeats_title">Repeats</string>
+    <string name="horizon_light_repeats_summary">Amount of times the animation should show\n0 for infinite</string>
+    <string name="horizon_light_timeout_title">Timeout</string>
+    <string name="horizon_light_timeout_forever">Forever</string>
+    <string name="horizon_light_timeout_half_minute">30 seconds</string>
+    <string name="horizon_light_timeout_minute">1 minute</string>
+    <string name="horizon_light_timeout_three_minutes">3 minutes</string>
+    <string name="horizon_light_timeout_five_minutes">5 minutes</string>
+    <string name="horizon_light_timeout_ten_minutes">10 minutes</string>
+    <string name="set_to_zero">Set repeats to 0 to enable</string>
+    <string name="horizon_color_mode_title">Color mode</string>
+    <string name="horizon_color_mode_accent">Accent color</string>
+    <string name="horizon_color_mode_wall">Wallpaper dominant color</string>
+    <string name="horizon_color_mode_notification">Notification icon color</string>
+    <string name="horizon_color_mode_custom">@string/horizon_light_color_title</string>
+    <string name="horizon_light_color_title">Custom color</string>
+    <!-- Oneui -->
+    <string name="enable_oneui">OneUI Settings Actionbar</string>
+    <string name="enable_oneui_summary">Show spacer above settings actionbar for easier use with one hand\nNOTE: restart settings app to see effect</string>
+    <!-- Themes -->
+    <string name="theme_type_title">Sakura themes</string>
+    <string name="theme_type_summary">Select theme</string>
+    <string name="theme_type_light">Light</string>
+    <string name="theme_type_pitch_black">Google Grey</string>
+    <string name="theme_type_solarized_dark">Solarized dark</string>
+    <string name="theme_type_baked_green">Baked Green</string>
+    <string name="theme_type_choco_x">Choco X</string>
+    <string name="theme_type_du_pitchblack">Pitch black</string>
+    <string name="theme_type_material_ocean">Material Ocean</string>
+    <string name="theme_type_style_mizu">Mizu</string>
+    <!-- gvisual mod -->
+    <string name="gvisual_title">Gvisual Mod</string>
+    <string name="rounded_ui_title">Rounded corner</string>
+    <string name="rounded_ui_dialog_title">Select rounded corner model</string>
+    <string name="rounded_style_default">Default</string>
+    <string name="rounded_style_rectangle">Rectangle</string>
+    <string name="rounded_style_large">Large</string>
+    <string name="rounded_style_medium">Medium</string>
+    <string name="statusbar_height_title">Statusbar height</string>
+    <string name="statusbar_height_dialog_title">Select statusbar height model</string>
+    <string name="sb_height_default">Default</string>
+    <string name="sb_height_medium">Medium</string>
+    <string name="sb_height_large">Large</string>
+    <string name="sb_height_extralarge">Extra Large</string>
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
+    <string name="screen_off_animation_summary">Crt and scaled animations for lockscreen</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Volume steps</string>
+    <string name="volume_steps_summary">Customize no. of steps in volume panel</string>
+    <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
+    <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
+    <string name="volume_steps_music_title">Volume steps: Music</string>
+    <string name="volume_steps_notification_title">Volume steps: Notification</string>
+    <string name="volume_steps_ring_title">Volume steps: Ringer</string>
+    <string name="volume_steps_system_title">Volume steps: System</string>
+    <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
+    <string name="volume_steps_reset">Reset</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+</resources>
