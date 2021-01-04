@@ -34,6 +34,15 @@
     <!-- System Gestures -->
     <PreferenceCategory
         android:title="@string/system_gestures">
+
+    <com.sakura.settings.preferences.SecureSettingListPreference
+        android:key="navbar_layout_views"
+        android:title="@string/navbar_layout_title"
+        android:summary="%s"
+        android:entries="@array/navbar_layout_entries"
+        android:entryValues="@array/navbar_layout_values"
+        android:defaultValue="default"
+        android:dependency="navbar_visibility" />
         
     <Preference
         android:key="gesture_settings"

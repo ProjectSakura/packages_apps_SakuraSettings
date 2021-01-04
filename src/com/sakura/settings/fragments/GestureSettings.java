@@ -34,10 +34,17 @@ import android.view.ViewGroup;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
+import com.android.internal.util.sakura.Utils;
+
 import com.android.settings.R;
 
 public class GestureSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String LAYOUT_SETTINGS = "navbar_layout_views";
+
+    private Preference mLayoutSettings;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,6 +52,13 @@ public class GestureSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.sakura_settings_gestures);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mLayoutSettings = (Preference) findPreference(LAYOUT_SETTINGS);
+
+        if (!Utils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
+            prefScreen.removePreference(mLayoutSettings);
+        }
+
     }
 
     @Override
