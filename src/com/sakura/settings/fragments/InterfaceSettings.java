@@ -57,11 +57,13 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
     private static final String PREF_THEME_SWITCH = "theme_switch";
     private static final String PREF_ROUNDED_CORNER = "rounded_ui";
     private static final String PREF_SB_HEIGHT = "statusbar_height";
+    private static final String KEY_SHOW_ROAMING = "roaming_indicator_icon";
 
     private UiModeManager mUiModeManager;
     private ListPreference mThemeSwitch;
     private ListPreference mRoundedUi;
     private ListPreference mSbHeight;
+    private SwitchPreference mShowRoaming;
     private IOverlayManager mOverlayService;
     private IOverlayManager mOverlayManager;
 
@@ -96,6 +98,11 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
         }
         mSbHeight.setSummary(mSbHeight.getEntry());
         mSbHeight.setOnPreferenceChangeListener(this);
+
+        mShowRoaming = (SwitchPreference) findPreference(KEY_SHOW_ROAMING);
+        if (!TelephonyUtils.isVoiceCapable(getActivity())) {
+            prefScreen.removePreference(mShowRoaming);
+        }
 
     }
 
@@ -158,6 +165,8 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = mContext.getContentResolver();
         Settings.System.putIntForUser(resolver,
                 Settings.System.BLUETOOTH_SHOW_BATTERY, 1, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.ROAMING_INDICATOR_ICON, 1, UserHandle.USER_CURRENT);
     }
 
     @Override

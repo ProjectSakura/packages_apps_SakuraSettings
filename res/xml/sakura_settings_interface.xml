@@ -29,8 +29,15 @@
             android:title="@string/volte_icon_title"
             android:summary="@string/volte_icon_summary"
             android:defaultValue="false"/>
-   
-     <!-- bluetooth battery level -->
+
+    <!-- roaming indicator icon -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="roaming_indicator_icon"
+            android:title="@string/roaming_indicator_icon_title"
+            android:summary="@string/roaming_indicator_icon_summary"
+            android:defaultValue="true"/>   
+
+    <!-- bluetooth battery level -->
     <com.sakura.settings.preferences.SystemSettingSwitchPreference
             android:key="bluetooth_show_battery"
             android:title="@string/bluetooth_battery_title"
