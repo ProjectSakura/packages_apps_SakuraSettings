@@ -44,6 +44,12 @@
             android:summary="@string/show_fourg_icon_summary"
             android:defaultValue="false"/>
 
+    <!-- old styles icons-->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="use_old_mobiletype"
+            android:title="@string/old_mobiletype_title"
+            android:summary="@string/old_mobiletype_summary" />
+
     <!-- data disabled icon -->
     <com.sakura.settings.preferences.SystemSettingSwitchPreference
             android:key="data_disabled_icon"

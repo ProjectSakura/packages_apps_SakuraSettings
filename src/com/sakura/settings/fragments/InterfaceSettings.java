@@ -61,6 +61,7 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
     private static final String KEY_SHOW_ROAMING = "roaming_indicator_icon";
     private static final String KEY_SHOW_FOURG = "show_fourg_icon";
     private static final String KEY_SHOW_DATA_DISABLED = "data_disabled_icon";
+    private static final String KEY_USE_OLD_MOBILETYPE = "use_old_mobiletype";
 
     private UiModeManager mUiModeManager;
     private ListPreference mThemeSwitch;
@@ -69,6 +70,7 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mShowRoaming;
     private SwitchPreference mShowFourg;
     private SwitchPreference mDataDisabled;
+    private SwitchPreference mOldMobileType;
 
     private IOverlayManager mOverlayService;
     private IOverlayManager mOverlayManager;
@@ -108,11 +110,13 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
         mShowRoaming = (SwitchPreference) findPreference(KEY_SHOW_ROAMING);
         mShowFourg = (SwitchPreference) findPreference(KEY_SHOW_FOURG);
         mDataDisabled = (SwitchPreference) findPreference(KEY_SHOW_DATA_DISABLED);
+        mOldMobileType = (SwitchPreference) findPreference(KEY_USE_OLD_MOBILETYPE);
 
         if (!TelephonyUtils.isVoiceCapable(getActivity())) {
              prefScreen.removePreference(mShowRoaming);
              prefScreen.removePreference(mShowFourg);
              prefScreen.removePreference(mDataDisabled);
+             prefScreen.removePreference(mOldMobileType);
         }
 
     }
@@ -182,6 +186,8 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
                 Settings.System.SHOW_FOURG_ICON, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.DATA_DISABLED_ICON, 1, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.USE_OLD_MOBILETYPE, 0, UserHandle.USER_CURRENT);
     }
 
     @Override
