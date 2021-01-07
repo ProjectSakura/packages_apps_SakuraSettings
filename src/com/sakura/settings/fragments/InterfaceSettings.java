@@ -45,6 +45,7 @@ import java.util.Objects;
 
 import com.android.internal.util.sakura.ThemesUtils;
 import com.android.internal.util.sakura.Utils;
+import com.sakura.settings.utils.TelephonyUtils;
 
 import static android.os.UserHandle.USER_SYSTEM;
 import android.app.UiModeManager;
@@ -58,12 +59,15 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
     private static final String PREF_ROUNDED_CORNER = "rounded_ui";
     private static final String PREF_SB_HEIGHT = "statusbar_height";
     private static final String KEY_SHOW_ROAMING = "roaming_indicator_icon";
+    private static final String KEY_SHOW_FOURG = "show_fourg_icon";
 
     private UiModeManager mUiModeManager;
     private ListPreference mThemeSwitch;
     private ListPreference mRoundedUi;
     private ListPreference mSbHeight;
     private SwitchPreference mShowRoaming;
+    private SwitchPreference mShowFourg;
+
     private IOverlayManager mOverlayService;
     private IOverlayManager mOverlayManager;
 
@@ -100,8 +104,11 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
         mSbHeight.setOnPreferenceChangeListener(this);
 
         mShowRoaming = (SwitchPreference) findPreference(KEY_SHOW_ROAMING);
+        mShowFourg = (SwitchPreference) findPreference(KEY_SHOW_FOURG);
+
         if (!TelephonyUtils.isVoiceCapable(getActivity())) {
-            prefScreen.removePreference(mShowRoaming);
+             prefScreen.removePreference(mShowRoaming);
+             prefScreen.removePreference(mShowFourg);
         }
 
     }
@@ -167,6 +174,8 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
                 Settings.System.BLUETOOTH_SHOW_BATTERY, 1, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.ROAMING_INDICATOR_ICON, 1, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.SHOW_FOURG_ICON, 0, UserHandle.USER_CURRENT);
     }
 
     @Override
