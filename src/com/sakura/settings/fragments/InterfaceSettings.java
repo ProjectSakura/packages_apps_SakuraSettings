@@ -80,6 +80,7 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.sakura_settings_interface);
         ContentResolver resolver = getActivity().getContentResolver();
+        Context mContext = getActivity().getApplicationContext();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         mUiModeManager = getContext().getSystemService(UiModeManager.class);
@@ -117,6 +118,13 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
              prefScreen.removePreference(mShowFourg);
              prefScreen.removePreference(mDataDisabled);
              prefScreen.removePreference(mOldMobileType);
+        } else {
+            boolean mConfigUseOldMobileType = mContext.getResources().getBoolean(
+                    com.android.internal.R.bool.config_useOldMobileIcons);
+            boolean showing = Settings.System.getIntForUser(resolver,
+                    Settings.System.USE_OLD_MOBILETYPE,
+                    mConfigUseOldMobileType ? 1 : 0, UserHandle.USER_CURRENT) != 0;
+            mOldMobileType.setChecked(showing);
         }
 
     }
@@ -178,6 +186,9 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
 
     public static void reset(Context mContext) {
         ContentResolver resolver = mContext.getContentResolver();
+        boolean mConfigUseOldMobileType = mContext.getResources().getBoolean(
+                com.android.internal.R.bool.config_useOldMobileIcons);
+
         Settings.System.putIntForUser(resolver,
                 Settings.System.BLUETOOTH_SHOW_BATTERY, 1, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
@@ -187,7 +198,7 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
         Settings.System.putIntForUser(resolver,
                 Settings.System.DATA_DISABLED_ICON, 1, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
-                Settings.System.USE_OLD_MOBILETYPE, 0, UserHandle.USER_CURRENT);
+                Settings.System.USE_OLD_MOBILETYPE, mConfigUseOldMobileType ? 1 : 0, UserHandle.USER_CURRENT);
     }
 
     @Override
