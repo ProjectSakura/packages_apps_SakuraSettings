@@ -170,7 +170,8 @@
 <PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_xiaomi" >
-        
+    
+    <!--Mi -->    
     <Preference
         android:title="@string/device_tucana"
         android:summary="@string/device_tucana_description"
@@ -179,6 +180,34 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/alexander_baransky496" />
     </Preference>
+
+    <!--Poco-->
+    <Preference
+        android:title="@string/device_phoenix"
+        android:summary="@string/device_phoenix_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Dronacharyaa" />
+    </Preference> 
+
+    <!-- Redmi -->
+    <Preference
+        android:title="@string/device_sakura"
+        android:summary="@string/device_sakura_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Darthinperator21" />
+    </Preference> 
+    <Preference
+        android:title="@string/device_whyred"
+        android:summary="@string/device_whyred_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Darkstar085" />
+    </Preference> 
     <Preference
         android:title="@string/device_violet"
         android:summary="@string/device_violet_description"
