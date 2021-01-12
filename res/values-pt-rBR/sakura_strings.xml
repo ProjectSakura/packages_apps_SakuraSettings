@@ -50,11 +50,11 @@
     <string name="device_cph1859_description">CPH1859\nCyberJalagam</string>
     <!-- Lagsung -->
     <string name="device_samsung">Samsung</string>
-    <string name="device_a30">Galáxia A30</string>
+    <string name="device_a30">Galaxy A30</string>
     <string name="device_a30_description">a30\nHaridhayal</string>
-    <string name="device_a40">Galáxia A40</string>
+    <string name="device_a40">Galaxy A40</string>
     <string name="device_a40_description">a40\nHaridhayal</string>
-    <string name="device_m20lte">Galáxia M20</string>
+    <string name="device_m20lte">Galaxy M20</string>
     <string name="device_m20lte_description">m20lte\nHaridhayal</string>
     <string name="device_m30lte">Galaxy M30</string>
     <string name="device_m30lte_description">m30lte\nHaridhayal</string>
@@ -90,14 +90,14 @@
     <string name="secure_lockscreen_settings">Tela de bloqueio segura</string>
     <string name="headsup_settings">Avisos do sistema</string>
     <string name="horizon_light_settings">Notificações AOD</string>
-    <string name="misc_qs_settings">Opções diversas do QS</string>
+    <string name="misc_qs_settings">Opções diversas da QS</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reiniciar</string>
     <string name="cancel">Cancelar</string>
     <string name="save">Salvar</string>
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Selecionador de Cores</string>
+    <string name="dialog_color_picker">Seletor de Cores</string>
     <string name="press_color_to_apply">Selecione a cor abaixo para aplicar</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
@@ -137,7 +137,7 @@
     <string name="qs_columns_rows_category_title">Colunas e linhas das QS</string>
     <string name="qs_rows_columns_title">Linhas e colunas das QS</string>
     <string name="qs_rows_portrait_title">Linhas (Retrato)</string>
-    <string name="qs_rows_landscape_title">Rows (Landscape)</string>
+    <string name="qs_rows_landscape_title">Linhas (Paisagem)</string>
     <string name="qs_columns_portrait_title">Colunas (Retrato)</string>
     <string name="qs_columns_landscape_title">Colunas (Paisagem)</string>
     <!--QS tile title visibility-->
@@ -150,7 +150,7 @@
     <string name="qs_panel_alpha_title">Opacidade das Configurações Rápidas</string>
     <string name="qs_panel_alpha_summary">Configurar a opacidade do plano de fundo</string>
     <!-- Custom headers -->
-    <string name="notification_title">Painel de Notificação</string>
+    <string name="notification_title">Painel de Notificações</string>
     <string name="status_bar_custom_header_title">Habilitado</string>
     <string name="daylight_header_pack_title">Coleção de imagens no cabeçalho</string>
     <string name="status_bar_custom_header_shadow_title">Sombra da imagem do cabeçalho</string>
@@ -179,12 +179,12 @@
     <string name="task_open_title">Animação ao abrir tarefa</string>
     <string name="task_open_behind_title">Animação ao abrir tarefa atrás</string>
     <string name="task_close_title">Animação ao fechar tarefa</string>
-    <string name="task_move_to_front_title">Animação de mover para frente</string>
-    <string name="task_move_to_back_title">Animação de mover para trás</string>
+    <string name="task_move_to_front_title">Animação ao mover para frente</string>
+    <string name="task_move_to_back_title">Animação ao mover para trás</string>
     <string name="wallpaper_open_title">Animação ao abrir papel de parede</string>
     <string name="wallpaper_close_title">Animação ao fechar papel de parede</string>
-    <string name="wallpaper_intra_open_title">Animação de abrir intra papel de parede</string>
-    <string name="wallpaper_intra_close_title">Animação de fechar intra papel de parede</string>
+    <string name="wallpaper_intra_open_title">Animação ao abrir intra papel de parede</string>
+    <string name="wallpaper_intra_close_title">Animação ao fechar intra papel de parede</string>
     <string name="animation_duration_title">Duração da animação</string>
     <string name="title_animation_no_override">Evitar sobreposições de aplicativos</string>
     <string name="summary_animation_no_override">Impedir que aplicativos substituam transições</string>
@@ -220,7 +220,7 @@
     <!-- AOSP Gestures -->
     <string name="system_gestures">Gestos do sistema</string>
     <string name="aosp_gesture_title">Configurações de gestos AOSP</string>
-    <string name="aosp_gesture_summary">Gestos AOSP, 2 botões, e botões de navegação e mais...</string>
+    <string name="aosp_gesture_summary">Gestos AOSP, 2 botões, e botões de navegação e mais.</string>
     <!--dashboard icons-->
     <string name="theming_settings_dashboard_icons_title">Configurações dos ícones do painel</string>
     <string name="theming_settings_dashboard_icons_default2">Fundo padrão</string>
@@ -288,7 +288,7 @@
     <string name="gaming_mode_dynamic_summary">Tentar detectar e adicionar jogos automaticamente</string>
     <!--qs tint toggle-->
     <string name="qs_bg_use_new_tint">Tonalidade das QS</string>
-    <string name="qs_bg_use_new_tint_summary">Usar cor de acento para ícones e fundo das qs (Requer reinicialização do systemui)</string>
+    <string name="qs_bg_use_new_tint_summary">Usar cor de destaque para ícones e fundo das QS (Requer reinicialização do systemui)</string>
     <!-- Horizon light -->
     <string name="default_string">Padrão</string>
     <string name="horizon_light_title">Luz Horizontal</string>
@@ -297,7 +297,7 @@
     <string name="aod_disabled">AOD está desativado</string>
     <string name="horizon_light_enabled_summary">Continuar exibindo luz do horizonte em AOD</string>
     <string name="horizon_light_hide_aod_title">Esconder conteúdo no AOD</string>
-    <string name="horizon_light_hide_aod_summary">Ocultar conteúdo AOD quando as bordas são carregadas</string>
+    <string name="horizon_light_hide_aod_summary">Ocultar conteúdo AOD quando as bordas acenderem</string>
     <string name="horizon_light_duration_title">Duração</string>
     <string name="horizon_light_duration_summary">O tempo que leva para cada animação ser concluída</string>
     <string name="horizon_light_repeats_title">Repetições</string>
