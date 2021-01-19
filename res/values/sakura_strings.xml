@@ -72,6 +72,8 @@
     <!--Mi-->
     <string name="device_tucana">Mi Note 10</string>
     <string name="device_tucana_description">tucana\nAlexander</string>
+    <string name="device_tissot">Mi A1</string>
+    <string name="device_tissot_description">tissot\nRoger W.</string>
 
     <!--poco-->
     <string name="device_phoenix">Poco X2</string>
