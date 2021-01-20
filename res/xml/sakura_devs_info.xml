@@ -180,6 +180,22 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/alexander_baransky496" />
     </Preference>
+    <Preference
+        android:title="@string/device_wayne"
+        android:summary="@string/device_wayne_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Markdarkness" />
+    </Preference>
+    <Preference
+        android:title="@string/device_tissot"
+        android:summary="@string/device_tissot_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Lokodetoddyn" />
+    </Preference>
 
     <!--Poco-->
     <Preference
