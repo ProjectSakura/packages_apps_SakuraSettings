@@ -111,6 +111,14 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/The_real_Deepakjr" />
     </Preference>
+    <Preference
+        android:title="@string/device_oneplus6"
+        android:summary="@string/device_oneplus6_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/zahidmgsk" />
+    </Preference>    
 </PreferenceCategory>
 
 <!-- Realmeme -->
@@ -133,32 +141,16 @@
         android:key="maintainer"
         android:title="@string/device_samsung" >
     <Preference
-        android:title="@string/device_a30"
-        android:summary="@string/device_a30_description"
+        android:title="@string/device_a10"
+        android:summary="@string/device_a10_description"
         android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Haridhayal" />
-    </Preference>
-    <Preference
-        android:title="@string/device_a40"
-        android:summary="@string/device_a40_description"
-        android:icon="@drawable/ic_devs_phone">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Haridhayal" />
+            android:data="https://t.me/chatur27" />
     </Preference>
     <Preference
         android:title="@string/device_m20lte"
         android:summary="@string/device_m20lte_description"
-        android:icon="@drawable/ic_devs_phone">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Haridhayal" />
-    </Preference>
-    <Preference
-        android:title="@string/device_m30lte"
-        android:summary="@string/device_m30lte_description"
         android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
@@ -205,9 +197,25 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/Dronacharyaa" />
-    </Preference> 
+    </Preference>
+    <Preference
+        android:title="@string/device_surya"
+        android:summary="@string/device_surya_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/nubpeeps01" />
+    </Preference>     
 
     <!-- Redmi -->
+    <Preference
+        android:title="@string/device_davinci"
+        android:summary="@string/device_davinci_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Gabriel260BR" />
+    </Preference>     
     <Preference
         android:title="@string/device_sakura"
         android:summary="@string/device_sakura_description"
@@ -231,14 +239,6 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/Wally_West_The_Flash" />
-    </Preference> 
-    <Preference
-        android:title="@string/device_begonia"
-        android:summary="@string/device_begonia_description"
-        android:icon="@drawable/ic_devs_phone">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/himanshu1802" />
     </Preference>
     
 </PreferenceCategory>

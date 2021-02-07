@@ -49,6 +49,8 @@
     <string name="device_oneplus">OnePlus</string>
     <string name="device_oneplus3">OnePlus 3 and 3T </string>
     <string name="device_oneplus3_description">oneplus3\nDeepak Jr</string> 
+    <string name="device_oneplus6">OnePlus 6 </string>
+    <string name="device_oneplus6_description">enchilada\nZahidmgsk</string>     
 
     <!-- Realmeme -->
     <string name="device_realme">Realme</string>
@@ -57,14 +59,10 @@
     
     <!-- Lagsung -->
     <string name="device_samsung">Samsung</string>
-    <string name="device_a30">Galaxy A30</string>
-    <string name="device_a30_description">a30\nHaridhayal</string>
-    <string name="device_a40">Galaxy A40</string>
-    <string name="device_a40_description">a40\nHaridhayal</string>
+    <string name="device_a10">Galaxy A10</string>
+    <string name="device_a10_description">a10\nchatur</string>
     <string name="device_m20lte">Galaxy M20</string>
-    <string name="device_m20lte_description">m20lte\nHaridhayal</string>
-    <string name="device_m30lte">Galaxy M30</string>
-    <string name="device_m30lte_description">m30lte\nHaridhayal</string>	
+    <string name="device_m20lte_description">m20lte\nHaridhayal</string>	
 
     <!-- chinese spy -->
     <string name="device_xiaomi">Xiaomi</string>
@@ -80,16 +78,18 @@
     <!--poco-->
     <string name="device_phoenix">Poco X2</string>
     <string name="device_phoenix_description">phoenix\nShivam</string>
+    <string name="device_surya">Poco X3</string>
+    <string name="device_surya_description">surya\nAgus</string>    
 
     <!--redmi-->
+    <string name="device_davinci">Redmi K20</string>
+    <string name="device_davinci_description">davinci\nGabriel</string>      
     <string name="device_sakura">Redmi 6 Pro</string>
     <string name="device_sakura_description">sakura\nAlex</string>     
     <string name="device_whyred">Redmi Note 5 Pro</string>
     <string name="device_whyred_description">whyred\nDarkstar</string>       
     <string name="device_violet">Redmi Note 7 Pro</string>
-    <string name="device_violet_description">violet\nPrajwal and Nitish</string>
-    <string name="device_begonia">Redmi Note 8 Pro</string>
-    <string name="device_begonia_description">begonia\nHimanshu</string>    
+    <string name="device_violet_description">violet\nPrajwal and Nitish</string>  
 	
     <!-- Categories -->
     <string name="gestures_title">Gestures</string>
