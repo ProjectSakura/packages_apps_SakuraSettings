@@ -282,8 +282,8 @@
     <string name="traffic_statusbar">Statusbar</string>
     <string name="traffic_expanded_statusbar">Expanded Header</string>
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
-    <string name="network_traffic_arrow">Hide arrows</string>
-    <string name="network_traffic_arrow_summary">Hide the network traffic indicator arrows</string>
+    <string name="network_traffic_arrow">Show arrows</string>
+    <string name="network_traffic_arrow_summary">Show the network traffic indicator arrows</string>
     <string name="network_traffic_type">Select net activity type</string>
     <string name="show_network_traffic_combined">Combined (Upload + Download)</string>
     <string name="show_network_traffic_dynamic">Dynamic</string>
@@ -292,7 +292,7 @@
     <string name="show_network_traffic_all">Both</string>
     <string name="network_traffic_layout">Activity layout</string>
     <string name="network_traffic_layout_h">Horizontal</string>
-    <string name="network_traffic_layout_v">Verticle</string>
+    <string name="network_traffic_layout_v">Vertical</string>
     <string name="nettraf_font_size">Single net font size</string>
 
     <!-- volte icon toggle -->
