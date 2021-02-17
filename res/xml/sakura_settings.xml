@@ -71,13 +71,6 @@
             android:fragment="com.sakura.settings.fragments.GestureSettings"
             android:icon="@drawable/ic_settings_gest"/>
 
-        <!-- Power Menu
-        <com.sakura.settings.preferences.CardviewPreference
-            android:key="powermenu__category"
-            android:title="@string/powermenu_title"
-            android:fragment="com.sakura.settings.fragments.PowermenuSettings"
-            android:icon="@drawable/ic_settings_powermenu"/> -->
-
         <!-- Notifications -->
         <com.sakura.settings.preferences.CardviewPreference
             android:key="notifications_category"
@@ -85,6 +78,14 @@
             android:summary="@string/sakura_notifications_summary_title"
             android:fragment="com.sakura.settings.fragments.NotificationSettings"
             android:icon="@drawable/ic_settings_notifications"/>
+
+        <!-- LineageParts -->
+        <com.sakura.settings.preferences.CardviewPreference
+            android:key="parts_category"
+            android:title="@string/parts_title"
+            android:summary="@string/sakura_parts_summary_title"
+            android:fragment="com.sakura.settings.fragments.PartsSettings"
+            android:icon="@drawable/ic_settings_parts"/>
 
         <!-- Misc -->
         <com.sakura.settings.preferences.CardviewPreference
