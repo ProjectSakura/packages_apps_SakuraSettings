@@ -93,22 +93,28 @@
 	
     <!-- Categories -->
     <string name="gestures_title">Gestures</string>
-    <string name="sakura_gesture_summary_title">Three finger swipe</string>    
+    <string name="sakura_gesture_summary_title">Three finger swipe, layouts and AOSP gestures</string>    
     <string name="lockscreen_title">Lock Screen</string>
-    <string name="sakura_lockscreen_summary_title">secure lockscreen</string>        
+    <string name="sakura_lockscreen_summary_title">lockscreen charging and secure lockscreen</string>        
     <string name="misc_title">Miscellaneous</string>
     <string name="sakura_misc_summary_title">Gaming mode and misc options</string>        
+    <string name="parts_title">LineageParts</string>
+    <string name="sakura_parts_summary_title">statusbar, buttons and other lineage settings</string>
     <string name="quicksettings_title">Quick Settings</string>
     <string name="sakura_quicksettings_summary_title">Tile title, header images, opacity</string>        
     <string name="interface_title">Interface</string>
-    <string name="sakura_interface_summary_title">Theming, battery bar</string>            
+    <string name="sakura_interface_summary_title">Theming, battery bar and network meter</string>            
     <string name="animation_title">Animations</string>
     <string name="sakura_animation_summary_title">Opening and closing animations</string>        
     <string name="notifications_title">Notifications</string>
-    <string name="sakura_notifications_summary_title">Heads up</string>        
+    <string name="sakura_notifications_summary_title">Heads up, horizon lights, vibration options</string>        
     <string name="sakura_updater_summary_title">OTA updates</string>        
     <string name="updater_title">Sakura Updates</string>
-    
+    <string name="buttons_settings">Buttons settings</string>
+    <string name="buttons_settings_summary">LineageOS buttons settings</string>
+    <string name="statusbar_settings">Statusbar settings</string>
+    <string name="statusbar_settings_summary">LineageOS statusbar tweaks</string>    
+
     <!-- sub categories -->
     <string name="themes_ui_settings">Themes and UI settings</string>
     <string name="misc_interface_settings">Misc UI settings</string>
