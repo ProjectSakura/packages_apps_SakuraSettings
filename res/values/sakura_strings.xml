@@ -68,6 +68,8 @@
     <string name="device_xiaomi">Xiaomi</string>
 
     <!--Mi-->
+    <string name="device_gauguin">Mi 10i 5G | Mi 10T Lite</string>
+    <string name="device_gauguin_description">gauguin\nPrajwal and Nitish</string>
     <string name="device_tucana">Mi Note 10</string>
     <string name="device_tucana_description">tucana\nAlexander</string>
     <string name="device_wayne">Mi 6X</string>
@@ -89,7 +91,7 @@
     <string name="device_whyred">Redmi Note 5 Pro</string>
     <string name="device_whyred_description">whyred\nDarkstar</string>       
     <string name="device_violet">Redmi Note 7 Pro</string>
-    <string name="device_violet_description">violet\nPrajwal and Nitish</string>  
+    <string name="device_violet_description">violet\nSpicyDoughnut</string>  
 	
     <!-- Categories -->
     <string name="gestures_title">Gestures</string>
