@@ -163,7 +163,15 @@
         android:key="maintainer"
         android:title="@string/device_xiaomi" >
     
-    <!--Mi -->    
+    <!--Mi -->   
+    <Preference
+        android:title="@string/device_gauguin"
+        android:summary="@string/device_gauguin_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Wally_West_The_Flash" />
+    </Preference> 
     <Preference
         android:title="@string/device_tucana"
         android:summary="@string/device_tucana_description"
