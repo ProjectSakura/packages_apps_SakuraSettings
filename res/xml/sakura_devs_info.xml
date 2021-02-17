@@ -238,7 +238,7 @@
         android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Wally_West_The_Flash" />
+            android:data="https://t.me/spicydoughnut" />
     </Preference>
     
 </PreferenceCategory>
