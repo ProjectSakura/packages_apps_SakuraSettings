@@ -37,6 +37,13 @@
         android:summary="@string/less_boring_heads_up_summary"
         android:defaultValue="false" />
 
+    <!-- notification sound suppression -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+        android:key="notification_sound_vib_screen_on"
+        android:title="@string/notification_sound_vib_screen_on_title"
+        android:summary="@string/notification_sound_vib_screen_on_summary"
+        android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <!-- Horizon Light -->
