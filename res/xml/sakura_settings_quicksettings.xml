@@ -53,6 +53,14 @@
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
 
+     <!-- qs media player -->
+     <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_media_player"
+            android:title="@string/qs_media_player_title"
+            android:summaryOn="@string/qs_media_player_summary_on"
+            android:summaryOff="@string/qs_media_player_summary_off"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
      <!--QS rows and coloums -->
