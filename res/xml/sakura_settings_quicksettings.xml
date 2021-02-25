@@ -37,7 +37,7 @@
             android:key="qs_panel_bg_use_new_tint"
             android:title="@string/qs_bg_use_new_tint"
             android:summary="@string/qs_bg_use_new_tint_summary"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
 
      <!--QS tile visibility -->
      <com.sakura.settings.preferences.SystemSettingSwitchPreference
@@ -60,6 +60,14 @@
             android:summaryOn="@string/qs_media_player_summary_on"
             android:summaryOff="@string/qs_media_player_summary_off"
             android:defaultValue="false" />
+
+    <!-- QS Header data uasge -->
+    <com.sakura.settings.preferences.SystemSettingListPreference
+        android:key="qs_datausage"
+        android:title="@string/qs_datausage_title"
+        android:entries="@array/qs_datausage_entries"
+        android:entryValues="@array/qs_datausage_values"
+        android:defaultValue="1" />
 
     </PreferenceCategory>
 

@@ -82,13 +82,13 @@
             android:key="settings_spacer" 
             android:title="@string/enable_oneui" 
             android:summary="@string/enable_oneui_summary" 
-            android:defaultValue="true" />
+            android:defaultValue="false" />
 
     <!-- Themes -->
     <ListPreference
             android:key="theme_switch"
             android:title="@string/theme_type_title"
-	        android:summary="%s"
+	    android:summary="%s"
             android:dialogTitle="@string/theme_type_summary"
             android:entries="@array/theme_type_titles"
             android:entryValues="@array/theme_type_values"
