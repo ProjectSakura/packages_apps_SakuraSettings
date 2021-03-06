@@ -134,6 +134,14 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/CyberJalagam" />
     </Preference>
+    <Preference
+        android:title="@string/device_rmx2001"
+        android:summary="@string/device_rmx2001_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/tlas01" />
+    </Preference>
 </PreferenceCategory>
 
 <!--Lagsung-->
@@ -146,7 +154,15 @@
         android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/chatur27" />
+            android:data="https://t.me/chatur2709" />
+    </Preference>
+    <Preference
+        android:title="@string/device_j4prime"
+        android:summary="@string/device_j4prime_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Gabriel260BR" />
     </Preference>
     <Preference
         android:title="@string/device_m20lte"

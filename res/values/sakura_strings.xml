@@ -56,11 +56,15 @@
     <string name="device_realme">Realme</string>
     <string name="device_cph1859">Realme 1 </string>
     <string name="device_cph1859_description">CPH1859\nCyberJalagam</string> 
+    <string name="device_rmx2001">Realme 6 </string>
+    <string name="device_rmx2001_description">RMX2001\nTanmay</string>
     
     <!-- Lagsung -->
     <string name="device_samsung">Samsung</string>
     <string name="device_a10">Galaxy A10</string>
     <string name="device_a10_description">a10\nchatur</string>
+    <string name="device_j4prime">Galaxy J4Prime LTE</string>
+    <string name="device_j4prime_description">j4primelte\nGabriel</string>
     <string name="device_m20lte">Galaxy M20</string>
     <string name="device_m20lte_description">m20lte\nHaridhayal</string>	
 
