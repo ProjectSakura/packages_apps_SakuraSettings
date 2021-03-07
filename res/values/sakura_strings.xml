@@ -68,6 +68,10 @@
     <string name="device_m20lte">Galaxy M20</string>
     <string name="device_m20lte_description">m20lte\nHaridhayal</string>	
 
+    <!--Gayzu-->
+    <string name="device_m1882">Meizu 16th</string>
+    <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
+
     <!-- chinese spy -->
     <string name="device_xiaomi">Xiaomi</string>
 
