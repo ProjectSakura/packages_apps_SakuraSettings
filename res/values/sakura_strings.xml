@@ -81,6 +81,10 @@
     <string name="device_tissot">Mi A1</string>
     <string name="device_tissot_description">tissot\nRoger W.</string>
 
+    <!--Gayzu-->
+    <string name="device_m1882">Meizu 16th</string>
+    <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
+
     <!--poco-->
     <string name="device_phoenix">Poco X2</string>
     <string name="device_phoenix_description">phoenix\nShivam</string>
