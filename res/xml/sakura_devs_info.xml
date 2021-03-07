@@ -242,7 +242,7 @@
         android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/nubpeeps01" />
+            android:data="https://t.me/UsingTheName" />
     </Preference>     
 
     <!-- Redmi -->

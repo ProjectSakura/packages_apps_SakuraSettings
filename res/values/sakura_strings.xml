@@ -89,7 +89,7 @@
     <string name="device_phoenix">Poco X2</string>
     <string name="device_phoenix_description">phoenix\nShivam</string>
     <string name="device_surya">Poco X3</string>
-    <string name="device_surya_description">surya\nAgus</string>    
+    <string name="device_surya_description">surya\nArmSM</string>    
 
     <!--redmi-->
     <string name="device_davinci">Redmi K20</string>
