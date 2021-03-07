@@ -68,6 +68,11 @@
     <string name="device_m20lte">Galaxy M20</string>
     <string name="device_m20lte_description">m20lte\nHaridhayal</string>	
 
+    <!--Gayzu-->
+    <string name="device_meizu">Meizu</string>
+    <string name="device_m1882">Meizu 16th</string>
+    <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
+
     <!-- chinese spy -->
     <string name="device_xiaomi">Xiaomi</string>
 
@@ -85,7 +90,7 @@
     <string name="device_phoenix">Poco X2</string>
     <string name="device_phoenix_description">phoenix\nShivam</string>
     <string name="device_surya">Poco X3</string>
-    <string name="device_surya_description">surya\nAgus</string>    
+    <string name="device_surya_description">surya\nArmSM and Agus</string>    
 
     <!--redmi-->
     <string name="device_davinci">Redmi K20</string>
