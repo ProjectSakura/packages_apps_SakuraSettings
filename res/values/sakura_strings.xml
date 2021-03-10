@@ -63,6 +63,8 @@
     <string name="device_samsung">Samsung</string>
     <string name="device_a10">Galaxy A10</string>
     <string name="device_a10_description">a10\nchatur</string>
+    <string name="device_a20">Galaxy A20</string>
+    <string name="device_a20_description">a20\nchatur</string>
     <string name="device_j4prime">Galaxy J4Prime LTE</string>
     <string name="device_j4prime_description">j4primelte\nGabriel</string>
     <string name="device_m20lte">Galaxy M20</string>

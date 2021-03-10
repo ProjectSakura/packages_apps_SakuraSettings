@@ -157,6 +157,14 @@
             android:data="https://t.me/chatur2709" />
     </Preference>
     <Preference
+        android:title="@string/device_a20"
+        android:summary="@string/device_a20_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/chatur2709" />
+    </Preference>
+    <Preference
         android:title="@string/device_j4prime"
         android:summary="@string/device_j4prime_description"
         android:icon="@drawable/ic_devs_phone">
