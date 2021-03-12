@@ -39,13 +39,13 @@
             android:fragment="com.sakura.settings.fragments.InterfaceSettings" 
             android:icon="@drawable/ic_settings_ui"/>
                
-        <!-- Animation -->
+        <!-- Animation
         <com.sakura.settings.preferences.CardviewPreference
             android:key="animations_category" 
             android:title="@string/animation_title" 
             android:summary="@string/sakura_animation_summary_title"
             android:fragment="com.sakura.settings.fragments.Animations" 
-            android:icon="@drawable/ic_settings_animations"/>
+            android:icon="@drawable/ic_settings_animations"/> -->
 
         <!-- Quick Settings panel -->
         <com.sakura.settings.preferences.CardviewPreference

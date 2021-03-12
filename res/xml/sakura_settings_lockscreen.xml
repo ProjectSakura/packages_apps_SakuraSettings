@@ -25,8 +25,8 @@
         
     <!--lockscreen charging info-->
     <com.sakura.settings.preferences.SystemSettingSwitchPreference
-   	           android:key="lockscreen_battery_info"
-	           android:title="@string/lockscreen_battery_info_title"
+   	       android:key="lockscreen_battery_info"
+	       android:title="@string/lockscreen_battery_info_title"
                android:summary="@string/lockscreen_battery_info_summary"
                android:defaultValue="true" />
 
@@ -35,6 +35,20 @@
             android:title="@string/weather_title"
             android:summary="@string/weather_summary"
             android:fragment="com.sakura.settings.fragments.OmniJawsSettings" />
+
+    </PreferenceCategory>
+
+    <!-- Screen off animations -->
+    <PreferenceCategory
+        android:title="@string/screen_off_animation_title">
+
+    <com.sakura.settings.preferences.SystemSettingListPreference
+        android:key="screen_off_animation"
+        android:title="@string/screen_off_animation_title"
+        android:entries="@array/screen_off_animation_entries"
+        android:entryValues="@array/screen_off_animation_values"
+        android:summary="@string/screen_off_animation_summary"
+        android:defaultValue="0" />
 
     </PreferenceCategory>
 
