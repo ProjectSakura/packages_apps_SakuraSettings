@@ -74,6 +74,8 @@
     <string name="device_meizu">Meizu</string>
     <string name="device_m1882">Meizu 16th</string>
     <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
+    <string name="device_m1892">Meizu 16th Plus</string>
+    <string name="device_m1892_description">m1892\nAbdibekov Dauren</string>
 
     <!-- chinese spy -->
     <string name="device_xiaomi">Xiaomi</string>

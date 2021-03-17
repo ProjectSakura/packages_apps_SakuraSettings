@@ -183,10 +183,10 @@
 </PreferenceCategory>
 
 <!--Gayzu --> 
-<PreferenceCategory> 
+<PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_meizu" > 
-    <Preference>
+    <Preference
         android:title="@string/device_m1882"
         android:summary="@string/device_m1882_description"
         android:icon="@drawable/ic_devs_phone">
@@ -194,6 +194,15 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/THDAS" />
     </Preference>
+    <Preference 
+        android:title="@string/device_m1892"
+        android:summary="@string/device_m1892_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/THDAS" />
+    </Preference>
+
 </PreferenceCategory>
 
 <!-- Chinese Spy -->
