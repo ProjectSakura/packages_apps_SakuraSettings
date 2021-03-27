@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright © 2020-21 Project Sakura
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="sakura_settings_title">Configurări Sakura</string>
+    <string name="sakura_dashboard_summary">Să aducem primăvară pentru tine.</string>
+    <!-- ROM Info -->
+    <string name="sakura_about_info">Despre proiect</string>
+    <string name="sakura_about_info_summary_title">Despre echipă</string>
+    <string name="sakura_about_info_summary">Un sistem de operare Lineage OS. Unicul său scop este să ofere o platformă care este alimentată de Lineage și este mai personalizabilă decât Lineage.</string>
+    <!-- Dev Info -->
+    <string name="devs_header">Dezvoltatori</string>
+    <string name="dev_1">LordShenron</string>
+    <string name="dev1_description">Fondator/Dezvoltator</string>
+    <string name="dev_3">Arun Teltia</string>
+    <string name="dev3_description">Dezvoltator Web</string>
+    <!-- Maintainer Info -->
+    <string name="maintainers_header">Întreținători</string>
+    <string name="maintainers_header_summary">Aceștia sunt întreținătorii dispozitivelor oficiale...</string>
+    <!-- Asus -->
+    <string name="device_asus">Asus</string>
+    <string name="device_X00T">ZenFone Max Pro M1</string>
+    <string name="device_X00T_description">X00T\nShen</string>
+    <!-- Dead LeEco -->
+    <string name="device_leeco">LeEco</string>
+    <string name="device_s2">LeEco Le 2 </string>
+    <string name="device_s2_description">S2\nCakesTwix</string>
+    <!-- No more flagship killer -->
+    <string name="device_oneplus">OnePlus</string>
+    <string name="device_oneplus3">OnePlus 3 și 3T </string>
+    <string name="device_oneplus3_description">oneplus3\nDeepak Jr</string>
+    <string name="device_oneplus6">OnePlus 6 </string>
+    <string name="device_oneplus6_description">enchilada\neduardo</string>
+    <!-- Realmeme -->
+    <string name="device_realme">Realme</string>
+    <string name="device_cph1859">Realme 1 </string>
+    <string name="device_cph1859_description">CPH1859\nCyberJalagam</string>
+    <string name="device_rmx2001">Realme 6 </string>
+    <string name="device_rmx2001_description">RMX2001\nTanmay</string>
+    <!-- Lagsung -->
+    <string name="device_samsung">Samsung</string>
+    <string name="device_a10">Galaxy A10</string>
+    <string name="device_a10_description">a10\nchatur</string>
+    <string name="device_a20">Galaxy A20</string>
+    <string name="device_a20_description">a10\nchatur</string>
+    <string name="device_j4prime">Galaxy J4Prime LTE</string>
+    <string name="device_j4prime_description">j4primelte\nGabriel</string>
+    <string name="device_m20lte">Galaxy M20</string>
+    <string name="device_m20lte_description">m20lte\nHaridhayal</string>
+    <!--Gayzu-->
+    <string name="device_meizu">Meizu</string>
+    <string name="device_m1882">Meizu 16th</string>
+    <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
+    <string name="device_m1892">Meizu 16th Plus</string>
+    <string name="device_m1892_description">m1892\nAbdibekov Dauren</string>
+    <!-- chinese spy -->
+    <string name="device_xiaomi">Xiaomi</string>
+    <!--Mi-->
+    <string name="device_gauguin">Mi 10i 5G | Mi 10T Lite</string>
+    <string name="device_gauguin_description">gauguin\nPrajwal și Nitish</string>
+    <string name="device_tucana">Mi Note 10</string>
+    <string name="device_tucana_description">tucana\nAlexander</string>
+    <string name="device_wayne">Mi 6X</string>
+    <string name="device_wayne_description">wayne\nMarcos Almeida</string>
+    <string name="device_tissot">Mi A1</string>
+    <string name="device_tissot_description">tissot\nRoger W.</string>
+    <!--poco-->
+    <string name="device_phoenix">Poco X2</string>
+    <string name="device_phoenix_description">phoenix\nShivam</string>
+    <string name="device_surya">Poco X3</string>
+    <string name="device_surya_description">surya\nArmSM și Agus</string>
+    <!--redmi-->
+    <string name="device_davinci">Redmi K20</string>
+    <string name="device_davinci_description">davinci\nGabriel</string>
+    <string name="device_sakura">Redmi 6 Pro</string>
+    <string name="device_sakura_description">sakura\nAlex</string>
+    <string name="device_whyred">Redmi Note 5 Pro</string>
+    <string name="device_whyred_description">whyred\nDarkstar</string>
+    <string name="device_violet">Redmi Note 7 Pro</string>
+    <string name="device_violet_description">violet\nSpicyDoughnut</string>
+    <!-- Categories -->
+    <string name="gestures_title">Gesturi</string>
+    <string name="sakura_gesture_summary_title">Glisare cu 3 degete, machete și gesturi AOSP</string>
+    <string name="lockscreen_title">Ecran de blocare</string>
+    <string name="sakura_lockscreen_summary_title">încărcare ecran de blocare și ecran de blocare securizat</string>
+    <string name="misc_title">Diverse</string>
+    <string name="sakura_misc_summary_title">Mod de joc și alte opțiuni</string>
+    <string name="parts_title">LineageParts</string>
+    <string name="sakura_parts_summary_title">bara de stare, butoane și alte setări lineage</string>
+    <string name="quicksettings_title">Setări Rapide</string>
+    <string name="sakura_quicksettings_summary_title">Titlu tilă, imagini antet, opacitate</string>
+    <string name="interface_title">Interfață</string>
+    <string name="sakura_interface_summary_title">Teme, bara de baterie și contor de rețea</string>
+    <string name="animation_title">Animații</string>
+    <string name="sakura_animation_summary_title">Animații de deschidere și închidere</string>
+    <string name="notifications_title">Notificări</string>
+    <string name="sakura_notifications_summary_title">Atenționări, lumini orizontale, opțiuni de vibrații</string>
+    <string name="sakura_updater_summary_title">Actualizări OTA</string>
+    <string name="updater_title">Actualizări Sakura</string>
+    <string name="buttons_settings">Setări butoane</string>
+    <string name="buttons_settings_summary">Setări butoane LineageOS</string>
+    <string name="statusbar_settings">Setări bară de stare</string>
+    <string name="statusbar_settings_summary">Ajustări bară de stare LineageOS</string>
+    <!-- sub categories -->
+    <string name="themes_ui_settings">Setări pentru Teme şi UI</string>
+    <string name="misc_interface_settings">Setări suplimentare UI</string>
+    <string name="lockscreen_ui_settings">Interfață ecran de blocare</string>
+    <string name="secure_lockscreen_settings">Ecran de blocare securizat</string>
+    <string name="headsup_settings">Căşti de sistem</string>
+    <string name="horizon_light_settings">Notificări AOD</string>
+    <string name="misc_qs_settings">Opțiuni diverse QS</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Resetare</string>
+    <string name="cancel">Anulează</string>
+    <string name="save">Salvează</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Selectorul de culoare</string>
+    <string name="press_color_to_apply">Apăsaţi pe culoarea de mai jos pentru a aplica</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Setează</string>
+    <string name="color_default">Implicit</string>
+    <!-- Battery Bar -->
+    <string name="battery_bar_title">Bară de baterie</string>
+    <string name="battery_bar_summary">Arată și customizează bara de baterie de deasupra bării de stare</string>
+    <string name="battery_bar">Locație</string>
+    <string name="battery_bar_no_navbar">Locație</string>
+    <string name="battery_bar_location_hide">Ascunde</string>
+    <string name="battery_bar_location_statusbar">Bara de stare</string>
+    <string name="battery_bar_location_top_navbar">Partea de sus a barei de navigare</string>
+    <string name="battery_bar_location_bottom_navbar">Partea de jos a barei de navigare</string>
+    <string name="battery_bar_color">Culoare</string>
+    <string name="battery_bar_charging_color">Culoare incarcare</string>
+    <string name="battery_bar_battery_low_color">Culoare baterie scazuta</string>
+    <string name="battery_bar_cat">Stil</string>
+    <string name="battery_bar_style_title">Aliniere</string>
+    <string name="battery_bar_thickness_title">Grosime</string>
+    <string name="battery_bar_animate_title">Animaţie de încărcare</string>
+    <string name="battery_bar_style_regular">Obișnuit</string>
+    <string name="battery_bar_style_center_mirrored">Centrat-oglindă</string>
+    <string name="battery_bar_style_reversed">Inversat</string>
+    <string name="battery_bar_use_charging_color">Culoare personalizată de încărcare</string>
+    <string name="battery_bar_blend_color_title">Amestec de culori</string>
+    <string name="battery_bar_blend_color_summary">Amestecă culorile complete/goale corespunzătoare procentului bateriei</string>
+    <string name="battery_bar_blend_color_reverse_title">Inversare direcţie culoare</string>
+    <string name="battery_bar_blend_color_reverse_summary_off">Încărcată &#8594; descărcată: roşu &#8592; verde &#8592; albastru &#8592; roşu</string>
+    <string name="battery_bar_blend_color_reverse_summary_on">Încărcată &#8594; descărcată: roşu &#8594; verde &#8594; albastru &#8594; roşu</string>
+    <!-- QS rows and columns -->
+    <string name="sysui_qqs_count_title">Coloane (bară rapidă)</string>
+    <string name="qs_layout_category">Aspect</string>
+    <string name="qs_column_rows_settings_title">Setări panou setări rapide</string>
+    <string name="qs_columns_rows_category_title">Coloane și rânduri QS</string>
+    <string name="qs_rows_columns_title">Rânduri și coloane QS</string>
+    <string name="qs_rows_portrait_title">Rânduri (portret)</string>
+    <string name="qs_rows_landscape_title">Rânduri (peisaj)</string>
+    <string name="qs_columns_portrait_title">Coloane (portret)</string>
+    <string name="qs_columns_landscape_title">Coloane (peisaj)</string>
+    <!--QS tile title visibility-->
+    <string name="qs_tile_title_visibility_title">Titlu comutator</string>
+    <string name="qs_tile_title_visibility_summary">Afiseaza titlu sub fiecare comutator</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrare la atingere</string>
+    <string name="quick_settings_vibrate_summary">Vibrează la atingerea comutatoarelor</string>
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qs_panel_alpha_title">Setări rapide opacitate</string>
+    <string name="qs_panel_alpha_summary">Configurați opacitatea fundalului</string>
+    <!-- Custom headers -->
+    <string name="notification_title">Panoul de notificări</string>
+    <string name="status_bar_custom_header_title">Activează</string>
+    <string name="daylight_header_pack_title">Colecție de imagini antet</string>
+    <string name="status_bar_custom_header_shadow_title">Umbră imagine antet</string>
+    <string name="status_bar_custom_header_shadow_summary">Pentru o mai bună vizibilitate pe imagini luminoase</string>
+    <string name="unit_percent">\u0025</string>
+    <string name="static_header_provider_title">Imagine statică</string>
+    <string name="daylight_header_provider_title">Colecție de imagini</string>
+    <string name="custom_header_provider_title">Furnizor de antet</string>
+    <string name="custom_header_pick_title">Selectaţi imagine antet</string>
+    <string name="custom_header_pick_summary">Selectați o imagine locală sau la distanță</string>
+    <string name="style_enabled_summary">Imaginea personalizată în antent este activă</string>
+    <string name="style_disabled_summary">Imaginea personalizată în antent este dezactivată</string>
+    <string name="header_provider_disabled">Dezactivat</string>
+    <string name="custom_header_title">Imagine antet personalizată</string>
+    <string name="file_header_select_title">Selectează imaginea locală</string>
+    <string name="file_header_select_summary">Alegeți imaginea din memoria internă</string>
+    <string name="file_header_provider_title">O singură imagine</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="screenshot_gestures">Gestură de captură ecran</string>
+    <string name="three_finger_gesture">Gestură de trei degete</string>
+    <string name="three_finger_gesture_summary">Glisați cu trei degete pentru a face o captură de ecran</string>
+    <!-- AOKP custom system animations -->
+    <string name="system_animation_title">Sistem</string>
+    <string name="activity_open_title">Animaţie deschidere activitate</string>
+    <string name="activity_close_title">Animație la închiderea unei activități</string>
+    <string name="task_open_title">Sarcină deschidere animaţie</string>
+    <string name="task_open_behind_title">Sarcină deschisă în spatele animaţiei</string>
+    <string name="task_close_title">Animația de închidere a sarcinii</string>
+    <string name="task_move_to_front_title">Mutați la animația frontală</string>
+    <string name="task_move_to_back_title">Mutați la animația din spate</string>
+    <string name="wallpaper_open_title">Animaţie deschidere imagine de fundal</string>
+    <string name="wallpaper_close_title">Animaţie închidere imagine de fundal</string>
+    <string name="wallpaper_intra_open_title">Animaţie intra-deschidere imagine de fundal</string>
+    <string name="wallpaper_intra_close_title">Animaţie intra-închidere imagine de fundal</string>
+    <string name="animation_duration_title">Durata animaţiei</string>
+    <string name="title_animation_no_override">Preveniți suprascrierea aplicației</string>
+    <string name="summary_animation_no_override">Preveniți aplicațiile să suprascrie tranzițiile</string>
+    <string name="animation_duration_default">Implicit</string>
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Meniul de power</string>
+    <string name="lockscreen_enable_power_menu_summary">Permite accesarea meniului de power pe ecranul de blocare</string>
+    <string name="lockscreen_secure_power_menu_title">Meniul de alimentare securizat</string>
+    <string name="lockscreen_secure_power_menu_summary">Permiteți acțiunea din meniul de alimentare numai după autentificare</string>
+    <!-- Units -->
+    <string name="unit_seconds">secunde</string>
+    <string name="unit_milliseconds">milisecunde</string>
+    <string name="unit_pixels">dp</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Informații despre încărcare pe ecranul de blocare</string>
+    <string name="lockscreen_battery_info_summary">Afișează curentul, tensiunea și temperatura bateriei în timpul încărcării pe ecranul de blocare</string>
+    <!-- Heads up -->
+    <string name="heads_up_notifications">Atenționări</string>
+    <string name="heads_up_summary">Activează/Dezactivează notificările de atenţionare şi controlează headups</string>
+    <string name="summary_heads_up_enabled">Notificările de atenţionare sunt activate</string>
+    <string name="summary_heads_up_disabled">Notificările de atenţionare sunt dezactivate</string>
+    <string name="add_heads_up_package">Adaugă aplicație</string>
+    <string name="add_heads_up_stoplist_summary">Dezactivaţi atenţionările în aceste aplicaţii</string>
+    <string name="add_heads_up_blacklist_summary">Dezactivează atenţionările de la aceste aplicații</string>
+    <string name="heads_up_stoplist_title">Listă aplicaţii dezactivate</string>
+    <string name="heads_up_blacklist_title">Lista neagră</string>
+    <string name="profile_choose_app">Alegeți aplicația</string>
+    <string name="dialog_delete_title">Ștergeți</string>
+    <string name="dialog_delete_message">Ștergeți elementul selectat?</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Atenționări mai puțin plictisitoare</string>
+    <string name="less_boring_heads_up_summary">Arată atenționări numai pentru aplicația de telefon, mesagerie și alarmă</string>
+    <!-- AOSP Gestures -->
+    <string name="system_gestures">Gesturi de sistem</string>
+    <string name="aosp_gesture_title">Setări Gesturi AOSP</string>
+    <string name="aosp_gesture_summary">Gesturi de glisare AOSP, 2 butoane, 3 navigare butoane și altele</string>
+    <!--dashboard icons-->
+    <string name="theming_settings_dashboard_icons_title">Setări icoane tablou de bord</string>
+    <string name="theming_settings_dashboard_icons_default2">Fundalul implicit</string>
+    <string name="theming_settings_dashboard_icons_default_accent2">Accent fundal</string>
+    <string name="theming_settings_dashboard_icons_plain">Simplu</string>
+    <string name="theming_settings_dashboard_icons_plain_accent">Accent simplu</string>
+    <string name="theming_settings_dashboard_icons_default_oneplus">OnePlus</string>
+    <!-- Statusbar net monitor -->
+    <string name="traffic_title">Indicatori de trafic</string>
+    <string name="traffic_summary">Afișează monitorul traficului rețelei în QS și bara de stare</string>
+    <string name="network_traffic_state_title">Trafic reţea</string>
+    <string name="network_traffic_state_summary">Afișează activitatea rețelei în bara de stare</string>
+    <string name="network_traffic">Trafic reţea</string>
+    <string name="network_traffic_location">Plasarea indicatorului de trafic</string>
+    <string name="traffic_disabled">Dezactivat</string>
+    <string name="traffic_statusbar">Bara de stare</string>
+    <string name="traffic_expanded_statusbar">Antet extins</string>
+    <string name="network_traffic_autohide_threshold_title">Pragul de ascundere automată a activității de rețea (KB/s)</string>
+    <string name="network_traffic_arrow">Afişare săgeți</string>
+    <string name="network_traffic_arrow_summary">Afișează săgeţile în indicatorul de trafic</string>
+    <string name="network_traffic_type">Selectaţi tipul de activitate rețea</string>
+    <string name="show_network_traffic_combined">Combinate (Încărcare + Descărcare)</string>
+    <string name="show_network_traffic_dynamic">Dinamic</string>
+    <string name="show_network_traffic_up">Încărcare</string>
+    <string name="show_network_traffic_down">Descărcare</string>
+    <string name="show_network_traffic_all">Ambele</string>
+    <string name="network_traffic_layout">Aspectul activității</string>
+    <string name="network_traffic_layout_h">Orizontal</string>
+    <string name="network_traffic_layout_v">Vertical</string>
+    <string name="nettraf_font_size">Dimensiune font net unic</string>
+    <!-- volte icon toggle -->
+    <string name="volte_icon_title">Pictograma VoLTE</string>
+    <string name="volte_icon_summary">Afișare pictogramă VoLTE atunci când este disponibilă</string>
+    <!--bluetooth battery level -->
+    <string name="bluetooth_battery_title">Stare baterie Bluetooth</string>
+    <string name="bluetooth_battery_summary">Arată starea bateriei pentru dispozitivul bluetooth conectat, dacă este disponibil</string>
+    <!-- Screenshot Sound  -->
+    <string name="screenshot_sound_title">Sunet captură de ecran</string>
+    <string name="screenshot_sound_summary">Comutator redare sunet capturare scran</string>
+    <string name="audio_panel_view_timeout_title">Timeout al panoului de volum</string>
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Mod de joc</string>
+    <string name="gaming_mode_summary">Customizare preferinte mod de joc</string>
+    <string name="gaming_mode_enabled_summary">Permite activarea modului de joc</string>
+    <string name="gaming_mode_app_picker_title">Se pornește automat pentru aceste aplicații</string>
+    <string name="add_gaming_mode_package_title">Adăuga aplicații pentru modul de joc</string>
+    <string name="add_gaming_mode_package_summary">Modul de joc se v-a activa automat când aceste aplicații sunt deschise și dezactiva cand sunt închise</string>
+    <string name="gaming_mode_headsup_title">Blocare notificări</string>
+    <string name="gaming_mode_headsup_summary">Apelurile si alarmele sunt omise</string>
+    <string name="gaming_mode_hardware_keys_title">Blocare butoane</string>
+    <string name="gaming_mode_hardware_keys_summary">Cand modul de joc este activ, butoanele vor fi blocate</string>
+    <string name="gaming_mode_brightness_title">Dezactivează luminozitatea automată</string>
+    <string name="gaming_mode_brightness_summary">Blocare iluminare automată cand modul de joc este pornit</string>
+    <string name="gaming_mode_ringer_title">Sunete in modul de joc</string>
+    <string name="gaming_mode_ringer_off_title">Nu schimba</string>
+    <string name="gaming_mode_ringer_vibrate_title">Vibrare</string>
+    <string name="gaming_mode_ringer_dnd_title">Nu deranja</string>
+    <string name="gaming_mode_ringer_silent_title">Silențios</string>
+    <string name="gaming_mode_notifications_title">Indicator pentru modul de joc</string>
+    <string name="gaming_mode_notifications_off_title">Dezactivat</string>
+    <string name="gaming_mode_notifications_notif_title">Afișare notificare</string>
+    <string name="gaming_mode_notifications_toast_title">Afişare toast</string>
+    <string name="gaming_mode_notifications_all_title">Afişare toast şi notificare</string>
+    <string name="gaming_mode_dynamic_title">Mod dinamic</string>
+    <string name="gaming_mode_dynamic_summary">Încearcă să detectezi şi să adaugi jocuri în mod automat</string>
+    <!--qs tint toggle-->
+    <string name="qs_bg_use_new_tint">Comutator nuanță QS</string>
+    <string name="qs_bg_use_new_tint_summary">Folosește culoarea de accent pentru iconițele QS și fundal (necesită repornirea sistemul)</string>
+    <!-- Horizon light -->
+    <string name="default_string">Implicit</string>
+    <string name="horizon_light_title">Lumina horizon</string>
+    <string name="horizon_light_summary">Margini ambiante deschise pentru notificările de pulsare</string>
+    <string name="horizon_light_enabled_title">Arată pe AOD</string>
+    <string name="aod_disabled">AOD este dezactivat</string>
+    <string name="horizon_light_enabled_summary">Continuaţi să arătaţi lumina orizontală pe AOD</string>
+    <string name="horizon_light_hide_aod_title">Ascunde conținutul AOD</string>
+    <string name="horizon_light_hide_aod_summary">Ascunde conţinutul AOD atunci când marginile sunt luminate</string>
+    <string name="horizon_light_duration_title">Durata</string>
+    <string name="horizon_light_duration_summary">Timpul necesar pentru ca fiecare animaţie să se completeze</string>
+    <string name="horizon_light_repeats_title">Repetări</string>
+    <string name="horizon_light_repeats_summary">Cantitatea de ori animația ar trebui să afișeze\n0 pentru infinit</string>
+    <string name="horizon_light_timeout_title">Pauză</string>
+    <string name="horizon_light_timeout_forever">Permanent</string>
+    <string name="horizon_light_timeout_half_minute">30 de secunde</string>
+    <string name="horizon_light_timeout_minute">1 minut</string>
+    <string name="horizon_light_timeout_three_minutes">3 minute</string>
+    <string name="horizon_light_timeout_five_minutes">5 minute</string>
+    <string name="horizon_light_timeout_ten_minutes">10 minute</string>
+    <string name="set_to_zero">Setează repetările la 0 pentru a activa</string>
+    <string name="horizon_color_mode_title">Mod de culoare</string>
+    <string name="horizon_color_mode_accent">Nuanță culoare</string>
+    <string name="horizon_color_mode_wall">Culoarea dominantă a fundalului</string>
+    <string name="horizon_color_mode_notification">Culoarea pictogramei de notificări</string>
+    <string name="horizon_color_mode_custom">@string/horizon_light_color_title</string>
+    <string name="horizon_light_color_title">Culoare personalizată</string>
+    <!-- Oneui -->
+    <string name="enable_oneui">Actionbar de setări OneUI</string>
+    <string name="enable_oneui_summary">Afișează spațiu deasupra bării de acțiuni pentru o utilizare mai ușoară cu o singură mână\nNotă: repornește aplicația de setări pentru a vedea rezultatul</string>
+    <!-- Themes -->
+    <string name="theme_type_title">Teme Sakura</string>
+    <string name="theme_type_summary">Selectaţi tema</string>
+    <string name="theme_type_light">Luminoasă</string>
+    <string name="theme_type_pitch_black">Google Gri</string>
+    <string name="theme_type_solarized_dark">Negru solarizat</string>
+    <string name="theme_type_baked_green">Verde copt</string>
+    <string name="theme_type_choco_x">Choco X</string>
+    <string name="theme_type_du_pitchblack">Negru complet</string>
+    <string name="theme_type_material_ocean">Ocean material</string>
+    <string name="theme_type_style_mizu">Mizu</string>
+    <!-- gvisual mod -->
+    <string name="gvisual_title">Modul Gvizual</string>
+    <string name="rounded_ui_title">Colț rotunjit</string>
+    <string name="rounded_ui_dialog_title">Selectaţi modelul de colţ rotunjit</string>
+    <string name="rounded_style_default">Implicit</string>
+    <string name="rounded_style_rectangle">Dreptunghi</string>
+    <string name="rounded_style_large">Mare</string>
+    <string name="rounded_style_medium">Mediu</string>
+    <string name="statusbar_height_title">Înălţimea bării de stare</string>
+    <string name="statusbar_height_dialog_title">Selectaţi modelul de înălţime al bării de stare</string>
+    <string name="sb_height_default">Implicit</string>
+    <string name="sb_height_medium">Mediu</string>
+    <string name="sb_height_large">Mare</string>
+    <string name="sb_height_extralarge">Foarte mare</string>
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Animație închidere ecran</string>
+    <string name="screen_off_animation_default">Implicit</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scală</string>
+    <string name="screen_off_animation_summary">Animații scalate și CRT pentru ecranul de blocare</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Opţiuni de vibraţie în apel</string>
+    <string name="incall_vibrate_connect_title">Vibrează la conectare</string>
+    <string name="incall_vibrate_call_wait_title">Vibrare la apel în așteptare</string>
+    <string name="incall_vibrate_disconnect_title">Vibrare la deconectare apel</string>
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Trepte Volum</string>
+    <string name="volume_steps_summary">Personalizare nr. paşi în panoul de volum</string>
+    <string name="volume_steps_alarm_title">Trepte volum: Alarmă</string>
+    <string name="volume_steps_dtmf_title">Trepte volum: DTMF</string>
+    <string name="volume_steps_music_title">Trepte volum: Muzică</string>
+    <string name="volume_steps_notification_title">Trepte volum: Notificare</string>
+    <string name="volume_steps_ring_title">Trepte volum: Sunet de apel</string>
+    <string name="volume_steps_system_title">Trepte volum: Sistem</string>
+    <string name="volume_steps_voice_call_title">Trepte volum: Apel vocal</string>
+    <string name="volume_steps_reset">Resetare</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+    <!-- Navbar layout options -->
+    <string name="navbar_layout_title">Aspect</string>
+    <string name="navbar_layout_normal">Normal</string>
+    <string name="navbar_layout_compact">Compact</string>
+    <string name="navbar_layout_leftleaning">Înclinat spre stânga</string>
+    <string name="navbar_layout_rightleaning">Înclinat spre dreapta</string>
+    <string name="navbar_invert_layout_title">Inversare aspect</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Indicator roaming</string>
+    <string name="roaming_indicator_icon_summary">Afișează indicatorul roaming în cadrul iconiței de semnal în timpul modului roaming</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Iconiță 4G</string>
+    <string name="show_fourg_icon_summary">Afișare pictogramă 4G în loc de LTE</string>
+    <!-- Data disabled indicator -->
+    <string name="data_disabled_icon_title">Indicator date mobile dezactivat</string>
+    <string name="data_disabled_icon_summary">Afișarea semnului x lângă bara de semnal atunci când datele sunt dezactivate</string>
+    <!-- Old mobiletype icon style -->
+    <string name="old_mobiletype_title">Iconiță semnal stil vechi</string>
+    <string name="old_mobiletype_summary">Îmbină semnal și iconițe de tip semnal</string>
+    <!-- Notifications while screen on -->
+    <string name="notification_sound_vib_screen_on_title">Notificări zgomotoase</string>
+    <string name="notification_sound_vib_screen_on_summary">Redare sunet şi vibraţii când ecranul este aprins</string>
+    <!-- qs media player -->
+    <string name="qs_media_player_title">Player media QS</string>
+    <string name="qs_media_player_summary_on">Arată playerul media în QS.\nNecesită o repornire a interfeței de sistem</string>
+    <string name="qs_media_player_summary_off">Arată playerul media ca o notificare.\nNecesită o repornire a interfeței sistemului</string>
+    <!-- QS DataUsage Toggle -->
+    <string name="qs_datausage_title">Utilizare date în antetul QS</string>
+    <string name="qs_datausage_disabled">Dezactivat</string>
+    <string name="qs_datausage_daily">Utilizare zilnică</string>
+    <string name="qs_datausage_monthly">Utilizare lunară</string>
+    <!-- Omni Jaws -->
+    <string name="weather_title">Vremea</string>
+    <string name="weather_summary">Configurări meteo OmniJaws</string>
+    <string name="weather_config_title">Serviciu meteo</string>
+    <string name="weather_config_summary">Setările serviciului de sistem</string>
+    <string name="header_weather_title">Antet vreme</string>
+    <string name="header_weather_summary">Activați afișarea antetului de vreme, în panoul de notificări</string>
+    <string name="weather_icon_pack_title">Pachet de pictograme Condition</string>
+    <string name="weather_icon_pack_note">Notă\u003a puteți instala pachete noi de pictograme din Magazinul Google Play, căutând \"Chronus icons\"</string>
+    <string name="weather_icon_pack_info_title">Pachetul de pictograme Condition este utilizat în setări rapide şi în ecranul de blocare</string>
+    <string name="lockscreen_weather_title">Arată condiția meteo</string>
+    <string name="lockscreen_weather_summary">Arată starea actuală a vremii și temperatura</string>
+    <string name="lock_screen_weather_style_title">Stilul meteo</string>
+    <string name="lock_screen_weather_style_summaryOff">Vremea este afișată sub linia datei cu locația</string>
+    <string name="lock_screen_weather_style_summaryOn">Vremea este afișată sub linia datei fără locație</string>
+    <!-- FOD icon picker -->
+    <string name="fod_icon_picker_title">Selector pictograme FOD</string>
+    <string name="fod_icon_picker_summary">Alegeţi pictograma preferată pentru amprentă</string>
+    <string name="fod_icon_picker_footer">Pentru a adăuga propria pictogramă, selectați pictograma din stânga sus și utilizați aplicația OnePlus 6T FP Customizer pentru a selecta pictograma dorită.</string>
+    <!-- FOD animations -->
+    <string name="fod_recog_animation">Animație la deblocare cu amprentă</string>
+    <string name="fod_recog_animation_summary">Afișare animație în timp ce se citește amprenta</string>
+    <string name="fod_recog_animation_effect_title">Efect animație de recunoaştere</string>
+    <string name="fod_recog_animation_miui_normal">Implicit MIUI</string>
+    <string name="fod_recog_animation_miui_aod">MIUI AOD</string>
+    <string name="fod_recog_animation_miui_aurora">Aurora (K30 Pro)</string>
+    <string name="fod_recog_animation_miui_aurora_cas">Aurora (Mi 10 Ultra)</string>
+    <string name="fod_recog_animation_miui_light">Luminoasă</string>
+    <string name="fod_recog_animation_miui_pop">Pop</string>
+    <string name="fod_recog_animation_miui_pulse">Puls</string>
+    <string name="fod_recog_animation_miui_pulse_white">Puls (alb)</string>
+    <string name="fod_recog_animation_miui_rhythm">Ritm</string>
+    <string name="fod_recog_animation_miui_star_cas">Starlight</string>
+    <string name="fod_recog_animation_op_cosmos">Cosmos</string>
+    <string name="fod_recog_animation_op_energy">Energie</string>
+    <string name="fod_recog_animation_op_mclaren">McLaren</string>
+    <string name="fod_recog_animation_op_ripple">Undă</string>
+    <string name="fod_recog_animation_op_stripe">Dungă</string>
+    <string name="fod_recog_animation_op_wave">Val</string>
+    <string name="fod_recog_animation_pureview_dna">ADN</string>
+    <string name="fod_recog_animation_pureview_future">Viitor</string>
+    <string name="fod_recog_animation_pureview_halo_ring">Inel Halo</string>
+    <string name="fod_recog_animation_pureview_molecular">Molecular</string>
+    <string name="fod_recog_animation_rog_fusion">Fuziune</string>
+    <string name="fod_recog_animation_rog_pulsar">Pulsar</string>
+    <string name="fod_recog_animation_rog_supernova">Supernova</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Amprenta pe ecran oprit</string>
+    <string name="fod_gesture_summary">Permite deblocarea dispozitivului fără a fi nevoie să porniţi mai întâi ecranul</string>
+</resources>

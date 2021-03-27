@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright © 2020-21 Project Sakura
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="sakura_settings_title">Configuraciones Sakura</string>
+    <string name="sakura_dashboard_summary">¡Traígamos la primavera hasta ti!</string>
+    <!-- ROM Info -->
+    <string name="sakura_about_info">Acerca del proyecto</string>
+    <string name="sakura_about_info_summary_title">Acerca del equipo</string>
+    <string name="sakura_about_info_summary">Un Lineage OS personalizado, cuyo único propósito es proporcionar una plataforma que sea alimentada por Lineage y sea más personalizable que Lineage.</string>
+    <!-- Dev Info -->
+    <string name="devs_header">Desarrolladores</string>
+    <string name="dev_1">LordShenron</string>
+    <string name="dev1_description">Fundador/Desarrollador</string>
+    <string name="dev_3">Arun Teltia</string>
+    <string name="dev3_description">Desarrollador Web</string>
+    <!-- Maintainer Info -->
+    <string name="maintainers_header">Mantenedores</string>
+    <string name="maintainers_header_summary">Estos son los mantenedores de Dispositivos Oficiales...</string>
+    <!-- Asus -->
+    <string name="device_asus">Asus</string>
+    <string name="device_X00T">ZenFone Max Pro M1</string>
+    <string name="device_X00T_description">X00T\nShen</string>
+    <!-- Dead LeEco -->
+    <string name="device_leeco">LeEco</string>
+    <string name="device_s2">LeEco Le 2</string>
+    <string name="device_s2_description">S2\nCakesTwix</string>
+    <!-- No more flagship killer -->
+    <string name="device_oneplus">OnePlus</string>
+    <string name="device_oneplus3">OnePlus 3 y 3T </string>
+    <string name="device_oneplus3_description">oneplus3\nDeepak Jr</string>
+    <string name="device_oneplus6">OnePlus 6</string>
+    <string name="device_oneplus6_description">enchilada\neduardo</string>
+    <!-- Realmeme -->
+    <string name="device_realme">Realme</string>
+    <string name="device_cph1859">Realme 1</string>
+    <string name="device_cph1859_description">CPH1859\nCyberJalagam</string>
+    <string name="device_rmx2001">Realme 6 </string>
+    <string name="device_rmx2001_description">RMX2001\nTanmay</string>
+    <!-- Lagsung -->
+    <string name="device_samsung">Samsung</string>
+    <string name="device_a10">Galaxy A10</string>
+    <string name="device_a10_description">a10\nchatur</string>
+    <string name="device_a20">Galaxy A20</string>
+    <string name="device_a20_description">a20\nchatur</string>
+    <string name="device_j4prime">Galaxy J4Prime LTE</string>
+    <string name="device_j4prime_description">j4primelte\nGabriel</string>
+    <string name="device_m20lte">Galaxy M20</string>
+    <string name="device_m20lte_description">m20lte\nHaridhayal</string>
+    <!--Gayzu-->
+    <string name="device_meizu">Meizu</string>
+    <string name="device_m1882">Meizu 16th</string>
+    <string name="device_m1882_description">m1892\nAbdibekov Dauren</string>
+    <string name="device_m1892">Meizu 16th Plus</string>
+    <string name="device_m1892_description">m1892\nAbdibekov Dauren</string>
+    <!-- chinese spy -->
+    <string name="device_xiaomi">Xiaomi</string>
+    <!--Mi-->
+    <string name="device_gauguin">Mi 10i 5G | Mi 10T Lite</string>
+    <string name="device_gauguin_description">gauguin\nPrajwal y Nitish</string>
+    <string name="device_tucana">Mi Note 10</string>
+    <string name="device_tucana_description">tucana\nAlexander</string>
+    <string name="device_wayne">Mi 6X</string>
+    <string name="device_wayne_description">wayne\nMarcos Almeida</string>
+    <string name="device_tissot">Mi A1</string>
+    <string name="device_tissot_description">tissot\nRoger W.</string>
+    <!--poco-->
+    <string name="device_phoenix">Poco X2</string>
+    <string name="device_phoenix_description">phoenix\nShivam</string>
+    <string name="device_surya">Poco X3</string>
+    <string name="device_surya_description">surya\nArmSM y Agus</string>
+    <!--redmi-->
+    <string name="device_davinci">Redmi K20</string>
+    <string name="device_davinci_description">davinci\nGabriel</string>
+    <string name="device_sakura">Redmi 6 Pro</string>
+    <string name="device_sakura_description">sakura\nAlex</string>
+    <string name="device_whyred">Redmi Note 5 Pro</string>
+    <string name="device_whyred_description">whyred\nDarkstar</string>
+    <string name="device_violet">Redmi Note 7 Pro</string>
+    <string name="device_violet_description">violet\nSpicyDoughnut</string>
+    <!-- Categories -->
+    <string name="gestures_title">Gestures</string>
+    <string name="sakura_gesture_summary_title">Tres dedos, diseños y gestos AOSP</string>
+    <string name="lockscreen_title">Pantalla de bloqueo</string>
+    <string name="sakura_lockscreen_summary_title">Carga en pantalla de bloqueo y bloqueo seguro</string>
+    <string name="misc_title">Misceláneos</string>
+    <string name="sakura_misc_summary_title">Modo Gaming y otras opciones</string>
+    <string name="parts_title">LineageParts</string>
+    <string name="sakura_parts_summary_title">Barra de estado, botones y otros ajustes de Lineage</string>
+    <string name="quicksettings_title">Ajustes rápidos</string>
+    <string name="sakura_quicksettings_summary_title">Título de accesos directos, imagénes de encabezado, opacidad</string>
+    <string name="interface_title">Interfaz</string>
+    <string name="sakura_interface_summary_title">Tema, barra de bateria y medidor de red</string>
+    <string name="animation_title">Animaciones</string>
+    <string name="sakura_animation_summary_title">Animaciones de apertura y cierre</string>
+    <string name="notifications_title">Notificaciones</string>
+    <string name="sakura_notifications_summary_title">Notificaciones emergentes, luces, opciones de vibración</string>
+    <string name="sakura_updater_summary_title">Actualizaciones OTA</string>
+    <string name="updater_title">Actualizaciones Sakura</string>
+    <string name="buttons_settings">Configuración de botones</string>
+    <string name="buttons_settings_summary">Ajustes de botones de LineageOS</string>
+    <string name="statusbar_settings">Configuración de la barra de estado</string>
+    <string name="statusbar_settings_summary">Ajustes de la barra de estado de LineageOS</string>
+    <!-- sub categories -->
+    <string name="themes_ui_settings">Administración de Temas</string>
+    <string name="misc_interface_settings">Otros ajustes</string>
+    <string name="lockscreen_ui_settings">Interfaz de la pantalla de bloqueo</string>
+    <string name="secure_lockscreen_settings">Pantalla de bloqueo segura</string>
+    <string name="headsup_settings">Notificaciones emergentes</string>
+    <string name="horizon_light_settings">Notificaciones del AOD</string>
+    <string name="misc_qs_settings">Otras opciones de Ajustes Rápidos</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Restablecer</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Guardar</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Selector de color</string>
+    <string name="press_color_to_apply">Toca el color de abajo para aplicar</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Establecer</string>
+    <string name="color_default">Por defecto</string>
+    <!-- Battery Bar -->
+    <string name="battery_bar_title">Barra de la batería</string>
+    <string name="battery_bar_summary">Mostrar y personalizar la barra de batería encima de la barra de estado</string>
+    <string name="battery_bar">Ubicación</string>
+    <string name="battery_bar_no_navbar">Ubicación</string>
+    <string name="battery_bar_location_hide">Oculto</string>
+    <string name="battery_bar_location_statusbar">Barra de estado</string>
+    <string name="battery_bar_location_top_navbar">Parte superior de la barra de navegación</string>
+    <string name="battery_bar_location_bottom_navbar">Parte inferior de la barra de navegación</string>
+    <string name="battery_bar_color">Color</string>
+    <string name="battery_bar_charging_color">Color durante la carga</string>
+    <string name="battery_bar_battery_low_color">Color de batería baja</string>
+    <string name="battery_bar_cat">Estilo</string>
+    <string name="battery_bar_style_title">Alineación</string>
+    <string name="battery_bar_thickness_title">Grosor</string>
+    <string name="battery_bar_animate_title">Animación de carga</string>
+    <string name="battery_bar_style_regular">Regular</string>
+    <string name="battery_bar_style_center_mirrored">Centrada-reflejada</string>
+    <string name="battery_bar_style_reversed">Revertido</string>
+    <string name="battery_bar_use_charging_color">Color de carga personalizado</string>
+    <string name="battery_bar_blend_color_title">Mezclar colores</string>
+    <string name="battery_bar_blend_color_summary">Mezclar colores lleno/vacío dependiendo del porcentaje de batería</string>
+    <string name="battery_bar_blend_color_reverse_title">Invertir dirección de colores</string>
+    <string name="battery_bar_blend_color_reverse_summary_off">Lleno &#8594; vacio: rojo &#8592; verde &#8592; azul &#8592; rojo</string>
+    <string name="battery_bar_blend_color_reverse_summary_on">Lleno &#8594; vacio: rojo &#8594; verde &#8594; azul &#8594; rojo</string>
+    <!-- QS rows and columns -->
+    <string name="sysui_qqs_count_title">Columnas (Barra rápida)</string>
+    <string name="qs_layout_category">Distribución</string>
+    <string name="qs_column_rows_settings_title">Configuraciones del panel de ajustes rápidos</string>
+    <string name="qs_columns_rows_category_title">Columnas y filas de los ajustes rápidos</string>
+    <string name="qs_rows_columns_title">Columnas y filas</string>
+    <string name="qs_rows_portrait_title">Filas (Vertical)</string>
+    <string name="qs_rows_landscape_title">Filas (horizontal)</string>
+    <string name="qs_columns_portrait_title">Columnas (Vertical)</string>
+    <string name="qs_columns_landscape_title">Columnas (Horizontal)</string>
+    <!--QS tile title visibility-->
+    <string name="qs_tile_title_visibility_title">Título de ajuste rápido</string>
+    <string name="qs_tile_title_visibility_summary">Mostrar titulo debajo de cada ajuste rápido</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrar al tocarla</string>
+    <string name="quick_settings_vibrate_summary">Vibrar al tocar en el ajuste rápido</string>
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qs_panel_alpha_title">Opacidad de ajustes rápidos</string>
+    <string name="qs_panel_alpha_summary">Ajustar la opacidad del fondo</string>
+    <!-- Custom headers -->
+    <string name="notification_title">Panel de notificaciones</string>
+    <string name="status_bar_custom_header_title">Habilitar</string>
+    <string name="daylight_header_pack_title">Colección de encabezados de imagen</string>
+    <string name="status_bar_custom_header_shadow_title">Sombra de imagen de encabezado</string>
+    <string name="status_bar_custom_header_shadow_summary">Para mejor visibilidad en imágenes claras</string>
+    <string name="unit_percent">\u0025</string>
+    <string name="static_header_provider_title">Imagen estática</string>
+    <string name="daylight_header_provider_title">Colección de imágenes</string>
+    <string name="custom_header_provider_title">Proveedor de notificaciones emergentes</string>
+    <string name="custom_header_pick_title">Elegir imagen de encabezado</string>
+    <string name="custom_header_pick_summary">Seleccionar una imagen remota o local</string>
+    <string name="style_enabled_summary">La imagen personalizada del encabezado está activada</string>
+    <string name="style_disabled_summary">La imagen personalizada del encabezado está desactivada</string>
+    <string name="header_provider_disabled">Desactivado</string>
+    <string name="custom_header_title">Imagen de encabezado personalizada</string>
+    <string name="file_header_select_title">Seleccionar una imagen local</string>
+    <string name="file_header_select_summary">Seleccionar una imagen desde almacenamiento</string>
+    <string name="file_header_provider_title">Imagen individual</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="screenshot_gestures">Gesto de captura de pantalla</string>
+    <string name="three_finger_gesture">Gesto de tres dedos</string>
+    <string name="three_finger_gesture_summary">Deslizar tres dedos para hacer captura de pantalla</string>
+    <!-- AOKP custom system animations -->
+    <string name="system_animation_title">Sistema</string>
+    <string name="activity_open_title">Animación de actividad lanzada</string>
+    <string name="activity_close_title">Animación de cerrar actividad</string>
+    <string name="task_open_title">Animación al abrir una tarea</string>
+    <string name="task_open_behind_title">Animación al abrir tareas detrás</string>
+    <string name="task_close_title">Animación de cierre de tarea</string>
+    <string name="task_move_to_front_title">Animación al traer al frente</string>
+    <string name="task_move_to_back_title">Animación para enviar atrás</string>
+    <string name="wallpaper_open_title">Animación de abrir wallpaper</string>
+    <string name="wallpaper_close_title">Animación al cerrar fondo de pantalla</string>
+    <string name="wallpaper_intra_open_title">Animación al entrar al fondo de pantalla</string>
+    <string name="wallpaper_intra_close_title">Animación de cierre interno del fondo de pantalla</string>
+    <string name="animation_duration_title">Duración de la animación</string>
+    <string name="title_animation_no_override">Evitar anulaciones de apps</string>
+    <string name="summary_animation_no_override">Evitar que las aplicaciones reemplacen las transiciones</string>
+    <string name="animation_duration_default">Por defecto</string>
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Menú de encendido</string>
+    <string name="lockscreen_enable_power_menu_summary">Permitir acceder al menú de apagado desde la pantalla de bloqueo segura</string>
+    <string name="lockscreen_secure_power_menu_title">Menú de apagado seguro</string>
+    <string name="lockscreen_secure_power_menu_summary">Permitir la acción del menú de encendido solo después de la autenticación</string>
+    <!-- Units -->
+    <string name="unit_seconds">segundos</string>
+    <string name="unit_milliseconds">milisegundos</string>
+    <string name="unit_pixels">dp</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Información de carga en la pantalla de bloqueo</string>
+    <string name="lockscreen_battery_info_summary">Mostrar el nivel de corriente y voltaje de carga actual y la temperatura de la bateria en la pantalla de bloqueo al cargar</string>
+    <!-- Heads up -->
+    <string name="heads_up_notifications">Notificaciones emergentes</string>
+    <string name="heads_up_summary">Habilitar/deshabilitar notificaciones emergentes y controlar encabezados</string>
+    <string name="summary_heads_up_enabled">Las notificaciones emergentes están habilitadas</string>
+    <string name="summary_heads_up_disabled">Las notificaciones emergentes están deshabilitadas</string>
+    <string name="add_heads_up_package">Añadir aplicación</string>
+    <string name="add_heads_up_stoplist_summary">Desactiva las notificaciones flotantes en estas aplicaciones</string>
+    <string name="add_heads_up_blacklist_summary">Desactivar las notificaciones flotantes de estas apps</string>
+    <string name="heads_up_stoplist_title">Lista de detención</string>
+    <string name="heads_up_blacklist_title">Lista negra</string>
+    <string name="profile_choose_app">Elija la aplicación</string>
+    <string name="dialog_delete_title">Eliminar</string>
+    <string name="dialog_delete_message">¿Eliminar el elemento seleccionado?</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Notificaciones flotantes menos aburridas</string>
+    <string name="less_boring_heads_up_summary">Mostrar notificaciones emergentes sólo para la aplicación de teléfono y alarma</string>
+    <!-- AOSP Gestures -->
+    <string name="system_gestures">Gestos del sistema</string>
+    <string name="aosp_gesture_title">Ajustes de gestos de AOSP</string>
+    <string name="aosp_gesture_summary">Gestos de deslizado, 2 botones, navegación por 3 botones y más</string>
+    <!--dashboard icons-->
+    <string name="theming_settings_dashboard_icons_title">Iconos de menú de ajustes</string>
+    <string name="theming_settings_dashboard_icons_default2">Fondo por defecto</string>
+    <string name="theming_settings_dashboard_icons_default_accent2">Fondo con color principal</string>
+    <string name="theming_settings_dashboard_icons_plain">Sin formato</string>
+    <string name="theming_settings_dashboard_icons_plain_accent">Plano con color principal</string>
+    <string name="theming_settings_dashboard_icons_default_oneplus">OnePlus</string>
+    <!-- Statusbar net monitor -->
+    <string name="traffic_title">Indicadores de tráfico</string>
+    <string name="traffic_summary">Mostrar monitor de tráfico de red en QS y barra de estado</string>
+    <string name="network_traffic_state_title">Tráfico de la Red</string>
+    <string name="network_traffic_state_summary">Mostrar velocidad de la red en la barra de estado</string>
+    <string name="network_traffic">Tráfico de red</string>
+    <string name="network_traffic_location">Posición del indicador de tráfico</string>
+    <string name="traffic_disabled">Desactivado</string>
+    <string name="traffic_statusbar">Barra de estado</string>
+    <string name="traffic_expanded_statusbar">Encabezado expandido</string>
+    <string name="network_traffic_autohide_threshold_title">Tráfico de red mínimo para ocultar actividad (KB/s)</string>
+    <string name="network_traffic_arrow">Mostrar flechas</string>
+    <string name="network_traffic_arrow_summary">Mostrar las flechas indicadoras de tráfico de la red</string>
+    <string name="network_traffic_type">Selecciona tipo de actividad</string>
+    <string name="show_network_traffic_combined">Ambos (Carga + Descarga)</string>
+    <string name="show_network_traffic_dynamic">Dinámico</string>
+    <string name="show_network_traffic_up">Subir</string>
+    <string name="show_network_traffic_down">Descargar</string>
+    <string name="show_network_traffic_all">Ambos</string>
+    <string name="network_traffic_layout">Diseño de la actividad</string>
+    <string name="network_traffic_layout_h">Horizontal</string>
+    <string name="network_traffic_layout_v">Vertical</string>
+    <string name="nettraf_font_size">Tamaño de fuente neto único</string>
+    <!-- volte icon toggle -->
+    <string name="volte_icon_title">Icono de VoLTE</string>
+    <string name="volte_icon_summary">Mostrar icono VoLTE cuando esté disponible</string>
+    <!--bluetooth battery level -->
+    <string name="bluetooth_battery_title">Estado de la batería del dispositivo Bluetooth</string>
+    <string name="bluetooth_battery_summary">Mostrar el estado de bateria de los dispositivos bluetooth conectado, si esta disponible</string>
+    <!-- Screenshot Sound  -->
+    <string name="screenshot_sound_title">Sonido de captura</string>
+    <string name="screenshot_sound_summary">Conmutar sonido al tomar una captura de pantalla</string>
+    <string name="audio_panel_view_timeout_title">Tiempo de espera del panel de volumen</string>
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Modo Gaming</string>
+    <string name="gaming_mode_summary">Personalizar preferencias de Modo Gaming</string>
+    <string name="gaming_mode_enabled_summary">Permitir activar el Modo Gaming</string>
+    <string name="gaming_mode_app_picker_title">Activar automáticamente para estas aplicaciones</string>
+    <string name="add_gaming_mode_package_title">Añadir aplicaciones para el Modo Gaming</string>
+    <string name="add_gaming_mode_package_summary">El Modo Gaming se activara automáticamente cuando estas aplicaciones estén abiertas y se desactivará cuando se cierren</string>
+    <string name="gaming_mode_headsup_title">Bloquear notificaciones</string>
+    <string name="gaming_mode_headsup_summary">Llamadas y alarmas permitidas</string>
+    <string name="gaming_mode_hardware_keys_title">Bloquear los botones</string>
+    <string name="gaming_mode_hardware_keys_summary">Cuando el Modo Gaming este activo, los botones serán bloqueados</string>
+    <string name="gaming_mode_brightness_title">Desactivar brillo automático</string>
+    <string name="gaming_mode_brightness_summary">Bloquear brillo de pantalla cuando el Modo Gaming este activado</string>
+    <string name="gaming_mode_ringer_title">Timbrar en Modo Gaming</string>
+    <string name="gaming_mode_ringer_off_title">No cambiar</string>
+    <string name="gaming_mode_ringer_vibrate_title">Vibrar</string>
+    <string name="gaming_mode_ringer_dnd_title">No Molestar</string>
+    <string name="gaming_mode_ringer_silent_title">Silencioso</string>
+    <string name="gaming_mode_notifications_title">Indicador del Modo Gaming</string>
+    <string name="gaming_mode_notifications_off_title">Desactivado</string>
+    <string name="gaming_mode_notifications_notif_title">Mostrar notificación</string>
+    <string name="gaming_mode_notifications_toast_title">Mostrar notificación toast</string>
+    <string name="gaming_mode_notifications_all_title">Mostrar notificaciones emergentes y toast</string>
+    <string name="gaming_mode_dynamic_title">Modo dinámico</string>
+    <string name="gaming_mode_dynamic_summary">Intentar detectar y añadir los juegos automáticamente</string>
+    <!--qs tint toggle-->
+    <string name="qs_bg_use_new_tint">Cambiador de color QS</string>
+    <string name="qs_bg_use_new_tint_summary">Usar el color de acento para iconos y fondo de ajustes rápidos (Requiere el reinicio del SystemUI)</string>
+    <!-- Horizon light -->
+    <string name="default_string">Por defecto</string>
+    <string name="horizon_light_title">Luz de horizonte</string>
+    <string name="horizon_light_summary">Iluminar los bordes del AOD para notificaciones entrantes</string>
+    <string name="horizon_light_enabled_title">Mostrar el AOD</string>
+    <string name="aod_disabled">AOD está desactivado</string>
+    <string name="horizon_light_enabled_summary">Seguir mostrando la luz horizontón en AOD</string>
+    <string name="horizon_light_hide_aod_title">Ocultar el contenido en AOD</string>
+    <string name="horizon_light_hide_aod_summary">Ocultar contenido de AOD cuando los bordes son encendidos</string>
+    <string name="horizon_light_duration_title">Duración</string>
+    <string name="horizon_light_duration_summary">Tiempo que tarda en completar cada animación</string>
+    <string name="horizon_light_repeats_title">Repeticiones</string>
+    <string name="horizon_light_repeats_summary">Cantidad de veces que la animación debe mostrar\n0 para infinito</string>
+    <string name="horizon_light_timeout_title">Timeout</string>
+    <string name="horizon_light_timeout_forever">Para siempre</string>
+    <string name="horizon_light_timeout_half_minute">30 segundos</string>
+    <string name="horizon_light_timeout_minute">1 minuto</string>
+    <string name="horizon_light_timeout_three_minutes">3 minutos</string>
+    <string name="horizon_light_timeout_five_minutes">5 minutos</string>
+    <string name="horizon_light_timeout_ten_minutes">10 minutos</string>
+    <string name="set_to_zero">Poner repeticiones en 0 para habilitar</string>
+    <string name="horizon_color_mode_title">Modo de color</string>
+    <string name="horizon_color_mode_accent">Color de acento</string>
+    <string name="horizon_color_mode_wall">Color del fondo de pantalla dominante</string>
+    <string name="horizon_color_mode_notification">Color del icono de notificación</string>
+    <string name="horizon_color_mode_custom">@string/horizon_light_color_title</string>
+    <string name="horizon_light_color_title">Color personalizado</string>
+    <!-- Oneui -->
+    <string name="enable_oneui">Barra de acción de ajustes de OneUI</string>
+    <string name="enable_oneui_summary">Mostrar el espaciador sobre la barra de acciones de configuración para un uso más fácil con una mano \nNOTA: reinicie la aplicación de configuración para ver el efecto</string>
+    <!-- Themes -->
+    <string name="theme_type_title">Temas Sakura</string>
+    <string name="theme_type_summary">Selecciona un tema</string>
+    <string name="theme_type_light">Claro</string>
+    <string name="theme_type_pitch_black">Gris de Google</string>
+    <string name="theme_type_solarized_dark">Solarized Dark</string>
+    <string name="theme_type_baked_green">Verde horneado</string>
+    <string name="theme_type_choco_x">Choco X</string>
+    <string name="theme_type_du_pitchblack">Negro intenso</string>
+    <string name="theme_type_material_ocean">Material Ocean</string>
+    <string name="theme_type_style_mizu">Mizu</string>
+    <!-- gvisual mod -->
+    <string name="gvisual_title">Gvisual Mod</string>
+    <string name="rounded_ui_title">Esquinas redondeadas</string>
+    <string name="rounded_ui_dialog_title">Seleccionar modelo de esquina redondeada</string>
+    <string name="rounded_style_default">Por defecto</string>
+    <string name="rounded_style_rectangle">Rectángulo</string>
+    <string name="rounded_style_large">Grande</string>
+    <string name="rounded_style_medium">Medio</string>
+    <string name="statusbar_height_title">Altura de la Barra de Estado</string>
+    <string name="statusbar_height_dialog_title">Seleccionar modelo de altura de la barra de estado</string>
+    <string name="sb_height_default">Por defecto</string>
+    <string name="sb_height_medium">Medio</string>
+    <string name="sb_height_large">Grande</string>
+    <string name="sb_height_extralarge">Extra grande</string>
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Animación al apagar pantalla</string>
+    <string name="screen_off_animation_default">Por defecto</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Escala</string>
+    <string name="screen_off_animation_summary">Animaciones crt y escaladas para la pantalla de bloqueo</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Opciones de vibración en llamada</string>
+    <string name="incall_vibrate_connect_title">Vibrar al conectar</string>
+    <string name="incall_vibrate_call_wait_title">Vibrar en llamada en espera</string>
+    <string name="incall_vibrate_disconnect_title">Vibrar al desconectar</string>
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Niveles de volumen</string>
+    <string name="volume_steps_summary">Personaliza el número de pasos en el panel de volumen</string>
+    <string name="volume_steps_alarm_title">Niveles de volumen: Alarma</string>
+    <string name="volume_steps_dtmf_title">Niveles de volumen: DTMF</string>
+    <string name="volume_steps_music_title">Niveles de volumen: Música</string>
+    <string name="volume_steps_notification_title">Niveles de volumen: Notificación</string>
+    <string name="volume_steps_ring_title">Niveles de volumen: Tono de llamada</string>
+    <string name="volume_steps_system_title">Niveles de volumen: Sistema</string>
+    <string name="volume_steps_voice_call_title">Niveles de volumen: Llamada</string>
+    <string name="volume_steps_reset">Restablecer</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+    <!-- Navbar layout options -->
+    <string name="navbar_layout_title">Distribución</string>
+    <string name="navbar_layout_normal">Normal</string>
+    <string name="navbar_layout_compact">Compacto</string>
+    <string name="navbar_layout_leftleaning">Para zurdos</string>
+    <string name="navbar_layout_rightleaning">Para diestros</string>
+    <string name="navbar_invert_layout_title">Invertir barra de navegación</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Indicador de roaming</string>
+    <string name="roaming_indicator_icon_summary">Mostrar indicador roaming en el icono de señal cuando está activado el modo roaming</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Icono 4G</string>
+    <string name="show_fourg_icon_summary">Mostrar ícono de 4G en lugar de LTE</string>
+    <!-- Data disabled indicator -->
+    <string name="data_disabled_icon_title">Indicador de datos deshabilitado</string>
+    <string name="data_disabled_icon_summary">Mostar una \"X\" junto a la barra de señal cuando los datos esten deshabilitados</string>
+    <!-- Old mobiletype icon style -->
+    <string name="old_mobiletype_title">Icono de señal antiguo</string>
+    <string name="old_mobiletype_summary">Combinar iconos de señal y tipo de señal</string>
+    <!-- Notifications while screen on -->
+    <string name="notification_sound_vib_screen_on_title">Notificaciones ruidosas</string>
+    <string name="notification_sound_vib_screen_on_summary">Reproducir sonido y vibrar al recibir notificaciones cuando la pantalla está encendida</string>
+    <!-- qs media player -->
+    <string name="qs_media_player_title">Reproductor multimedia</string>
+    <string name="qs_media_player_summary_on">Mostrar reproductor multimedia.\nRequiere reiniciar la UI</string>
+    <string name="qs_media_player_summary_off">Mostrar reproductor multimedia como notificación.\nRequiere reiniciar la UI</string>
+    <!-- QS DataUsage Toggle -->
+    <string name="qs_datausage_title">Uso de datos en el encabezado de ajustes rápidos</string>
+    <string name="qs_datausage_disabled">Desactivado</string>
+    <string name="qs_datausage_daily">Uso diario</string>
+    <string name="qs_datausage_monthly">Uso mensual</string>
+    <!-- Omni Jaws -->
+    <string name="weather_title">Clima</string>
+    <string name="weather_summary">Configuraciones del tiempo de OmniJaws</string>
+    <string name="weather_config_title">Servicio de clima</string>
+    <string name="weather_config_summary">Configuración del servicio del sistema</string>
+    <string name="header_weather_title">Vista del tiempo en el encabezado</string>
+    <string name="header_weather_summary">Habilitar mostrar el tiempo en la cabecera del panel de notificaciones</string>
+    <string name="weather_icon_pack_title">Paquete de iconos de clima</string>
+    <string name="weather_icon_pack_note">Nota\u003a puede instalar nuevos paquetes de iconos desde Play Store buscando \"Chronus icons\"</string>
+    <string name="weather_icon_pack_info_title">El paquete de iconos es usado en las ajustes rápidos y en la pantalla de bloqueo</string>
+    <string name="lockscreen_weather_title">Mostrar la condición del clima</string>
+    <string name="lockscreen_weather_summary">Mostrar condición meteorológica actual y temperatura</string>
+    <string name="lock_screen_weather_style_title">Estilo de clima</string>
+    <string name="lock_screen_weather_style_summaryOff">El clima se muestra por debajo de la línea de fecha con la ubicación</string>
+    <string name="lock_screen_weather_style_summaryOn">El clima se muestra por debajo de la línea de fecha sin la ubicación</string>
+    <!-- FOD icon picker -->
+    <string name="fod_icon_picker_title">Selector de iconos FOD</string>
+    <string name="fod_icon_picker_summary">Elegir el icono favorito de huella digital</string>
+    <string name="fod_icon_picker_footer">Para añadir tu propio icono, selecciona el icono superior izquierdo y usa la aplicación OnePlus 6T FP Customizer para seleccionar el icono deseado.</string>
+    <!-- FOD animations -->
+    <string name="fod_recog_animation">Animación de reconocimiento de FOD</string>
+    <string name="fod_recog_animation_summary">Muestra la animación mientras lee tu huella</string>
+    <string name="fod_recog_animation_effect_title">Efecto de animación de reconocimiento</string>
+    <string name="fod_recog_animation_miui_normal">MIUI por defecto</string>
+    <string name="fod_recog_animation_miui_aod">MIUI AOD</string>
+    <string name="fod_recog_animation_miui_aurora">Aurora (K30 Pro)</string>
+    <string name="fod_recog_animation_miui_aurora_cas">Aurora (Mi 10 Ultra)</string>
+    <string name="fod_recog_animation_miui_light">Claro</string>
+    <string name="fod_recog_animation_miui_pop">Pop</string>
+    <string name="fod_recog_animation_miui_pulse">Pulse</string>
+    <string name="fod_recog_animation_miui_pulse_white">Pulso (Blanco)</string>
+    <string name="fod_recog_animation_miui_rhythm">Ritmo</string>
+    <string name="fod_recog_animation_miui_star_cas">Estrellas</string>
+    <string name="fod_recog_animation_op_cosmos">Cosmos</string>
+    <string name="fod_recog_animation_op_energy">Energía</string>
+    <string name="fod_recog_animation_op_mclaren">McLaren</string>
+    <string name="fod_recog_animation_op_ripple">Onda</string>
+    <string name="fod_recog_animation_op_stripe">Stripe</string>
+    <string name="fod_recog_animation_op_wave">Ola</string>
+    <string name="fod_recog_animation_pureview_dna">ADN</string>
+    <string name="fod_recog_animation_pureview_future">Futuro</string>
+    <string name="fod_recog_animation_pureview_halo_ring">Anillo de halo</string>
+    <string name="fod_recog_animation_pureview_molecular">Molecular</string>
+    <string name="fod_recog_animation_rog_fusion">Fusión</string>
+    <string name="fod_recog_animation_rog_pulsar">Pulsar</string>
+    <string name="fod_recog_animation_rog_supernova">Supernova</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Huella con la pantalla apagada</string>
+    <string name="fod_gesture_summary">Permitir desbloquear el dispositivo sin tener que despertar primero la pantalla</string>
+</resources>
