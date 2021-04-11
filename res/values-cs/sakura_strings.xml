@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright © 2020-21 Project Sakura
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="sakura_settings_title">Sakura konfigurace</string>
+    <string name="sakura_dashboard_summary">Přivede Vám jaro.</string>
+    <!-- ROM Info -->
+    <string name="sakura_about_info">O projektu</string>
+    <string name="sakura_about_info_summary_title">O týmu</string>
+    <string name="sakura_about_info_summary">Přizpůsobený operační systém Lineage. Jejím jediným účelem je poskytnout přizpůsobitelnější platformu poháněnou systémem Lineage.</string>
+    <!-- Dev Info -->
+    <string name="devs_header">Vývojáři</string>
+    <string name="dev_1">LordShenron</string>
+    <string name="dev1_description">Zakladatel/vývojář</string>
+    <string name="dev_3">Arun Teltia</string>
+    <string name="dev3_description">Vývojář webu</string>
+    <!-- Maintainer Info -->
+    <string name="maintainers_header">Správci</string>
+    <string name="maintainers_header_summary">Toto jsou správci oficiálních zařízení...</string>
+    <!-- Asus -->
+    <string name="device_asus">Asus</string>
+    <string name="device_X00T">ZenFone Max Pro M1</string>
+    <string name="device_X00T_description">X00T\nShen</string>
+    <!-- Dead LeEco -->
+    <string name="device_leeco">LeEco</string>
+    <string name="device_s2">LeEco Le 2 </string>
+    <string name="device_s2_description">S2\nCakesTwix</string>
+    <!-- No more flagship killer -->
+    <string name="device_oneplus">OnePlus</string>
+    <string name="device_oneplus3">OnePlus 3 a 3T </string>
+    <string name="device_oneplus3_description">oneplus3\nDeepak Jr</string>
+    <string name="device_oneplus6">OnePlus 6 </string>
+    <string name="device_oneplus6_description">enchilada\neduardo</string>
+    <!-- Realmeme -->
+    <string name="device_realme">Realme</string>
+    <string name="device_cph1859">Realme 1 </string>
+    <string name="device_cph1859_description">CPH1859\nCyberJalagam</string>
+    <string name="device_rmx2001">Realme 6 </string>
+    <string name="device_rmx2001_description">RMX2001\nTanmay</string>
+    <!-- Lagsung -->
+    <string name="device_samsung">Samsung</string>
+    <string name="device_a10">Galaxy A10</string>
+    <string name="device_a10_description">a10\nchatur</string>
+    <string name="device_a20">Galaxy A20</string>
+    <string name="device_a20_description">a20\nchatur</string>
+    <string name="device_j4prime">Galaxy J4Prime LTE</string>
+    <string name="device_j4prime_description">j4primelte\nGabriel</string>
+    <string name="device_m20lte">Galaxie M20</string>
+    <string name="device_m20lte_description">m20lte\nHaridhayal</string>
+    <!--Gayzu-->
+    <string name="device_meizu">Meizu</string>
+    <string name="device_m1882">Meizu 16th</string>
+    <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
+    <string name="device_m1892">Meizu 16th Plus</string>
+    <string name="device_m1892_description">m1892\nAbdibekov Dauren</string>
+    <!-- chinese spy -->
+    <string name="device_xiaomi">Xiaomi</string>
+    <!--Mi-->
+    <string name="device_gauguin">Mi 10i 5G | Mi 10T Lite</string>
+    <string name="device_gauguin_description">gauguin\nPrajwal a Nitish</string>
+    <string name="device_tucana">Mi Note 10</string>
+    <string name="device_tucana_description">tucana\nAlexander</string>
+    <string name="device_wayne">Mi 6X</string>
+    <string name="device_wayne_description">wayne\nMarcos Almeida</string>
+    <string name="device_tissot">Mi A1</string>
+    <string name="device_tissot_description">tissot\nRoger W.</string>
+    <!--poco-->
+    <string name="device_phoenix">Poco X2</string>
+    <string name="device_phoenix_description">phoenix\nShivam</string>
+    <string name="device_surya">Poco X3</string>
+    <string name="device_surya_description">surya\nArmSM a Agus</string>
+    <!--redmi-->
+    <string name="device_davinci">Redmi K20</string>
+    <string name="device_davinci_description">davinci\nGabriel</string>
+    <string name="device_sakura">Redmi 6 Pro</string>
+    <string name="device_sakura_description">sakura\nAlex</string>
+    <string name="device_whyred">Redmi Note 5 Pro</string>
+    <string name="device_whyred_description">whyred\nDarkstar</string>
+    <string name="device_violet">Redmi Note 7 Pro</string>
+    <string name="device_violet_description">violet\nSpicyDoughnut</string>
+    <!-- Categories -->
+    <string name="gestures_title">Gesta</string>
+    <string name="sakura_gesture_summary_title">Třemi prsty sjetí, rozložení a gesta AOSP</string>
+    <string name="lockscreen_title">Zamykací obrazovka</string>
+    <string name="sakura_lockscreen_summary_title">nabíjení na zamykací obrazovce a zabezpečená zamykací obrazovka</string>
+    <string name="misc_title">Ostatní</string>
+    <string name="sakura_misc_summary_title">Indikace herního režimu</string>
+    <string name="parts_title">LineageČásti</string>
+    <string name="sakura_parts_summary_title">stavová lišta, tlačítka a další nastavení řádků</string>
+    <string name="quicksettings_title">Rychlé nastavení</string>
+    <string name="sakura_quicksettings_summary_title">Název dlaždice, obrázky záhlaví, průhlednost</string>
+    <string name="interface_title">Rozhraní</string>
+    <string name="sakura_interface_summary_title">Motivy, pruh baterie a měřič sítě</string>
+    <string name="animation_title">Animace</string>
+    <string name="sakura_animation_summary_title">Otevření a zavření animací</string>
+    <string name="notifications_title">Oznámení</string>
+    <string name="sakura_notifications_summary_title">Plovoucí upozornění, horizontální světla, možnosti vibrací</string>
+    <string name="sakura_updater_summary_title">OTA aktualizace</string>
+    <string name="updater_title">Aktualizace Sakury</string>
+    <string name="buttons_settings">Nastavení tlačítek</string>
+    <string name="buttons_settings_summary">Nastavení tlačítek LineageOS</string>
+    <string name="statusbar_settings">Nastavení stavové lišty</string>
+    <string name="statusbar_settings_summary">Vylepšení LineageOS stavové lišty</string>
+    <!-- sub categories -->
+    <string name="themes_ui_settings">Témata a nastavení uživatelského rozhraní</string>
+    <string name="misc_interface_settings">Různé nastavení uživatelského rozhraní</string>
+    <string name="lockscreen_ui_settings">Uživatelské rozhraní zamykací obrazovky</string>
+    <string name="secure_lockscreen_settings">Zabezpečená zamykací obrazovka</string>
+    <string name="headsup_settings">Systémová Headsup</string>
+    <string name="horizon_light_settings">AOD Oznámení</string>
+    <string name="misc_qs_settings">Různé nastavení QS</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Resetovat</string>
+    <string name="cancel">Zrušit</string>
+    <string name="save">Uložit</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Výběr barvy</string>
+    <string name="press_color_to_apply">Klikněte na barvu pro její výběr</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Nastavit</string>
+    <string name="color_default">Výchozí</string>
+    <!-- Battery Bar -->
+    <string name="battery_bar_title">Pruh baterie</string>
+    <string name="battery_bar_summary">Zobrazit a přizpůsobit pruh baterie nad stavovou lištou</string>
+    <string name="battery_bar">Poloha</string>
+    <string name="battery_bar_no_navbar">Poloha</string>
+    <string name="battery_bar_location_hide">Skrýt</string>
+    <string name="battery_bar_location_statusbar">Stavová lišta</string>
+    <string name="battery_bar_location_top_navbar">V horní části navigační lišty</string>
+    <string name="battery_bar_location_bottom_navbar">V dolní části navigační lišty</string>
+    <string name="battery_bar_color">Barva</string>
+    <string name="battery_bar_charging_color">Barva při nabíjení</string>
+    <string name="battery_bar_battery_low_color">Barva nízkého stavu baterie</string>
+    <string name="battery_bar_cat">Styl</string>
+    <string name="battery_bar_style_title">Zarovnání</string>
+    <string name="battery_bar_thickness_title">Tloušťka</string>
+    <string name="battery_bar_animate_title">Animace nabíjení</string>
+    <string name="battery_bar_style_regular">Základní</string>
+    <string name="battery_bar_style_center_mirrored">Zrcadlově na střed</string>
+    <string name="battery_bar_style_reversed">Obráceně</string>
+    <string name="battery_bar_use_charging_color">Vlastní barva nabíjení</string>
+    <string name="battery_bar_blend_color_title">Smísit barvy</string>
+    <string name="battery_bar_blend_color_summary">Smíchání barvy odpovídající procentu baterie - plné/prázdné</string>
+    <string name="battery_bar_blend_color_reverse_title">Obrátit pořadí barev</string>
+    <string name="battery_bar_blend_color_reverse_summary_off">Nabito &#8594; Vybito: červená &#8592; zelená &#8592; modrá &#8592; červená</string>
+    <string name="battery_bar_blend_color_reverse_summary_on">Nabito &#8594; Vybito: červená &#8594; zelená &#8594; modrá &#8594; červená</string>
+    <!-- QS rows and columns -->
+    <string name="sysui_qqs_count_title">Sloupce (panel QS)</string>
+    <string name="qs_layout_category">Rozložení</string>
+    <string name="qs_column_rows_settings_title">Nastavení panelu QS</string>
+    <string name="qs_columns_rows_category_title">Sloupce a řádky QS</string>
+    <string name="qs_rows_columns_title">Řádky a sloupce QS</string>
+    <string name="qs_rows_portrait_title">Řádky (na výšku)</string>
+    <string name="qs_rows_landscape_title">Řádky (na šířku)</string>
+    <string name="qs_columns_portrait_title">Sloupce (na výšku)</string>
+    <string name="qs_columns_landscape_title">Sloupce (na šířku)</string>
+    <!--QS tile title visibility-->
+    <string name="qs_tile_title_visibility_title">Názvy dlaždic</string>
+    <string name="qs_tile_title_visibility_summary">Zobrazit název pod každou dlaždicí</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrace při dotyku</string>
+    <string name="quick_settings_vibrate_summary">Vibrace při dotyku dlaždice</string>
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qs_panel_alpha_title">Průhlednost panelu QS</string>
+    <string name="qs_panel_alpha_summary">Nastavení průhlednosti panelu QS</string>
+    <!-- Custom headers -->
+    <string name="notification_title">Panel oznámení</string>
+    <string name="status_bar_custom_header_title">Povolit</string>
+    <string name="daylight_header_pack_title">Sbírka obrázků záhlaví</string>
+    <string name="status_bar_custom_header_shadow_title">Zatmavení obrázku záhlaví</string>
+    <string name="status_bar_custom_header_shadow_summary">Pro lepší viditelnost na jasném pozadí</string>
+    <string name="unit_percent">\u0025</string>
+    <string name="static_header_provider_title">Statický obrázek</string>
+    <string name="daylight_header_provider_title">Sbírka obrázků</string>
+    <string name="custom_header_provider_title">Poskytovatel záhlaví</string>
+    <string name="custom_header_pick_title">Vybrat obrázek záhlaví</string>
+    <string name="custom_header_pick_summary">Vyberte místní nebo vzdálený obrázek</string>
+    <string name="style_enabled_summary">Vlastní obrázek záhlaví je zapnutý</string>
+    <string name="style_disabled_summary">Vlastní obrázek záhlaví je vypnutý</string>
+    <string name="header_provider_disabled">Vypnuto</string>
+    <string name="custom_header_title">Vlastní obrázek záhlaví</string>
+    <string name="file_header_select_title">Vyberte místní obrázek</string>
+    <string name="file_header_select_summary">Vyberte obrázek z úložiště</string>
+    <string name="file_header_provider_title">Jeden obrázek</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="screenshot_gestures">Gesto snímku obrazovky</string>
+    <string name="three_finger_gesture">Gesto třemi prsty</string>
+    <string name="three_finger_gesture_summary">Snímek obrazovky zhotovíte přejetím třemi prsty dolů po displeji</string>
+    <!-- AOKP custom system animations -->
+    <string name="system_animation_title">Systém</string>
+    <string name="activity_open_title">Animace otevření aktivity</string>
+    <string name="activity_close_title">Animace zavření aktivity</string>
+    <string name="task_open_title">Animace otevření úlohy</string>
+    <string name="task_open_behind_title">Animace otevření úlohy na pozadí</string>
+    <string name="task_close_title">Animace zavření úlohy</string>
+    <string name="task_move_to_front_title">Animace přesunutí do popředí</string>
+    <string name="task_move_to_back_title">Animace přesunutí na pozadí</string>
+    <string name="wallpaper_open_title">Animace otevření tapety</string>
+    <string name="wallpaper_close_title">Animace zavření tapety</string>
+    <string name="wallpaper_intra_open_title">Animace otevření nové tapety</string>
+    <string name="wallpaper_intra_close_title">Animace zavření nové tapety</string>
+    <string name="animation_duration_title">Délka animace</string>
+    <string name="title_animation_no_override">Bránit aplikacím v překrývání</string>
+    <string name="summary_animation_no_override">Bránit aplikacím měnit nastavení přechodů</string>
+    <string name="animation_duration_default">Výchozí</string>
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Menu napájení</string>
+    <string name="lockscreen_enable_power_menu_summary">Povolit přístup do Menu napájení na zabezpečené obrazovce uzamčení</string>
+    <string name="lockscreen_secure_power_menu_title">Zabezpečené menu napájení</string>
+    <string name="lockscreen_secure_power_menu_summary">Povolit vstup do menu napájení pouze po ověření</string>
+    <!-- Units -->
+    <string name="unit_seconds">sekundy</string>
+    <string name="unit_milliseconds">milisekundy</string>
+    <string name="unit_pixels">dp</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Informace o nabíjení na zamykací obrazovce</string>
+    <string name="lockscreen_battery_info_summary">Zobrazit maximální proud, napětí a teplotu baterie při nabíjení na zamykací obrazovce</string>
+    <!-- Heads up -->
+    <string name="heads_up_notifications">Plovoucí upozornění</string>
+    <string name="heads_up_summary">Povolit/zakázat vyskakování oznámení a ovládání hlavičky</string>
+    <string name="summary_heads_up_enabled">Plovoucí oznámení jsou povolena</string>
+    <string name="summary_heads_up_disabled">Plovoucí oznámení jsou zakázána</string>
+    <string name="add_heads_up_package">Přidat aplikaci</string>
+    <string name="add_heads_up_stoplist_summary">Zakázané plovoucí oznámení pro tyto aplikace</string>
+    <string name="add_heads_up_blacklist_summary">Zakázané plovoucí oznámení pro tyto aplikace</string>
+    <string name="heads_up_stoplist_title">Stoplist</string>
+    <string name="heads_up_blacklist_title">Černá listina</string>
+    <string name="profile_choose_app">Vybrat aplikace</string>
+    <string name="dialog_delete_title">Vymazat</string>
+    <string name="dialog_delete_message">Odstranit vybranou položku?</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Méně nudné plovoucí oznámení</string>
+    <string name="less_boring_heads_up_summary">Zobrazit plovoucí oznámení pouze pro aplikace Telefon, Zprávy nebo Budík</string>
+    <!-- AOSP Gestures -->
+    <string name="system_gestures">Systémová gesta</string>
+    <string name="aosp_gesture_title">Nastavení gest AOSP</string>
+    <string name="aosp_gesture_summary">Přejetí prstem, 2 tlačítka, 3 tlačítka navigace a další</string>
+    <!--dashboard icons-->
+    <string name="theming_settings_dashboard_icons_title">Nastavení ikon hlavního panelu</string>
+    <string name="theming_settings_dashboard_icons_default2">Výchozí pozadí</string>
+    <string name="theming_settings_dashboard_icons_default_accent2">Doplňková barva pozadí</string>
+    <string name="theming_settings_dashboard_icons_plain">Prostý</string>
+    <string name="theming_settings_dashboard_icons_plain_accent">Prostý odstín</string>
+    <string name="theming_settings_dashboard_icons_default_oneplus">OnePlus</string>
+    <!-- Statusbar net monitor -->
+    <string name="traffic_title">Indikátor síťového provozu</string>
+    <string name="traffic_summary">Zobrazit indikátor síťového provozu v QS a stavové liště</string>
+    <string name="network_traffic_state_title">Síťový provoz</string>
+    <string name="network_traffic_state_summary">Zobrazit indikátor síťové aktivity ve stavové liště</string>
+    <string name="network_traffic">Síťový provoz</string>
+    <string name="network_traffic_location">Umístění indikátoru síťového provozu</string>
+    <string name="traffic_disabled">Vypnuto</string>
+    <string name="traffic_statusbar">Stavová lišta</string>
+    <string name="traffic_expanded_statusbar">Rozšířené záhlaví</string>
+    <string name="network_traffic_autohide_threshold_title">Prahová hodnota pro automatické skrytí síťové aktivity (KB/s)</string>
+    <string name="network_traffic_arrow">Zobrazit šipky</string>
+    <string name="network_traffic_arrow_summary">Zobrazit šipky aktivity sítě</string>
+    <string name="network_traffic_type">Vyberte typ činnosti sítě</string>
+    <string name="show_network_traffic_combined">Kombinovaný (Nahrávání + Stahování)</string>
+    <string name="show_network_traffic_dynamic">Dynamické</string>
+    <string name="show_network_traffic_up">Nahrávání</string>
+    <string name="show_network_traffic_down">Stahování</string>
+    <string name="show_network_traffic_all">Obojí</string>
+    <string name="network_traffic_layout">Rozvržení šipek</string>
+    <string name="network_traffic_layout_h">Horizontální</string>
+    <string name="network_traffic_layout_v">Vertikální</string>
+    <string name="nettraf_font_size">Velikost textu jedné sítě</string>
+    <!-- volte icon toggle -->
+    <string name="volte_icon_title">Ikona VoLTE</string>
+    <string name="volte_icon_summary">Zobrazit ikonu VoLTE, je-li k dispozici</string>
+    <!--bluetooth battery level -->
+    <string name="bluetooth_battery_title">Stav baterie Bluetooth zařízení</string>
+    <string name="bluetooth_battery_summary">Zobrazit stav baterie připojeného bluetooth zařízení, je-li dostupné</string>
+    <!-- Screenshot Sound  -->
+    <string name="screenshot_sound_title">Zvuk snímku obrazovky</string>
+    <string name="screenshot_sound_summary">Přehrát zvuk při pořízení snímku obrazovky</string>
+    <string name="audio_panel_view_timeout_title">Doba trvání zobrazení Panelu hlasitosti</string>
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Herní režim</string>
+    <string name="gaming_mode_summary">Přizpůsobit předvolby Herního režimu</string>
+    <string name="gaming_mode_enabled_summary">Povolit zapnutí Herního režimu</string>
+    <string name="gaming_mode_app_picker_title">Automaticky zapnout při použití těchto aplikací</string>
+    <string name="add_gaming_mode_package_title">Přidat aplikace do Herního režimu</string>
+    <string name="add_gaming_mode_package_summary">Herní režim se automaticky zapne, když budou tyto aplikace spuštěny a zase se vypne, když budou ukončeny</string>
+    <string name="gaming_mode_headsup_title">Blokovat oznámení</string>
+    <string name="gaming_mode_headsup_summary">Hovory a budíky jsou vyňaty</string>
+    <string name="gaming_mode_hardware_keys_title">Uzamknout tlačítka</string>
+    <string name="gaming_mode_hardware_keys_summary">Po zapnutí Herního režimu budou tlačítka uzamčena</string>
+    <string name="gaming_mode_brightness_title">Zakázat automatický jas</string>
+    <string name="gaming_mode_brightness_summary">Zamknout jas obrazovky při zapnutí Herního režimu</string>
+    <string name="gaming_mode_ringer_title">Vyzvánění při Herním režimu</string>
+    <string name="gaming_mode_ringer_off_title">Neměnit</string>
+    <string name="gaming_mode_ringer_vibrate_title">Vibrace</string>
+    <string name="gaming_mode_ringer_dnd_title">Nerušit</string>
+    <string name="gaming_mode_ringer_silent_title">Tichý</string>
+    <string name="gaming_mode_notifications_title">Indikace herního režimu</string>
+    <string name="gaming_mode_notifications_off_title">Vypnuto</string>
+    <string name="gaming_mode_notifications_notif_title">Zobrazit upozornění</string>
+    <string name="gaming_mode_notifications_toast_title">Zobrazit vyskakovací oznámení</string>
+    <string name="gaming_mode_notifications_all_title">Zobrazit vyskakovací oznámení a oznámení</string>
+    <string name="gaming_mode_dynamic_title">Dynamický režim</string>
+    <string name="gaming_mode_dynamic_summary">Zkusit rozpoznat a přidat herní aplikace automaticky</string>
+    <!--qs tint toggle-->
+    <string name="qs_bg_use_new_tint">Přepínač odstínu QS</string>
+    <string name="qs_bg_use_new_tint_summary">Použít barvu zvýraznění pro ikony dlaždic a pozadí (vyžaduje restartování systému)</string>
+    <!-- Horizon light -->
+    <string name="default_string">Výchozí</string>
+    <string name="horizon_light_title">Horizontální světlo</string>
+    <string name="horizon_light_summary">Světelné okraje pro pulzující oznámení</string>
+    <string name="horizon_light_enabled_title">Zobrazit na AOD</string>
+    <string name="aod_disabled">AOD je vypnuto</string>
+    <string name="horizon_light_enabled_summary">Zachovat zobrazování horizontálního světla na AOD</string>
+    <string name="horizon_light_hide_aod_title">Skrýt obsah na AOD</string>
+    <string name="horizon_light_hide_aod_summary">Skrýt AOD obsah, když jsou světelné okraje rozsvíceny</string>
+    <string name="horizon_light_duration_title">Doba trvání</string>
+    <string name="horizon_light_duration_summary">Čas dokončení každé animace</string>
+    <string name="horizon_light_repeats_title">Opakování</string>
+    <string name="horizon_light_repeats_summary">Množství kolikrát by se animace měla zobrazovat\n0 pro nekonečné</string>
+    <string name="horizon_light_timeout_title">Časový limit</string>
+    <string name="horizon_light_timeout_forever">Opakovat navždy</string>
+    <string name="horizon_light_timeout_half_minute">30 sekund</string>
+    <string name="horizon_light_timeout_minute">1 minuta</string>
+    <string name="horizon_light_timeout_three_minutes">3 minuty</string>
+    <string name="horizon_light_timeout_five_minutes">5 minut</string>
+    <string name="horizon_light_timeout_ten_minutes">10 minut</string>
+    <string name="set_to_zero">Nastavit opakování na 0 pro povolení</string>
+    <string name="horizon_color_mode_title">Barevný režim</string>
+    <string name="horizon_color_mode_accent">Doplňková barva</string>
+    <string name="horizon_color_mode_wall">Dominantní barva tapety</string>
+    <string name="horizon_color_mode_notification">Barva ikon upozornění</string>
+    <string name="horizon_color_mode_custom">@string/horizon_light_color_title</string>
+    <string name="horizon_light_color_title">Vlastní barva</string>
+    <!-- Oneui -->
+    <string name="enable_oneui">Nastavení OneUI panelu akcí</string>
+    <string name="enable_oneui_summary">Zobrazit mezery nad nastavením panelu akcí pro snazší použití s jednou rukou\nPOZNÁMKA: restartujte aplikaci pro zobrazení efektu</string>
+    <!-- Themes -->
+    <string name="theme_type_title">Sakura motivy</string>
+    <string name="theme_type_summary">Vyberte motiv</string>
+    <string name="theme_type_light">Světlý</string>
+    <string name="theme_type_pitch_black">Google šedá</string>
+    <string name="theme_type_solarized_dark">Osvětlená čená</string>
+    <string name="theme_type_baked_green">Baked Green - zelená</string>
+    <string name="theme_type_choco_x">Choco X</string>
+    <string name="theme_type_du_pitchblack">Pitch black - černá</string>
+    <string name="theme_type_material_ocean">Material Ocean - modrá</string>
+    <string name="theme_type_style_mizu">Mizu</string>
+    <!-- gvisual mod -->
+    <string name="gvisual_title">Gvisual modifikace</string>
+    <string name="rounded_ui_title">Zaoblené rohy</string>
+    <string name="rounded_ui_dialog_title">Vyberte zaoblený rohový model</string>
+    <string name="rounded_style_default">Výchozí</string>
+    <string name="rounded_style_rectangle">Obdélník</string>
+    <string name="rounded_style_large">Velký</string>
+    <string name="rounded_style_medium">Střední</string>
+    <string name="statusbar_height_title">Výška stavové lišty</string>
+    <string name="statusbar_height_dialog_title">Vyberte model výšky stavové lišty</string>
+    <string name="sb_height_default">Výchozí</string>
+    <string name="sb_height_medium">Střední</string>
+    <string name="sb_height_large">Velký</string>
+    <string name="sb_height_extralarge">Extra velký</string>
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Animace vypnutí obrazovky</string>
+    <string name="screen_off_animation_default">Výchozí</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Škála</string>
+    <string name="screen_off_animation_summary">Crt efekt vypnutí obrazovky</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Možnosti vibrací při volání</string>
+    <string name="incall_vibrate_connect_title">Zavibrovat při spojení</string>
+    <string name="incall_vibrate_call_wait_title">Vibrovat při dalším hovoru</string>
+    <string name="incall_vibrate_disconnect_title">Zavibrovat při zavěšení</string>
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Kroky hlasitosti</string>
+    <string name="volume_steps_summary">Přizpůsobit počet kroků v panelu hlasitosti</string>
+    <string name="volume_steps_alarm_title">Kroky hlasitosti: Budík</string>
+    <string name="volume_steps_dtmf_title">Kroky hlasitosti: DTMF</string>
+    <string name="volume_steps_music_title">Kroky hlasitosti: Hudba</string>
+    <string name="volume_steps_notification_title">Kroky hlasitosti: Oznámení</string>
+    <string name="volume_steps_ring_title">Kroky hlasitosti: Vyzvánění</string>
+    <string name="volume_steps_system_title">Kroky hlasitosti: Systémové zvuky</string>
+    <string name="volume_steps_voice_call_title">Kroky hlasitosti: Volání</string>
+    <string name="volume_steps_reset">Resetovat</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+    <!-- Navbar layout options -->
+    <string name="navbar_layout_title">Rozložení</string>
+    <string name="navbar_layout_normal">Normální</string>
+    <string name="navbar_layout_compact">Kompaktní</string>
+    <string name="navbar_layout_leftleaning">Přichyceno vlevo</string>
+    <string name="navbar_layout_rightleaning">Přichyceno vpravo</string>
+    <string name="navbar_invert_layout_title">Obrátit rozložení</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Indikátor roamingu</string>
+    <string name="roaming_indicator_icon_summary">V režimu roamingu zobrazit indikátor v ikoně signálu</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Ikona 4G</string>
+    <string name="show_fourg_icon_summary">Zobrazit ikonu 4G namísto LTE</string>
+    <!-- Data disabled indicator -->
+    <string name="data_disabled_icon_title">Indikátor vypnutých mobilních dat</string>
+    <string name="data_disabled_icon_summary">Zobrazit křížek na ikoně signálu sítě, když jsou mobilní data vypnuta</string>
+    <!-- Old mobiletype icon style -->
+    <string name="old_mobiletype_title">Starý styl ikony signálu</string>
+    <string name="old_mobiletype_summary">Sloučit signál a typ ikony</string>
+    <!-- Notifications while screen on -->
+    <string name="notification_sound_vib_screen_on_title">Hlasitá oznámení</string>
+    <string name="notification_sound_vib_screen_on_summary">Přehrát zvuk a vibrace pro oznámení při zapnuté obrazovce</string>
+    <!-- qs media player -->
+    <string name="qs_media_player_title">Přehrávač médií QS</string>
+    <string name="qs_media_player_summary_on">Zobrazit přehrávač médií v QS.\nVyžaduje restart SystemUI</string>
+    <string name="qs_media_player_summary_off">Zobrazit přehrávač médií jako oznámení.\nVyžaduje restart SystemUI</string>
+    <!-- QS DataUsage Toggle -->
+    <string name="qs_datausage_title">Zobrazení využití dat v záhlaví QS</string>
+    <string name="qs_datausage_disabled">Vypnuto</string>
+    <string name="qs_datausage_daily">Denní využití</string>
+    <string name="qs_datausage_monthly">Měsíční využití</string>
+    <!-- Omni Jaws -->
+    <string name="weather_title">Počasí</string>
+    <string name="weather_summary">Konfigurace počasí OmniJaws</string>
+    <string name="weather_config_title">Poskytovatel počasí</string>
+    <string name="weather_config_summary">Nastavení systémové služby</string>
+    <string name="header_weather_title">Zobrazit počasí v záhlaví</string>
+    <string name="header_weather_summary">Povolit zobrazení počasí v záhlaví panelu oznámení</string>
+    <string name="weather_icon_pack_title">Balík ikon počasí</string>
+    <string name="weather_icon_pack_note">Poznámka\u003a Nové balíčky ikon můžete nainstalovat z Obchodu Play vyhledáním „Chronus icons“</string>
+    <string name="weather_icon_pack_info_title">Balíček ikon stavu počasí je používán v Rychlém nastavení a na obrazovce uzamčení</string>
+    <string name="lockscreen_weather_title">Zobrazit stav počasí</string>
+    <string name="lockscreen_weather_summary">Zobrazí aktuální stav počasí a teplotu</string>
+    <string name="lock_screen_weather_style_title">Styl počasí</string>
+    <string name="lock_screen_weather_style_summaryOff">Počasí s polohou se zobrazí pod řádkem data</string>
+    <string name="lock_screen_weather_style_summaryOn">Počasí bez polohy se zobrazí na řádku s datem</string>
+    <!-- FOD icon picker -->
+    <string name="fod_icon_picker_title">Výběr ikony otisku prstu</string>
+    <string name="fod_icon_picker_summary">Vyberte si svou oblíbenou ikonu čtečky otisku prstu v displeji</string>
+    <string name="fod_icon_picker_footer">Chcete‑li přidat vlastní ikonu, vyberte levou horní ikonu a použijte aplikaci OnePlus 6T FP Customizer pro výběr požadované ikony.</string>
+    <!-- FOD animations -->
+    <string name="fod_recog_animation">Animace rozpoznání otisku prstu</string>
+    <string name="fod_recog_animation_summary">Zobrazit animaci při skenování otisku prstu</string>
+    <string name="fod_recog_animation_effect_title">Animace rozpoznávání otisku prstu</string>
+    <string name="fod_recog_animation_miui_normal">Výchozí MIUI</string>
+    <string name="fod_recog_animation_miui_aod">MIUI AOD</string>
+    <string name="fod_recog_animation_miui_aurora">Aurora (K30 Pro)</string>
+    <string name="fod_recog_animation_miui_aurora_cas">Aurora (Mi 10 Ultra)</string>
+    <string name="fod_recog_animation_miui_light">Světlý</string>
+    <string name="fod_recog_animation_miui_pop">Pop</string>
+    <string name="fod_recog_animation_miui_pulse">Pulzování</string>
+    <string name="fod_recog_animation_miui_pulse_white">Pulzování (bílá)</string>
+    <string name="fod_recog_animation_miui_rhythm">Rytmus</string>
+    <string name="fod_recog_animation_miui_star_cas">Světlo hvězd</string>
+    <string name="fod_recog_animation_op_cosmos">Kosmos</string>
+    <string name="fod_recog_animation_op_energy">Energie</string>
+    <string name="fod_recog_animation_op_mclaren">McLaren</string>
+    <string name="fod_recog_animation_op_ripple">Zvlnění</string>
+    <string name="fod_recog_animation_op_stripe">Proužek</string>
+    <string name="fod_recog_animation_op_wave">Vlna</string>
+    <string name="fod_recog_animation_pureview_dna">DNA</string>
+    <string name="fod_recog_animation_pureview_future">Budoucnost</string>
+    <string name="fod_recog_animation_pureview_halo_ring">Halový kruh</string>
+    <string name="fod_recog_animation_pureview_molecular">Molekulární</string>
+    <string name="fod_recog_animation_rog_fusion">Fúze</string>
+    <string name="fod_recog_animation_rog_pulsar">Pulzování</string>
+    <string name="fod_recog_animation_rog_supernova">Supernova</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Otisk prstu při vypnuté obrazovce</string>
+    <string name="fod_gesture_summary">Umožňuje odemykat zařízení, aniž by bylo nutné nejprve probouzet obrazovku</string>
+</resources>
