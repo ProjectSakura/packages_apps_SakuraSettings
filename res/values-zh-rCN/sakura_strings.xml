@@ -290,7 +290,7 @@
     <string name="bluetooth_battery_summary">如果蓝牙设备支持，将在蓝牙图标旁显示已连接的蓝牙设备电量</string>
     <!-- Screenshot Sound  -->
     <string name="screenshot_sound_title">截图提示音</string>
-    <string name="screenshot_sound_summary">截图时’叮‘地一下</string>
+    <string name="screenshot_sound_summary">截图时‘叮’地一下</string>
     <string name="audio_panel_view_timeout_title">音量菜单显示时间</string>
     <!-- Gaming mode -->
     <string name="gaming_mode_title">游戏模式</string>
