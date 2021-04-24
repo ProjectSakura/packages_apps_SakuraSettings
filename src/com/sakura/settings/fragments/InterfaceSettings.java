@@ -57,6 +57,7 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
 
     private static final String PREF_THEME_SWITCH = "theme_switch";
     private static final String PREF_ROUNDED_CORNER = "rounded_ui";
+    private static final String GVISUAL_FOOTER = "gvisual_footer";
     private static final String PREF_SB_HEIGHT = "statusbar_height";
     private static final String KEY_SHOW_ROAMING = "roaming_indicator_icon";
     private static final String KEY_SHOW_FOURG = "show_fourg_icon";
@@ -82,6 +83,7 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
         Context mContext = getActivity().getApplicationContext();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        findPreference(GVISUAL_FOOTER).setTitle(R.string.gvisual_footer);
 
         mUiModeManager = getContext().getSystemService(UiModeManager.class);
         mOverlayService = IOverlayManager.Stub

@@ -130,6 +130,11 @@
             android:entries="@array/rounded_ui_titles"
             android:entryValues="@array/rounded_ui_values" />
 
+        <com.android.settingslib.widget.FooterPreference
+            android:key="gvisual_footer"
+            android:selectable="false"
+            settings:searchable="false" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
