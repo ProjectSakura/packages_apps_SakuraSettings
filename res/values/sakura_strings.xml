@@ -410,6 +410,7 @@
 
     <!-- gvisual mod -->
     <string name="gvisual_title">Gvisual Mod</string>
+    <string name="gvisual_footer">For some odd reason, the Rounded corner option doesn\'t work when Rounded Rectangle, Squircle, Teardrop or any other icon shapes are selected as the system icon shape.</string>
     <string name="rounded_ui_title">Rounded corner</string>
     <string name="rounded_ui_dialog_title">Select rounded corner model</string>
     <string name="rounded_style_default">Default</string>
