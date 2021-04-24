@@ -26,6 +26,16 @@
         android:summary="@string/screenshot_sound_summary"
         android:defaultValue="true" />
 
+    <!-- Screenshot compression -->
+    <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+        android:key="screenshot_compression"
+        android:title="@string/screenshot_compression_title"
+        android:summary="@string/screenshot_compression_summary"
+        android:defaultValue="100"
+        android:max="100"
+        settings:min="10"
+        settings:units="%" />
+
     <!-- volume dialog -->
     <com.sakura.settings.preferences.SystemSettingSeekBarPreference
         android:key="audio_panel_view_timeout"
