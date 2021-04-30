@@ -551,4 +551,7 @@
     <string name="screenshot_compression_title">Screenshot quality</string>
     <string name="screenshot_compression_summary">Compress screenshot size with loss in image quality</string>
 
+    <!-- Notification background opacity -->
+    <string name="notification_alpha_title">Notification background opacity</string>
+
 </resources>

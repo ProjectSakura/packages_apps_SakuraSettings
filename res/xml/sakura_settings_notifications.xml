@@ -19,6 +19,16 @@
     android:title="@string/notifications_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Notification background opacity -->
+    <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+        android:key="notification_bg_alpha"
+        android:title="@string/notification_alpha_title"
+        android:icon="@drawable/ic_invert_colors"
+        android:defaultValue="255"
+        android:max="255"
+        settings:min="0"
+        settings:units="" />
+
     <!-- Headsup -->
     <PreferenceCategory
         android:title="@string/headsup_settings">
