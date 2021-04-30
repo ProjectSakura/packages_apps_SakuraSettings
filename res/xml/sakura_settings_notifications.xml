@@ -23,7 +23,6 @@
     <com.sakura.settings.preferences.SystemSettingSeekBarPreference
         android:key="notification_bg_alpha"
         android:title="@string/notification_alpha_title"
-        android:icon="@drawable/ic_invert_colors"
         android:defaultValue="255"
         android:max="255"
         settings:min="0"
