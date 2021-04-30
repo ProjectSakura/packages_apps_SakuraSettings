@@ -77,6 +77,13 @@
     <PreferenceCategory
         android:title="@string/themes_ui_settings">
         
+    <!-- Charging animation -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+           android:key="charging_animation"
+           android:title="@string/charging_animation_title"
+           android:summary="@string/charging_animation_summary"
+           android:defaultValue="true" />
+
     <!-- OneUI like settings actionbar -->
     <com.sakura.settings.preferences.SystemSettingSwitchPreference 
             android:key="settings_spacer" 
