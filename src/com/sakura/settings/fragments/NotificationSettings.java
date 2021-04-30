@@ -94,6 +94,8 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = mContext.getContentResolver();
         Settings.System.putIntForUser(resolver,
                 Settings.System.NOTIFICATION_SOUND_VIB_SCREEN_ON, 1, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.NOTIFICATION_BG_ALPHA, 255, UserHandle.USER_CURRENT);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
