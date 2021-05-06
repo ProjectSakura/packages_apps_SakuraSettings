@@ -19,6 +19,14 @@
     android:title="@string/misc_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Clipboard toast info -->
+    <com.sakura.settings.preferences.SystemSettingListPreference
+        android:key="clipboard_toast_info"
+        android:title="@string/clipboard_toast_info_title"
+        android:entries="@array/clipboard_toast_info_entries"
+        android:entryValues="@array/clipboard_toast_info_values"
+        android:defaultValue="0" />
+
     <!-- Screenshot Sound  -->
     <com.sakura.settings.preferences.SystemSettingSwitchPreference
         android:key="screenshot_sound"
@@ -45,14 +53,6 @@
         settings:min="1"
         settings:interval="1" />
 
-    <!--Gaming mode -->
-    <Preference
-        android:key="gaming_mode"
-        android:icon="@drawable/ic_gaming"
-        android:title="@string/gaming_mode_title"
-        android:summary="@string/gaming_mode_summary"
-        android:fragment="com.sakura.settings.fragments.misc.GamingMode"/>
-
     <!-- Volume Steps -->
     <PreferenceScreen
         android:key="volume_steps"
@@ -60,5 +60,13 @@
         android:title="@string/volume_steps_title"
         android:summary="@string/volume_steps_summary"
         android:fragment="com.sakura.settings.fragments.misc.VolumeSteps" />
+
+    <!--Gaming mode -->
+    <Preference
+        android:key="gaming_mode"
+        android:icon="@drawable/ic_gaming"
+        android:title="@string/gaming_mode_title"
+        android:summary="@string/gaming_mode_summary"
+        android:fragment="com.sakura.settings.fragments.misc.GamingMode"/>
 
 </PreferenceScreen>
