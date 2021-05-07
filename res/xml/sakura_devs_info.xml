@@ -26,7 +26,7 @@
               android:title="@string/sakura_about_info" >
 
         <Preference
-               android:summary="@string/sakura_about_info_summary" 
+               android:summary="@string/sakura_about_info_summary"
                android:icon="@drawable/ic_devs_info" >
         <intent
                android:action="android.intent.action.VIEW"
@@ -38,14 +38,18 @@
 <PreferenceCategory
             android:key="sakura_dev"
             android:title="@string/devs_header" >
+
         <Preference
+            android:key="maintainer_shen"
             android:title="@string/dev_1"
             android:summary="@string/dev1_description">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/LordShenron" />
         </Preference>
+
         <Preference
+            android:key="maintainer_arun"
             android:title="@string/dev_3"
             android:summary="@string/dev3_description">
         <intent
@@ -58,13 +62,13 @@
 <PreferenceCategory
             android:key="maintainer"
             android:title="@string/maintainers_header" >
-			
+
         <Preference
-            android:summary="@string/maintainers_header_summary" 
+            android:summary="@string/maintainers_header_summary"
             android:icon="@drawable/ic_devs_info" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://www.github.com/ProjectSakura" />
+            android:data="https://projectsakura.xyz/maintainers" />
         </Preference>
 </PreferenceCategory>
 
@@ -74,6 +78,7 @@
         android:title="@string/device_asus" >
 
     <Preference
+        android:key="maintainer_X00T"
         android:title="@string/device_X00T"
         android:summary="@string/device_X00T_description"
         android:icon="@drawable/ic_devs_phone">
@@ -81,6 +86,17 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/LordShenron" />
     </Preference>
+
+    <Preference
+        android:key="maintainer_henrique"
+        android:title="@string/device_X00QD"
+        android:summary="@string/device_X00QD_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/henricaodopao" />
+    </Preference>
+
 </PreferenceCategory>
 
 <!-- Dead Leeco -->
@@ -89,6 +105,7 @@
         android:title="@string/device_leeco" >
 
     <Preference
+        android:key="maintainer_cakestwix"
         android:title="@string/device_s2"
         android:summary="@string/device_s2_description"
         android:icon="@drawable/ic_devs_phone">
@@ -98,12 +115,83 @@
     </Preference>
 </PreferenceCategory>
 
+<!--lenuwu-->
+<PreferenceCategory
+        android:key="maintainer"
+        android:title="@string/device_lenevo" >
+
+    <Preference
+        android:key="maintainer_jd2019"
+        android:title="@string/device_jd2019"
+        android:summary="@string/device_jd2019_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/CakesTwix" />
+    </Preference>
+</PreferenceCategory>
+
+<!--Gayzu -->
+<PreferenceCategory
+        android:key="maintainer"
+        android:title="@string/device_meizu" >
+
+    <Preference
+        android:key="maintainer_thdas"
+        android:title="@string/device_m1882"
+        android:summary="@string/device_m1882_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/THDAS" />
+    </Preference>
+
+    <Preference
+        android:key="maintainer_m1892"
+        android:title="@string/device_m1892"
+        android:summary="@string/device_m1892_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/THDAS" />
+    </Preference>
+
+</PreferenceCategory>
+
+<!-- muwurowola -->
+<PreferenceCategory
+        android:key="maintainer"
+        android:title="@string/device_motorola" >
+
+    <Preference
+        android:key="maintainer_armypunk"
+        android:title="@string/device_sanders"
+        android:summary="@string/device_sanders_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/UsingTheName" />
+    </Preference>
+
+    <Preference
+        android:key="maintainer_amy"
+        android:title="@string/device_channel"
+        android:summary="@string/device_channel_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/amyosx" />
+    </Preference>
+
+</PreferenceCategory>
+
 <!-- No more flagship killers -->
 <PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_oneplus" >
 
     <Preference
+        android:key="maintainer_deepakjr"
         android:title="@string/device_oneplus3"
         android:summary="@string/device_oneplus3_description"
         android:icon="@drawable/ic_devs_phone">
@@ -111,14 +199,16 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/The_real_Deepakjr" />
     </Preference>
+
     <Preference
+        android:key="maintainer_eduardo"
         android:title="@string/device_oneplus6"
         android:summary="@string/device_oneplus6_description"
         android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/NeoTheSavage" />
-    </Preference>    
+    </Preference>
 </PreferenceCategory>
 
 <!-- Realmeme -->
@@ -127,6 +217,7 @@
         android:title="@string/device_realme" >
 
     <Preference
+        android:key="maintainer_cyberkiddo"
         android:title="@string/device_cph1859"
         android:summary="@string/device_cph1859_description"
         android:icon="@drawable/ic_devs_phone">
@@ -134,7 +225,9 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/CyberJalagam" />
     </Preference>
+
     <Preference
+        android:key="maintainer_tanmay"
         android:title="@string/device_rmx2001"
         android:summary="@string/device_rmx2001_description"
         android:icon="@drawable/ic_devs_phone">
@@ -148,7 +241,9 @@
 <PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_samsung" >
+
     <Preference
+        android:key="maintainer_chatur"
         android:title="@string/device_a10"
         android:summary="@string/device_a10_description"
         android:icon="@drawable/ic_devs_phone">
@@ -156,7 +251,9 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/chatur2709" />
     </Preference>
+
     <Preference
+        android:key="maintainer_a20"
         android:title="@string/device_a20"
         android:summary="@string/device_a20_description"
         android:icon="@drawable/ic_devs_phone">
@@ -164,15 +261,9 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/chatur2709" />
     </Preference>
+
     <Preference
-        android:title="@string/device_j4prime"
-        android:summary="@string/device_j4prime_description"
-        android:icon="@drawable/ic_devs_phone">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Gabriel260BR" />
-    </Preference>
-    <Preference
+        android:key="maintainer_haridhayal"
         android:title="@string/device_m20lte"
         android:summary="@string/device_m20lte_description"
         android:icon="@drawable/ic_devs_phone">
@@ -180,27 +271,35 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/Haridhayal" />
     </Preference>
-</PreferenceCategory>
 
-<!--Gayzu --> 
-<PreferenceCategory
-        android:key="maintainer"
-        android:title="@string/device_meizu" > 
     <Preference
-        android:title="@string/device_m1882"
-        android:summary="@string/device_m1882_description"
+        android:key="maintainer_dreamlte"
+        android:title="@string/device_dreamlte"
+        android:summary="@string/device_dreamlte_description"
         android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/THDAS" />
+            android:data="https://t.me/Haridhayal" />
     </Preference>
-    <Preference 
-        android:title="@string/device_m1892"
-        android:summary="@string/device_m1892_description"
+
+    <Preference
+        android:key="maintainer_dream2lte"
+        android:title="@string/device_dream2lte"
+        android:summary="@string/device_dream2lte_description"
         android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/THDAS" />
+            android:data="https://t.me/Haridhayal" />
+    </Preference>
+
+    <Preference
+        android:key="maintainer_greatlte"
+        android:title="@string/device_m20lte"
+        android:summary="@string/device_m20lte_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Haridhayal" />
     </Preference>
 
 </PreferenceCategory>
@@ -209,17 +308,20 @@
 <PreferenceCategory
         android:key="maintainer"
         android:title="@string/device_xiaomi" >
-    
-    <!--Mi -->   
+
+    <!--Mi -->
     <Preference
+        android:key="maintainer_nitish"
         android:title="@string/device_gauguin"
         android:summary="@string/device_gauguin_description"
         android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/Wally_West_The_Flash" />
-    </Preference> 
+    </Preference>
+
     <Preference
+        android:key="maintainer_alexbrrbrr"
         android:title="@string/device_tucana"
         android:summary="@string/device_tucana_description"
         android:icon="@drawable/ic_devs_phone">
@@ -227,67 +329,41 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/alexander_baransky496" />
     </Preference>
-    <Preference
-        android:title="@string/device_wayne"
-        android:summary="@string/device_wayne_description"
-        android:icon="@drawable/ic_devs_phone">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Markdarkness" />
-    </Preference>
-    <Preference
-        android:title="@string/device_tissot"
-        android:summary="@string/device_tissot_description"
-        android:icon="@drawable/ic_devs_phone">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Lokodetoddyn" />
-    </Preference>
 
     <!--Poco-->
     <Preference
-        android:title="@string/device_phoenix"
-        android:summary="@string/device_phoenix_description"
-        android:icon="@drawable/ic_devs_phone">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Dronacharyaa" />
-    </Preference>
-    <Preference
+        android:key="maintainer_agus"
         android:title="@string/device_surya"
         android:summary="@string/device_surya_description"
         android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/UsingTheName" />
-    </Preference>     
+    </Preference>
 
     <!-- Redmi -->
     <Preference
-        android:title="@string/device_davinci"
-        android:summary="@string/device_davinci_description"
+        android:key="maintainer_shriiyansh"
+        android:title="@string/device_rosy"
+        android:summary="@string/device_rosy_description"
         android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Gabriel260BR" />
-    </Preference>     
+            android:data="https://t.me/shriiyansh210" />
+    </Preference>
+
     <Preference
-        android:title="@string/device_sakura"
-        android:summary="@string/device_sakura_description"
-        android:icon="@drawable/ic_devs_phone">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Darthinperator21" />
-    </Preference> 
-    <Preference
+        android:key="maintainer_darksitara"
         android:title="@string/device_whyred"
         android:summary="@string/device_whyred_description"
         android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/Darkstar085" />
-    </Preference> 
+    </Preference>
+
     <Preference
+        android:key="maintainer_spicyfriedbread"
         android:title="@string/device_violet"
         android:summary="@string/device_violet_description"
         android:icon="@drawable/ic_devs_phone">
@@ -295,6 +371,25 @@
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/spicydoughnut" />
     </Preference>
-    
+
+    <Preference
+        android:key="maintainer_abishek"
+        android:title="@string/device_begonia"
+        android:summary="@string/device_begonia_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/abhixv" />
+    </Preference>
+
+    <Preference
+        android:key="maintainer_a9ito"
+        android:title="@string/device_miatoll"
+        android:summary="@string/device_miatoll_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/a9ito" />
+    </Preference>
 </PreferenceCategory>
 </PreferenceScreen>

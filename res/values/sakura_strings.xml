@@ -34,31 +34,75 @@
     <!-- Maintainer Info -->
     <string name="maintainers_header">Maintainers</string>
     <string name="maintainers_header_summary">These are the Official Devices Maintainers...</string>
-    
+
+    <!--Maintainer git info -->
+    <string name="maintainer_shen_git">LordShenron</string>
+    <string name="maintainer_armypunk_git">ArmSM</string>
+    <string name="maintainer_haridhayal_git">haridhayal11</string>
+    <string name="maintainer_agus_git">agustkid</string>
+    <string name="maintainer_darksitara_git">Sweeto143</string>
+    <string name="maintainer_henrique_git">henricaodopao</string>
+    <string name="maintainer_arun_git">ArunTeltia</string>
+    <string name="maintainer_nitish_git">funeralfrog</string>
+    <string name="maintainer_cakestwix_git">CakesTwix</string>
+    <string name="maintainer_alexbrrbrr_git">AlexanderBaransky</string>
+    <string name="maintainer_a9ito_git">a9ito</string>
+    <string name="maintainer_deepakjr_git">aquariusjr10</string>
+    <string name="maintainer_eduardo_git">THERAD1</string>
+    <string name="maintainer_abishek_git">abhixv</string>
+    <string name="maintainer_chatur_git">Chatur27</string>
+    <string name="maintainer_tanmay_git">Atlas78</string>
+    <string name="maintainer_amy_git">00p513-dev</string>
+    <string name="maintainer_thdas_git">thedauke</string>
+    <string name="maintainer_cyberkiddo_git">CyberJalagam</string>
+    <string name="maintainer_shriiyansh_git">shriiyansh210</string>
+    <string name="maintainer_spicyfriedbread_git">spicydoughnut</string>
+
     <!-- Asus -->
     <string name="device_asus">Asus</string>
     <string name="device_X00T">ZenFone Max Pro M1</string>
     <string name="device_X00T_description">X00T\nShen</string>
+    <string name="device_X00QD">Zenfone 5</string>
+    <string name="device_X00QD_description">X00QD\nHenrique</string>
 
     <!-- Dead LeEco -->
     <string name="device_leeco">LeEco</string>
     <string name="device_s2">LeEco Le 2 </string>
-    <string name="device_s2_description">S2\nCakesTwix</string> 
-    
-    <!-- No more flagship killer -->   
+    <string name="device_s2_description">S2\nCakesTwix</string>
+
+    <!--lenuwu-->
+    <string name="device_lenevo">Lenevo</string>
+    <string name="device_jd2019">Lenevo Z5S</string>
+    <string name="device_jd2019_description">jd2019\nCakesTwix</string>
+
+    <!--Gayzu-->
+    <string name="device_meizu">Meizu</string>
+    <string name="device_m1882">Meizu 16th</string>
+    <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
+    <string name="device_m1892">Meizu 16th Plus</string>
+    <string name="device_m1892_description">m1892\nAbdibekov Dauren</string>
+
+    <!--muwurowola-->
+    <string name="device_motorola">Motorola</string>
+    <string name="device_sanders">Moto G5S Plus</string>
+    <string name="device_sanders_description">sanders\nArmSm</string>
+    <string name="device_channel">Moto G7 Play</string>
+    <string name="device_channel_description">channel\Amy Grace</string>
+
+    <!-- No more flagship killer -->
     <string name="device_oneplus">OnePlus</string>
     <string name="device_oneplus3">OnePlus 3 and 3T </string>
-    <string name="device_oneplus3_description">oneplus3\nDeepak Jr</string> 
+    <string name="device_oneplus3_description">oneplus3\nDeepak Jr</string>
     <string name="device_oneplus6">OnePlus 6 </string>
-    <string name="device_oneplus6_description">enchilada\neduardo</string>     
+    <string name="device_oneplus6_description">enchilada\neduardo</string>
 
     <!-- Realmeme -->
     <string name="device_realme">Realme</string>
     <string name="device_cph1859">Realme 1 </string>
-    <string name="device_cph1859_description">CPH1859\nCyberJalagam</string> 
+    <string name="device_cph1859_description">CPH1859\nCyberJalagam</string>
     <string name="device_rmx2001">Realme 6 </string>
     <string name="device_rmx2001_description">RMX2001\nTanmay</string>
-    
+
     <!-- Lagsung -->
     <string name="device_samsung">Samsung</string>
     <string name="device_a10">Galaxy A10</string>
@@ -68,14 +112,13 @@
     <string name="device_j4prime">Galaxy J4Prime LTE</string>
     <string name="device_j4prime_description">j4primelte\nGabriel</string>
     <string name="device_m20lte">Galaxy M20</string>
-    <string name="device_m20lte_description">m20lte\nHaridhayal</string>	
-
-    <!--Gayzu-->
-    <string name="device_meizu">Meizu</string>
-    <string name="device_m1882">Meizu 16th</string>
-    <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
-    <string name="device_m1892">Meizu 16th Plus</string>
-    <string name="device_m1892_description">m1892\nAbdibekov Dauren</string>
+    <string name="device_m20lte_description">m20lte\nHaridhayal</string>
+    <string name="device_dreamlte">Galaxy S8</string>
+    <string name="device_dreamlte_description">dreamlte\nHaridhayal</string>
+    <string name="device_dream2lte">Galaxy S8 Plus</string>
+    <string name="device_dream2lte_description">dream2lte\nHaridhayal</string>
+    <string name="device_greatlte">Galaxy Note 8</string>
+    <string name="device_greatlte_description">greatlte\nHaridhayal</string>
 
     <!-- chinese spy -->
     <string name="device_xiaomi">Xiaomi</string>
@@ -94,51 +137,57 @@
     <string name="device_phoenix">Poco X2</string>
     <string name="device_phoenix_description">phoenix\nShivam</string>
     <string name="device_surya">Poco X3</string>
-    <string name="device_surya_description">surya\nArmSM and Agus</string>    
+    <string name="device_surya_description">surya\nArmSM and Agus</string>
 
     <!--redmi-->
     <string name="device_davinci">Redmi K20</string>
-    <string name="device_davinci_description">davinci\nGabriel</string>      
+    <string name="device_davinci_description">davinci\nGabriel</string>
+    <string name="device_rosy">Redmi 5</string>
+    <string name="device_rosy_description">rosy\nShriiyansh</string>
     <string name="device_sakura">Redmi 6 Pro</string>
-    <string name="device_sakura_description">sakura\nAlex</string>     
+    <string name="device_sakura_description">sakura\nAlex</string>
     <string name="device_whyred">Redmi Note 5 Pro</string>
-    <string name="device_whyred_description">whyred\nDarkstar</string>       
+    <string name="device_whyred_description">whyred\nDarkstar</string>
     <string name="device_violet">Redmi Note 7 Pro</string>
-    <string name="device_violet_description">violet\nSpicyDoughnut</string>  
-	
+    <string name="device_violet_description">violet\nSpicyDoughnut</string>
+    <string name="device_begonia">Redmi Note 8 Pro</string>
+    <string name="device_begonia_description">begonia\nHaridhayal</string>
+    <string name="device_miatoll">Redmi Note 9 Pro</string>
+    <string name="device_miatoll_description">miatoll\nA9ito</string>
+
     <!-- Categories -->
     <string name="gestures_title">Gestures</string>
-    <string name="sakura_gesture_summary_title">Three finger swipe, layouts and AOSP gestures</string>    
+    <string name="sakura_gesture_summary_title">Three finger swipe, layouts and AOSP gestures</string>
     <string name="lockscreen_title">Lock Screen</string>
-    <string name="sakura_lockscreen_summary_title">lockscreen charging and secure lockscreen</string>        
+    <string name="sakura_lockscreen_summary_title">lockscreen charging and secure lockscreen</string>
     <string name="misc_title">Miscellaneous</string>
-    <string name="sakura_misc_summary_title">Gaming mode and misc options</string>        
+    <string name="sakura_misc_summary_title">Gaming mode and misc options</string>
     <string name="parts_title">LineageParts</string>
     <string name="sakura_parts_summary_title">statusbar, buttons and other lineage settings</string>
     <string name="quicksettings_title">Quick Settings</string>
-    <string name="sakura_quicksettings_summary_title">Tile title, header images, opacity</string>        
+    <string name="sakura_quicksettings_summary_title">Tile title, header images, opacity</string>
     <string name="interface_title">Interface</string>
-    <string name="sakura_interface_summary_title">Theming, battery bar and network meter</string>            
+    <string name="sakura_interface_summary_title">Theming, battery bar and network meter</string>
     <string name="animation_title">Animations</string>
-    <string name="sakura_animation_summary_title">Opening and closing animations</string>        
+    <string name="sakura_animation_summary_title">Opening and closing animations</string>
     <string name="notifications_title">Notifications</string>
-    <string name="sakura_notifications_summary_title">Heads up, horizon lights, vibration options</string>        
-    <string name="sakura_updater_summary_title">OTA updates</string>        
+    <string name="sakura_notifications_summary_title">Heads up, horizon lights, vibration options</string>
+    <string name="sakura_updater_summary_title">OTA updates</string>
     <string name="updater_title">Sakura Updates</string>
     <string name="buttons_settings">Buttons settings</string>
     <string name="buttons_settings_summary">LineageOS buttons settings</string>
     <string name="statusbar_settings">Statusbar settings</string>
-    <string name="statusbar_settings_summary">LineageOS statusbar tweaks</string>    
+    <string name="statusbar_settings_summary">LineageOS statusbar tweaks</string>
 
     <!-- sub categories -->
     <string name="themes_ui_settings">Themes and UI settings</string>
     <string name="misc_interface_settings">Misc UI settings</string>
     <string name="lockscreen_ui_settings">Lockscreen UI</string>
-    <string name="secure_lockscreen_settings">Secure Lockscreen</string>    
-    <string name="headsup_settings">System Headsup</string>    
+    <string name="secure_lockscreen_settings">Secure Lockscreen</string>
+    <string name="headsup_settings">System Headsup</string>
     <string name="horizon_light_settings">AOD Notifications</string>
-    <string name="misc_qs_settings">Misc QS Options</string>          
-    
+    <string name="misc_qs_settings">Misc QS Options</string>
+
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
@@ -228,26 +277,26 @@
     <string name="file_header_provider" translatable="false">file</string>
 
     <!-- Three-fingers-swipe to screenshot -->
-    <string name="screenshot_gestures">Screenshot Gesture</string>    
+    <string name="screenshot_gestures">Screenshot Gesture</string>
     <string name="three_finger_gesture">Three finger gesture</string>
     <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
 
     <!-- AOKP custom system animations -->
     <string name="system_animation_title">System</string>
-    <string name="activity_open_title">Activity open animation</string> 
+    <string name="activity_open_title">Activity open animation</string>
     <string name="activity_close_title">Activity close animation</string>
     <string name="task_open_title">Task open animation</string>
     <string name="task_open_behind_title">Task open behind animation</string>
     <string name="task_close_title">Task close animation</string>
-    <string name="task_move_to_front_title">Move to front animation</string> 
+    <string name="task_move_to_front_title">Move to front animation</string>
     <string name="task_move_to_back_title">Move to back animation</string>
     <string name="wallpaper_open_title">Wallpaper open animation</string>
-    <string name="wallpaper_close_title">Wallpaper close animation</string> 
+    <string name="wallpaper_close_title">Wallpaper close animation</string>
     <string name="wallpaper_intra_open_title">Wallpaper intra open animation</string>
     <string name="wallpaper_intra_close_title">Wallpaper intra close animation</string>
-    <string name="animation_duration_title">Animation duration</string> 
+    <string name="animation_duration_title">Animation duration</string>
     <string name="title_animation_no_override">Prevent app overrides</string>
-    <string name="summary_animation_no_override">Prevent apps from overriding transitions</string> 
+    <string name="summary_animation_no_override">Prevent apps from overriding transitions</string>
     <string name="animation_duration_default">Default</string>
 
     <!-- Power menu on secure lockscreen -->
@@ -267,7 +316,7 @@
 
     <!-- Heads up -->
     <string name="heads_up_notifications">Heads up</string>
-    <string name="heads_up_summary">Enable/Disable pop up notifications and control headsups</string>    
+    <string name="heads_up_summary">Enable/Disable pop up notifications and control headsups</string>
     <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
     <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
     <string name="add_heads_up_package">Add app</string>
@@ -286,7 +335,7 @@
     <!-- AOSP Gestures -->
     <string name="system_gestures">System Gestures</string>
     <string name="aosp_gesture_title">AOSP Gestures Settings</string>
-    <string name="aosp_gesture_summary">Aosp swipe gestures, 2 buttons, 3 button navigation and more</string>    
+    <string name="aosp_gesture_summary">Aosp swipe gestures, 2 buttons, 3 button navigation and more</string>
 
     <!--dashboard icons-->
     <string name="theming_settings_dashboard_icons_title">Settings dashboard icons</string>
@@ -298,7 +347,7 @@
 
     <!-- Statusbar net monitor -->
     <string name="traffic_title">Traffic indicators</string>
-    <string name="traffic_summary">Display Network traffic monitor in QS and statusbar</string>    
+    <string name="traffic_summary">Display Network traffic monitor in QS and statusbar</string>
     <string name="network_traffic_state_title">Network traffic</string>
     <string name="network_traffic_state_summary">Show net activity in statusbar</string>
     <string name="network_traffic">Network traffic</string>
@@ -396,7 +445,7 @@
     <string name="enable_oneui">OneUI Settings Actionbar</string>
     <string name="enable_oneui_summary">Show spacer above settings actionbar for easier use with one hand\nNOTE: restart settings app to see effect</string>
 
-    <!-- Themes -->  
+    <!-- Themes -->
     <string name="theme_type_title">Sakura themes</string>
     <string name="theme_type_summary">Select theme</string>
     <string name="theme_type_light">Light</string>
@@ -519,14 +568,14 @@
     <string name="fod_recog_animation">FOD recognizing animation</string>
     <string name="fod_recog_animation_summary">Shows an animation while reading your finger</string>
     <string name="fod_recog_animation_effect_title">Recognizing animation effect</string>
-    <string name="fod_recog_animation_miui_normal">MIUI default</string> 
+    <string name="fod_recog_animation_miui_normal">MIUI default</string>
     <string name="fod_recog_animation_miui_aod">MIUI AOD</string>
     <string name="fod_recog_animation_miui_aurora">Aurora (K30 Pro)</string>
     <string name="fod_recog_animation_miui_aurora_cas">Aurora (Mi 10 Ultra)</string>
     <string name="fod_recog_animation_miui_light">Light</string>
     <string name="fod_recog_animation_miui_pop">Pop</string>
     <string name="fod_recog_animation_miui_pulse">Pulse</string>
-    <string name="fod_recog_animation_miui_pulse_white">Pulse (White)</string> 
+    <string name="fod_recog_animation_miui_pulse_white">Pulse (White)</string>
     <string name="fod_recog_animation_miui_rhythm">Rhythm</string>
     <string name="fod_recog_animation_miui_star_cas">Starlight</string>
     <string name="fod_recog_animation_op_cosmos">Cosmos</string>
@@ -537,7 +586,7 @@
     <string name="fod_recog_animation_op_wave">Wave</string>
     <string name="fod_recog_animation_pureview_dna">DNA</string>
     <string name="fod_recog_animation_pureview_future">Future</string>
-    <string name="fod_recog_animation_pureview_halo_ring">Halo ring</string> 
+    <string name="fod_recog_animation_pureview_halo_ring">Halo ring</string>
     <string name="fod_recog_animation_pureview_molecular">Molecular</string>
     <string name="fod_recog_animation_rog_fusion">Fusion</string>
     <string name="fod_recog_animation_rog_pulsar">Pulsar</string>
