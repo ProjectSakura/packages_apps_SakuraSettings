@@ -532,11 +532,6 @@
     <string name="notification_sound_vib_screen_on_title">Noisy notifications</string>
     <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
 
-    <!-- qs media player -->
-    <string name="qs_media_player_title">QS Media player</string>
-    <string name="qs_media_player_summary_on">Show media player in QS.\nRequires a SystemUI restart</string>
-    <string name="qs_media_player_summary_off">Show media player as a notification.\nRequires a SystemUI restart</string>
-
     <!-- QS DataUsage Toggle -->
     <string name="qs_datausage_title">Data usage in QS Header</string>
     <string name="qs_datausage_disabled">Disabled</string>
