@@ -151,7 +151,7 @@
     <string name="device_violet">Redmi Note 7 Pro</string>
     <string name="device_violet_description">violet\nSpicyDoughnut</string>
     <string name="device_begonia">Redmi Note 8 Pro</string>
-    <string name="device_begonia_description">begonia\nHaridhayal</string>
+    <string name="device_begonia_description">begonia\nAbhiXV</string>
     <string name="device_miatoll">Redmi Note 9 Pro</string>
     <string name="device_miatoll_description">miatoll\nA9ito</string>
 
@@ -606,4 +606,9 @@
     <string name="clipboard_toast_info_title">Clipboard access alerts</string>
     <string name="clipboard_toast_info_show_important">Show only important alerts</string>
     <string name="clipboard_toast_info_show_all">Show all access alerts</string>
+
+    <!-- Lockscreen blur -->
+    <string name="lockscreen_blur_title">Background blur</string>
+    <string name="lockscreen_blur_summary">Blur lock screen background</string>
+
 </resources>
