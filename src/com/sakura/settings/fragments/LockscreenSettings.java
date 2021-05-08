@@ -34,18 +34,28 @@ import android.view.ViewGroup;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
-
+import com.sakura.settings.utils.Utils;
 import com.android.settings.R;
 
 public class LockscreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String LOCKSCREEN_BLUR = "lockscreen_blur";
+
+    private Preference mLockscreenBlur;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.sakura_settings_lockscreen);
+        PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mLockscreenBlur = (Preference) findPreference(LOCKSCREEN_BLUR);
+        if (!Utils.isBlurSupported()) {
+            prefSet.removePreference(mLockscreenBlur);
+        }
     }
 
     @Override
@@ -55,6 +65,8 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
 
     public static void reset(Context mContext) {
         ContentResolver resolver = mContext.getContentResolver();
+        Settings.System.putIntForUser(resolver,
+                Settings.System.LOCKSCREEN_BLUR, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.LOCKSCREEN_ENABLE_POWER_MENU, 1, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
