@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright © 2020-21 Project Sakura
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="sakura_settings_title">ההגדרות של Sakura</string>
+    <string name="sakura_dashboard_summary">בוא נביא את האביב אליכם.</string>
+    <!-- ROM Info -->
+    <string name="sakura_about_info">על הפרויקט</string>
+    <string name="sakura_about_info_summary_title">על הצוות שלנו</string>
+    <string name="sakura_about_info_summary">מערכת הפעלה מותאמת אישית ומבוססת LineageOS. מטרתה היחידה היא לספק פלטפורמה שמופעלת על־ידי Lineage והיא ניתנת להתאמה אישית יותר מאשר Lineage.</string>
+    <!-- Dev Info -->
+    <string name="devs_header">מפתחים</string>
+    <string name="dev_1">LordShenron</string>
+    <string name="dev1_description">מייסד/מפתח</string>
+    <string name="dev_3">Arun Teltia</string>
+    <string name="dev3_description">מפתח אתר אינטרנט</string>
+    <!-- Maintainer Info -->
+    <string name="maintainers_header">מתחזקים</string>
+    <string name="maintainers_header_summary">אלה מתחזקי המכשירים הרשמיים שלנו...</string>
+    <!--Maintainer git info -->
+    <string name="maintainer_shen_git">LordShenron</string>
+    <string name="maintainer_armypunk_git">ArmSM</string>
+    <string name="maintainer_haridhayal_git">haridhayal11</string>
+    <string name="maintainer_agus_git">agustkid</string>
+    <string name="maintainer_darksitara_git">Sweeto143</string>
+    <string name="maintainer_henrique_git">henricaodopao</string>
+    <string name="maintainer_arun_git">ArunTeltia</string>
+    <string name="maintainer_nitish_git">funeralfrog</string>
+    <string name="maintainer_cakestwix_git">CakesTwix</string>
+    <string name="maintainer_alexbrrbrr_git">AlexanderBaransky</string>
+    <string name="maintainer_a9ito_git">a9ito</string>
+    <string name="maintainer_deepakjr_git">aquariusjr10</string>
+    <string name="maintainer_eduardo_git">THERAD1</string>
+    <string name="maintainer_abishek_git">abhixv</string>
+    <string name="maintainer_chatur_git">Chatur27</string>
+    <string name="maintainer_tanmay_git">Atlas78</string>
+    <string name="maintainer_amy_git">00p513-dev</string>
+    <string name="maintainer_thdas_git">thedauke</string>
+    <string name="maintainer_cyberkiddo_git">CyberJalagam</string>
+    <string name="maintainer_shriiyansh_git">shriiyansh210</string>
+    <string name="maintainer_spicyfriedbread_git">spicydoughnut</string>
+    <!-- Asus -->
+    <string name="device_asus">מכשירי Asus</string>
+    <string name="device_X00T">ZenFone Max Pro M1</string>
+    <string name="device_X00T_description">X00T\nShen</string>
+    <string name="device_X00QD">Zenfone 5</string>
+    <string name="device_X00QD_description">X00QD\nHenrique</string>
+    <!-- Dead LeEco -->
+    <string name="device_leeco">מכשירי LeEco</string>
+    <string name="device_s2">LeEco Le 2 </string>
+    <string name="device_s2_description">S2\nCakesTwix</string>
+    <!--lenuwu-->
+    <string name="device_lenevo">Lenevo</string>
+    <string name="device_jd2019">Lenevo Z5S</string>
+    <string name="device_jd2019_description">jd2019\nCakesTwix</string>
+    <!--Gayzu-->
+    <string name="device_meizu">מכשירי Meizu</string>
+    <string name="device_m1882">Meizu 16th</string>
+    <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
+    <string name="device_m1892">Meizu 16th Plus</string>
+    <string name="device_m1892_description">m1892\nAbdibekov Daurenב</string>
+    <!--muwurowola-->
+    <string name="device_motorola">Motorola</string>
+    <string name="device_sanders">Moto G5S Plus</string>
+    <string name="device_sanders_description">sanders\nArmSm</string>
+    <string name="device_channel">Moto G7 Play</string>
+    <string name="device_channel_description">channel\Amy Grace</string>
+    <!-- No more flagship killer -->
+    <string name="device_oneplus">מכשירי OnePlus</string>
+    <string name="device_oneplus3">OnePlus 3 and 3T </string>
+    <string name="device_oneplus3_description">oneplus3\nDeepak Jr</string>
+    <string name="device_oneplus6">OnePlus 6 </string>
+    <string name="device_oneplus6_description">enchilada\neduardo</string>
+    <!-- Realmeme -->
+    <string name="device_realme">מכשירי Realme</string>
+    <string name="device_cph1859">Realme 1 </string>
+    <string name="device_cph1859_description">CPH1859\nCyberJalagam</string>
+    <string name="device_rmx2001">Realme 6 </string>
+    <string name="device_rmx2001_description">RMX2001\nTanmay</string>
+    <!-- Lagsung -->
+    <string name="device_samsung">מכשירי Samsung</string>
+    <string name="device_a10">Galaxy A10</string>
+    <string name="device_a10_description">a10\nchatur</string>
+    <string name="device_a20">Galaxy A20</string>
+    <string name="device_a20_description">a20\nchatur</string>
+    <string name="device_j4prime">Galaxy J4Prime LTEב</string>
+    <string name="device_j4prime_description">j4primelte\nGabriel</string>
+    <string name="device_m20lte">Galaxy M20</string>
+    <string name="device_m20lte_description">m20lte\nHaridhayal</string>
+    <string name="device_dreamlte">Galaxy S8</string>
+    <string name="device_dreamlte_description">dreamlte\nHaridhayal</string>
+    <string name="device_dream2lte">Galaxy S8 Plus</string>
+    <string name="device_dream2lte_description">dream2lte\nHaridhayal</string>
+    <string name="device_greatlte">Galaxy Note 8</string>
+    <string name="device_greatlte_description">greatlte\nHaridhayal</string>
+    <!-- chinese spy -->
+    <string name="device_xiaomi">מכשירי Xiaomi</string>
+    <!--Mi-->
+    <string name="device_gauguin">Mi 10i 5G | Mi 10T Lite</string>
+    <string name="device_gauguin_description">gauguin\nPrajwal and Nitish</string>
+    <string name="device_tucana">Mi Note 10</string>
+    <string name="device_tucana_description">tucana\nAlexander</string>
+    <string name="device_wayne">Mi 6X</string>
+    <string name="device_wayne_description">wayne\nMarcos Almeida</string>
+    <string name="device_tissot">Mi A1ב</string>
+    <string name="device_tissot_description">tissot\nRoger W.</string>
+    <!--poco-->
+    <string name="device_phoenix">Poco X2</string>
+    <string name="device_phoenix_description">phoenix\nShivam</string>
+    <string name="device_surya">Poco X3</string>
+    <string name="device_surya_description">surya\nArmSM and Agus</string>
+    <!--redmi-->
+    <string name="device_davinci">Redmi K20</string>
+    <string name="device_davinci_description">davinci\nGabriel</string>
+    <string name="device_rosy">Redmi 5</string>
+    <string name="device_rosy_description">rosy\nShriiyansh</string>
+    <string name="device_sakura">Redmi 6 Pro</string>
+    <string name="device_sakura_description">sakura\nAlex</string>
+    <string name="device_whyred">Redmi Note 5 Pro</string>
+    <string name="device_whyred_description">whyred\nDarkstarב</string>
+    <string name="device_violet">Redmi Note 7 Pro</string>
+    <string name="device_violet_description">violet\nSpicyDoughnut</string>
+    <string name="device_begonia">Redmi Note 8 Pro</string>
+    <string name="device_begonia_description">begonia\nAbhiXV</string>
+    <string name="device_miatoll">Redmi Note 9 Pro</string>
+    <string name="device_miatoll_description">miatoll\nA9ito</string>
+    <!-- Categories -->
+    <string name="gestures_title">מחוות</string>
+    <string name="sakura_gesture_summary_title">החלקה עם שלוש אצבעות, פריסות ומחוות AOSP</string>
+    <string name="lockscreen_title">מסך הנעילה</string>
+    <string name="sakura_lockscreen_summary_title">מסך הנעילה בעת טעינה ואבטחת מסך הנעילה</string>
+    <string name="misc_title">שונות</string>
+    <string name="sakura_misc_summary_title">מצב משחק ושאר אפשרויות</string>
+    <string name="parts_title">חלקים מ־LineageOS</string>
+    <string name="sakura_parts_summary_title">שורת המצב, כפתורים ושאר הגדרות מ־LineageOS</string>
+    <string name="quicksettings_title">הגדרות מהירות</string>
+    <string name="sakura_quicksettings_summary_title">כותרת אריח, תמונה עליונה, אטימות</string>
+    <string name="interface_title">ממשק</string>
+    <string name="sakura_interface_summary_title">ערכות נושא, סרגל הסוללה וקצב הרשת</string>
+    <string name="animation_title">הנפשות</string>
+    <string name="sakura_animation_summary_title">פתיחה וסגירה של הנפשות</string>
+    <string name="notifications_title">התראות</string>
+    <string name="sakura_notifications_summary_title">התראות קופצות, תאורת שוליים, אפשרויות רטט</string>
+    <string name="sakura_updater_summary_title">עדכוני דרך האוויר</string>
+    <string name="updater_title">עדכוני Sakura</string>
+    <string name="buttons_settings">הגדרות לחצנים</string>
+    <string name="buttons_settings_summary">הגדרות לחצנים מ־LineageOS</string>
+    <string name="statusbar_settings">הגדרות שורת המצב</string>
+    <string name="statusbar_settings_summary">התאמות לשורת המצב מ־LineageOS</string>
+    <!-- sub categories -->
+    <string name="themes_ui_settings">הגדרות ממשק המשתמש וערכות נושא</string>
+    <string name="misc_interface_settings">הגדרות נוספות של ממשק המשתמש</string>
+    <string name="lockscreen_ui_settings">ממשק מסך הנעילה</string>
+    <string name="secure_lockscreen_settings">מסך נעילה מאובטח</string>
+    <string name="headsup_settings">מערכת התראות קופצות</string>
+    <string name="horizon_light_settings">התראות בתצוגה תמידית</string>
+    <string name="misc_qs_settings">אפשרויות שונות של הגדרות מהירות</string>
+    <!-- General strings -->
+    <string name="ok">אישור</string>
+    <string name="reset">איפוס</string>
+    <string name="cancel">ביטול</string>
+    <string name="save">שמירה</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">בורר הצבעים</string>
+    <string name="press_color_to_apply">לחץ על צבע לבחירה</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">קוד צבע:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">הגדר</string>
+    <string name="color_default">ברירת מחדל</string>
+    <!-- Battery Bar -->
+    <string name="battery_bar_title">סרגל הסוללה</string>
+    <string name="battery_bar_summary">הצג והתאם אישית את סרגל הסוללה מעל שורת המצב</string>
+    <string name="battery_bar">מיקום</string>
+    <string name="battery_bar_no_navbar">מיקום</string>
+    <string name="battery_bar_location_hide">הסתר</string>
+    <string name="battery_bar_location_statusbar">שורת המצב</string>
+    <string name="battery_bar_location_top_navbar">בחלקו העליון של סרגל הניווט</string>
+    <string name="battery_bar_location_bottom_navbar">בתחתית סרגל הניווט</string>
+    <string name="battery_bar_color">צבע</string>
+    <string name="battery_bar_charging_color">צבע טעינה</string>
+    <string name="battery_bar_battery_low_color">צבע סוללה חלשה</string>
+    <string name="battery_bar_cat">סגנון</string>
+    <string name="battery_bar_style_title">יישור</string>
+    <string name="battery_bar_thickness_title">עובי</string>
+    <string name="battery_bar_animate_title">הנפשת טעינה</string>
+    <string name="battery_bar_style_regular">רגיל (ימין)</string>
+    <string name="battery_bar_style_center_mirrored">מיושר לאמצע</string>
+    <string name="battery_bar_style_reversed">הפוך (שמאל)</string>
+    <string name="battery_bar_use_charging_color">צבע טעינה מותאם אישית</string>
+    <string name="battery_bar_blend_color_title">מיזוג צבעים</string>
+    <string name="battery_bar_blend_color_summary">מזג צבעים ריקים\מלאים בהתאמה לאחוזי הסוללה</string>
+    <string name="battery_bar_blend_color_reverse_title">הפוך כיוון צבעים</string>
+    <string name="battery_bar_blend_color_reverse_summary_off">מלא &#8592; ריק: אדום &#8594; ירוק &#8594; כחול &#8594; אדום</string>
+    <string name="battery_bar_blend_color_reverse_summary_on">מלא &#8594; ריק: אדום &#8592; ירוק &#8592; כחול &#8592; אדום</string>
+    <!-- QS rows and columns -->
+    <string name="sysui_qqs_count_title">עמודות (חלון גישה מהירה)</string>
+    <string name="qs_layout_category">פריסה</string>
+    <string name="qs_column_rows_settings_title">הגדרות לוח הגדרות מהירות</string>
+    <string name="qs_columns_rows_category_title">עמודות ושורות — הגדרות מהירות</string>
+    <string name="qs_rows_columns_title">שורות ועמודות — הגדרות מהירות</string>
+    <string name="qs_rows_portrait_title">שורות (לאורך)</string>
+    <string name="qs_rows_landscape_title">שורות (לרוחב)</string>
+    <string name="qs_columns_portrait_title">עמודות (לאורך)</string>
+    <string name="qs_columns_landscape_title">עמודות (לרוחב)</string>
+    <!--QS tile title visibility-->
+    <string name="qs_tile_title_visibility_title">כותרת אריח</string>
+    <string name="qs_tile_title_visibility_summary">הצג כותרת מתחת לכל אריח</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">רטט במגע</string>
+    <string name="quick_settings_vibrate_summary">רטוט בלחיצה על אריחי הגדרות מהירות</string>
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qs_panel_alpha_title">שקיפות חלון ההגדרות המהירות</string>
+    <string name="qs_panel_alpha_summary">הגדר את שקיפות הרקע</string>
+    <!-- Custom headers -->
+    <string name="notification_title">וילון ההתראות</string>
+    <string name="status_bar_custom_header_title">פעיל</string>
+    <string name="daylight_header_pack_title">אוסף תמונות כותרת</string>
+    <string name="status_bar_custom_header_shadow_title">צל תמונת הכותרת</string>
+    <string name="status_bar_custom_header_shadow_summary">לנראות טובה יותר בתמונות בהירות</string>
+    <string name="unit_percent">\u0025</string>
+    <string name="static_header_provider_title">תמונה קבועה</string>
+    <string name="daylight_header_provider_title">אוסף תמונות</string>
+    <string name="custom_header_provider_title">כותרת מעוצבת</string>
+    <string name="custom_header_pick_title">בחר תמונת כותרת</string>
+    <string name="custom_header_pick_summary">בחירת תמונה מקומית או מרוחקת</string>
+    <string name="style_enabled_summary">תמונת כותרת בהתאמה אישית מופעלת</string>
+    <string name="style_disabled_summary">תמונת כותרת בהתאמה אישית מושבתת</string>
+    <string name="header_provider_disabled">מושבת</string>
+    <string name="custom_header_title">תמונת כותרת מותאמת אישית</string>
+    <string name="file_header_select_title">בחירת תמונה מקומית</string>
+    <string name="file_header_select_summary">בחירת תמונה מהאחסון</string>
+    <string name="file_header_provider_title">תמונה בודדת</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="screenshot_gestures">מחוות צילום מסך</string>
+    <string name="three_finger_gesture">מחוות שלוש אצבעות</string>
+    <string name="three_finger_gesture_summary">החלק עם שלוש אצבעות לצילום מסך</string>
+    <!-- AOKP custom system animations -->
+    <string name="system_animation_title">מערכת</string>
+    <string name="activity_open_title">הנפשת פתיחת פעילות</string>
+    <string name="activity_close_title">הנפשת סגירת פעילות</string>
+    <string name="task_open_title">הנפשת פתיחת משימה</string>
+    <string name="task_open_behind_title">משימה פתוחה מאחורי הנפשה</string>
+    <string name="task_close_title">הנפשת סגירת משימה</string>
+    <string name="task_move_to_front_title">הנפשת מעבר לקדמה</string>
+    <string name="task_move_to_back_title">הנפשת מעבר לאחור</string>
+    <string name="wallpaper_open_title">הנפשת פתיחת טפט</string>
+    <string name="wallpaper_close_title">הנפשת סגירת טפט</string>
+    <string name="wallpaper_intra_open_title">הנפשת תזוזת פתיחת טפט</string>
+    <string name="wallpaper_intra_close_title">הנפשת תזוזת סגירת טפט</string>
+    <string name="animation_duration_title">אורך זמן ההנפשה</string>
+    <string name="title_animation_no_override">מנע עקיפות יישומים</string>
+    <string name="summary_animation_no_override">מנע מאפליקציות לעקוף מעברים</string>
+    <string name="animation_duration_default">ברירת מחדל</string>
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">תפריט הפעלה</string>
+    <string name="lockscreen_enable_power_menu_summary">אפשר גישה לתפריט ההפעלה במסך נעילה מאובטח</string>
+    <string name="lockscreen_secure_power_menu_title">תפריט הפעלה מאובטח</string>
+    <string name="lockscreen_secure_power_menu_summary">אפשר שימוש בפקדי תפריט ההפעלה רק לאחר אימות מסך הנעילה</string>
+    <!-- Units -->
+    <string name="unit_seconds">שניות</string>
+    <string name="unit_milliseconds">מילי־שניות</string>
+    <string name="unit_pixels">כמות פיקסלים</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">מידע על טעינה במסך הנעילה</string>
+    <string name="lockscreen_battery_info_summary">בעת טעינה הראה פרטים מפורטים במסך הנעילה — מהירות הטעינה באמפר, בוולט וטמפרטורת הסוללה</string>
+    <!-- Heads up -->
+    <string name="heads_up_notifications">התראות קופצות</string>
+    <string name="heads_up_summary">אפשר/השבת התראות קופצות ושלוט בהן</string>
+    <string name="summary_heads_up_enabled">הודעות קופצות מופעלות</string>
+    <string name="summary_heads_up_disabled">הודעות קופצות מושבתות</string>
+    <string name="add_heads_up_package">הוסף יישום</string>
+    <string name="add_heads_up_stoplist_summary">בטל סמלי התראות ביישומים אלה</string>
+    <string name="add_heads_up_blacklist_summary">אל תציג הודעות קופצות מיישומים אלו</string>
+    <string name="heads_up_stoplist_title">רשימת עצירה</string>
+    <string name="heads_up_blacklist_title">רשימה שחורה</string>
+    <string name="profile_choose_app">בחר יישום</string>
+    <string name="dialog_delete_title">מחיקה</string>
+    <string name="dialog_delete_message">להסיר את הפריט הנבחר?</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">התראות קופצות פחות משעממות</string>
+    <string name="less_boring_heads_up_summary">הצג התראות קופצות רק ליישומי החייגן, הודעות ושעון מעורר</string>
+    <!-- AOSP Gestures -->
+    <string name="system_gestures">מחוות מערכת</string>
+    <string name="aosp_gesture_title">הגדרות של מחוות מובנות באנדרואיד</string>
+    <string name="aosp_gesture_summary">מחוות החלקה, סרגל ניווט עם 2 או 3 כפתורים ועוד</string>
+    <!--dashboard icons-->
+    <string name="theming_settings_dashboard_icons_title">סוג סמלי כותרות ההגדרות</string>
+    <string name="theming_settings_dashboard_icons_default2">רקע ברירת המחדל</string>
+    <string name="theming_settings_dashboard_icons_default_accent2">רקע בצבע ההדגשה</string>
+    <string name="theming_settings_dashboard_icons_plain">חצי־שקוף</string>
+    <string name="theming_settings_dashboard_icons_plain_accent">חצי־שקוף בצבע ההדגשה</string>
+    <string name="theming_settings_dashboard_icons_default_oneplus">כמו ב־OnePlus</string>
+    <!-- Statusbar net monitor -->
+    <string name="traffic_title">חווי תעבורת אינטרנט</string>
+    <string name="traffic_summary">הצג תעבורת רשת בתפריט ההגדרות המהירות ובשורת המצב</string>
+    <string name="network_traffic_state_title">תעבורת רשת</string>
+    <string name="network_traffic_state_summary">הצג תעבורת רשת בשורת המצב</string>
+    <string name="network_traffic">תעבורת רשת</string>
+    <string name="network_traffic_location">מיקום תעבורת הרשת</string>
+    <string name="traffic_disabled">מושבת</string>
+    <string name="traffic_statusbar">שורת המצב</string>
+    <string name="traffic_expanded_statusbar">כותרת מורחבת</string>
+    <string name="network_traffic_autohide_threshold_title">סף תעבורת נתונים לתצוגה (KB/s)</string>
+    <string name="network_traffic_arrow">הצג חיצים</string>
+    <string name="network_traffic_arrow_summary">הצג את חיצי מחווני תעבורת רשת</string>
+    <string name="network_traffic_type">בחירת סוג תעבורת רשת</string>
+    <string name="show_network_traffic_combined">משולב (הורדה + העלאה)</string>
+    <string name="show_network_traffic_dynamic">משתנה</string>
+    <string name="show_network_traffic_up">העלאה</string>
+    <string name="show_network_traffic_down">הורדה</string>
+    <string name="show_network_traffic_all">גם וגם</string>
+    <string name="network_traffic_layout">פריסת תעבורת הרשת</string>
+    <string name="network_traffic_layout_h">אופקי</string>
+    <string name="network_traffic_layout_v">אנכי</string>
+    <string name="nettraf_font_size">גודל המספרים בתעבורת הרשת</string>
+    <!-- volte icon toggle
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon when available</string> -->
+    <!--bluetooth battery level -->
+    <string name="bluetooth_battery_title">הצג מצב סוללה של התקני Bluetooth</string>
+    <string name="bluetooth_battery_summary">הראה את מצב הסוללה של התקני ה־Bluetooth המחוברים כעת, אם יש כאלו</string>
+    <!-- Screenshot Sound  -->
+    <string name="screenshot_sound_title">צליל צילום מסך</string>
+    <string name="screenshot_sound_summary">השמע צליל בעת צילום מסך</string>
+    <string name="audio_panel_view_timeout_title">פרק זמן של הצגת לוח עוצמת הקול</string>
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">מצב משחק</string>
+    <string name="gaming_mode_summary">התאם אישית הגדרות מצב משחק</string>
+    <string name="gaming_mode_enabled_summary">הפעל מצב משחק תמיד</string>
+    <string name="gaming_mode_app_picker_title">הפעל אוטומטית מצב משחק ליישומים האלה</string>
+    <string name="add_gaming_mode_package_title">הוסף יישומים למצב משחק</string>
+    <string name="add_gaming_mode_package_summary">מצב משחק יופעל אוטומטית כשהיישומים הללו נפתחים ונכבה כשהם נסגרים</string>
+    <string name="gaming_mode_headsup_title">חסום התראות</string>
+    <string name="gaming_mode_headsup_summary">חוץ משיחות ושעונים מעוררים</string>
+    <string name="gaming_mode_hardware_keys_title">נעל מקשים</string>
+    <string name="gaming_mode_hardware_keys_summary">כשמצב משחק פועל, המקשים ינעלו</string>
+    <string name="gaming_mode_brightness_title">השבת בהירות אוטומטית</string>
+    <string name="gaming_mode_brightness_summary">נעל את בהירות המסך כאשר מצב משחק מופעל</string>
+    <string name="gaming_mode_ringer_title">מצב שמע במצב משחק</string>
+    <string name="gaming_mode_ringer_off_title">ללא שינוי</string>
+    <string name="gaming_mode_ringer_vibrate_title">רטט</string>
+    <string name="gaming_mode_ringer_dnd_title">נא לא להפריע</string>
+    <string name="gaming_mode_ringer_silent_title">שקט</string>
+    <string name="gaming_mode_notifications_title">אינדיקציה להפעלת מצב משחק</string>
+    <string name="gaming_mode_notifications_off_title">מושבת</string>
+    <string name="gaming_mode_notifications_notif_title">הצג התראות</string>
+    <string name="gaming_mode_notifications_toast_title">הצג הודעות קופצות</string>
+    <string name="gaming_mode_notifications_all_title">הצג הודעות קופצות והתראות</string>
+    <string name="gaming_mode_dynamic_title">מצב משתנה</string>
+    <string name="gaming_mode_dynamic_summary">נסה לזהות ולהוסיף יישומי משחקים אוטומטית</string>
+    <!--qs tint toggle-->
+    <string name="qs_bg_use_new_tint">החלפת גוון ההגדרות המהירות</string>
+    <string name="qs_bg_use_new_tint_summary">השתמש בצבע ההדגשה עבור הסמלים והרקע באריחי ההגדרות המהירות (מצריך הפעלה מחדש)</string>
+    <!-- Horizon light -->
+    <string name="default_string">ברירת מחדל</string>
+    <string name="horizon_light_title">תאורת שוליים</string>
+    <string name="horizon_light_summary">בעת קבלת התראות בתצוגת התראות עמומה, השוליים יוארו</string>
+    <string name="horizon_light_enabled_title">הצג בתצוגה תמידית</string>
+    <string name="aod_disabled">תצוגת התראות תמידית מושבתת</string>
+    <string name="horizon_light_enabled_summary">הצג תמיד תאורת שוליים בתצוגת התראות תמידית</string>
+    <string name="horizon_light_hide_aod_title">הסתר תוכן תצוגת התראות תמידית</string>
+    <string name="horizon_light_hide_aod_summary">הסתר את תוכן תצוגת התראות תמיד כשהשוליים מוארים</string>
+    <string name="horizon_light_duration_title">משך הזמן</string>
+    <string name="horizon_light_duration_summary">הזמן שנדרש להשלמת כל הנפשה</string>
+    <string name="horizon_light_repeats_title">מספר חזרות</string>
+    <string name="horizon_light_repeats_summary">מספר הפעמים שההנפשה תוצג\n0 לאין־סוף</string>
+    <string name="horizon_light_timeout_title">זמן קצוב לסיום</string>
+    <string name="horizon_light_timeout_forever">לתמיד</string>
+    <string name="horizon_light_timeout_half_minute">30 שניות</string>
+    <string name="horizon_light_timeout_minute">דקה אחת</string>
+    <string name="horizon_light_timeout_three_minutes">3 דקות</string>
+    <string name="horizon_light_timeout_five_minutes">5 דקות</string>
+    <string name="horizon_light_timeout_ten_minutes">10 דקות</string>
+    <string name="set_to_zero">הגדר את מספר החזרות ל־0 כדי לאפשר</string>
+    <string name="horizon_color_mode_title">סוג הצבע</string>
+    <string name="horizon_color_mode_accent">צבע הדגשה</string>
+    <string name="horizon_color_mode_wall">צבע הרקע הדומיננטי</string>
+    <string name="horizon_color_mode_notification">צבע סמל ההתראה</string>
+    <string name="horizon_color_mode_custom">@string/horizon_light_color_title</string>
+    <string name="horizon_light_color_title">צבע מותאם אישית</string>
+    <!-- Oneui -->
+    <string name="enable_oneui">כותרת הגדרות כמו ב־OneUI</string>
+    <string name="enable_oneui_summary">הצג רווח מעל שורת הפעולות של ההגדרות לשימוש קל יותר ביד אחת\nהערה: הפעל מחדש את אפליקציית ההגדרות כדי לראות את ההבדל</string>
+    <!-- Themes -->
+    <string name="theme_type_title">ערכות הנושא של Sakura</string>
+    <string name="theme_type_summary">בחר ערכת נושא</string>
+    <string name="theme_type_light">בהיר</string>
+    <string name="theme_type_pitch_black">אפור של Google</string>
+    <string name="theme_type_solarized_dark">חושך חצי־כוח</string>
+    <string name="theme_type_baked_green">ירוק אפוי</string>
+    <string name="theme_type_choco_x">Choco X</string>
+    <string name="theme_type_du_pitchblack">חושך מוחלט</string>
+    <string name="theme_type_material_ocean">אוקיינוס חומרי</string>
+    <string name="theme_type_style_mizu">Mizu (שקוף)</string>
+    <!-- gvisual mod -->
+    <string name="gvisual_title">תוספות התאמה אישית</string>
+    <string name="gvisual_footer">מסיבה מוזרה כלשהי, אפשרות הפינות המעוגלות אינה פועלת כאשר מלבן מעוגל, עיגול, דמעה או כל צורה אחרת של סמלים נבחרת כצורת סמלי המערכת.</string>
+    <string name="rounded_ui_title">עיגול פינות</string>
+    <string name="rounded_ui_dialog_title">בחר כמה מעוגלות תהיינה הפינות</string>
+    <string name="rounded_style_default">ברירת מחדל</string>
+    <string name="rounded_style_rectangle">מרובע</string>
+    <string name="rounded_style_large">גדול</string>
+    <string name="rounded_style_medium">בינוני</string>
+    <string name="statusbar_height_title">גובה שורת המצב</string>
+    <string name="statusbar_height_dialog_title">בחר את אורך שורת המצב</string>
+    <string name="sb_height_default">ברירת מחדל</string>
+    <string name="sb_height_medium">בינוני</string>
+    <string name="sb_height_large">גדול</string>
+    <string name="sb_height_extralarge">גדול מאוד</string>
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">הנפשת כיבוי מסך</string>
+    <string name="screen_off_animation_default">ברירת מחדל</string>
+    <string name="screen_off_animation_crt">טלוויזיה ישנה</string>
+    <string name="screen_off_animation_scale">שאיבה</string>
+    <string name="screen_off_animation_summary">הנפשות מסוגים שונים למסך הנעילה</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">אפשרויות רטט בשיחה</string>
+    <string name="incall_vibrate_connect_title">רטוט כשמתקשרים אליי</string>
+    <string name="incall_vibrate_call_wait_title">רטוט בעת שיחה ממתינה</string>
+    <string name="incall_vibrate_disconnect_title">רטוט בניתוק שיחה</string>
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">שנתות עוצמת השמע</string>
+    <string name="volume_steps_summary">התאם אישית את מספר הקפיצות בלוח עוצמת השמע</string>
+    <string name="volume_steps_alarm_title">שנתות עוצמת השמע: שעון מעורר</string>
+    <string name="volume_steps_dtmf_title">שנתות בעוצמת הקול: DTMF</string>
+    <string name="volume_steps_music_title">שנתות בעוצמת הקול: מוזיקה</string>
+    <string name="volume_steps_notification_title">שנתות בעוצמת הקול: התראות</string>
+    <string name="volume_steps_ring_title">שנתות בעוצמת הקול: צלצול</string>
+    <string name="volume_steps_system_title">שנתות בעוצמת הקול: צלילי מערכת</string>
+    <string name="volume_steps_voice_call_title">שנתות בעוצמת הקול: שיחות קוליות</string>
+    <string name="volume_steps_reset">אפס</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+    <!-- Navbar layout options -->
+    <string name="navbar_layout_title">פריסה</string>
+    <string name="navbar_layout_normal">רגיל</string>
+    <string name="navbar_layout_compact">מרוכז</string>
+    <string name="navbar_layout_leftleaning">מוטה שמאלה</string>
+    <string name="navbar_layout_rightleaning">מוטה ימינה</string>
+    <string name="navbar_invert_layout_title">פריסה הפוכה</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">מחוון נדידה</string>
+    <string name="roaming_indicator_icon_summary">הצג מחוון נדידה בסמל הקליטה בעת הימצאות במצב נדידה</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">סמל דור רביעי</string>
+    <string name="show_fourg_icon_summary">הצג סמל 4G בסמל אות הקליטה במקום LTE</string>
+    <!-- Data disabled indicator -->
+    <string name="data_disabled_icon_title">מחוון נתונים ניידים מושבתים</string>
+    <string name="data_disabled_icon_summary">הצג את סימן הצלב ליד סמל הנתונים הניידים כאשר הם מושבתים</string>
+    <!-- Old mobiletype icon style -->
+    <string name="old_mobiletype_title">סגנון ישן של סמל הנתונים</string>
+    <string name="old_mobiletype_summary">מזג את סמלי הנתונים הניידים וסוגם</string>
+    <!-- Notifications while screen on -->
+    <string name="notification_sound_vib_screen_on_title">התראות קולניות</string>
+    <string name="notification_sound_vib_screen_on_summary">השמע צליל ורטט עבור הודעות כאשר המסך מופעל</string>
+    <!-- QS DataUsage Toggle -->
+    <string name="qs_datausage_title">שימוש בנתונים בכותרת ההגדרות המהירות</string>
+    <string name="qs_datausage_disabled">מושבת</string>
+    <string name="qs_datausage_daily">שימוש יומי</string>
+    <string name="qs_datausage_monthly">שימוש חודשי</string>
+    <!-- Omni Jaws -->
+    <string name="weather_title">מזג־אוויר</string>
+    <string name="weather_summary">הגדרות מזג־האוויר במסך הנעילה</string>
+    <string name="weather_config_title">שירותי מזג־אוויר</string>
+    <string name="weather_config_summary">הגדרות שירותי המערכת</string>
+    <string name="header_weather_title">הצג מזג־אוויר בכותרת</string>
+    <string name="header_weather_summary">אפשר הצגת מזג האוויר בכותרת לוח ההתראות</string>
+    <string name="weather_icon_pack_title">ערכת סמלי מצבים</string>
+    <string name="weather_icon_pack_note">הערה\u003a ניתן להתקין חבילות סמלים נוספות מחנות האפליקציות בחיפוש \"Chronus icons\"</string>
+    <string name="weather_icon_pack_info_title">חבילת הסמלים המשומשת בהגדרות המהירות ובמסך הנעילה</string>
+    <string name="lockscreen_weather_title">הצג תנאי מזג־אוויר</string>
+    <string name="lockscreen_weather_summary">הצג את מצב מזג־האוויר והטמפרטורה הנוכחיים</string>
+    <string name="lock_screen_weather_style_title">סגנון מזג־אוויר</string>
+    <string name="lock_screen_weather_style_summaryOff">מזג־אוויר מוצג מתחת לשורת התאריך עם מיקום</string>
+    <string name="lock_screen_weather_style_summaryOn">מזג־אוויר מוצג בשורת התאריך ללא מיקום</string>
+    <!-- FOD icon picker -->
+    <string name="fod_icon_picker_title">בחירת סמל טביעת האצבע במסך</string>
+    <string name="fod_icon_picker_summary">בחר בסמל טביעת האצבע המועדף עליך</string>
+    <string name="fod_icon_picker_footer">על מנת להוסיף סמל משלך, בחר בסמל השמאלי העליון והשתמש ביישום OnePlus 6T FP Customizer כדי לבחור את הסמל הרצוי.</string>
+    <!-- FOD animations -->
+    <string name="fod_recog_animation">הנפשת זיהוי טביעת אצבע במסך</string>
+    <string name="fod_recog_animation_summary">מציג הנפשה בעת קריאת טביעת האצבע שלך</string>
+    <string name="fod_recog_animation_effect_title">אפקט הנפשת זיהוי טביעת האצבע</string>
+    <string name="fod_recog_animation_miui_normal">ברירת המחדל ב־MIUI</string>
+    <string name="fod_recog_animation_miui_aod">תצוגה תמידית של MIUI</string>
+    <string name="fod_recog_animation_miui_aurora">כמו ב־K30 Pro</string>
+    <string name="fod_recog_animation_miui_aurora_cas">כמו ב־Mi 10 Ultra</string>
+    <string name="fod_recog_animation_miui_light">בהיר</string>
+    <string name="fod_recog_animation_miui_pop">קצבי</string>
+    <string name="fod_recog_animation_miui_pulse">פעימה</string>
+    <string name="fod_recog_animation_miui_pulse_white">פעימה (בלבן)</string>
+    <string name="fod_recog_animation_miui_rhythm">קצב</string>
+    <string name="fod_recog_animation_miui_star_cas">אור כוכבים</string>
+    <string name="fod_recog_animation_op_cosmos">יקום</string>
+    <string name="fod_recog_animation_op_energy">חשמל</string>
+    <string name="fod_recog_animation_op_mclaren">McLaren</string>
+    <string name="fod_recog_animation_op_ripple">אדווה</string>
+    <string name="fod_recog_animation_op_stripe">פסים</string>
+    <string name="fod_recog_animation_op_wave">גל</string>
+    <string name="fod_recog_animation_pureview_dna">די־אנ־איי</string>
+    <string name="fod_recog_animation_pureview_future">עתידי</string>
+    <string name="fod_recog_animation_pureview_halo_ring">טבעת הילה</string>
+    <string name="fod_recog_animation_pureview_molecular">מולקולות</string>
+    <string name="fod_recog_animation_rog_fusion">היתוך</string>
+    <string name="fod_recog_animation_rog_pulsar">כוכב שמיימי</string>
+    <string name="fod_recog_animation_rog_supernova">פיצוץ בין־כוכבי</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">טביעת אצבע במסך הנעילה</string>
+    <string name="fod_gesture_summary">אפשר לבטל את נעילת המכשיר מבלי הצורך להעיר תחילה את המסך</string>
+    <!-- Screenshot compression  -->
+    <string name="screenshot_compression_title">איכות צילום מסך</string>
+    <string name="screenshot_compression_summary">דחס את גודל צילום המסך עם אובדן באיכות התמונה</string>
+    <!-- Notification background opacity -->
+    <string name="notification_alpha_title">שקיפות הרקע של התראות</string>
+    <!-- Charging animation -->
+    <string name="charging_animation_title">הנפשת טעינה</string>
+    <string name="charging_animation_summary">הצגת הנפשה כאשר המכשיר מחובר</string>
+    <!-- Clipboard toast info -->
+    <string name="clipboard_toast_info_title">התראות גישה ללוח</string>
+    <string name="clipboard_toast_info_show_important">הצג התראות חשובות בלבד</string>
+    <string name="clipboard_toast_info_show_all">הצג את כל התראות הגישה</string>
+    <!-- Lockscreen blur -->
+    <string name="lockscreen_blur_title">טשטוש רקע</string>
+    <string name="lockscreen_blur_summary">טשטוש הרקע במסך הנעילה</string>
+</resources>

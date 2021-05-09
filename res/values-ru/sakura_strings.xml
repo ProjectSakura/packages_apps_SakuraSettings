@@ -30,14 +30,54 @@
     <!-- Maintainer Info -->
     <string name="maintainers_header">Сопровождающие</string>
     <string name="maintainers_header_summary">Это официальные сопровождающие устройств...</string>
+    <!--Maintainer git info -->
+    <string name="maintainer_shen_git">LordShenron</string>
+    <string name="maintainer_armypunk_git">ArmSM</string>
+    <string name="maintainer_haridhayal_git">haridhayal11</string>
+    <string name="maintainer_agus_git">agustkid</string>
+    <string name="maintainer_darksitara_git">Sweeto143</string>
+    <string name="maintainer_henrique_git">henricaodopao</string>
+    <string name="maintainer_arun_git">ArunTeltia</string>
+    <string name="maintainer_nitish_git">funeralfrog</string>
+    <string name="maintainer_cakestwix_git">CakesTwix</string>
+    <string name="maintainer_alexbrrbrr_git">AlexanderBaransky</string>
+    <string name="maintainer_a9ito_git">a9ito</string>
+    <string name="maintainer_deepakjr_git">aquariusjr10</string>
+    <string name="maintainer_eduardo_git">THERAD1</string>
+    <string name="maintainer_abishek_git">abhixv</string>
+    <string name="maintainer_chatur_git">Chatur27</string>
+    <string name="maintainer_tanmay_git">Atlas78</string>
+    <string name="maintainer_amy_git">00p513-dev</string>
+    <string name="maintainer_thdas_git">thedauke</string>
+    <string name="maintainer_cyberkiddo_git">CyberJalagam</string>
+    <string name="maintainer_shriiyansh_git">shriiyansh210</string>
+    <string name="maintainer_spicyfriedbread_git">spicydoughnut</string>
     <!-- Asus -->
     <string name="device_asus">Asus</string>
     <string name="device_X00T">ZenFone Max Pro M1</string>
     <string name="device_X00T_description">X00T\nShen</string>
+    <string name="device_X00QD">Zenfone 5</string>
+    <string name="device_X00QD_description">X00QD\nHenrique</string>
     <!-- Dead LeEco -->
     <string name="device_leeco">LeEco</string>
     <string name="device_s2">LeEco Le 2 </string>
     <string name="device_s2_description">S2\nCakesTwix</string>
+    <!--lenuwu-->
+    <string name="device_lenevo">Lenevo</string>
+    <string name="device_jd2019">Lenevo Z5S</string>
+    <string name="device_jd2019_description">jd2019\nCakesTwix</string>
+    <!--Gayzu-->
+    <string name="device_meizu">Meizu</string>
+    <string name="device_m1882">Meizu 16th</string>
+    <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
+    <string name="device_m1892">Meizu 16th Plus</string>
+    <string name="device_m1892_description">m1882\nAbdibekov Dauren</string>
+    <!--muwurowola-->
+    <string name="device_motorola">Motorola</string>
+    <string name="device_sanders">Moto G5S Plus</string>
+    <string name="device_sanders_description">sanders\nArmSm</string>
+    <string name="device_channel">Moto G7 Play</string>
+    <string name="device_channel_description">channel\Amy Grace</string>
     <!-- No more flagship killer -->
     <string name="device_oneplus">OnePlus</string>
     <string name="device_oneplus3">OnePlus 3 и 3T </string>
@@ -60,12 +100,12 @@
     <string name="device_j4prime_description">j4primelte\nGabriel</string>
     <string name="device_m20lte">Galaxy M20</string>
     <string name="device_m20lte_description">m20lte\nHaridhayal</string>
-    <!--Gayzu-->
-    <string name="device_meizu">Meizu</string>
-    <string name="device_m1882">Meizu 16th</string>
-    <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
-    <string name="device_m1892">Meizu 16th Plus</string>
-    <string name="device_m1892_description">m1882\nAbdibekov Dauren</string>
+    <string name="device_dreamlte">Galaxy S8</string>
+    <string name="device_dreamlte_description">dreamlte\nHaridhayal</string>
+    <string name="device_dream2lte">Galaxy S8 Plus</string>
+    <string name="device_dream2lte_description">dream2lte\nHaridhayal</string>
+    <string name="device_greatlte">Galaxy Note 8</string>
+    <string name="device_greatlte_description">greatlte\nHaridhayal</string>
     <!-- chinese spy -->
     <string name="device_xiaomi">Xiaomi</string>
     <!--Mi-->
@@ -85,12 +125,18 @@
     <!--redmi-->
     <string name="device_davinci">Redmi K20</string>
     <string name="device_davinci_description">davinci\nGabriel</string>
+    <string name="device_rosy">Redmi 5</string>
+    <string name="device_rosy_description">rosy\nShriiyansh</string>
     <string name="device_sakura">Redmi 6 Pro</string>
     <string name="device_sakura_description">sakura\nAlex</string>
     <string name="device_whyred">Redmi Note 5 Pro</string>
     <string name="device_whyred_description">whyred\nDarkstar</string>
     <string name="device_violet">Redmi Note 7 Pro</string>
     <string name="device_violet_description">violet\nSpicyDoughnut</string>
+    <string name="device_begonia">Redmi Note 8 Pro</string>
+    <string name="device_begonia_description">begonia\nAbhiXV</string>
+    <string name="device_miatoll">Redmi Note 9 Pro</string>
+    <string name="device_miatoll_description">miatoll\nA9ito</string>
     <!-- Categories -->
     <string name="gestures_title">Жесты</string>
     <string name="sakura_gesture_summary_title">Свайп тремя пальцами, раскладки и жесты AOSP</string>
@@ -282,9 +328,9 @@
     <string name="network_traffic_layout_h">Горизонтально</string>
     <string name="network_traffic_layout_v">Вертикально</string>
     <string name="nettraf_font_size">Размер шрифта</string>
-    <!-- volte icon toggle -->
-    <string name="volte_icon_title">Иконка VoLTE</string>
-    <string name="volte_icon_summary">Показывать иконку VoLTE при доступности</string>
+    <!-- volte icon toggle
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon when available</string> -->
     <!--bluetooth battery level -->
     <string name="bluetooth_battery_title">Показывать уровень заряда Bluetooth устройства</string>
     <string name="bluetooth_battery_summary">Показывать заряд батареи подключенных Bluetooth-устройств, если доступно</string>
@@ -363,6 +409,7 @@
     <string name="theme_type_style_mizu">Mizu</string>
     <!-- gvisual mod -->
     <string name="gvisual_title">Gvisual Mod</string>
+    <string name="gvisual_footer">По какой-то странной причине параметр «Закругленный угол» не работает, если в качестве системного значка выбраны значки любых других форм.</string>
     <string name="rounded_ui_title">Закругленные углы</string>
     <string name="rounded_ui_dialog_title">Выбрать закругление углов</string>
     <string name="rounded_style_default">По умолчанию</string>
@@ -425,10 +472,6 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Уведомления со звуком при включенном экране</string>
     <string name="notification_sound_vib_screen_on_summary">Проигрывать звук и вибрацию для уведомлений при включенном экране</string>
-    <!-- qs media player -->
-    <string name="qs_media_player_title">Медиапроигрыватель</string>
-    <string name="qs_media_player_summary_on">Показать медиаплеер в QS.\nТребует перезапуска</string>
-    <string name="qs_media_player_summary_off">Показать медиаплеер как уведомление.\nТребует перезапуска SystemUI</string>
     <!-- QS DataUsage Toggle -->
     <string name="qs_datausage_title">Использование трафика в заголовке Быстрых настроек</string>
     <string name="qs_datausage_disabled">Отключено</string>
@@ -483,4 +526,19 @@
     <!-- Screen off fod -->
     <string name="fod_gesture_title">Работа сканера отпечатка пальца только с выключенным экраном</string>
     <string name="fod_gesture_summary">Позволяет разблокировать устройство без предварительного пробуждения экрана</string>
+    <!-- Screenshot compression  -->
+    <string name="screenshot_compression_title">Качество скриншота</string>
+    <string name="screenshot_compression_summary">Сжать размер скриншота с потерей качества изображения</string>
+    <!-- Notification background opacity -->
+    <string name="notification_alpha_title">Прозрачность фона уведомлений</string>
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Анимация зарядки</string>
+    <string name="charging_animation_summary">Показывать анимацию при подключении зарядного устройства</string>
+    <!-- Clipboard toast info -->
+    <string name="clipboard_toast_info_title">Оповещения о доступе к буферу обмена</string>
+    <string name="clipboard_toast_info_show_important">Показывать только важные оповещения</string>
+    <string name="clipboard_toast_info_show_all">Показывать все оповещения о доступе</string>
+    <!-- Lockscreen blur -->
+    <string name="lockscreen_blur_title">Размытие фона</string>
+    <string name="lockscreen_blur_summary">Размытие фона экрана блокировки</string>
 </resources>
