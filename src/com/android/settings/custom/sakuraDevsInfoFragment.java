@@ -64,23 +64,23 @@ public class sakuraDevsInfoFragment extends SettingsPreferenceFragment {
     }
 
     private void showGitProfileIcons() {
-		getGithubIcon(R.string.maintainer_shen_git, findPreference("maintainer_shen"));
+    getGithubIcon(R.string.maintainer_shen_git, findPreference("maintainer_shen"));
     getGithubIcon(R.string.maintainer_shen_git, findPreference("maintainer_X00T"));
-		getGithubIcon(R.string.maintainer_arun_git, findPreference("maintainer_arun"));
-		getGithubIcon(R.string.maintainer_nitish_git, findPreference("maintainer_nitish"));
-		getGithubIcon(R.string.maintainer_haridhayal_git, findPreference("maintainer_haridhayal"));
+    getGithubIcon(R.string.maintainer_arun_git, findPreference("maintainer_arun"));
+    getGithubIcon(R.string.maintainer_nitish_git, findPreference("maintainer_nitish"));
+    getGithubIcon(R.string.maintainer_haridhayal_git, findPreference("maintainer_haridhayal"));
     getGithubIcon(R.string.maintainer_haridhayal_git, findPreference("maintainer_dreamlte"));
     getGithubIcon(R.string.maintainer_haridhayal_git, findPreference("maintainer_dream2lte"));
     getGithubIcon(R.string.maintainer_haridhayal_git, findPreference("maintainer_greatlte"));
-		getGithubIcon(R.string.maintainer_armypunk_git, findPreference("maintainer_armypunk"));
-		getGithubIcon(R.string.maintainer_amy_git, findPreference("maintainer_amy"));
-		getGithubIcon(R.string.maintainer_agus_git, findPreference("maintainer_agus"));
+    getGithubIcon(R.string.maintainer_armypunk_git, findPreference("maintainer_armypunk"));
+    getGithubIcon(R.string.maintainer_amy_git, findPreference("maintainer_amy"));
+    getGithubIcon(R.string.maintainer_agus_git, findPreference("maintainer_agus"));
     getGithubIcon(R.string.maintainer_cyberkiddo_git, findPreference("maintainer_cyberkiddo"));
     getGithubIcon(R.string.maintainer_henrique_git, findPreference("maintainer_henrique"));
     getGithubIcon(R.string.maintainer_tanmay_git, findPreference("maintainer_tanmay"));
     getGithubIcon(R.string.maintainer_darksitara_git, findPreference("maintainer_darksitara"));
     getGithubIcon(R.string.maintainer_chatur_git, findPreference("maintainer_chatur"));
-    getGithubIcon(R.string.maintainer_chatur_git, findPreference("maintainer_a20"));    
+    getGithubIcon(R.string.maintainer_chatur_git, findPreference("maintainer_a20"));
     getGithubIcon(R.string.maintainer_a9ito_git, findPreference("maintainer_a9ito"));
     getGithubIcon(R.string.maintainer_thdas_git, findPreference("maintainer_thdas"));
     getGithubIcon(R.string.maintainer_thdas_git, findPreference("maintainer_m1892"));
@@ -92,6 +92,7 @@ public class sakuraDevsInfoFragment extends SettingsPreferenceFragment {
     getGithubIcon(R.string.maintainer_cakestwix_git, findPreference("maintainer_jd2019"));
     getGithubIcon(R.string.maintainer_alexbrrbrr_git, findPreference("maintainer_alexbrrbrr"));
     getGithubIcon(R.string.maintainer_spicyfriedbread_git, findPreference("maintainer_spicyfriedbread"));
+    getGithubIcon(R.string.maintainer_hisoka_git, findPreference("maintainer_hisoka"));
     }
 
     public void getGithubIcon(int usernameResId, Preference preference) {

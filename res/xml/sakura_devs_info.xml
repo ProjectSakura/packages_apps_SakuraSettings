@@ -183,6 +183,16 @@
             android:data="https://t.me/amyosx" />
     </Preference>
 
+    <Preference
+        android:key="maintainer_hisoka"
+        android:title="@string/device_ocean"
+        android:summary="@string/device_ocean_description"
+        android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/the_only_one_bruno" />
+    </Preference>
+
 </PreferenceCategory>
 
 <!-- No more flagship killers -->

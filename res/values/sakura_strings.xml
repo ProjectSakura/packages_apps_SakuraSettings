@@ -57,6 +57,7 @@
     <string name="maintainer_cyberkiddo_git">CyberJalagam</string>
     <string name="maintainer_shriiyansh_git">shriiyansh210</string>
     <string name="maintainer_spicyfriedbread_git">spicydoughnut</string>
+    <string name="maintainer_hisoka_git">DeinMathelehrer</string>
 
     <!-- Asus -->
     <string name="device_asus">Asus</string>
@@ -87,7 +88,9 @@
     <string name="device_sanders">Moto G5S Plus</string>
     <string name="device_sanders_description">sanders\nArmSm</string>
     <string name="device_channel">Moto G7 Play</string>
-    <string name="device_channel_description">channel\Amy Grace</string>
+    <string name="device_channel_description">channel\nAmy Grace</string>
+    <string name="device_ocean">Moto G7 Power</string>
+    <string name="device_ocean_description">ocean\nHisoka Simp</string>
 
     <!-- No more flagship killer -->
     <string name="device_oneplus">OnePlus</string>
