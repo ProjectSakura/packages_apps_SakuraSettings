@@ -58,7 +58,7 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
         Context mContext = getActivity().getApplicationContext();
         final PreferenceScreen prefScreen = getPreferenceScreen();
-        
+
         mShowRoaming = (SwitchPreference) findPreference(KEY_SHOW_ROAMING);
         mShowFourg = (SwitchPreference) findPreference(KEY_SHOW_FOURG);
         mDataDisabled = (SwitchPreference) findPreference(KEY_SHOW_DATA_DISABLED);
@@ -77,8 +77,6 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
                     mConfigUseOldMobileType ? 1 : 0, UserHandle.USER_CURRENT) != 0;
             mOldMobileType.setChecked(showing);
         }
-	}
-
     }
 
     @Override

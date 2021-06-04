@@ -517,4 +517,12 @@
     <string name="sb_height_medium">Medium</string>
     <string name="sb_height_large">Large</string>
     <string name="sb_height_extralarge">Extra Large</string>
+
+    <!--  Volume Panel Plugin   -->
+    <string name="volume_panel">Volume Panel Style</string>
+    <string name="volume_panel_stock">Stock</string>
+    <string name="volume_panel_aosp">AOSP</string>
+    <string name="volume_panel_compact">Compact</string>
+    <string name="volume_panel_oreo">Oreo</string>
+    <string name="volume_panel_tiled">Tiled</string>
 </resources>
