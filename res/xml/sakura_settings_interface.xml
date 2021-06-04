@@ -91,6 +91,14 @@
             android:summary="@string/enable_oneui_summary" 
             android:defaultValue="false" />
 
+    <!-- volume panel plugins -->
+    <com.sakura.settings.preferences.SystemSettingListPreference
+            android:key="systemui_plugin_volume"
+            android:title="@string/volume_panel"
+            android:entries="@array/volume_panel_entries"
+            android:entryValues="@array/volume_panel_values"
+            android:defaultValue="com.android.systemui.volume" />
+
     <!--dashboard themes-->
     <com.sakura.settings.preferences.SystemSettingListPreference
             android:key="theming_settings_dashboard_icons"
