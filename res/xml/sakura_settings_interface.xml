@@ -91,16 +91,6 @@
             android:summary="@string/enable_oneui_summary" 
             android:defaultValue="false" />
 
-    <!-- Themes -->
-    <ListPreference
-            android:key="theme_switch"
-            android:title="@string/theme_type_title"
-	    android:summary="%s"
-            android:dialogTitle="@string/theme_type_summary"
-            android:entries="@array/theme_type_titles"
-            android:entryValues="@array/theme_type_values"
-            android:defaultValue="1"/>
-
     <!--dashboard themes-->
     <com.sakura.settings.preferences.SystemSettingListPreference
             android:key="theming_settings_dashboard_icons"
@@ -108,6 +98,13 @@
             android:entries="@array/theming_settings_dashboard_icons_entries"
             android:entryValues="@array/theming_settings_dashboard_icons_values"
             android:defaultValue="0" />
+
+    <!-- gvisual mod -->
+    <PreferenceScreen
+            android:key="gvisual"
+            android:title="@string/gvisual_title"
+            android:summary="@string/gvisual_summary"
+            android:fragment="com.sakura.settings.fragments.GvisualSettings" />
 
     <!-- Battery bar -->
     <PreferenceScreen
@@ -117,31 +114,4 @@
             android:fragment="com.sakura.settings.fragments.BatteryBar" />
 
     </PreferenceCategory>
-
-    <!-- Gvisual mod -->
-    <PreferenceCategory
-        android:key="gvisual_category"
-        android:title="@string/gvisual_title" >
-
-        <ListPreference
-            android:key="statusbar_height"
-            android:title="@string/statusbar_height_title"
-            android:dialogTitle="@string/statusbar_height_dialog_title"
-            android:entries="@array/statusbar_height_titles"
-            android:entryValues="@array/statusbar_height_values" />
-
-        <ListPreference
-            android:key="rounded_ui"
-            android:title="@string/rounded_ui_title"
-            android:dialogTitle="@string/rounded_ui_dialog_title"
-            android:entries="@array/rounded_ui_titles"
-            android:entryValues="@array/rounded_ui_values" />
-
-        <com.android.settingslib.widget.FooterPreference
-            android:key="gvisual_footer"
-            android:selectable="false"
-            settings:searchable="false" />
-
-    </PreferenceCategory>
-
 </PreferenceScreen>
