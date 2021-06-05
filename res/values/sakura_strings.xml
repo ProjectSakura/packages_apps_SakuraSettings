@@ -396,34 +396,6 @@
     <string name="enable_oneui">OneUI Settings Actionbar</string>
     <string name="enable_oneui_summary">Show spacer above settings actionbar for easier use with one hand\nNOTE: restart settings app to see effect</string>
 
-    <!-- Themes -->  
-    <string name="theme_type_title">Sakura themes</string>
-    <string name="theme_type_summary">Select theme</string>
-    <string name="theme_type_light">Light</string>
-    <string name="theme_type_pitch_black">Google Grey</string>
-    <string name="theme_type_solarized_dark">Solarized dark</string>
-    <string name="theme_type_baked_green">Baked Green</string>
-    <string name="theme_type_choco_x">Choco X</string>
-    <string name="theme_type_du_pitchblack">Pitch black</string>
-    <string name="theme_type_material_ocean">Material Ocean</string>
-    <string name="theme_type_style_mizu">Mizu</string>
-
-    <!-- gvisual mod -->
-    <string name="gvisual_title">Gvisual Mod</string>
-    <string name="gvisual_footer">For some odd reason, the Rounded corner option doesn\'t work when Rounded Rectangle, Squircle, Teardrop or any other icon shapes are selected as the system icon shape.</string>
-    <string name="rounded_ui_title">Rounded corner</string>
-    <string name="rounded_ui_dialog_title">Select rounded corner model</string>
-    <string name="rounded_style_default">Default</string>
-    <string name="rounded_style_rectangle">Rectangle</string>
-    <string name="rounded_style_large">Large</string>
-    <string name="rounded_style_medium">Medium</string>
-    <string name="statusbar_height_title">Statusbar height</string>
-    <string name="statusbar_height_dialog_title">Select statusbar height model</string>
-    <string name="sb_height_default">Default</string>
-    <string name="sb_height_medium">Medium</string>
-    <string name="sb_height_large">Large</string>
-    <string name="sb_height_extralarge">Extra Large</string>
-
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">Screen off animation</string>
     <string name="screen_off_animation_default">Default</string>
@@ -530,4 +502,19 @@
     <string name="lockscreen_blur_title">Background blur</string>
     <string name="lockscreen_blur_summary">Blur lock screen background</string>
 
+    <!-- gvisual mod -->
+    <string name="gvisual_title">G-Visual Mod</string>
+    <string name="gvisual_summary">Various UI customizations</string>
+    <string name="rounded_ui_title">Rounded corner</string>
+    <string name="rounded_ui_dialog_title">Select rounded corner model</string>
+    <string name="rounded_style_default">Default</string>
+    <string name="rounded_style_rectangle">Rectangle</string>
+    <string name="rounded_style_large">Large</string>
+    <string name="rounded_style_medium">Medium</string>
+    <string name="statusbar_height_title">Statusbar height</string>
+    <string name="statusbar_height_dialog_title">Select statusbar height model</string>
+    <string name="sb_height_default">Default</string>
+    <string name="sb_height_medium">Medium</string>
+    <string name="sb_height_large">Large</string>
+    <string name="sb_height_extralarge">Extra Large</string>
 </resources>
