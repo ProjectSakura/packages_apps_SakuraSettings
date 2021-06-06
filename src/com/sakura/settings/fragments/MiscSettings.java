@@ -70,6 +70,8 @@ public class MiscSettings extends SettingsPreferenceFragment implements
                 Settings.System.AUDIO_PANEL_VIEW_TIMEOUT, 3, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.SCREENSHOT_COMPRESSION, 100, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.POWER_MENU_BG_ALPHA, 255, UserHandle.USER_CURRENT);
         GamingMode.reset(mContext);
     }
 
