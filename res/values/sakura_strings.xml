@@ -525,4 +525,8 @@
     <string name="volume_panel_compact">Compact</string>
     <string name="volume_panel_oreo">Oreo</string>
     <string name="volume_panel_tiled">Tiled</string>
+
+    <!-- Power menu background opacity -->
+    <string name="power_menu_alpha_title">Power menu opacity</string>
+
 </resources>
