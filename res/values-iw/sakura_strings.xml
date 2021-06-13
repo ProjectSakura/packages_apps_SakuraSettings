@@ -52,6 +52,7 @@
     <string name="maintainer_cyberkiddo_git">CyberJalagam</string>
     <string name="maintainer_shriiyansh_git">shriiyansh210</string>
     <string name="maintainer_spicyfriedbread_git">spicydoughnut</string>
+    <string name="maintainer_hisoka_git">DeinMathelehrer</string>
     <!-- Asus -->
     <string name="device_asus">מכשירי Asus</string>
     <string name="device_X00T">ZenFone Max Pro M1</string>
@@ -77,7 +78,9 @@
     <string name="device_sanders">Moto G5S Plus</string>
     <string name="device_sanders_description">sanders\nArmSm</string>
     <string name="device_channel">Moto G7 Play</string>
-    <string name="device_channel_description">channel\Amy Grace</string>
+    <string name="device_channel_description">channel\nAmy Grace</string>
+    <string name="device_ocean">Moto G7 Power</string>
+    <string name="device_ocean_description">ocean\nHisoka Simp</string>
     <!-- No more flagship killer -->
     <string name="device_oneplus">מכשירי OnePlus</string>
     <string name="device_oneplus3">OnePlus 3 and 3T </string>
@@ -154,7 +157,7 @@
     <string name="sakura_animation_summary_title">פתיחה וסגירה של הנפשות</string>
     <string name="notifications_title">התראות</string>
     <string name="sakura_notifications_summary_title">התראות קופצות, תאורת שוליים, אפשרויות רטט</string>
-    <string name="sakura_updater_summary_title">עדכוני דרך האוויר</string>
+    <string name="sakura_updater_summary_title">עדכונים דרך האוויר</string>
     <string name="updater_title">עדכוני Sakura</string>
     <string name="buttons_settings">הגדרות לחצנים</string>
     <string name="buttons_settings_summary">הגדרות לחצנים מ־LineageOS</string>
@@ -299,7 +302,7 @@
     <string name="aosp_gesture_title">הגדרות של מחוות מובנות באנדרואיד</string>
     <string name="aosp_gesture_summary">מחוות החלקה, סרגל ניווט עם 2 או 3 כפתורים ועוד</string>
     <!--dashboard icons-->
-    <string name="theming_settings_dashboard_icons_title">סוג סמלי כותרות ההגדרות</string>
+    <string name="theming_settings_dashboard_icons_title">סוג הסמלים בדף ההגדרות</string>
     <string name="theming_settings_dashboard_icons_default2">רקע ברירת המחדל</string>
     <string name="theming_settings_dashboard_icons_default_accent2">רקע בצבע ההדגשה</string>
     <string name="theming_settings_dashboard_icons_plain">חצי־שקוף</string>
@@ -396,32 +399,6 @@
     <!-- Oneui -->
     <string name="enable_oneui">כותרת הגדרות כמו ב־OneUI</string>
     <string name="enable_oneui_summary">הצג רווח מעל שורת הפעולות של ההגדרות לשימוש קל יותר ביד אחת\nהערה: הפעל מחדש את אפליקציית ההגדרות כדי לראות את ההבדל</string>
-    <!-- Themes -->
-    <string name="theme_type_title">ערכות הנושא של Sakura</string>
-    <string name="theme_type_summary">בחר ערכת נושא</string>
-    <string name="theme_type_light">בהיר</string>
-    <string name="theme_type_pitch_black">אפור של Google</string>
-    <string name="theme_type_solarized_dark">חושך חצי־כוח</string>
-    <string name="theme_type_baked_green">ירוק אפוי</string>
-    <string name="theme_type_choco_x">Choco X</string>
-    <string name="theme_type_du_pitchblack">חושך מוחלט</string>
-    <string name="theme_type_material_ocean">אוקיינוס חומרי</string>
-    <string name="theme_type_style_mizu">Mizu (שקוף)</string>
-    <!-- gvisual mod -->
-    <string name="gvisual_title">תוספות התאמה אישית</string>
-    <string name="gvisual_footer">מסיבה מוזרה כלשהי, אפשרות הפינות המעוגלות אינה פועלת כאשר מלבן מעוגל, עיגול, דמעה או כל צורה אחרת של סמלים נבחרת כצורת סמלי המערכת.</string>
-    <string name="rounded_ui_title">עיגול פינות</string>
-    <string name="rounded_ui_dialog_title">בחר כמה מעוגלות תהיינה הפינות</string>
-    <string name="rounded_style_default">ברירת מחדל</string>
-    <string name="rounded_style_rectangle">מרובע</string>
-    <string name="rounded_style_large">גדול</string>
-    <string name="rounded_style_medium">בינוני</string>
-    <string name="statusbar_height_title">גובה שורת המצב</string>
-    <string name="statusbar_height_dialog_title">בחר את אורך שורת המצב</string>
-    <string name="sb_height_default">ברירת מחדל</string>
-    <string name="sb_height_medium">בינוני</string>
-    <string name="sb_height_large">גדול</string>
-    <string name="sb_height_extralarge">גדול מאוד</string>
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">הנפשת כיבוי מסך</string>
     <string name="screen_off_animation_default">ברירת מחדל</string>
@@ -541,4 +518,28 @@
     <!-- Lockscreen blur -->
     <string name="lockscreen_blur_title">טשטוש רקע</string>
     <string name="lockscreen_blur_summary">טשטוש הרקע במסך הנעילה</string>
+    <!-- gvisual mod -->
+    <string name="gvisual_title">תוספות התאמה אישית</string>
+    <string name="gvisual_summary">התאמות אישיות שונות</string>
+    <string name="rounded_ui_title">עיגול פינות</string>
+    <string name="rounded_ui_dialog_title">בחר כמה מעוגלות תהיינה הפינות</string>
+    <string name="rounded_style_default">ברירת מחדל</string>
+    <string name="rounded_style_rectangle">מרובעות</string>
+    <string name="rounded_style_large">הרבה</string>
+    <string name="rounded_style_medium">בינוניות</string>
+    <string name="statusbar_height_title">גובה שורת המצב</string>
+    <string name="statusbar_height_dialog_title">בחר את גובה שורת המצב</string>
+    <string name="sb_height_default">ברירת מחדל</string>
+    <string name="sb_height_medium">בינוני</string>
+    <string name="sb_height_large">גדול</string>
+    <string name="sb_height_extralarge">גדול מאוד</string>
+    <!--  Volume Panel Plugin   -->
+    <string name="volume_panel">עיצוב לוח עוצמת קול</string>
+    <string name="volume_panel_stock">ברירת מחדל</string>
+    <string name="volume_panel_aosp">AOSP</string>
+    <string name="volume_panel_compact">מרוכז</string>
+    <string name="volume_panel_oreo">אוראו</string>
+    <string name="volume_panel_tiled">אריחים</string>
+    <!-- Power menu background opacity -->
+    <string name="power_menu_alpha_title">שקיפות תפריט ההפעלה</string>
 </resources>

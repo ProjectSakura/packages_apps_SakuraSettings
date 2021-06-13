@@ -18,7 +18,7 @@
     <string name="sakura_settings_title">Cấu hình Sakura</string>
     <string name="sakura_dashboard_summary">Hãy mang mùa xuân đến cho bạn.</string>
     <!-- ROM Info -->
-    <string name="sakura_about_info">Thông tin về dự án này</string>
+    <string name="sakura_about_info">Thông tin về dự án</string>
     <string name="sakura_about_info_summary_title">Về nhóm</string>
     <string name="sakura_about_info_summary">Hệ điều hành Lineage tùy chỉnh. Mục đích duy nhất của nó là cung cấp một nền tảng được cung cấp bởi Lineage và có thể tùy chỉnh nhiều hơn Lineage.</string>
     <!-- Dev Info -->
@@ -30,14 +30,57 @@
     <!-- Maintainer Info -->
     <string name="maintainers_header">Người bảo trì</string>
     <string name="maintainers_header_summary">Đây là các nhà bảo trì thiết bị chính thức...</string>
+    <!--Maintainer git info -->
+    <string name="maintainer_shen_git">LordShenron</string>
+    <string name="maintainer_armypunk_git">ArmSM</string>
+    <string name="maintainer_haridhayal_git">haridhayal11</string>
+    <string name="maintainer_agus_git">agustkid</string>
+    <string name="maintainer_darksitara_git">Sweeto143</string>
+    <string name="maintainer_henrique_git">henricaodopao</string>
+    <string name="maintainer_arun_git">ArunTeltia</string>
+    <string name="maintainer_nitish_git">funeralfrog</string>
+    <string name="maintainer_cakestwix_git">CakesTwix</string>
+    <string name="maintainer_alexbrrbrr_git">AlexanderBaransky</string>
+    <string name="maintainer_a9ito_git">a9ito</string>
+    <string name="maintainer_deepakjr_git">aquariusjr10</string>
+    <string name="maintainer_eduardo_git">THERAD1</string>
+    <string name="maintainer_abishek_git">abhixv</string>
+    <string name="maintainer_chatur_git">Chatur27</string>
+    <string name="maintainer_tanmay_git">Atlas78</string>
+    <string name="maintainer_amy_git">00p513-dev</string>
+    <string name="maintainer_thdas_git">thedauke</string>
+    <string name="maintainer_cyberkiddo_git">CyberJalagam</string>
+    <string name="maintainer_shriiyansh_git">shriiyansh210</string>
+    <string name="maintainer_spicyfriedbread_git">spicydoughnut</string>
+    <string name="maintainer_hisoka_git">DeinMathelehrer</string>
     <!-- Asus -->
     <string name="device_asus">Asus</string>
     <string name="device_X00T">ZenFone Max Pro M1</string>
     <string name="device_X00T_description">X00T\nShen</string>
+    <string name="device_X00QD">Zenfone 5</string>
+    <string name="device_X00QD_description">X00QD\nHenrique</string>
     <!-- Dead LeEco -->
     <string name="device_leeco">LeEco</string>
     <string name="device_s2">LeEco Le 2 </string>
     <string name="device_s2_description">S2\nCakesTwix</string>
+    <!--lenuwu-->
+    <string name="device_lenevo">Lenevo</string>
+    <string name="device_jd2019">Lenevo Z5S</string>
+    <string name="device_jd2019_description">jd2019\nCakesTwix</string>
+    <!--Gayzu-->
+    <string name="device_meizu">Meizu</string>
+    <string name="device_m1882">Meizu 16th</string>
+    <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
+    <string name="device_m1892">Meizu 16th Plus</string>
+    <string name="device_m1892_description">m1892\nAbdibekov Dauren</string>
+    <!--muwurowola-->
+    <string name="device_motorola">Motorola</string>
+    <string name="device_sanders">Moto G5S Plus</string>
+    <string name="device_sanders_description">sanders\nArmSm</string>
+    <string name="device_channel">Moto G7 Play</string>
+    <string name="device_channel_description">channel\nAmy Grace</string>
+    <string name="device_ocean">Moto G7 Power</string>
+    <string name="device_ocean_description">ocean\nHisoka Simp</string>
     <!-- No more flagship killer -->
     <string name="device_oneplus">OnePlus</string>
     <string name="device_oneplus3">OnePlus 3 and 3T </string>
@@ -60,12 +103,12 @@
     <string name="device_j4prime_description">j4primelte\nGabriel</string>
     <string name="device_m20lte">Galaxy M20</string>
     <string name="device_m20lte_description">m20lte\nHaridhayal</string>
-    <!--Gayzu-->
-    <string name="device_meizu">Meizu</string>
-    <string name="device_m1882">Meizu 16th</string>
-    <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
-    <string name="device_m1892">Meizu 16th Plus</string>
-    <string name="device_m1892_description">m1892\nAbdibekov Dauren</string>
+    <string name="device_dreamlte">Galaxy S8</string>
+    <string name="device_dreamlte_description">dreamlte\nHaridhayal</string>
+    <string name="device_dream2lte">Galaxy S8 Plus</string>
+    <string name="device_dream2lte_description">dream2lte\nHaridhayal</string>
+    <string name="device_greatlte">Galaxy Note 8</string>
+    <string name="device_greatlte_description">greatlte\nHaridhayal</string>
     <!-- chinese spy -->
     <string name="device_xiaomi">Xiaomi</string>
     <!--Mi-->
@@ -85,12 +128,18 @@
     <!--redmi-->
     <string name="device_davinci">Redmi K20</string>
     <string name="device_davinci_description">davinci\nGabriel</string>
+    <string name="device_rosy">Redmi 5</string>
+    <string name="device_rosy_description">rosy\nShriiyansh</string>
     <string name="device_sakura">Redmi 6 Pro</string>
     <string name="device_sakura_description">sakura\nAlex</string>
     <string name="device_whyred">Redmi Note 5 Pro</string>
     <string name="device_whyred_description">whyred\nDarkstar</string>
     <string name="device_violet">Redmi Note 7 Pro</string>
     <string name="device_violet_description">violet\nSpicyDoughnut</string>
+    <string name="device_begonia">Redmi Note 8 Pro</string>
+    <string name="device_begonia_description">begonia\nAbhiXV</string>
+    <string name="device_miatoll">Redmi Note 9 Pro</string>
+    <string name="device_miatoll_description">miatoll\nA9ito</string>
     <!-- Categories -->
     <string name="gestures_title">Cử chỉ</string>
     <string name="sakura_gesture_summary_title">Vuốt ba ngón tay, bố cục và cử chỉ AOSP</string>
@@ -282,9 +331,9 @@
     <string name="network_traffic_layout_h">Chiều ngang</string>
     <string name="network_traffic_layout_v">Chiều dọc</string>
     <string name="nettraf_font_size">Cỡ chữ đơn</string>
-    <!-- volte icon toggle -->
-    <string name="volte_icon_title">Biểu tượng VoLTE</string>
-    <string name="volte_icon_summary">Hiện ảnh biểu tượng VoLTE khi khả dụng</string>
+    <!-- volte icon toggle
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon when available</string> -->
     <!--bluetooth battery level -->
     <string name="bluetooth_battery_title">Trạng thái pin Bluetooth</string>
     <string name="bluetooth_battery_summary">Hiển thị trạng thái pin của thiết bị bluetooth đã kết nối, nếu có sẵn</string>
@@ -350,31 +399,6 @@
     <!-- Oneui -->
     <string name="enable_oneui">OneUI Settings Actionbar</string>
     <string name="enable_oneui_summary">Hiển thị thanh hành động cài đặt trên miếng đệm để sử dụng dễ dàng hơn bằng một tay\nNote: khởi động lại ứng dụng cài đặt để thấy hiệu quả</string>
-    <!-- Themes -->
-    <string name="theme_type_title">Chủ đề Sakura</string>
-    <string name="theme_type_summary">Chọn chủ đề</string>
-    <string name="theme_type_light">Sáng</string>
-    <string name="theme_type_pitch_black">Google Grey</string>
-    <string name="theme_type_solarized_dark">Solarized dark</string>
-    <string name="theme_type_baked_green">Baked Green</string>
-    <string name="theme_type_choco_x">Choco X</string>
-    <string name="theme_type_du_pitchblack">Pitch black</string>
-    <string name="theme_type_material_ocean">Material Ocean</string>
-    <string name="theme_type_style_mizu">Mizu</string>
-    <!-- gvisual mod -->
-    <string name="gvisual_title">Gvisual Mod</string>
-    <string name="rounded_ui_title">Độ bo góc</string>
-    <string name="rounded_ui_dialog_title">Tuỳ chọn kiểu góc tròn</string>
-    <string name="rounded_style_default">Mặc định</string>
-    <string name="rounded_style_rectangle">Hình chữ nhật</string>
-    <string name="rounded_style_large">Lớn</string>
-    <string name="rounded_style_medium">Trung bình</string>
-    <string name="statusbar_height_title">Chiều cao thanh trạng thái</string>
-    <string name="statusbar_height_dialog_title">Chọn kiểu chiều cao thanh trạng thái</string>
-    <string name="sb_height_default">Mặc định</string>
-    <string name="sb_height_medium">Trung bình</string>
-    <string name="sb_height_large">Lớn</string>
-    <string name="sb_height_extralarge">Rất lớn</string>
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">Hiệu ứng tắt màn hình</string>
     <string name="screen_off_animation_default">Mặc định</string>
@@ -425,10 +449,6 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Thông báo ồn ào</string>
     <string name="notification_sound_vib_screen_on_summary">Phát âm thanh và rung cho thông báo khi màn hình đang bật</string>
-    <!-- qs media player -->
-    <string name="qs_media_player_title">Trình chơi nhạc trên QS</string>
-    <string name="qs_media_player_summary_on">Hiển thị trình phát đa phương tiện trong QS.\nYêu cầu khởi động lại SystemUI</string>
-    <string name="qs_media_player_summary_off">Hiển thị trình phát đa phương tiện trong Qs.\nYêu cầu khởi động lại SystemUI</string>
     <!-- QS DataUsage Toggle -->
     <string name="qs_datausage_title">Dữ liệu sử dụng trong Cài đặt nhanh</string>
     <string name="qs_datausage_disabled">Đã vô hiệu</string>
@@ -483,4 +503,43 @@
     <!-- Screen off fod -->
     <string name="fod_gesture_title">Mở khóa bằng vân tay khi màn hình tắt</string>
     <string name="fod_gesture_summary">Cho phép mở khóa thiết bị mà không cần phải đánh thức màn hình trước</string>
+    <!-- Screenshot compression  -->
+    <string name="screenshot_compression_title">Chất lượng ảnh chụp màn hình</string>
+    <string name="screenshot_compression_summary">Nén kích thước ảnh chụp màn hình với chất lượng hình ảnh bị giảm</string>
+    <!-- Notification background opacity -->
+    <string name="notification_alpha_title">Độ mờ của nền thông báo</string>
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Hiệu ứng khi sạc</string>
+    <string name="charging_animation_summary">Hiển thị hình động khi thiết bị được cắm</string>
+    <!-- Clipboard toast info -->
+    <string name="clipboard_toast_info_title">Cảnh báo truy cập khay nhớ tạm</string>
+    <string name="clipboard_toast_info_show_important">Chỉ hiển thị những cảnh báo quan trọng</string>
+    <string name="clipboard_toast_info_show_all">Hiển thị tất cả cảnh báo truy cập bảng tạm</string>
+    <!-- Lockscreen blur -->
+    <string name="lockscreen_blur_title">Làm mờ nền</string>
+    <string name="lockscreen_blur_summary">Hình nền mờ màn hình khóa</string>
+    <!-- gvisual mod -->
+    <string name="gvisual_title">G-Visual Mod</string>
+    <string name="gvisual_summary">Các tùy chỉnh giao diện khác</string>
+    <string name="rounded_ui_title">Độ bo góc</string>
+    <string name="rounded_ui_dialog_title">Tuỳ chọn kiểu góc tròn</string>
+    <string name="rounded_style_default">Mặc định</string>
+    <string name="rounded_style_rectangle">Hình chữ nhật</string>
+    <string name="rounded_style_large">Lớn</string>
+    <string name="rounded_style_medium">Trung bình</string>
+    <string name="statusbar_height_title">Chiều cao thanh trạng thái</string>
+    <string name="statusbar_height_dialog_title">Chọn kiểu chiều cao thanh trạng thái</string>
+    <string name="sb_height_default">Mặc định</string>
+    <string name="sb_height_medium">Trung bình</string>
+    <string name="sb_height_large">Lớn</string>
+    <string name="sb_height_extralarge">Rất lớn</string>
+    <!--  Volume Panel Plugin   -->
+    <string name="volume_panel">Kiểu bảng âm lượng</string>
+    <string name="volume_panel_stock">Gốc</string>
+    <string name="volume_panel_aosp">AOSP</string>
+    <string name="volume_panel_compact">Thu gọn</string>
+    <string name="volume_panel_oreo">Oreo</string>
+    <string name="volume_panel_tiled">Ô xếp</string>
+    <!-- Power menu background opacity -->
+    <string name="power_menu_alpha_title">Độ trong suốt menu nguồn</string>
 </resources>
