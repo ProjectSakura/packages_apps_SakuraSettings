@@ -567,4 +567,7 @@
     <!-- Power menu background opacity -->
     <string name="power_menu_alpha_title">Power menu opacity</string>
 
+    <!-- OOS style material dismiss all button for notifications -->
+    <string name="notification_material_dismiss_button_title">Material dimiss button</string>
+    <string name="notification_material_dismiss_button_summary">Replace clear all notification text with floating button</string>
 </resources>

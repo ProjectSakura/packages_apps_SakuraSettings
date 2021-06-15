@@ -258,6 +258,14 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mHeaderBrowse.setEnabled(isBrowseHeaderAvailable() && providerName.equals(mFileHeaderProvider));
     }
 
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        Resources res = null;
+
+        Settings.System.putIntForUser(resolver,
+                Settings.System.NOTIFICATION_MATERIAL_DISMISS, 0, UserHandle.USER_CURRENT);
+    }
+
     @Override
     public void onResume() {
         super.onResume();

@@ -32,6 +32,13 @@
             settings:min="0"
             android:persistent="false" />
 
+     <!-- OOS style material dismiss all button for notifications -->
+     <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="notification_material_dismiss"
+            android:title="@string/notification_material_dismiss_button_title"
+            android:summary="@string/notification_material_dismiss_button_summary"
+            android:defaultValue="false" />
+
      <!--QS tint toggle-->   
      <com.sakura.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_panel_bg_use_new_tint"
@@ -59,7 +66,7 @@
             android:title="@string/qs_media_player_title"
             android:summaryOn="@string/qs_media_player_summary_on"
             android:summaryOff="@string/qs_media_player_summary_off"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
     <!-- QS Header data uasge -->
     <com.sakura.settings.preferences.SystemSettingListPreference
