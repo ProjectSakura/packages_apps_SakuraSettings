@@ -52,6 +52,7 @@
     <string name="maintainer_cyberkiddo_git">CyberJalagam</string>
     <string name="maintainer_shriiyansh_git">shriiyansh210</string>
     <string name="maintainer_spicyfriedbread_git">spicydoughnut</string>
+    <string name="maintainer_hisoka_git">DeinMathelehrer</string>
     <!-- Asus -->
     <string name="device_asus">Asus</string>
     <string name="device_X00T">ZenFone Max Pro M1</string>
@@ -77,7 +78,9 @@
     <string name="device_sanders">Moto G5S Plus</string>
     <string name="device_sanders_description">sanders\nArmSm</string>
     <string name="device_channel">Moto G7 Play</string>
-    <string name="device_channel_description">channel\Amy Grace</string>
+    <string name="device_channel_description">channel\nAmy Grace</string>
+    <string name="device_ocean">Moto G7 Power</string>
+    <string name="device_ocean_description">ocean\nHisoka Simp</string>
     <!-- No more flagship killer -->
     <string name="device_oneplus">OnePlus</string>
     <string name="device_oneplus3">OnePlus 3 and 3T </string>
@@ -396,32 +399,6 @@
     <!-- Oneui -->
     <string name="enable_oneui">OneUI 設定アクションバー</string>
     <string name="enable_oneui_summary">片手で使用しやすくするために設定のアクションバーの上にスペーサーを表示する\n注意: 適用するにはアプリの再起動が必要です</string>
-    <!-- Themes -->
-    <string name="theme_type_title">Sakura テーマ</string>
-    <string name="theme_type_summary">テーマを選択</string>
-    <string name="theme_type_light">ライト</string>
-    <string name="theme_type_pitch_black">Google グレー</string>
-    <string name="theme_type_solarized_dark">Solarized ダーク</string>
-    <string name="theme_type_baked_green">Baked グリーン</string>
-    <string name="theme_type_choco_x">Choco X</string>
-    <string name="theme_type_du_pitchblack">PitchBlack</string>
-    <string name="theme_type_material_ocean">マテリアルオーシャン</string>
-    <string name="theme_type_style_mizu">水</string>
-    <!-- gvisual mod -->
-    <string name="gvisual_title">Gvisual Mod</string>
-    <string name="gvisual_footer">いくつかの不明な理由で、角丸四角形、Squircle、ティアドロップやその他のアイコン形状がシステムアイコン形状に選択されている時に画面の丸い角のオプションが動作しません。</string>
-    <string name="rounded_ui_title">丸い画面の角</string>
-    <string name="rounded_ui_dialog_title">画面の角の丸みの種類を指定する</string>
-    <string name="rounded_style_default">既定</string>
-    <string name="rounded_style_rectangle">四角形</string>
-    <string name="rounded_style_large">大</string>
-    <string name="rounded_style_medium">中</string>
-    <string name="statusbar_height_title">ステータスバーの高さ</string>
-    <string name="statusbar_height_dialog_title">ステータスバーの高さの種類を指定する</string>
-    <string name="sb_height_default">既定</string>
-    <string name="sb_height_medium">中</string>
-    <string name="sb_height_large">大</string>
-    <string name="sb_height_extralarge">特大</string>
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">画面消灯時のアニメーション</string>
     <string name="screen_off_animation_default">既定</string>
@@ -541,4 +518,28 @@
     <!-- Lockscreen blur -->
     <string name="lockscreen_blur_title">背景のぼかし</string>
     <string name="lockscreen_blur_summary">ロック画面の背景をぼかす</string>
+    <!-- gvisual mod -->
+    <string name="gvisual_title">G-Visual MOD</string>
+    <string name="gvisual_summary">様々な UI カスタマイズをする</string>
+    <string name="rounded_ui_title">丸い画面の角</string>
+    <string name="rounded_ui_dialog_title">画面の角の丸みの種類を指定する</string>
+    <string name="rounded_style_default">既定</string>
+    <string name="rounded_style_rectangle">四角形</string>
+    <string name="rounded_style_large">大</string>
+    <string name="rounded_style_medium">中</string>
+    <string name="statusbar_height_title">ステータスバーの高さ</string>
+    <string name="statusbar_height_dialog_title">ステータスバーの高さの種類を指定する</string>
+    <string name="sb_height_default">既定</string>
+    <string name="sb_height_medium">中</string>
+    <string name="sb_height_large">大</string>
+    <string name="sb_height_extralarge">特大</string>
+    <!--  Volume Panel Plugin   -->
+    <string name="volume_panel">音量パネルのスタイル</string>
+    <string name="volume_panel_stock">標準</string>
+    <string name="volume_panel_aosp">AOSP</string>
+    <string name="volume_panel_compact">コンパクト</string>
+    <string name="volume_panel_oreo">Oreo</string>
+    <string name="volume_panel_tiled">タイル</string>
+    <!-- Power menu background opacity -->
+    <string name="power_menu_alpha_title">電源メニューの不透明度</string>
 </resources>

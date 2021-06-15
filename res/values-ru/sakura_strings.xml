@@ -52,6 +52,7 @@
     <string name="maintainer_cyberkiddo_git">CyberJalagam</string>
     <string name="maintainer_shriiyansh_git">shriiyansh210</string>
     <string name="maintainer_spicyfriedbread_git">spicydoughnut</string>
+    <string name="maintainer_hisoka_git">DeinMathelehrer</string>
     <!-- Asus -->
     <string name="device_asus">Asus</string>
     <string name="device_X00T">ZenFone Max Pro M1</string>
@@ -77,7 +78,9 @@
     <string name="device_sanders">Moto G5S Plus</string>
     <string name="device_sanders_description">sanders\nArmSm</string>
     <string name="device_channel">Moto G7 Play</string>
-    <string name="device_channel_description">channel\Amy Grace</string>
+    <string name="device_channel_description">channel\nAmy Grace</string>
+    <string name="device_ocean">Moto G7 Power</string>
+    <string name="device_ocean_description">ocean\nHisoka Simp</string>
     <!-- No more flagship killer -->
     <string name="device_oneplus">OnePlus</string>
     <string name="device_oneplus3">OnePlus 3 и 3T </string>
@@ -396,32 +399,6 @@
     <!-- Oneui -->
     <string name="enable_oneui">Actionbar настройки OneUI</string>
     <string name="enable_oneui_summary">Показать пробел над настройками панели действий для более легкого использования с одной стороны\nПРИМЕЧАНИЕ: перезапустите приложения настроек, чтобы увидеть эффект</string>
-    <!-- Themes -->
-    <string name="theme_type_title">Темы для Сакуры</string>
-    <string name="theme_type_summary">Выбрать тему</string>
-    <string name="theme_type_light">Светлая</string>
-    <string name="theme_type_pitch_black">Серый Google</string>
-    <string name="theme_type_solarized_dark">Морская</string>
-    <string name="theme_type_baked_green">Зеленая</string>
-    <string name="theme_type_choco_x">Choco X</string>
-    <string name="theme_type_du_pitchblack">PitchBlack</string>
-    <string name="theme_type_material_ocean">Материал Океан</string>
-    <string name="theme_type_style_mizu">Mizu</string>
-    <!-- gvisual mod -->
-    <string name="gvisual_title">Gvisual Mod</string>
-    <string name="gvisual_footer">По какой-то странной причине параметр «Закругленный угол» не работает, если в качестве системного значка выбраны значки любых других форм.</string>
-    <string name="rounded_ui_title">Закругленные углы</string>
-    <string name="rounded_ui_dialog_title">Выбрать закругление углов</string>
-    <string name="rounded_style_default">По умолчанию</string>
-    <string name="rounded_style_rectangle">Прямоугольник</string>
-    <string name="rounded_style_large">Крупный</string>
-    <string name="rounded_style_medium">Средний</string>
-    <string name="statusbar_height_title">Высота строки состояния</string>
-    <string name="statusbar_height_dialog_title">Выбрать высоту строки состояния</string>
-    <string name="sb_height_default">По умолчанию</string>
-    <string name="sb_height_medium">Средний</string>
-    <string name="sb_height_large">Крупный</string>
-    <string name="sb_height_extralarge">Очень крупный</string>
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">Анимация отключения экрана</string>
     <string name="screen_off_animation_default">По умолчанию</string>
@@ -541,4 +518,28 @@
     <!-- Lockscreen blur -->
     <string name="lockscreen_blur_title">Размытие фона</string>
     <string name="lockscreen_blur_summary">Размытие фона экрана блокировки</string>
+    <!-- gvisual mod -->
+    <string name="gvisual_title">G-Visual Mod</string>
+    <string name="gvisual_summary">Различные настройки пользовательского интерфейса</string>
+    <string name="rounded_ui_title">Закругленные углы</string>
+    <string name="rounded_ui_dialog_title">Выбрать закругление углов</string>
+    <string name="rounded_style_default">По умолчанию</string>
+    <string name="rounded_style_rectangle">Прямоугольник</string>
+    <string name="rounded_style_large">Крупный</string>
+    <string name="rounded_style_medium">Средний</string>
+    <string name="statusbar_height_title">Высота строки состояния</string>
+    <string name="statusbar_height_dialog_title">Выбрать высоту строки состояния</string>
+    <string name="sb_height_default">По умолчанию</string>
+    <string name="sb_height_medium">Средний</string>
+    <string name="sb_height_large">Крупный</string>
+    <string name="sb_height_extralarge">Очень крупный</string>
+    <!--  Volume Panel Plugin   -->
+    <string name="volume_panel">Стиль панели громкости</string>
+    <string name="volume_panel_stock">Стандартный</string>
+    <string name="volume_panel_aosp">AOSP</string>
+    <string name="volume_panel_compact">Компактный</string>
+    <string name="volume_panel_oreo">Android Oreo</string>
+    <string name="volume_panel_tiled">Плиточный</string>
+    <!-- Power menu background opacity -->
+    <string name="power_menu_alpha_title">Прозрачность меню питания</string>
 </resources>
