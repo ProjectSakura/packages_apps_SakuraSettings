@@ -570,4 +570,9 @@
     <!-- OOS style material dismiss all button for notifications -->
     <string name="notification_material_dismiss_button_title">Material dimiss button</string>
     <string name="notification_material_dismiss_button_summary">Replace clear all notification text with floating button</string>
+
+    <!-- Display lock icon on lockscreen -->
+    <string name="lockscreen_lock_icon_title">Lock icon</string>
+    <string name="lockscreen_lock_icon_summary">Display lock icon on the lockscreen</string>
+
 </resources>

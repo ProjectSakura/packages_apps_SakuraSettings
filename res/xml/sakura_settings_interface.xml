@@ -64,6 +64,13 @@
             android:summary="@string/bluetooth_battery_summary"
             android:defaultValue="true"/>
 
+    <!-- Lock icon toggle -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_lock_icon"
+            android:title="@string/lockscreen_lock_icon_title"
+            android:summary="@string/lockscreen_lock_icon_summary"
+            android:defaultValue="true" />
+
     <!--Network traffic -->
     <Preference
             android:key="network_traffic"
