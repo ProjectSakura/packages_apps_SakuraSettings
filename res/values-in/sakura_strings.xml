@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright © 2020-21 Project Sakura
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="sakura_settings_title">Setelan Sakura</string>
+    <string name="sakura_dashboard_summary">Membawa musim semi kepada Anda.</string>
+    <!-- ROM Info -->
+    <string name="sakura_about_info">Tentang Proyek</string>
+    <string name="sakura_about_info_summary_title">Tentang tim</string>
+    <string name="sakura_about_info_summary">Sebuah Kustomisasi Lineage OS, adalah komitmen kami untuk membawakan platform yang ditenagai oleh Lineage dan lebih banyak kustomisasi daripada Lineage.</string>
+    <!-- Dev Info -->
+    <string name="devs_header">Pengembang</string>
+    <string name="dev_1">LordShenron</string>
+    <string name="dev1_description">Penemu/Pengembang</string>
+    <string name="dev_2">Arun Teltia</string>
+    <string name="dev2_description">Pengembang Web/Hubungan Masyarakat</string>
+    <string name="dev_3">ArmSM</string>
+    <string name="dev3_description">Koordinator</string>
+    <string name="dev_4">CryptoFox</string>
+    <string name="dev4_description">Desainer</string>
+    <string name="dev_5">Ritik</string>
+    <string name="dev5_description">Pengembang Web</string>
+    <string name="dev_6">Samridhi</string>
+    <string name="dev6_description">Pengembang Web</string>
+    <!-- Maintainer Info -->
+    <string name="maintainers_header">Pengelola</string>
+    <string name="maintainers_header_summary">Di sini adalah beberapa Pengelola Perangkat Resmi...</string>
+    <!-- Asus -->
+    <string name="device_asus">Asus</string>
+    <string name="device_X00T">ZenFone Max Pro M1</string>
+    <string name="device_X00T_description">X00T/X00TD</string>
+    <string name="device_X00QD">ZenFone 5</string>
+    <string name="device_X00QD_description">X00QD\nHenrique</string>
+    <!-- Dead LeEco -->
+    <string name="device_leeco">LeEco</string>
+    <string name="device_s2">LeEco Le 2</string>
+    <string name="device_s2_description">S2</string>
+    <!-- Lenovo -->
+    <string name="device_lenovo">Lenovo</string>
+    <string name="device_jd2019">Z5S </string>
+    <string name="device_jd2019_description">jd2019\nCakesTwix</string>
+    <!--Gayzu-->
+    <string name="device_meizu">Meizu</string>
+    <string name="device_m1882">Meizu 16th</string>
+    <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
+    <string name="device_m1892">Meizu 16th Plus</string>
+    <string name="device_m1892_description">m1892\nAbdibekov Dauren</string>
+    <string name="device_m1872">Meizu 16X</string>
+    <string name="device_m1872_description">m1872\nAlex</string>
+    <!--Momoroll-->
+    <string name="device_moto">Motorola</string>
+    <string name="device_sanders">Moto G5S Plus</string>
+    <string name="device_sanders_description">sanders\nArmSM</string>
+    <string name="device_channel">Moto G7 Play</string>
+    <string name="device_channel_description">channel\nAmy Grace</string>
+    <string name="device_ocean">Moto G7 Power</string>
+    <string name="device_ocean_description">ocean\nHisoka Simp</string>
+    <!-- No more flagship killer -->
+    <string name="device_oneplus">OnePlus</string>
+    <string name="device_oneplus3">OnePlus 3 &amp; 3T</string>
+    <string name="device_oneplus3_description">oneplus3\nDeepak Jr</string>
+    <string name="device_oneplus6">OnePlus 6 </string>
+    <string name="device_oneplus6_description">enchilada\neduardo</string>
+    <!-- Realmeme -->
+    <string name="device_realme">Realme</string>
+    <string name="device_cph1859">Realme 1 </string>
+    <string name="device_cph1859_description">CPH1859\nCyberJalagam</string>
+    <string name="device_rmx2001">Realme Xt </string>
+    <string name="device_rmx2001_description">RMX2001\nTanmay</string>
+    <!-- Lagsung -->
+    <string name="device_samsung">Samsung</string>
+    <string name="device_a10">Galaxy A10</string>
+    <string name="device_a10_description">a10\nchatur</string>
+    <string name="device_a20">Galaxy A20</string>
+    <string name="device_a20_description">a20\nchatur</string>
+    <string name="device_j4prime">Galaxy J4Prime LTE</string>
+    <string name="device_j4prime_description">j4primelte\nGabriel</string>
+    <string name="device_m20lte">Galaxy M20</string>
+    <string name="device_m20lte_description">m20lte\nHaridhayal</string>
+    <string name="device_dreamlte">Galaxy S8</string>
+    <string name="device_dreamlte_description">dreamlre\nHaridhayal</string>
+    <string name="device_dream2lte">Galaxy S8 Plus</string>
+    <string name="device_dream2lte_description">dream2lte\nHaridhayal</string>
+    <string name="device_greatlte">Galaxy Note 8</string>
+    <string name="device_greatlte_description">greatlte\nHaridhayal</string>
+    <!-- chinese spy -->
+    <string name="device_xiaomi">Xiaomi</string>
+    <!--Mi-->
+    <string name="device_gauguin">Mi 10i 5G\nMi 10T Lite</string>
+    <string name="device_gauguin_description">gauguin\nPrajwal dan Nitish</string>
+    <string name="device_tucana">Mi Note 10</string>
+    <string name="device_tucana_description">tucana\nAlexander</string>
+    <string name="device_wayne">Mi 6X</string>
+    <string name="device_wayne_description">wayne\nMarcos Almeida</string>
+    <string name="device_tissot">Mi A1</string>
+    <string name="device_tissot_description">tissot\nRoger W.</string>
+    <!--poco-->
+    <string name="device_phoenix">Poco X2</string>
+    <string name="device_phoenix_description">phoenix\nKunal</string>
+    <string name="device_surya">Poco X3</string>
+    <string name="device_surya_description">surya\nArmSM dan Agus</string>
+    <string name="device_vayu">Poco X3 Pro</string>
+    <string name="device_vayu_description">vayu\nKiam</string>
+    <!--redmi-->
+    <string name="device_davinci">Redmi K20</string>
+    <string name="device_davinci_description">davinci\nGabriel</string>
+    <string name="device_sakura">Redmi 6 Pro</string>
+    <string name="device_sakura_description">sakura\nAlex</string>
+    <string name="device_whyred">Redmi Note 5 Pro</string>
+    <string name="device_whyred_description">whyred\nDarkstar</string>
+    <string name="device_violet">Redmi Note 7 Pro</string>
+    <string name="device_violet_description">violet\nSpicyDoughnut</string>
+    <string name="device_begonia">Redmi Note 8 Pro</string>
+    <string name="device_begonia_description">begonia\nAbhiXV</string>
+    <string name="device_miatoll">Redmi Note 9 Pro</string>
+    <string name="device_miatoll_description">miatoll\nA9ito</string>
+    <!-- Categories -->
+    <string name="gestures_title">Gestur</string>
+    <string name="sakura_gesture_summary_title">Usap tiga jari, tata letak dan gestur AOSP</string>
+    <string name="lockscreen_title">Layar Kunci</string>
+    <string name="sakura_lockscreen_summary_title">Pengisian daya layar kunci dan layar kunci ama</string>
+    <string name="misc_title">Lain-lain</string>
+    <string name="sakura_misc_summary_title">Mode permainan dan opsi lainnya</string>
+    <string name="parts_title">Lineage Parts</string>
+    <string name="sakura_parts_summary_title">Bilah status, tombol dan setelan lineage lainnya</string>
+    <string name="quicksettings_title">Setelan Cepat</string>
+    <string name="sakura_quicksettings_summary_title">Judul ubin, gambar header, opasitas</string>
+    <string name="interface_title">Antarmuka</string>
+    <string name="sakura_interface_summary_title">Tema, garis baterai dan pengukur jaringan</string>
+    <string name="animation_title">Animasi</string>
+    <string name="sakura_animation_summary_title">Animasi buka dan tutup</string>
+    <string name="notifications_title">Notifikasi</string>
+    <string name="sakura_notifications_summary_title">Notifikasi mengambang, sisi pencahayaan, opsi getaran</string>
+    <string name="sakura_updater_summary_title">Pembaruan OTA</string>
+    <string name="updater_title">Pembaruan Sakura</string>
+    <string name="buttons_settings">Pengaturan tombol</string>
+    <string name="buttons_settings_summary">Pengaturan tombol LineageOS</string>
+    <string name="statusbar_settings">Pengaturan bilah status</string>
+    <string name="statusbar_settings_summary">Tweak bilah status LineageOS</string>
+    <!-- sub categories -->
+    <string name="themes_ui_settings">Tema dan setelan UI</string>
+    <string name="misc_interface_settings">Setelan UI lainnya</string>
+    <string name="lockscreen_ui_settings">Tampilan Layar Kunci</string>
+    <string name="secure_lockscreen_settings">Keamanan layar kunci</string>
+    <string name="headsup_settings">Notifikasi Sistem</string>
+    <string name="horizon_light_settings">Notifikasi AOD</string>
+    <string name="misc_qs_settings">Pengaturan QS Lainnya</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Setel ulang</string>
+    <string name="cancel">Batal</string>
+    <string name="save">Simpan</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Pemilih Warna</string>
+    <string name="press_color_to_apply">Tekan pada warna di bawah untuk menerapkan</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Setel</string>
+    <string name="color_default">Default</string>
+    <!-- Battery Bar -->
+    <string name="battery_bar_title">Bilah baterai</string>
+    <string name="battery_bar_summary">Menampilkan dan menyesuaikan bilah baterai di atas bilah status</string>
+    <string name="battery_bar">Lokasi</string>
+    <string name="battery_bar_no_navbar">Lokasi</string>
+    <string name="battery_bar_location_hide">Sembunyikan</string>
+    <string name="battery_bar_location_statusbar">Bilah status</string>
+    <string name="battery_bar_location_top_navbar">Atas Bar Navigasi</string>
+    <string name="battery_bar_location_bottom_navbar">Bawah Bar Navigasi</string>
+    <string name="battery_bar_color">Warna</string>
+    <string name="battery_bar_charging_color">Warna pengisian daya</string>
+    <string name="battery_bar_battery_low_color">Warna baterai lemah</string>
+    <string name="battery_bar_cat">Gaya</string>
+    <string name="battery_bar_style_title">Tata letak</string>
+    <string name="battery_bar_thickness_title">Ketebalan</string>
+    <string name="battery_bar_animate_title">Animasi pengisian daya</string>
+    <string name="battery_bar_style_regular">Reguler</string>
+    <string name="battery_bar_style_center_mirrored">Pusat-bercermin</string>
+    <string name="battery_bar_style_reversed">Terbalik</string>
+    <string name="battery_bar_use_charging_color">Warna khusus saat pengisian</string>
+    <string name="battery_bar_blend_color_title">Perpaduan warna</string>
+    <string name="battery_bar_blend_color_summary">Perpaduan warna penuh/kosong yang sesuai dengan persentase baterai</string>
+    <string name="battery_bar_blend_color_reverse_title">Arah warna terbalik</string>
+    <string name="battery_bar_blend_color_reverse_summary_off">Penuh &#8594; Kosong: Merah &#8592; Hijau &#8592; Biru &#8592; Merah</string>
+    <string name="battery_bar_blend_color_reverse_summary_on">Penuh &#8594; Kosong: Merah &#8594; Hijau &#8594; Biru &#8594; Merah</string>
+    <!-- QS rows and columns -->
+    <string name="sysui_qqs_count_title">Kolom (Setelan Cepat)</string>
+    <string name="qs_layout_category">Tata letak</string>
+    <string name="qs_column_rows_settings_title">Setelan panel QS</string>
+    <string name="qs_columns_rows_category_title">Kolom dan baris QS</string>
+    <string name="qs_rows_columns_title">Baris dan kolom QS</string>
+    <string name="qs_rows_portrait_title">Baris (Potret)</string>
+    <string name="qs_rows_landscape_title">Baris (Lanskap)</string>
+    <string name="qs_columns_portrait_title">Kolom (Potret)</string>
+    <string name="qs_columns_landscape_title">Kolom (Lanskap)</string>
+    <!--QS tile title visibility-->
+    <string name="qs_tile_title_visibility_title">Judul ubin</string>
+    <string name="qs_tile_title_visibility_summary">Menampilkan judul di bawah masing-masing ubin</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Bergetar saat disentuh</string>
+    <string name="quick_settings_vibrate_summary">Bergetar saat menyentuh ubin</string>
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qs_panel_alpha_title">Opasitas Setelan Cepat</string>
+    <string name="qs_panel_alpha_summary">Konfigurasi opasitas dari latar belakang</string>
+    <!-- Custom headers -->
+    <string name="notification_title">Panel notifikasi</string>
+    <string name="status_bar_custom_header_title">Aktifkan</string>
+    <string name="daylight_header_pack_title">Koleksi gambar header</string>
+    <string name="status_bar_custom_header_shadow_title">Bayangan gambar header</string>
+    <string name="status_bar_custom_header_shadow_summary">Untuk visibilitas lebih baik pada gambar yang terang</string>
+    <string name="unit_percent">\u0025</string>
+    <string name="static_header_provider_title">Gambar statis</string>
+    <string name="daylight_header_provider_title">Koleksi gambar</string>
+    <string name="custom_header_provider_title">Penyedia header</string>
+    <string name="custom_header_pick_title">Pilih gambar header</string>
+    <string name="custom_header_pick_summary">Pilih gambar lokal atau jarak jauh</string>
+    <string name="style_enabled_summary">Gambar header kustom aktif</string>
+    <string name="style_disabled_summary">Gambar header kustom mati</string>
+    <string name="header_provider_disabled">Dinonaktifkan</string>
+    <string name="custom_header_title">Gambar header kustom</string>
+    <string name="file_header_select_title">Pilih gambar lokal</string>
+    <string name="file_header_select_summary">Pilih gambar dari penyimpanan</string>
+    <string name="file_header_provider_title">Gambar tunggal</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="screenshot_gestures">Gestur Tangkapan Layar</string>
+    <string name="three_finger_gesture">Gestur tiga jari</string>
+    <string name="three_finger_gesture_summary">Usap tiga jari untuk mengambil tangkapan layar</string>
+    <!-- AOKP custom system animations -->
+    <string name="system_animation_title">Sistem</string>
+    <string name="activity_open_title">Animasi membuk aktivitas</string>
+    <string name="activity_close_title">Animasi menutup aktivitas</string>
+    <string name="task_open_title">Animasi membuka tugas</string>
+    <string name="task_open_behind_title">Animasi membuka tugas di belakang</string>
+    <string name="task_close_title">Animasi menutup tugas</string>
+    <string name="task_move_to_front_title">Animasi pindah ke depan</string>
+    <string name="task_move_to_back_title">Animasi pindah ke belakang</string>
+    <string name="wallpaper_open_title">Animasi membuka wallpaper</string>
+    <string name="wallpaper_close_title">Animasi menutup wallpaper</string>
+    <string name="wallpaper_intra_open_title">Animasi membuka wallpaper intra</string>
+    <string name="wallpaper_intra_close_title">Animasi menutup wallpaper intra</string>
+    <string name="animation_duration_title">Durasi animasi</string>
+    <string name="title_animation_no_override">Mencegah penimpaan aplikasi</string>
+    <string name="summary_animation_no_override">Mencegah aplikasi mengganti transisi</string>
+    <string name="animation_duration_default">Default</string>
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Menu Daya</string>
+    <string name="lockscreen_enable_power_menu_summary">Izinkan mengakses menu daya pada layar kunci aman</string>
+    <string name="lockscreen_secure_power_menu_title">Menu daya aman</string>
+    <string name="lockscreen_secure_power_menu_summary">Izinkan tindakan menu daya hanya setelah autentikasi</string>
+    <!-- Units -->
+    <string name="unit_seconds">detik</string>
+    <string name="unit_milliseconds">milidetik</string>
+    <string name="unit_pixels">dp</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Info pengisian daya pada layar kunci</string>
+    <string name="lockscreen_battery_info_summary">Menampilkan arus dan tegangan maksimal pengisi daya yang dinegosiasikan dan suhu baterai pada layar kunci saat mengisi daya</string>
+    <!-- Heads up -->
+    <string name="heads_up_notifications">Notifikasi mengambang</string>
+    <string name="heads_up_summary">Aktifkan/Nonaktifkan notifikasi mengambang dan mengaturnya</string>
+    <string name="summary_heads_up_enabled">Notifikasi pop-up diaktifkan</string>
+    <string name="summary_heads_up_disabled">Notifikasi pop-up dinonaktifkan</string>
+    <string name="add_heads_up_package">Tambahkan aplikasi</string>
+    <string name="add_heads_up_stoplist_summary">Matikan notifikasi mengambang di aplikasi ini</string>
+    <string name="add_heads_up_blacklist_summary">Matikan notifikasi mengambang dari aplikasi ini</string>
+    <string name="heads_up_stoplist_title">Daftar henti</string>
+    <string name="heads_up_blacklist_title">Daftar hitam</string>
+    <string name="profile_choose_app">Pilih aplikasi</string>
+    <string name="dialog_delete_title">Hapus</string>
+    <string name="dialog_delete_message">Hapus item yang dipilih?</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Kurangi notifikasi mengambang yang membosankan</string>
+    <string name="less_boring_heads_up_summary">Tampilkan notifikasi mengambang hanya untuk aplikasi panggilan, pesan, dan alarm</string>
+    <!-- AOSP Gestures -->
+    <string name="system_gestures">Gestur Sistem</string>
+    <string name="aosp_gesture_title">Pengaturan Gestur AOSP</string>
+    <string name="aosp_gesture_summary">Gestur usap AOSP, 2 tombol, 3 tombol navigasi dan banyak lagi</string>
+    <!--dashboard icons-->
+    <string name="theming_settings_dashboard_icons_title">Setelan ikon dasbor</string>
+    <string name="theming_settings_dashboard_icons_default2">Latar belakang default</string>
+    <string name="theming_settings_dashboard_icons_default_accent2">Latar belakang aksen</string>
+    <string name="theming_settings_dashboard_icons_plain">Polos</string>
+    <string name="theming_settings_dashboard_icons_plain_accent">Aksen polos</string>
+    <string name="theming_settings_dashboard_icons_default_oneplus">OnePlus</string>
+    <!-- Statusbar net monitor -->
+    <string name="traffic_title">Indikator jaringan</string>
+    <string name="traffic_summary">Tampilkan monitor jaringan di QS dan bilah status</string>
+    <string name="network_traffic_state_title">Lalu lintas jaringan</string>
+    <string name="network_traffic_state_summary">Tampilkan aktivitas jaringan di bilah status</string>
+    <string name="network_traffic">Lalu lintas jaringan</string>
+    <string name="network_traffic_location">Penempatan indikator jaringan</string>
+    <string name="traffic_disabled">Dinonaktifkan</string>
+    <string name="traffic_statusbar">Bilah status</string>
+    <string name="traffic_expanded_statusbar">Mode diperluas</string>
+    <string name="network_traffic_autohide_threshold_title">Otomatis menyembunyikan aktivitas jaringan (KB/d)</string>
+    <string name="network_traffic_arrow">Tampilkan panah</string>
+    <string name="network_traffic_arrow_summary">Tampilkan panah indikator lalu-lintas jaringan</string>
+    <string name="network_traffic_type">Pilih tipe aktivitas jaringan</string>
+    <string name="show_network_traffic_combined">Digabungkan (Unggah + Unduh)</string>
+    <string name="show_network_traffic_dynamic">Dinamis</string>
+    <string name="show_network_traffic_up">Unggah</string>
+    <string name="show_network_traffic_down">Unduh</string>
+    <string name="show_network_traffic_all">Keduanya</string>
+    <string name="network_traffic_layout">Tata Letak Aktivitas</string>
+    <string name="network_traffic_layout_h">Horizontal</string>
+    <string name="network_traffic_layout_v">Vertikal</string>
+    <string name="nettraf_font_size">Ukuran Font Jaringan tunggal</string>
+    <!-- volte icon toggle
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon when available</string> -->
+    <!--bluetooth battery level -->
+    <string name="bluetooth_battery_title">Status baterai bluetooth</string>
+    <string name="bluetooth_battery_summary">Menampilkan status baterai untuk perangkat bluetooth yang terhubung jika tersedia</string>
+    <!-- Screenshot Sound  -->
+    <string name="screenshot_sound_title">Suara tangkapan layar</string>
+    <string name="screenshot_sound_summary">Alihan suara yang dimainkan saat mengambil tangkapan layar</string>
+    <string name="audio_panel_view_timeout_title">Waktu habis panel suara</string>
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Mode Permainan</string>
+    <string name="gaming_mode_summary">Kustomisasi preferensi Mode Permainan</string>
+    <string name="gaming_mode_enabled_summary">Izinkan mengaktifkan Mode Permainan</string>
+    <string name="gaming_mode_app_picker_title">Secara otomatis nyalakan untuk aplikasi ini</string>
+    <string name="add_gaming_mode_package_title">Tambahkan aplikasi untuk mode Permainan</string>
+    <string name="add_gaming_mode_package_summary">Mode permainan akan menyala secara otomatis ketika aplikasi ini dibuka dan dimatikan ketika mereka ditutup</string>
+    <string name="gaming_mode_headsup_title">Blokir notifikasi</string>
+    <string name="gaming_mode_headsup_summary">Panggilan dan alarm dikecualikan</string>
+    <string name="gaming_mode_hardware_keys_title">Tombol kunci</string>
+    <string name="gaming_mode_hardware_keys_summary">Saat mode Permainan dihidupkan, tombol akan dikunci</string>
+    <string name="gaming_mode_brightness_title">Nonaktifkan kecerahan otomatis</string>
+    <string name="gaming_mode_brightness_summary">Kunci kecerahan layar saat Mode Permainan dihidupkan</string>
+    <string name="gaming_mode_ringer_title">Dering saat mode permainan</string>
+    <string name="gaming_mode_ringer_off_title">Jangan diubah</string>
+    <string name="gaming_mode_ringer_vibrate_title">Getar</string>
+    <string name="gaming_mode_ringer_dnd_title">Jangan Ganggu</string>
+    <string name="gaming_mode_ringer_silent_title">Senyap</string>
+    <string name="gaming_mode_notifications_title">Indikasi Mode Permainan</string>
+    <string name="gaming_mode_notifications_off_title">Dinonaktifkan</string>
+    <string name="gaming_mode_notifications_notif_title">Tampilkan notifikasi</string>
+    <string name="gaming_mode_notifications_toast_title">Tampilkan toast</string>
+    <string name="gaming_mode_notifications_all_title">Tampilkan toast dan notifikasi</string>
+    <string name="gaming_mode_dynamic_title">Mode dinamis</string>
+    <string name="gaming_mode_dynamic_summary">Mendeteksi dan menambah aplikasi permainan secara otomatis</string>
+    <!--qs tint toggle-->
+    <string name="qs_bg_use_new_tint">Tombol warna QS</string>
+    <string name="qs_bg_use_new_tint_summary">Gunakan warna aksen untuk ikon dan latar belakang ubin qs (Memerlukan mulai ulang sistem)</string>
+    <!-- Horizon light -->
+    <string name="default_string">Bawaan</string>
+    <string name="horizon_light_title">Sisi Pencahayaan</string>
+    <string name="horizon_light_summary">Cahaya ambien terang untuk mendorong notifikasi</string>
+    <string name="horizon_light_enabled_title">Tampilkan saat AOD</string>
+    <string name="aod_disabled">AOD dinonaktifkan</string>
+    <string name="horizon_light_enabled_summary">Tetap tampilkan sisi pencahayaan saat AOD</string>
+    <string name="horizon_light_hide_aod_title">Sembunyikan konten AOD</string>
+    <string name="horizon_light_hide_aod_summary">Sembunyikan konten AOD saat tepi diterangi</string>
+    <string name="horizon_light_duration_title">Durasi</string>
+    <string name="horizon_light_duration_summary">Waktu yang dibutuhkan untuk menyelesaikan setiap animasi</string>
+    <string name="horizon_light_repeats_title">Mengulangi</string>
+    <string name="horizon_light_repeats_summary">Berapa kali animasi harus ditampilkan\n0 untuk tak terhingga</string>
+    <string name="horizon_light_timeout_title">Batas waktu</string>
+    <string name="horizon_light_timeout_forever">Selamanya</string>
+    <string name="horizon_light_timeout_half_minute">30 detik</string>
+    <string name="horizon_light_timeout_minute">1 menit</string>
+    <string name="horizon_light_timeout_three_minutes">3 menit</string>
+    <string name="horizon_light_timeout_five_minutes">5 menit</string>
+    <string name="horizon_light_timeout_ten_minutes">10 menit</string>
+    <string name="set_to_zero">Setel pengulangan ke 0 untuk mengaktifkan</string>
+    <string name="horizon_color_mode_title">Mode warna</string>
+    <string name="horizon_color_mode_accent">Warna aksen</string>
+    <string name="horizon_color_mode_wall">Warna dominan wallpaper</string>
+    <string name="horizon_color_mode_notification">Warna ikon notifikasi</string>
+    <string name="horizon_color_mode_custom">@string/horizon_light_color_title</string>
+    <string name="horizon_light_color_title">Warna kustom</string>
+    <!-- Oneui -->
+    <string name="enable_oneui">Setelan bilah tindakan OneUI</string>
+    <string name="enable_oneui_summary">Tampilkan spacer di atas bilah tindakan setelan untuk penggunaan yang lebih mudah dengan satu tangan\nCATATAN: mulai ulang aplikasi pengaturan untuk melihat efeknya</string>
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Animasi layar mati</string>
+    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Skala</string>
+    <string name="screen_off_animation_summary">Crt dan animasi berskala untuk layar kunci</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Opsi getar dalam panggilan</string>
+    <string name="incall_vibrate_connect_title">Bergetar saat terhubung</string>
+    <string name="incall_vibrate_call_wait_title">Bergetar saat menunggu panggilan</string>
+    <string name="incall_vibrate_disconnect_title">Bergetar saat terputus</string>
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Tingkat volume</string>
+    <string name="volume_steps_summary">Sesuaikan jumlah tingkat pada panel volume</string>
+    <string name="volume_steps_alarm_title">Tingkat volume: Alarm</string>
+    <string name="volume_steps_dtmf_title">Tingkat volume: DTMF</string>
+    <string name="volume_steps_music_title">Tingkat volume: Musik</string>
+    <string name="volume_steps_notification_title">Tingkat volume: Notifikasi</string>
+    <string name="volume_steps_ring_title">Tingkat volume: Dering</string>
+    <string name="volume_steps_system_title">Tingkat volume: Sistem</string>
+    <string name="volume_steps_voice_call_title">Tingkat volume: Panggilan Suara</string>
+    <string name="volume_steps_reset">Setel ulang</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+    <!-- Navbar layout options -->
+    <string name="navbar_layout_title">Tata letak</string>
+    <string name="navbar_layout_normal">Normal</string>
+    <string name="navbar_layout_compact">Rapat</string>
+    <string name="navbar_layout_leftleaning">Evisiensi kiri</string>
+    <string name="navbar_layout_rightleaning">Evisiensi kanan</string>
+    <string name="navbar_invert_layout_title">Tukar tata letak</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Indikator Roaming</string>
+    <string name="roaming_indicator_icon_summary">Tampilkan indikator Roaming di ikon sinyal saat dalam mode Roaming</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Ikon 4G</string>
+    <string name="show_fourg_icon_summary">Tampilkan ikon 4G dalam ikon sinyal daripada LTE</string>
+    <!-- Data disabled indicator -->
+    <string name="data_disabled_icon_title">Indikator data dinonaktifkan</string>
+    <string name="data_disabled_icon_summary">Tampilkan tanda silang di sebelah ikon sinyal ketika data dinonaktifkan</string>
+    <!-- Old mobiletype icon style -->
+    <string name="old_mobiletype_title">Ikon sinyal gaya lama</string>
+    <string name="old_mobiletype_summary">Menggabungkan sinyal dan ikon jenis sinyal</string>
+    <!-- Notifications while screen on -->
+    <string name="notification_sound_vib_screen_on_title">Notifikasi berisik</string>
+    <string name="notification_sound_vib_screen_on_summary">Mainkan suara dan getaran untuk notifikasi ketika layar menyala</string>
+    <!-- qs media player -->
+    <string name="qs_media_player_title">Pemutar media QS</string>
+    <string name="qs_media_player_summary_on">Tampilkan pemutar media di QS.\nMemerlukan mulai ulang SistemUI</string>
+    <string name="qs_media_player_summary_off">Tampilkan pemutar media sebagai notifikasi.\nMemerlukan mulai ulang SistemUI</string>
+    <!-- QS DataUsage Toggle -->
+    <string name="qs_datausage_title">Penggunaan data di Tajuk QS</string>
+    <string name="qs_datausage_disabled">Dinonaktifkan</string>
+    <string name="qs_datausage_daily">Penggunaan harian</string>
+    <string name="qs_datausage_monthly">Penggunaan bulanan</string>
+    <!-- Omni Jaws -->
+    <string name="weather_title">Cuaca</string>
+    <string name="weather_summary">Konfigurasi Cuaca OmniJaws</string>
+    <string name="weather_config_title">Layanan cuaca</string>
+    <string name="weather_config_summary">Pengaturan layanan sistem</string>
+    <string name="header_weather_title">Tampilkan cuaca di panel atas</string>
+    <string name="header_weather_summary">Aktifkan tampilan cuaca di header panel notifikasi</string>
+    <string name="weather_icon_pack_title">Kondisi paket ikon</string>
+    <string name="weather_icon_pack_note">Catatan\u003a Anda dapat menginstal paket ikon baru dari Play Store dengan mencari \"Chronus ikon\"</string>
+    <string name="weather_icon_pack_info_title">Paket ikon kondisi digunakan dalam pengaturan cepat dan layar kunci</string>
+    <string name="lockscreen_weather_title">Tampilkan kondisi cuaca</string>
+    <string name="lockscreen_weather_summary">Tampilkan kondisi cuaca dan suhu saat ini</string>
+    <string name="lock_screen_weather_style_title">Gaya cuaca</string>
+    <string name="lock_screen_weather_style_summaryOff">Cuaca ditampilkan di bawah garis Tanggal dengan Lokasi</string>
+    <string name="lock_screen_weather_style_summaryOn">Cuaca ditampilkan pada garis tanggal tanpa lokasi</string>
+    <!-- Screenshot compression  -->
+    <string name="screenshot_compression_title">Kualitas Tangkapan Layar</string>
+    <string name="screenshot_compression_summary">Kompres ukuran tangkapan layar dengan hilangnya kualitas gambar</string>
+    <!-- Notification background opacity -->
+    <string name="notification_alpha_title">Opasitas latar belakang notifikasi</string>
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Animasi pengisian daya</string>
+    <string name="charging_animation_summary">Tampilkan animasi saat perangkat diisi daya</string>
+    <!-- Clipboard toast info -->
+    <string name="clipboard_toast_info_title">Peringatan akses clipboard</string>
+    <string name="clipboard_toast_info_show_important">Tampilkan hanya peringatan penting</string>
+    <string name="clipboard_toast_info_show_all">Tampilkan semua tanda akses</string>
+    <!-- Lockscreen blur -->
+    <string name="lockscreen_blur_title">Latar belakang blur</string>
+    <string name="lockscreen_blur_summary">Latar belakang layar kunci blur</string>
+    <!-- gvisual mod -->
+    <string name="gvisual_title">G-Visual Mod</string>
+    <string name="gvisual_summary">Berbagai kustomisasi antarmuka</string>
+    <string name="rounded_ui_title">Sudut lengkung</string>
+    <string name="rounded_ui_dialog_title">Pilih model sudut lengkung</string>
+    <string name="rounded_style_default">Default</string>
+    <string name="rounded_style_rectangle">Persegi panjang</string>
+    <string name="rounded_style_large">Besar</string>
+    <string name="rounded_style_medium">Sedang</string>
+    <string name="statusbar_height_title">Tinggi bilah status</string>
+    <string name="statusbar_height_dialog_title">Pilih model tinggi bilah status</string>
+    <string name="sb_height_default">Default</string>
+    <string name="sb_height_medium">Sedang</string>
+    <string name="sb_height_large">Besar</string>
+    <string name="sb_height_extralarge">Sangat besar</string>
+    <!--  Volume Panel Plugin   -->
+    <string name="volume_panel">Gaya Panel Volume</string>
+    <string name="volume_panel_stock">Bawaan</string>
+    <string name="volume_panel_aosp">AOSP</string>
+    <string name="volume_panel_compact">Ringkas</string>
+    <string name="volume_panel_oreo">Oreo</string>
+    <string name="volume_panel_tiled">Dasar</string>
+    <!-- Power menu background opacity -->
+    <string name="power_menu_alpha_title">Opasitas menu daya</string>
+    <!-- OOS style material dismiss all button for notifications -->
+    <string name="notification_material_dismiss_button_title">Tombol bersihkan semua</string>
+    <string name="notification_material_dismiss_button_summary">Aktifkan untuk menggunakan tombol di tengah bawah sebagai ganti stok teks Hapus Semua</string>
+    <!-- Display lock icon on lockscreen -->
+    <string name="lockscreen_lock_icon_title">Ikon kunci</string>
+    <string name="lockscreen_lock_icon_summary">Tampilkan ikon pengunci di layar kunci</string>
+</resources>

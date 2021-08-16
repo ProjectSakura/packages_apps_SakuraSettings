@@ -25,47 +25,32 @@
     <string name="devs_header">Разработчики</string>
     <string name="dev_1">LordShenron</string>
     <string name="dev1_description">Основатель/Разработчик</string>
-    <string name="dev_3">Arun Teltia</string>
-    <string name="dev3_description">Веб-Разработчик</string>
+    <string name="dev_2">Arun Teltia</string>
+    <string name="dev2_description">Веб разработчик/Связи с общественностью</string>
+    <string name="dev_3">ArmSM</string>
+    <string name="dev3_description">Координатор</string>
+    <string name="dev_4">CryptoFox</string>
+    <string name="dev4_description">Дизайнер</string>
+    <string name="dev_5">Ritik</string>
+    <string name="dev5_description">Веб-Разработчик</string>
+    <string name="dev_6">Samridhi</string>
+    <string name="dev6_description">Веб-Разработчик</string>
     <!-- Maintainer Info -->
     <string name="maintainers_header">Сопровождающие</string>
     <string name="maintainers_header_summary">Это официальные сопровождающие устройств...</string>
-    <!--Maintainer git info -->
-    <string name="maintainer_shen_git">LordShenron</string>
-    <string name="maintainer_armypunk_git">ArmSM</string>
-    <string name="maintainer_haridhayal_git">haridhayal11</string>
-    <string name="maintainer_agus_git">agustkid</string>
-    <string name="maintainer_darksitara_git">Sweeto143</string>
-    <string name="maintainer_henrique_git">henricaodopao</string>
-    <string name="maintainer_arun_git">ArunTeltia</string>
-    <string name="maintainer_nitish_git">funeralfrog</string>
-    <string name="maintainer_cakestwix_git">CakesTwix</string>
-    <string name="maintainer_alexbrrbrr_git">AlexanderBaransky</string>
-    <string name="maintainer_a9ito_git">a9ito</string>
-    <string name="maintainer_deepakjr_git">aquariusjr10</string>
-    <string name="maintainer_eduardo_git">THERAD1</string>
-    <string name="maintainer_abishek_git">abhixv</string>
-    <string name="maintainer_chatur_git">Chatur27</string>
-    <string name="maintainer_tanmay_git">Atlas78</string>
-    <string name="maintainer_amy_git">00p513-dev</string>
-    <string name="maintainer_thdas_git">thedauke</string>
-    <string name="maintainer_cyberkiddo_git">CyberJalagam</string>
-    <string name="maintainer_shriiyansh_git">shriiyansh210</string>
-    <string name="maintainer_spicyfriedbread_git">spicydoughnut</string>
-    <string name="maintainer_hisoka_git">DeinMathelehrer</string>
     <!-- Asus -->
     <string name="device_asus">Asus</string>
     <string name="device_X00T">ZenFone Max Pro M1</string>
     <string name="device_X00T_description">X00T\nShen</string>
-    <string name="device_X00QD">Zenfone 5</string>
+    <string name="device_X00QD">ZenFone 5</string>
     <string name="device_X00QD_description">X00QD\nHenrique</string>
     <!-- Dead LeEco -->
     <string name="device_leeco">LeEco</string>
     <string name="device_s2">LeEco Le 2 </string>
     <string name="device_s2_description">S2\nCakesTwix</string>
-    <!--lenuwu-->
-    <string name="device_lenevo">Lenevo</string>
-    <string name="device_jd2019">Lenevo Z5S</string>
+    <!-- Lenovo -->
+    <string name="device_lenovo">Lenovo</string>
+    <string name="device_jd2019">Z5S </string>
     <string name="device_jd2019_description">jd2019\nCakesTwix</string>
     <!--Gayzu-->
     <string name="device_meizu">Meizu</string>
@@ -73,10 +58,12 @@
     <string name="device_m1882_description">m1882\nAbdibekov Dauren</string>
     <string name="device_m1892">Meizu 16th Plus</string>
     <string name="device_m1892_description">m1882\nAbdibekov Dauren</string>
-    <!--muwurowola-->
-    <string name="device_motorola">Motorola</string>
+    <string name="device_m1872">Meizu 16X</string>
+    <string name="device_m1872_description">m1872\nAlex</string>
+    <!--Momoroll-->
+    <string name="device_moto">Motorola</string>
     <string name="device_sanders">Moto G5S Plus</string>
-    <string name="device_sanders_description">sanders\nArmSm</string>
+    <string name="device_sanders_description">sanders\nArmSM</string>
     <string name="device_channel">Moto G7 Play</string>
     <string name="device_channel_description">channel\nAmy Grace</string>
     <string name="device_ocean">Moto G7 Power</string>
@@ -104,7 +91,7 @@
     <string name="device_m20lte">Galaxy M20</string>
     <string name="device_m20lte_description">m20lte\nHaridhayal</string>
     <string name="device_dreamlte">Galaxy S8</string>
-    <string name="device_dreamlte_description">dreamlte\nHaridhayal</string>
+    <string name="device_dreamlte_description">dreamlre\nHaridhayal</string>
     <string name="device_dream2lte">Galaxy S8 Plus</string>
     <string name="device_dream2lte_description">dream2lte\nHaridhayal</string>
     <string name="device_greatlte">Galaxy Note 8</string>
@@ -112,7 +99,7 @@
     <!-- chinese spy -->
     <string name="device_xiaomi">Xiaomi</string>
     <!--Mi-->
-    <string name="device_gauguin">Mi 10i 5G | Mi 10T Lite</string>
+    <string name="device_gauguin">Mi 10i 5G\nMi 10T Lite</string>
     <string name="device_gauguin_description">gauguin\nPrajwal and Nitish</string>
     <string name="device_tucana">Mi Note 10</string>
     <string name="device_tucana_description">tucana\nAlexander</string>
@@ -122,14 +109,14 @@
     <string name="device_tissot_description">tissot\nRoger W.</string>
     <!--poco-->
     <string name="device_phoenix">Poco X2</string>
-    <string name="device_phoenix_description">phoenix\nShivam</string>
+    <string name="device_phoenix_description">phoenix\nKunal</string>
     <string name="device_surya">Poco X3</string>
     <string name="device_surya_description">surya\nArmSM and Agus</string>
+    <string name="device_vayu">Poco X3 Pro</string>
+    <string name="device_vayu_description">vayu\nKiam</string>
     <!--redmi-->
     <string name="device_davinci">Redmi K20</string>
     <string name="device_davinci_description">davinci\nGabriel</string>
-    <string name="device_rosy">Redmi 5</string>
-    <string name="device_rosy_description">rosy\nShriiyansh</string>
     <string name="device_sakura">Redmi 6 Pro</string>
     <string name="device_sakura_description">sakura\nAlex</string>
     <string name="device_whyred">Redmi Note 5 Pro</string>
@@ -449,6 +436,10 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Уведомления со звуком при включенном экране</string>
     <string name="notification_sound_vib_screen_on_summary">Проигрывать звук и вибрацию для уведомлений при включенном экране</string>
+    <!-- qs media player -->
+    <string name="qs_media_player_title">Медиаплеер в быстрых настройках</string>
+    <string name="qs_media_player_summary_on">Показать медиаплеер в быстрых настройках.\nТребуется перезапуск SystemU</string>
+    <string name="qs_media_player_summary_off">Показать медиаплеер как уведомление.\nТребуется перезапуск SystemUI</string>
     <!-- QS DataUsage Toggle -->
     <string name="qs_datausage_title">Использование трафика в заголовке Быстрых настроек</string>
     <string name="qs_datausage_disabled">Отключено</string>
@@ -469,40 +460,6 @@
     <string name="lock_screen_weather_style_title">Стиль погоды</string>
     <string name="lock_screen_weather_style_summaryOff">Показывать погоду вместе с местоположением под строкой даты</string>
     <string name="lock_screen_weather_style_summaryOn">Показывать погоду без местоположения на одной строке с датой</string>
-    <!-- FOD icon picker -->
-    <string name="fod_icon_picker_title">Выбор иконки FOD</string>
-    <string name="fod_icon_picker_summary">Выберите вашу любимую иконку отпечатка пальца</string>
-    <string name="fod_icon_picker_footer">Чтобы добавить свой собственный значок, выберите верхний левый значок и используйте приложение OnePlus 6T FP Customizer, чтобы выбрать нужный значок.</string>
-    <!-- FOD animations -->
-    <string name="fod_recog_animation">Анимация при распознавании FOD</string>
-    <string name="fod_recog_animation_summary">Показывать анимацию при распознавании отпечатка</string>
-    <string name="fod_recog_animation_effect_title">Эффект анимации распознавания отпечатка</string>
-    <string name="fod_recog_animation_miui_normal">MIUI - По умолчанию</string>
-    <string name="fod_recog_animation_miui_aod">MIUI AOD</string>
-    <string name="fod_recog_animation_miui_aurora">Aurora (K30 Pro)</string>
-    <string name="fod_recog_animation_miui_aurora_cas">Aurora (Mi 10 Ultra)</string>
-    <string name="fod_recog_animation_miui_light">Светлая</string>
-    <string name="fod_recog_animation_miui_pop">Поп</string>
-    <string name="fod_recog_animation_miui_pulse">Эффект пульсации</string>
-    <string name="fod_recog_animation_miui_pulse_white">Эффект пульсации (белый)</string>
-    <string name="fod_recog_animation_miui_rhythm">Ритм</string>
-    <string name="fod_recog_animation_miui_star_cas">Звездный свет</string>
-    <string name="fod_recog_animation_op_cosmos">Космос</string>
-    <string name="fod_recog_animation_op_energy">Энергия</string>
-    <string name="fod_recog_animation_op_mclaren">McLaren</string>
-    <string name="fod_recog_animation_op_ripple">Рябь</string>
-    <string name="fod_recog_animation_op_stripe">Полосы</string>
-    <string name="fod_recog_animation_op_wave">Волна</string>
-    <string name="fod_recog_animation_pureview_dna">ДНК</string>
-    <string name="fod_recog_animation_pureview_future">Будущее</string>
-    <string name="fod_recog_animation_pureview_halo_ring">Кольцо Halo</string>
-    <string name="fod_recog_animation_pureview_molecular">Молекула</string>
-    <string name="fod_recog_animation_rog_fusion">Слияние</string>
-    <string name="fod_recog_animation_rog_pulsar">Пульсирующий</string>
-    <string name="fod_recog_animation_rog_supernova">Сверхновая</string>
-    <!-- Screen off fod -->
-    <string name="fod_gesture_title">Работа сканера отпечатка пальца только с выключенным экраном</string>
-    <string name="fod_gesture_summary">Позволяет разблокировать устройство без предварительного пробуждения экрана</string>
     <!-- Screenshot compression  -->
     <string name="screenshot_compression_title">Качество скриншота</string>
     <string name="screenshot_compression_summary">Сжать размер скриншота с потерей качества изображения</string>
@@ -542,4 +499,10 @@
     <string name="volume_panel_tiled">Плиточный</string>
     <!-- Power menu background opacity -->
     <string name="power_menu_alpha_title">Прозрачность меню питания</string>
+    <!-- OOS style material dismiss all button for notifications -->
+    <string name="notification_material_dismiss_button_title">Кнопка уменьшения Материал</string>
+    <string name="notification_material_dismiss_button_summary">Заменитm текст уведомления \"Очистить все\" на плавающую кнопку</string>
+    <!-- Display lock icon on lockscreen -->
+    <string name="lockscreen_lock_icon_title">Значок блокировки</string>
+    <string name="lockscreen_lock_icon_summary">Отображать значок замка на экране блокировки</string>
 </resources>
