@@ -24,6 +24,12 @@
         android:summary="@string/pulse_on_new_tracks_summary"
         android:defaultValue="false" />
 
+    <com.superior.support.preferences.SystemSettingSwitchPreference
+        android:key="auth_ripple_enabled"
+        android:title="@string/enable_fingerprint_ripple_effect_title"
+        android:summary="@string/enable_fingerprint_ripple_effect_summary"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:title="@string/weather_category_title">
 
