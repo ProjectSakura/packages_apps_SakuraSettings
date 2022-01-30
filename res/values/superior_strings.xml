@@ -149,4 +149,8 @@
     <string name="pif_spoofing_title">Select PIF JSON File</string>
     <string name="pif_spoofing_summary">Pick PIF JSON file to be used for spoofing play integrity</string>
 
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Unlock animation</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
+
 </resources>
