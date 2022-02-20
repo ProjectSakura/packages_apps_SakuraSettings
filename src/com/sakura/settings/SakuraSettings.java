@@ -36,6 +36,6 @@ public class SakuraSettings extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SAKURA_SETINGS;
+        return MetricsProto.MetricsEvent.SAKURA_SETTINGS;
     }
 }

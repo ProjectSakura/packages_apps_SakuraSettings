@@ -37,7 +37,7 @@ import androidx.preference.PreferenceCategory;
 import com.android.settings.R;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.superior.settings.utils.HttpHandler;
+import com.sakura.settings.utils.HttpHandler;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -60,7 +60,7 @@ public class SakuraDevsInfoFragment extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.SAKURA_SETINGS;
+        return MetricsEvent.SAKURA_SETTINGS;
     }
 
     private void showGitProfileIcons() {
@@ -69,9 +69,6 @@ public class SakuraDevsInfoFragment extends SettingsPreferenceFragment {
 		getGithubIcon(R.string.dev_3_git, findPreference("dev3"));
 		getGithubIcon(R.string.dev_4_git, findPreference("dev4"));
 		getGithubIcon(R.string.dev_5_git, findPreference("dev5"));
-		getGithubIcon(R.string.mentions_sam_git, findPreference("mentions_sam"));
-		getGithubIcon(R.string.mentions_iacob_git, findPreference("mentions_iacob"));
-		getGithubIcon(R.string.mentions_pavan_git, findPreference("mentions_pavan"));
     }
     
     public void getGithubIcon(int usernameResId, Preference preference) {

@@ -29,14 +29,13 @@
             android:key="dev_info"
             android:title="@string/sakura_about_info"
             android:summary="@string/sakura_about_info_summary_title"
-            android:fragment="com.android.settings.custom.SuperiorDevsInfoFragment"
-            android:icon="@drawable/ic_sakura_about"/>
+            android:fragment="com.android.settings.custom.SuperiorDevsInfoFragment"/>
 
     </PreferenceCategory>
 
     <PreferenceCategory
             android:key="features"
-            android:title="Superior Features" >
+            android:title="Personalizations" >
 
         <!-- Status Bar -->
         <com.sakura.settings.preferences.CardviewPreference

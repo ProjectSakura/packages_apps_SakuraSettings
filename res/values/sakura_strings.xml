@@ -17,7 +17,6 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="sakura_settings_title">Sakura Settings</string>
-   <string name="sakura_settings_title">Project Sakura</string>
     <string name="sakura_dashboard_summary">Feels Like Spring..</string>
 	
     <!-- ROM Info -->

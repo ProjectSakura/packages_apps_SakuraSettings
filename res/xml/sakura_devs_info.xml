@@ -18,7 +18,7 @@
 
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="@string/sakura_settings_devtitle">
+        android:title="About Developers">
 
 <PreferenceCategory
               android:key="about"
@@ -89,7 +89,7 @@
 
 </PreferenceCategory>
 
-<PreferenceCategory
+<!-- <PreferenceCategory
     android:key="honorable_mentions"
     android:title="@string/mentions_header">
 
@@ -123,7 +123,7 @@
             android:data="https://t.me/iacobionut" />
         </Preference>
 
-</PreferenceCategory>
+</PreferenceCategory> -->
 
 <PreferenceCategory
             android:key="maintainer"
