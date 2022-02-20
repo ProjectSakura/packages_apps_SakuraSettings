@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.superior.settings.fragments;
+package com.sakura.settings.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -36,20 +36,20 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
 
-public class PowermenuSettings extends SettingsPreferenceFragment implements
+public class MiscSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.superior_settings_powermenu);
+        addPreferencesFromResource(R.xml.sakura_settings_misc);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
+        return MetricsProto.MetricsEvent.SAKURA_SETTINGS;
     }
 
     @Override

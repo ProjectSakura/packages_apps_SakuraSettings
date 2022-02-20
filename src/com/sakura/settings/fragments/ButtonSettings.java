@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.superior.settings.fragments;
+package com.sakura.settings.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -34,22 +34,22 @@ import android.view.ViewGroup;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
-import com.android.settings.R;
+import com.sakura.settings.R;
 
-public class MiscSettings extends SettingsPreferenceFragment implements
+public class ButtonSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.superior_settings_misc);
+        addPreferencesFromResource(R.xml.sakura_settings_button);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
+        return MetricsProto.MetricsEvent.SAKURA_SETTINGS;
     }
 
     @Override

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.superior.settings.preferences;
+package com.sakura.settings.preferences;
 
 import android.content.Context;
 import android.content.om.IOverlayManager;

@@ -18,19 +18,19 @@
 
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="@string/superior_settings_devtitle">
+        android:title="@string/sakura_settings_devtitle">
 		
 		<!-- Header -->
         <Preference
-            android:key="superior_header"
-            android:layout="@layout/about_superior_header" />
+            android:key="sakura_header"
+            android:layout="@layout/about_sakura_header" />
 
 <PreferenceCategory
               android:key="about"
-              android:title="@string/superior_about_info" >
+              android:title="@string/sakura_about_info" >
 
         <Preference
-               android:summary="@string/superior_about_info_summary" 
+               android:summary="@string/sakura_about_info_summary" 
                android:icon="@drawable/ic_devs_info" >
         <intent
                android:action="android.intent.action.VIEW"
@@ -39,7 +39,7 @@
 </PreferenceCategory>
 
 <PreferenceCategory
-            android:key="superior_dev"
+            android:key="sakura_dev"
             android:title="@string/devs_header" >
 
         <Preference
