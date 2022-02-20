@@ -19,11 +19,6 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/sakura_settings_devtitle">
-		
-		<!-- Header -->
-        <Preference
-            android:key="sakura_header"
-            android:layout="@layout/about_sakura_header" />
 
 <PreferenceCategory
               android:key="about"

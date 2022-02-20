@@ -1,4 +1,4 @@
-package com.superior.settings.utils;
+package com.sakura.settings.utils;
 
 import android.util.Log;
 

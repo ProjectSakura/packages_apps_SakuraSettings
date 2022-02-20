@@ -46,13 +46,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
-public class SuperiorDevsInfoFragment extends SettingsPreferenceFragment {
+public class SakuraDevsInfoFragment extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.superior_devs_info);
+        addPreferencesFromResource(R.xml.sakura_devs_info);
         if (isOnline()) {
             showGitProfileIcons();
         }
@@ -60,7 +60,7 @@ public class SuperiorDevsInfoFragment extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.SUPERIOR;
+        return MetricsEvent.SAKURA_SETINGS;
     }
 
     private void showGitProfileIcons() {

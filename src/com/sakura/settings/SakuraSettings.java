@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.superior.settings;
+package com.sakura.settings;
 
 import android.os.Bundle;
 import androidx.preference.Preference;
@@ -26,16 +26,16 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.internal.logging.nano.MetricsProto;
 
-public class SuperiorSettings extends SettingsPreferenceFragment {
+public class SakuraSettings extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.superior_settings);
+        addPreferencesFromResource(R.xml.sakura_settings);
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
+        return MetricsProto.MetricsEvent.SAKURA_SETINGS;
     }
 }

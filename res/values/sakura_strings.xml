@@ -16,44 +16,32 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sakura_settings_title">Superior Settings</string>
-   <string name="sakura_settings_title">Superior OS</string>
-    <string name="sakura_dashboard_summary">Superior Goodies</string>
+    <string name="sakura_settings_title">Sakura Settings</string>
+   <string name="sakura_settings_title">Project Sakura</string>
+    <string name="sakura_dashboard_summary">Feels Like Spring..</string>
 	
     <!-- ROM Info -->
     <string name="sakura_about_info">About Project</string>
     <string name="sakura_about_info_summary_title">About Team</string>
-    <string name="sakura_about_info_summary">Superior OS is a Custom ROM based on AOSP, with some most required minimal features, the main aim of this ROM is to deliver light speed performance,smoothness and good battery backup.</string>
-	
+    <string name="sakura_about_info_summary">A customised Lineage OS. Its sole purpose is to provide a platform which is powered by Lineage and is more customisable than Lineage.</string>
+
     <!-- Dev Info -->
     <string name="devs_header">Family Members</string>
-    <string name="dev_1">Sipun Ku Mahanta</string>
-    <string name="dev_1_git" translatable="false">Darkstar085</string>
-    <string name="dev1_description">Developer</string>
-    <string name="dev_2">Jayant Deshmukh</string>
-    <string name="dev_2_git" translatable="false">Jayant-Deshmukh</string>
-    <string name="dev2_description">Lead Developer</string>
-    <string name="dev_3">Nipin NA</string>
-    <string name="dev_3_git" translatable="false">Joker-V2</string>
-    <string name="dev3_description">Developer</string>
-    <string name="dev_4">Adnan Faysal</string>
-    <string name="dev_4_git" translatable="false">sakuraos-bot</string>
-    <string name="dev4_description">Graphic Designer</string>
+    <string name="dev_1">Shen</string>
+    <string name="dev_1_git" translatable="false">LordShenron</string>
+    <string name="dev1_description">The broken Lord</string>
+    <string name="dev_2">ArmSM</string>
+    <string name="dev_2_git" translatable="false">UsingTheName</string>
+    <string name="dev2_description">Motivational Speaker</string>
+    <string name="dev_3">AshwinDS</string>
+    <string name="dev_3_git" translatable="false">AshwinDS</string>
+    <string name="dev3_description">We call him Ass-win</string>
+    <string name="dev_4">Nitish</string>
+    <string name="dev_4_git" translatable="false">funeralfrog</string>
+    <string name="dev4_description">Who are you?</string>
     <string name="dev_5">Arun Teltia</string>
     <string name="dev_5_git" translatable="false">ArunTeltia</string>
     <string name="dev5_description">Web Developer</string>
-
-    <!-- Mentions -->
-    <string name="mentions_header">Honorable Mentions</string>
-    <string name="mentions_sam">Sam Grande</string>
-    <string name="mentions_sam_git" translatable="false">SamGrande</string>
-    <string name="mentions_sam_description">Designer</string>
-    <string name="mentions_iacob">Ionut Iacob</string>
-    <string name="mentions_iacob_git" translatable="false">IacobIonut01</string>
-    <string name="mentions_iacob_description">UI/UX Developer</string>
-    <string name="mentions_pavan">Pavan Patel</string>
-    <string name="mentions_pavan_git" translatable="false">Advertpavan</string>
-    <string name="mentions_pavan_description">Designer</string>
 
     <!-- Maintainer Info -->
     <string name="maintainers_header">Maintainers</string>
