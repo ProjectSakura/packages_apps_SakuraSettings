@@ -146,6 +146,13 @@
         android:summary="@string/floating_rotation_button_summary"
         android:defaultValue="true" />
 
+    <!-- Ignore window secure flags -->
+    <com.sakura.settings.preferences.GlobalSettingSwitchPreference	    
+        android:key="window_ignore_secure"	    
+        android:title="@string/miscellaneous_ignore_window_secure_title"
+        android:summary="@string/miscellaneous_ignore_window_secure_summary"	    
+        android:defaultValue="false" />	    
+
     <!-- Hide screen capture status -->
     <com.sakura.settings.preferences.GlobalSettingSwitchPreference	    
         android:key="hide_screen_capture_status"

@@ -1524,6 +1524,10 @@
     <string name="shake_gestures_intensity_title">Shake Gestures Intensity</string>
     <string name="shake_gestures_intensity_summary">Adjust the sensitivity of shake gestures</string>
 
+    <!-- Ignore window secure flags -->    
+    <string name="miscellaneous_ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="miscellaneous_ignore_window_secure_summary">Remove restrictions on screenshots and screen recordings for all applications, potentially risking privacy leaks</string>    
+
     <!-- Hide screen capture status -->
     <string name="hide_screen_capture_status_title">Hide screen capture status</string>
     <string name="hide_screen_capture_status_summary">Hide screen capture/record status from apps. Useful but may risk privacy. Restart apps to apply.</string>    
