@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2016 The AOSP-RRO Project
      Copyright (C) 2018-19 The Superior OS Project
-     Copyright (C) 2020 Direwolf INC for Project Sakura
+     Copyright (C) 2023 Direwolf INC for Project Sakura
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -65,6 +65,13 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://telegram.me/ProB0MBER"/>
+        </Preference>
+        <Preference
+            android:title="@string/dev_5"
+            android:summary="@string/dev5_description">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://telegram.me/ReveRTX"/>
         </Preference>                          
 
 </PreferenceCategory>

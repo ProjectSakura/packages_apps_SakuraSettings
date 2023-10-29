@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright © 2020-21 Project Sakura
+    Copyright © 2020-23 Project Sakura
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -34,6 +34,8 @@
     <string name="dev3_description">Web Developer</string>
     <string name="dev_4">Arun Teltia</string>
     <string name="dev4_description">Web Developer/Public Relations</string>            
+    <string name="dev_5">ReveRTX</string>
+    <string name="dev5_description">Core Developer</string>   
 
     <!-- Maintainer Info -->
     <string name="maintainers_header">Maintainers</string>

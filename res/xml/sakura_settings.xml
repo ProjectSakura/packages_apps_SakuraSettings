@@ -22,14 +22,6 @@
 
     <PreferenceCategory
            android:title="Sakura Features" >
-  
-       <!-- About Devs -->
-       <com.sakura.settings.preferences.CardviewPreference
-            android:key="dev_info"
-            android:title="@string/sakura_about_info"
-            android:summary="@string/sakura_about_info_summary_title"
-            android:fragment="com.android.settings.custom.sakuraDevsInfoFragment"
-            android:icon="@drawable/ic_sakura_about"/>
 
         <!-- Themes -->
         <com.sakura.settings.preferences.CardviewPreference
@@ -102,6 +94,14 @@
             android:summary="@string/sakura_updater_summary_title"
             android:fragment="com.sakura.settings.fragments.UpdaterSettings"
             android:icon="@drawable/ic_settings_ota"/>
+
+       <!-- About Devs -->
+       <com.sakura.settings.preferences.CardviewPreference
+            android:key="dev_info"
+            android:title="@string/sakura_about_info"
+            android:summary="@string/sakura_about_info_summary_title"
+            android:fragment="com.android.settings.custom.sakuraDevsInfoFragment"
+            android:icon="@drawable/ic_sakura_about"/>
 
     </PreferenceCategory>
 
