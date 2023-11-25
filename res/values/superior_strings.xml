@@ -97,4 +97,12 @@
     <!-- Ambient Ticker -->
     <string name="pulse_on_new_tracks_title">Music ticker</string>
     <string name="pulse_on_new_tracks_summary">Show music ticker on Ambient Display during track change or now playing song detection</string>
+
+    <!-- Weather -->
+    <string name="weather_category_title">Weather</string>
+    <string name="weather_settings_title">Weather settings</string>
+    <string name="weather_settings_summary">Setup icon pack and weather service</string>
+    <string name="lockscreen_weather_title">Weather condition</string>
+    <string name="lockscreen_weather_summary">Display current weather condition, temperature and location</string>
+    <string name="lockscreen_weather_enabled_info">Requires weather service to be enabled</string>
 </resources>
