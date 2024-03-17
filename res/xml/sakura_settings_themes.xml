@@ -85,7 +85,11 @@
             android:key="android.theme.customization.fonts"
             android:title="@string/themes_system_font_title"
             android:summary="@string/themes_system_font_summary"
+<<<<<<< HEAD:res/xml/sakura_settings_themes.xml
             android:fragment="org.sakura.settings.fragments.themes.Fonts"/>
+=======
+            android:fragment="org.evolution.settings.fragments.themes.fonts.FontPickerPreview"/>
+>>>>>>> a1088ab0 (Evolver: Revamp settings font picker):res/xml/evolution_settings_themes.xml
 
         <!-- Lock screen clock font -->
         <Preference
