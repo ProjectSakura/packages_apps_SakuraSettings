@@ -37,8 +37,6 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.android.settings.R;
 import com.android.settings.Utils;
 
 public class CardviewPreference extends Preference {
@@ -51,15 +49,15 @@ public class CardviewPreference extends Preference {
     public CardviewPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Preference);
+        //TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Preference);
 
-        mAllowDividerAbove = TypedArrayUtils.getBoolean(a, R.styleable.Preference_allowDividerAbove,
-                R.styleable.Preference_allowDividerAbove, false);
-        mAllowDividerBelow = TypedArrayUtils.getBoolean(a, R.styleable.Preference_allowDividerBelow,
-                R.styleable.Preference_allowDividerBelow, false);
-        a.recycle();
+        //mAllowDividerAbove = TypedArrayUtils.getBoolean(a, R.styleable.Preference_allowDividerAbove,
+        //        R.styleable.Preference_allowDividerAbove, false);
+        //mAllowDividerBelow = TypedArrayUtils.getBoolean(a, R.styleable.Preference_allowDividerBelow,
+        //        R.styleable.Preference_allowDividerBelow, false);
+        //a.recycle();
 
-        setLayoutResource(R.layout.preference_cardview);
+        //setLayoutResource(R.layout.preference_cardview);
     }
 
     public CardviewPreference(Context context, View view) {
@@ -74,7 +72,7 @@ public class CardviewPreference extends Preference {
         final boolean selectable = isSelectable();
         holder.itemView.setFocusable(selectable);
         holder.itemView.setClickable(selectable);
-        holder.setDividerAllowedAbove(mAllowDividerAbove);
-        holder.setDividerAllowedBelow(mAllowDividerBelow);
+        //holder.setDividerAllowedAbove(mAllowDividerAbove);
+        //holder.setDividerAllowedBelow(mAllowDividerBelow);
     }
 }
