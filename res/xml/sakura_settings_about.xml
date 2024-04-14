@@ -57,7 +57,7 @@
         android:summary="@string/about_github_summary">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://github.com/Sakura-XYZ" />
+            android:data="https://github.com/ProjectSakura" />
     </Preference>
 
     <PreferenceCategory
