@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2019-2024 Project Sakura
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/about_title">
+
+    <!-- Project Sakura logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="sakura_logo"
+        android:layout="@layout/sakura_logo"
+        android:clickable="false"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.ProjectSakuraLogoPreferenceController"/>
+
+    <!-- Info -->
+    <com.android.settingslib.widget.TopIntroPreference
+        android:title="@string/about_info" />
+
+    <!-- Github -->
+    <Preference
+        android:title="@string/about_github_title"
+        android:icon="@drawable/ic_github"
+        android:summary="@string/about_github_summary">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/ProjectSakura" />
+        </Preference>
+
+</PreferenceScreen>

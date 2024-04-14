@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright © 2018-24 The Superior OS Project
-     Copyright (C) 2020-24 Project Sakura
+    Copyright © 2018-25 The Superior OS Project
+     Copyright (C) 2020-25 Project Sakura
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@
   <!-- The broken Lord -->
   <string name="dev_1">Shen</string>
   <string name="dev_1_git" translatable="false">LordShenron</string>
-  <string name="dev1_description">Founder/Developer</string>
+  <string name="dev1_description">Founder</string>
   <!-- RTX in name but uses a potato PC/laptop -->
   <string name="dev_2">ReveRTX</string>
   <string name="dev_2_git" translatable="false">ReveRTX</string>
@@ -358,4 +358,19 @@
     <string name="enable_protection">Enable protection</string>
     <string name="hide_from_launcher_title">Hide from launcher</string>
     <string name="hide_from_launcher_summary">Prevent this application from showing up in any launcher. Requires a launcher restart for changes to take effect.</string>
+
+<!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right" translatable="false">→</string>
+    <string name="arrow_down" translatable="false">↓</string>
+    <string name="hex" translatable="false">Hex:</string>
+    <string name="hex_hint" translatable="false">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">by default</string>
+    <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong tap to set</string>
+    <string name="custom_seekbar_default_value_is_set">Default value is set</string>
 </resources>
