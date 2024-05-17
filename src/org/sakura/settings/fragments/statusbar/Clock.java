@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.evolution.settings.fragments.statusbar;
+package org.sakura.settings.fragments.statusbar;
 
 import android.app.AlertDialog;
 import android.content.ContentResolver;
@@ -46,9 +46,9 @@ import java.util.List;
 import lineageos.preference.LineageSystemSettingListPreference;
 import lineageos.providers.LineageSettings;
 
-import org.evolution.settings.preferences.CustomSeekBarPreference;
-import org.evolution.settings.preferences.SystemSettingListPreference;
-import org.evolution.settings.utils.DeviceUtils;
+import org.sakura.settings.preferences.CustomSeekBarPreference;
+import org.sakura.settings.preferences.SystemSettingListPreference;
+import org.sakura.settings.utils.DeviceUtils;
 
 @SearchIndexable
 public class Clock extends SettingsPreferenceFragment implements
@@ -233,7 +233,7 @@ public class Clock extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.EVOLVER;
+        return MetricsEvent.SAKURA_SETTINGS;
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
