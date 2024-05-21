@@ -146,4 +146,10 @@
         android:summary="@string/floating_rotation_button_summary"
         android:defaultValue="true" />
 
+    <!-- Hide screen capture status -->
+    <com.sakura.settings.preferences.GlobalSettingSwitchPreference	    
+        android:key="hide_screen_capture_status"
+        android:title="@string/hide_screen_capture_status_title"
+        android:summary="@string/hide_screen_capture_status_summary"
+        android:defaultValue="false"/>	    
 </PreferenceScreen>
