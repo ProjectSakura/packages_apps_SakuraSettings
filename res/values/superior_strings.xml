@@ -105,4 +105,8 @@
     <string name="lockscreen_weather_title">Weather condition</string>
     <string name="lockscreen_weather_summary">Display current weather condition, temperature and location</string>
     <string name="lockscreen_weather_enabled_info">Requires weather service to be enabled</string>
+
+    <!-- Annoying Notifications -->
+    <string name="notification_sound_vib_screen_on_title">Annoying Notifications</string>
+    <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
 </resources>
