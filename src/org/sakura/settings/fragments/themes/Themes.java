@@ -47,6 +47,7 @@ public class Themes extends SettingsPreferenceFragment implements
     private static final String KEY_PGB_STYLE = "progress_bar_style";
     private static final String KEY_NOTIF_STYLE = "notification_style";
     private static final String KEY_POWERMENU_STYLE = "powermenu_style";
+    private static final String KEY_LAUNCHER_CATEGORY = "themes_launcher_category";
 
     private static final String[] POWER_MENU_OVERLAYS = {
             "com.android.theme.powermenu.cyberpunk",
@@ -69,6 +70,7 @@ public class Themes extends SettingsPreferenceFragment implements
             "com.android.theme.progressbar.shishu"
     };
 
+    private PreferenceCategory mLauncherCategory;
     private PreferenceCategory mIconsCategory;
     private Preference mNavbarIcon;
     private Preference mSignalIcon;
@@ -91,6 +93,7 @@ public class Themes extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources resources = context.getResources();
 
+        mLauncherCategory = (PreferenceCategory) findPreference(KEY_LAUNCHER_CATEGORY);
         mIconsCategory = (PreferenceCategory) findPreference(KEY_ICONS_CATEGORY);
         mNavbarIcon = (Preference) findPreference(KEY_NAVBAR_ICON);
         mSignalIcon = (Preference) findPreference(KEY_SIGNAL_ICON);
@@ -130,6 +133,10 @@ public class Themes extends SettingsPreferenceFragment implements
 
         mPowerMenuStylePref = findPreference(KEY_POWERMENU_STYLE);
         mPowerMenuStylePref.setOnPreferenceChangeListener(this);
+
+        if (!Utils.isPackageInstalled(context, "com.google.android.apps.nexuslauncher")) {
+            prefScreen.removePreference(mLauncherCategory);
+        }
     }
 
     private void updateStyle(String key, String category, String target,
@@ -220,6 +227,10 @@ public class Themes extends SettingsPreferenceFragment implements
                     keys.add(KEY_SIGNAL_ICON);
                 }
 
+                if (!Utils.isPackageInstalled(context, "com.google.android.apps.nexuslauncher")) {
+                    keys.add(KEY_LAUNCHER_CATEGORY);
+                }
+
                 if (fingerprintManager == null || !fingerprintManager.isHardwareDetected()) {
                     keys.add(KEY_UDFPS_ICON);
                     keys.add(KEY_UDFPS_ANIMATION);
@@ -235,4 +246,3 @@ public class Themes extends SettingsPreferenceFragment implements
             }
         };
 }
-
