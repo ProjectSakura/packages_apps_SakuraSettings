@@ -92,4 +92,8 @@
         limits for all applications. Normally, special applications are replaced with black areas in
         records. This can be convenient in some cases but may lead to privacy leaks. After changing
         this toggle, you may need to restart applications for the change to take effect.</string>
+
+    <!-- Ambient Ticker -->
+    <string name="pulse_on_new_tracks_title">Music ticker</string>
+    <string name="pulse_on_new_tracks_summary">Show music ticker on Ambient Display during track change or now playing song detection</string>
 </resources>
