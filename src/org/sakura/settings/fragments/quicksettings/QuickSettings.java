@@ -38,6 +38,7 @@ import org.sakura.settings.preferences.SystemSettingListPreference;
 import org.sakura.settings.preferences.SystemSettingSeekBarPreference;
 import org.sakura.settings.preferences.SystemSettingSwitchPreference;
 import org.sakura.settings.utils.DeviceUtils;
+import org.sakura.settings.utils.SystemUtils;
 
 @SearchIndexable
 public class QuickSettings extends SettingsPreferenceFragment implements
@@ -53,6 +54,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String KEY_QS_BLUETOOTH_SHOW_DIALOG = "qs_bt_show_dialog";
     private static final String KEY_QS_PANEL_STYLE  = "qs_panel_style";
     private static final String KEY_QS_UI_STYLE  = "qs_tile_ui_style";
+    private static final String KEY_QS_WIDGETS_ENABLED  = "qs_widgets_enabled";
     private static final String KEY_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
     private static final String KEY_SHOW_AUTO_BRIGHTNESS = "qs_show_auto_brightness";
     private static final String KEY_TILE_ANIM_STYLE = "qs_tile_animation_style";
@@ -75,6 +77,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private SystemSettingListPreference mTileAnimationInterpolator;
     private SystemSettingListPreference mTileAnimationStyle;
     private SystemSettingSeekBarPreference mTileAnimationDuration;
+    private SystemSettingSwitchPreference mQsWidgetsPref;
     private SystemSettingSwitchPreference mSplitShadePref;
 
     private static ThemeUtils mThemeUtils;
@@ -142,6 +145,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mQsPanelStyle = (ListPreference) findPreference(KEY_QS_PANEL_STYLE);
         mQsPanelStyle.setOnPreferenceChangeListener(this);
 
+        mQsWidgetsPref = findPreference(KEY_QS_WIDGETS_ENABLED);
+        mQsWidgetsPref.setOnPreferenceChangeListener(this);
+
         mSplitShadePref = (SystemSettingSwitchPreference) findPreference("qs_split_shade_enabled");
         mSplitShadePref.setOnPreferenceChangeListener(this);
 
@@ -186,6 +192,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             Settings.System.putIntForUser(resolver,
                    "qs_split_shade_enabled", value, UserHandle.USER_CURRENT);
             updateSplitShadeEnabled(getActivity());
+            return true;
+        } else if (preference == mQsWidgetsPref) {
+            SystemUtils.showSystemUiRestartDialog(context);
             return true;
         }
         return false;
