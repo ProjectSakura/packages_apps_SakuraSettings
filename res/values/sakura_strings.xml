@@ -394,6 +394,14 @@
     <string name="notifications_alert_display_on_title">Alert while display on</string>
     <string name="notifications_alert_display_on_summary">Play sound and vibration for notifications while the display is on</string>
 
+    <!-- Notifications/Alert Slider Notifications (OnePlus devices) -->
+    <string name="alert_slider_notifications_title">Alert slider notifications</string>
+    <string name="alert_slider_notifications_summary">Display notification when changing alert slider position</string>
+
+    <!-- Notifications/Compact Heads-up -->
+    <string name="compact_heads_up_notifications_enabled_title">Compact heads-up</string>
+    <string name="compact_heads_up_notifications_enabled_summary">Display notifications in compact size</string>
+
     <!-- Notifications/Edge light -->
     <string name="notifications_edge_light_enable_ttile">Enable</string>
     <string name="notifications_edge_light_always_trigger_on_pulse_title">Always trigger on pulse</string>
