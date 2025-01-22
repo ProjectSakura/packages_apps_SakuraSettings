@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2019-2024 Project Sakura
+     Copyright (C) 2019-2025 Project Sakura
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Sakura Settings -->
     <string name="sakura_dashboard_title">Sakura Settings</string>
-    <string name="sakura_dashboard_summary">Less is more !</string>
+    <string name="sakura_dashboard_summary">Less is more!</string>
 
     <!-- Categories -->
     <string name="themes_title">Themes</string>
@@ -183,8 +183,8 @@
     <string name="status_bar_battery_percent_title">Battery percent</string>
     <string name="status_bar_battery_percent_hidden">Hidden</string>
     <string name="status_bar_battery_percent_text_inside">Inside the icon</string>
-    <string name="status_bar_battery_percent_text_next_right">Next to the icon (right)</string> 
-    <string name="status_bar_battery_percent_text_next_left">Next to the icon (left)</string> 
+    <string name="status_bar_battery_percent_text_next_right">Next to the icon (right)</string>
+    <string name="status_bar_battery_percent_text_next_left">Next to the icon (left)</string>
     <string name="status_bar_battery_text_charging_title">Battery percentage when charging</string>
     <string name="status_bar_battery_text_charging_summary">Always display battery percentage when charging</string>
     <string name="status_bar_clock_and_date_title">Clock &amp; date</string>
@@ -381,24 +381,6 @@
     <string name="quick_settings_miscellaneous_category">Miscellaneous</string>
     <string name="quick_settings_bluetooth_show_dialog_title">Bluetooth tile dialog</string>
     <string name="quick_settings_bluetooth_show_dialog_summary">Show bluetooth dialog or toggle bluetooth state on tapping bluetooth tile</string>
-    <string name="quick_settings_header_image_title">Header image</string>
-    <string name="quick_settings_header_image_summary">Select QS background header image</string>
-    <string name="quick_settings_header_daylight_pack_title">Header image collection</string>
-    <string name="quick_settings_header_shadow_title">Header image shadow</string>
-    <string name="quick_settings_header_shadow_summary">For better visibility on bright images</string>
-    <string name="quick_settings_header_static_provider_title">Static image</string>
-    <string name="quick_settings_header_daylight_provider_title">Image collection</string>
-    <string name="quick_settings_header_file_provider_title">Custom image</string>
-    <string name="quick_settings_header_provider_title">Header provider</string>
-    <string name="quick_settings_header_browse_title">Browse installed headers</string>
-    <string name="quick_settings_header_browse_summary">Browse all available header collections</string>
-    <string name="quick_settings_header_pick_title">Select header image</string>
-    <string name="quick_settings_header_pick_summary">Select an image to use for static mode</string>
-    <string name="quick_settings_header_file_select_title">Select image</string>
-    <string name="quick_settings_header_file_select_summary">Select custom image</string>
-    <string name="quick_settings_header_needs_gallery">You must install a gallery app!</string>
-    <string name="quick_settings_header_offset_title">Header image offset</string>
-    <string name="quick_settings_header_offset_summary">Adjust the image header size</string>
 
     <!-- Notifications -->
     <string name="notifications_heads_up_title">Heads up</string>
@@ -413,17 +395,13 @@
     <string name="notifications_alert_display_on_summary">Play sound and vibration for notifications while the display is on</string>
 
     <!-- Notifications/Edge light -->
+    <string name="notifications_edge_light_enable_ttile">Enable</string>
     <string name="notifications_edge_light_always_trigger_on_pulse_title">Always trigger on pulse</string>
     <string name="notifications_edge_light_always_trigger_on_pulse_summary">Whether to show edge light whenever ambient display is shown and not just for notifications</string>
     <string name="notifications_edge_light_repeat_animation_title">Repeat animation</string>
     <string name="notifications_edge_light_repeat_animation_summary_on">Repeat until timeout</string>
     <string name="notifications_edge_light_repeat_animation_summary_off">Show only once</string>
     <string name="notifications_edge_light_color_mode_title">Edge light color mode</string>
-    <string name="notifications_edge_light_style_title">Edge light style</string>
-    <string name="notifications_edge_light_stroke_width_title">Edge light stroke width</string>
-    <string name="notifications_edge_light_stroke_width_summary">Configure edge light thickness</string>
-    <string name="notifications_edge_light_style_1">Draw Line</string>
-    <string name="notifications_edge_light_style_2">Blink/Pulse</string>
 
     <!-- Notifications/Less boring heads up -->
     <string name="notifications_less_boring_heads_up_title">Less boring</string>
@@ -503,7 +481,7 @@
     <string name="about_github_title" translatable="false">GitHub</string>
     <string name="about_github_summary">Check out our GitHub</string>
     <string name="about_contributors_title">Contributors</string>
-    <string name="about_contributor_1_title" translatable="false">Lord Shenron & ReveRTX</string>
+    <string name="about_contributor_1_title" translatable="false">Lord Shenron &amp; ReveRTX</string>
     <string name="about_contributor_1_summary" translatable="false">Founder/Lead Developer</string>
     <string name="about_contributor_2_title" translatable="false">ArmSM</string>
     <string name="about_contributor_2_summary" translatable="false">Co-Founder/Co-Developer</string>
@@ -522,7 +500,6 @@
     <string name="accent_color">Accent color (Default)</string>
     <string name="notification_color">Notification color</string>
     <string name="wallpaper_color">Wallpaper color</string>
-    <string name="rainbow_gradient_color">Rainbow gradient color</string>
     <string name="custom_color">Custom color</string>
 
     <!-- Custom seekbar -->
