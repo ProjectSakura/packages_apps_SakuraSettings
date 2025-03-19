@@ -36,6 +36,7 @@ import android.view.ViewGroup;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
+import com.sakura.settings.fragments.ui.SmartPixels;
 import com.android.settings.R;
 
 public class MiscSettings extends SettingsPreferenceFragment implements
@@ -44,6 +45,9 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String SYS_NETFLIX_SPOOF = "persist.sys.pixelprops.netflix";
+    private static final String SMART_PIXELS = "smart_pixels";
+
+    private Preference mSmartPixels;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,6 +55,13 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.sakura_settings_misc);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+
+        mSmartPixels = (Preference) prefScreen.findPreference(SMART_PIXELS);
+        boolean mSmartPixelsSupported = getResources().getBoolean(
+                com.android.internal.R.bool.config_supportSmartPixels);
+        if (!mSmartPixelsSupported)
+            prefScreen.removePreference(mSmartPixels);
     }
 
     @Override

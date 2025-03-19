@@ -147,4 +147,12 @@
             android:targetPackage="org.omnirom.omnijaws"
             android:targetClass="org.omnirom.omnijaws.SettingsActivity" />
     </Preference>
+
+    <!-- Smart Pixels -->
+    <Preference
+        android:key="smart_pixels"
+        android:icon="@drawable/ic_smart_pixels"
+        android:title="@string/smart_pixels_title" 
+        android:summary="@string/smart_pixels_summary" 
+        android:fragment="com.sakura.settings.fragments.ui.SmartPixels" />
 </PreferenceScreen>
