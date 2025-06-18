@@ -21,6 +21,7 @@ import android.os.SystemProperties;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -28,6 +29,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 import android.provider.Settings;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
@@ -54,6 +57,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import org.sakura.settings.preferences.KeyboxDataPreference;
 import org.sakura.settings.preferences.SystemPropertySwitchPreference;
 import org.sakura.settings.utils.DeviceUtils;
 
@@ -78,7 +82,10 @@ public class Spoofing extends SettingsPreferenceFragment implements
     private static final String SYS_SNAP_SPOOF = "persist.sys.pixelprops.snap";
     private static final String SYS_VENDING_SPOOF = "persist.sys.pixelprops.vending";
     private static final String SYS_ENABLE_TENSOR_FEATURES = "persist.sys.features.tensor";
+    private static final String KEYBOX_DATA_KEY = "keybox_data_setting";
 
+    private ActivityResultLauncher<Intent> mKeyboxFilePickerLauncher;
+    private KeyboxDataPreference mKeyboxDataPreference;
     private Preference mPifJsonFilePreference;
     private Preference mUpdateJsonButton;
     private PreferenceCategory mSystemWideCategory;
@@ -140,6 +147,19 @@ public class Spoofing extends SettingsPreferenceFragment implements
         mVendingSpoof.setOnPreferenceChangeListener(this);
         mTensorFeaturesToggle.setOnPreferenceChangeListener(this);
 
+        mKeyboxFilePickerLauncher = registerForActivityResult(
+        new ActivityResultContracts.StartActivityForResult(),
+        result -> {
+            if (result.getResultCode() == Activity.RESULT_OK && result.getData() != null) {
+            Uri uri = result.getData().getData();
+            Preference pref = findPreference(KEYBOX_DATA_KEY);
+            if (pref instanceof KeyboxDataPreference) {
+                ((KeyboxDataPreference) pref).handleFileSelected(uri);
+            }
+        }
+    }
+    );
+
         mPifJsonFilePreference.setOnPreferenceClickListener(preference -> {
             openFileSelector(10001);
             return true;
@@ -167,6 +187,15 @@ public class Spoofing extends SettingsPreferenceFragment implements
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
         intent.setType("application/json");
         startActivityForResult(intent, requestCode);
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        mKeyboxDataPreference = findPreference(KEYBOX_DATA_KEY);
+        if (mKeyboxDataPreference != null) {
+            mKeyboxDataPreference.setFilePickerLauncher(mKeyboxFilePickerLauncher);
+        }
     }
 
     @Override
