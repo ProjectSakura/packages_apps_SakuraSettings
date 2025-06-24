@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2024 The Project Sakura Project
+ * Copyright (C) 2019-2025 Evolution X
  * SPDX-License-Identifier: Apache-2.0
  */
 
