@@ -568,7 +568,7 @@
     <string name="about_twitter_title" translatable="false">Twitter</string>
     <string name="about_twitter_summary">Come see our tweets</string>
     <string name="about_discord_title" translatable="false">Discord</string>
-    <string name="about_discord_summary">Visit our community chat</string>
+    <string name="about_discord_summary">Chat with us on Discord</string>
     <string name="about_github_title" translatable="false">GitHub</string>
     <string name="about_github_summary">Check out our GitHub</string>
     <string name="about_contributors_title">Contributors</string>

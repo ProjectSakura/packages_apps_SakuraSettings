@@ -23,8 +23,8 @@
     <!-- Website -->
     <Preference
         android:title="@string/about_website_title"
-        android:icon="@drawable/ic_about"
-        android:summary="@string/about_website_summary">
+        android:summary="@string/about_website_summary"
+        android:icon="@drawable/ic_sakura_settings_about">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://google.com" />
@@ -33,8 +33,8 @@
     <!-- Discord -->
     <Preference
         android:title="@string/about_discord_title"
-        android:icon="@drawable/ic_discord"
-        android:summary="@string/about_discord_summary">
+        android:summary="@string/about_discord_summary"
+        android:icon="@drawable/ic_about_discord">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://discord.gg/3qbSZHx" />
@@ -42,12 +42,12 @@
 
     <!-- Twitter -->
     <Preference
-        android:title="@string/about_twitter_title"
-        android:icon="@drawable/ic_twitter"
-        android:summary="@string/about_twitter_summary">
+        android:title="@string/about_X_title"
+        android:icon="@drawable/ic_X"
+        android:summary="@string/about_X_summary">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://twitter.com/SakuraXROM" />
+            android:data="https://X.com/ProjectSakura" />
         </Preference>
 
     <!-- Github -->
@@ -59,36 +59,5 @@
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/ProjectSakura" />
     </Preference>
-
-    <PreferenceCategory
-        android:key="contributors"
-        android:title="@string/about_contributors_title" />
-
-    <!-- Contributor 1 -->
-        <Preference
-            android:title="@string/about_contributor_1_title"
-            android:summary="@string/about_contributor_1_summary">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://linktr.ee/joeyhuab" />
-        </Preference>
-
-    <!-- Contributor 2 -->
-        <Preference
-            android:title="@string/about_contributor_2_title"
-            android:summary="@string/about_contributor_2_summary">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://t.me/AnierinB" />
-        </Preference>
-
-    <!-- Contributor 3 -->
-        <Preference
-            android:title="@string/about_contributor_3_title"
-            android:summary="@string/about_contributor_3_summary">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://t.me/RealAkito" />
-        </Preference>
 
 </PreferenceScreen>
