@@ -37,7 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <org.evolution.settings.utils.WallpaperView
+                    <org.sakura.settings.utils.WallpaperView
                         android:id="@+id/wallpaper_view"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"

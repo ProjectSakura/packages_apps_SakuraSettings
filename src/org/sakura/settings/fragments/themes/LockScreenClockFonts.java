@@ -100,7 +100,7 @@ public class LockScreenClockFonts extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.EVOLVER;
+        return MetricsEvent.SAKURA_SETTINGS;
     }
 
     @Override
