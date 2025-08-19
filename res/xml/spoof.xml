@@ -34,4 +34,11 @@
             android:summary="@string/use_games_spoof_summary"
             android:defaultValue="false" />
 
+        <!-- Keybox Data -->
+        <com.android.settings.preferences.KeyboxDataPreference
+            android:key="keybox_data_setting"
+            android:title="@string/keybox_data_title"
+            android:summary="@string/keybox_data_summary"
+            android:defaultValue=""/>
+
 </PreferenceScreen> 
