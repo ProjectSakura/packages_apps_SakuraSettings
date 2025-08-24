@@ -146,13 +146,20 @@ class KeyboxDataPreference(context: Context, attrs: AttributeSet) : Preference(c
                         }
 
                         TAG_PRIVATE_KEY -> {
-                            if (!parser.isPemFormat() || currentAlg == null) return null
-                            currentPriv = parser.nextText().trim()
+                            if (currentAlg == null || !parser.isPemFormat()) {
+                                Log.w(TAG, "Skipping key due to invalid format or algorithm")
+                                currentPriv = null
+                            } else {
+                                currentPriv = parser.nextText().trim()
+                            }
                         }
 
                         TAG_CERTIFICATE -> {
-                            if (!parser.isPemFormat() || currentAlg == null) return null
-                            currentCerts.add(parser.nextText().trim())
+                            if (currentAlg == null || !parser.isPemFormat()) {
+                                Log.w(TAG, "Skipping certificate due to invalid format or algorithm")
+                            } else {
+                                currentCerts.add(parser.nextText().trim())
+                            }
                         }
                     }
 
@@ -170,9 +177,7 @@ class KeyboxDataPreference(context: Context, attrs: AttributeSet) : Preference(c
             return null
         }
 
-        return if (numberOfKeyboxes == 1 && keyboxes.any { it.algorithm == KEY_EC } && keyboxes.any { it.algorithm == KEY_RSA }) {
-            keyboxes
-        } else null
+        return if (keyboxes.isNotEmpty()) keyboxes else null
     }
 
     private fun isXmlFile(uri: Uri): Boolean {
