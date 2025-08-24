@@ -110,6 +110,10 @@
     <string name="notification_sound_vib_screen_on_title">Annoying Notifications</string>
     <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
 
+    <!-- GMS Spoof -->
+    <string name="gms_spoof_title">Enable GMS spoof</string>
+    <string name="gms_spoof_summary">Spoof your device to pass Google Play Attestation</string>
+
     <!-- Spoofing -->
     <string name="spoofing_title">Spoofing</string>
     <string name="spoofing_title_summary">Spoof as different device to unlock application features</string>
@@ -130,4 +134,19 @@
     <string name="keybox_invalid_xml">Invalid XML: missing required data</string>
     <string name="keybox_file_loaded">XML file loaded</string>
     <string name="keybox_file_read_failed">Failed to read XML</string>
+
+    <!-- Play Integrit Fix JSON Update -->
+    <string name="toast_spoofing_success">Successfully downloaded pif.json. Spoofing as %1$s for play integrity.</string>
+    <string name="toast_spoofing_failure">Failed to spoof properties.</string>
+    <string name="toast_import_success">Successfully imported pif json.</string>
+    <string name="update_pif_json_title">Update Play Integrity Fix</string>
+    <string name="update_pif_json_summary">Update PIF spoofing device, requires internet connection.</string>
+    <string name="show_pif_properties_title">Play Integrity Fix properties</string>
+    <string name="show_pif_properties_summary">Show all currently set PIF properties</string>
+    <string name="error_loading_properties">Error loading PIF properties</string>
+
+    <!-- PIF spoofing -->
+    <string name="pif_spoofing_title">Select PIF JSON File</string>
+    <string name="pif_spoofing_summary">Pick PIF JSON file to be used for spoofing play integrity</string>
+
 </resources>
