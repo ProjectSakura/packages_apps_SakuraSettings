@@ -22,7 +22,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.provider.Settings
+import android.os.SystemProperties
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
@@ -32,11 +32,9 @@ import androidx.preference.Preference
 import com.android.settings.R
 import com.android.settings.preferences.KeyboxDataPreference
 import com.android.settings.preferences.BasePreferenceFragment
-import org.json.JSONException
 import org.json.JSONObject
-import java.net.HttpURLConnection
-import java.net.URL
 import java.nio.charset.StandardCharsets
+import java.security.MessageDigest
 
 class Spoof : BasePreferenceFragment(R.xml.spoof) {
 
@@ -50,17 +48,15 @@ class Spoof : BasePreferenceFragment(R.xml.spoof) {
 
     private val keyboxFilePickerLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-            if (result.resultCode == Activity.RESULT_OK && result.data != null) {
-                val uri: Uri? = result.data?.data
-                keyboxDataPreference?.handleFileSelected(uri)
+            if (result.resultCode == Activity.RESULT_OK) {
+                keyboxDataPreference?.handleFileSelected(result.data?.data)
             }
         }
 
     private val pifJsonFilePickerLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-            if (result.resultCode == Activity.RESULT_OK && result.data != null) {
-                val uri: Uri? = result.data?.data
-                if (uri != null) {
+            if (result.resultCode == Activity.RESULT_OK) {
+                result.data?.data?.let { uri ->
                     loadPifJson(uri)
                     Toast.makeText(requireContext(), R.string.toast_import_success, Toast.LENGTH_SHORT).show()
                 }
@@ -77,24 +73,12 @@ class Spoof : BasePreferenceFragment(R.xml.spoof) {
         mPifJsonFilePreference = findPreference(KEY_PIF_JSON_FILE_PREFERENCE)!!
         mUpdateJsonButton = findPreference(KEY_UPDATE_JSON_BUTTON)!!
 
-        mGmsSpoof.setOnPreferenceChangeListener { _, _ ->
-            true
-        }
+        mGmsSpoof.setOnPreferenceChangeListener { _, _ -> true }
 
-        mPifJsonFilePreference.setOnPreferenceClickListener {
-            openPifJsonFileSelector()
-            true
-        }
+        mPifJsonFilePreference.setOnPreferenceClickListener { openPifJsonFileSelector(); true }
+        mUpdateJsonButton.setOnPreferenceClickListener { updatePropertiesFromUrl(PIF_JSON_URL); true }
 
-        mUpdateJsonButton.setOnPreferenceClickListener {
-            updatePropertiesFromUrl(PIF_JSON_URL)
-            true
-        }
-
-        findPreference<Preference>("show_pif_properties")?.setOnPreferenceClickListener {
-            showPropertiesDialog()
-            true
-        }
+        findPreference<Preference>("show_pif_properties")?.setOnPreferenceClickListener { showPropertiesDialog(); true }
     }
 
     private fun openPifJsonFileSelector() {
@@ -106,23 +90,32 @@ class Spoof : BasePreferenceFragment(R.xml.spoof) {
     }
 
     private fun showPropertiesDialog() {
-        var jsonString = Settings.System.getString(requireContext().contentResolver, "pif_props_data")
-        if (TextUtils.isEmpty(jsonString)) {
-            Log.e(TAG, "No spoofing data found in Settings")
-            jsonString = getString(R.string.error_loading_properties)
-        } else {
-            try {
-                val json = JSONObject(jsonString!!)
-                jsonString = json.toString(4).replace("\\/", "/")
-            } catch (e: JSONException) {
-                Log.e(TAG, "Malformed JSON in pif_props_data", e)
-                jsonString = getString(R.string.error_loading_properties)
-            }
+        val keys = SystemProperties.get("persist.sys.propshooks_keys", "")
+        if (TextUtils.isEmpty(keys)) {
+            Toast.makeText(requireContext(), R.string.error_loading_properties, Toast.LENGTH_SHORT).show()
+            return
         }
+
+        val commonKeys = mapOf(
+            "MF" to "MANUFACTURER",
+            "MD" to "MODEL",
+            "FP" to "FINGERPRINT",
+            "PR" to "PRODUCT",
+            "DV" to "DEVICE",
+            "SP" to "SECURITY_PATCH",
+            "ISDK" to "DEVICE_INITIAL_SDK_INT"
+        )
+
+        val map = keys.split(",").associate { key ->
+            val fullKey = commonKeys.getOrDefault(key, key)
+            fullKey to SystemProperties.get("persist.sys.propshooks_$key", "")
+        }
+
+        val displayJson = JSONObject(map).toString(4).replace("\\/", "/")
 
         AlertDialog.Builder(requireContext())
             .setTitle(R.string.show_pif_properties_title)
-            .setMessage(jsonString)
+            .setMessage(displayJson)
             .setPositiveButton(android.R.string.ok, null)
             .show()
     }
@@ -130,41 +123,56 @@ class Spoof : BasePreferenceFragment(R.xml.spoof) {
     private fun updatePropertiesFromUrl(urlString: String) {
         Thread {
             try {
-                val url = URL(urlString)
-                val urlConnection = url.openConnection() as HttpURLConnection
-                try {
-                    val json = urlConnection.inputStream.readBytes().toString(StandardCharsets.UTF_8)
-                    Log.d(TAG, "Downloaded JSON data: $json")
-                    val jsonObject = JSONObject(json)
-                    val spoofedModel = jsonObject.optString("MODEL", "Unknown model")
-                    Settings.System.putString(requireActivity().contentResolver, "pif_props_data", jsonObject.toString())
-                    handler.post {
-                        val toastMessage = getString(R.string.toast_spoofing_success, spoofedModel)
-                        Toast.makeText(requireContext(), toastMessage, Toast.LENGTH_LONG).show()
-                    }
-                } finally {
-                    urlConnection.disconnect()
-                }
+                val json = java.net.URL(urlString).readBytes().toString(StandardCharsets.UTF_8)
+                applyPifJson(JSONObject(json))
             } catch (e: Exception) {
-                Log.e(TAG, "Error downloading JSON or setting properties", e)
-                handler.post {
-                    Toast.makeText(requireContext(), R.string.toast_spoofing_failure, Toast.LENGTH_LONG).show()
-                }
+                Log.e(TAG, "Error downloading or applying JSON", e)
+                handler.post { Toast.makeText(requireContext(), R.string.toast_spoofing_failure, Toast.LENGTH_LONG).show() }
             }
         }.start()
     }
 
     private fun loadPifJson(uri: Uri) {
-        Log.d(TAG, "Loading PIF JSON from URI: $uri")
         try {
             requireActivity().contentResolver.openInputStream(uri)?.use { inputStream ->
-                val json = inputStream.readBytes().toString(StandardCharsets.UTF_8)
-                Log.d(TAG, "PIF JSON data: $json")
-                val jsonObject = JSONObject(json)
-                Settings.System.putString(requireActivity().contentResolver, "pif_props_data", jsonObject.toString())
+                applyPifJson(JSONObject(inputStream.readBytes().toString(StandardCharsets.UTF_8)))
             }
         } catch (e: Exception) {
-            Log.e(TAG, "Error reading PIF JSON or setting properties", e)
+            Log.e(TAG, "Error loading PIF JSON", e)
+        }
+    }
+
+    private fun applyPifJson(jsonObject: JSONObject) {
+        val keys = mutableListOf<String>()
+        for (entry in jsonObject.keys()) {
+            val key = entry
+            val value = jsonObject.getString(key)
+            val pifKey = when (key) {
+                "MANUFACTURER" -> "MF"
+                "MODEL" -> "MD"
+                "FINGERPRINT" -> "FP"
+                "PRODUCT" -> "PR"
+                "DEVICE" -> "DV"
+                "SECURITY_PATCH" -> "SP"
+                "DEVICE_INITIAL_SDK_INT" -> "ISDK"
+                else -> key
+            }
+            SystemProperties.set("persist.sys.propshooks_$pifKey", value)
+            keys.add(pifKey)
+        }
+
+        val keysCsv = keys.joinToString(",")
+        SystemProperties.set("persist.sys.propshooks_keys", keysCsv)
+
+        val hash = MessageDigest.getInstance("SHA-256").digest(
+            keys.sorted().joinToString("") { k -> k + SystemProperties.get("persist.sys.propshooks_$k", "") }.toByteArray()
+        ).joinToString("") { "%02x".format(it) }
+
+        SystemProperties.set("persist.sys.propshooks_data_hash", hash)
+
+        handler.post {
+            val spoofedModel = jsonObject.optString("MODEL", "Unknown model")
+            Toast.makeText(requireContext(), getString(R.string.toast_spoofing_success, spoofedModel), Toast.LENGTH_LONG).show()
         }
     }
 
