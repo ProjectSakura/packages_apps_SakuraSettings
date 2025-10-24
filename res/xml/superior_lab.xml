@@ -18,66 +18,72 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/superior_lab_title" >
 
+    <PreferenceCategory
+        android:layout="@layout/settingslib_preference_category_no_title">
+
         <Preference
             android:key="team__category"
             android:title="@string/team_title" 
+            android:summary="@string/team_summary"
             android:fragment="com.superior.lab.fragments.SuperiorTeam"
-            android:icon="@drawable/ic_settings_team"/>
+            android:icon="@drawable/ic_hm_team"/>
+
+    </PreferenceCategory>
 
         <!-- Status Bar -->
         <Preference
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
             android:fragment="com.superior.lab.fragments.StatusBarSettings" 
-            android:icon="@drawable/ic_settings_statusbar"/>
+            android:icon="@drawable/ic_hm_statusbar"/>
 
         <!-- Quick Settings panel -->
         <Preference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
             android:fragment="com.superior.lab.fragments.QuickSettings"
-            android:icon="@drawable/ic_settings_quicksettings"/>
+            android:icon="@drawable/ic_hm_quicksettings"/>
 
         <!-- Buttons -->
         <Preference
             android:key="buttonsettings_category"
             android:title="@string/button_title"
             android:fragment="com.superior.lab.fragments.ButtonSettings"
-            android:icon="@drawable/ic_settings_buttons"/>
+            android:icon="@drawable/ic_hm_buttons"/>
 
         <!-- Navigation Bar -->
         <Preference
             android:key="navigationbar_category"
             android:title="@string/navbar_title" 
             android:fragment="com.superior.lab.fragments.NavbarSettings"
-            android:icon="@drawable/ic_settings_navbar"/>
+            android:icon="@drawable/ic_hm_navbar"/>
 
         <!-- Gestures -->
         <Preference
             android:key="gestures_category"
             android:title="@string/gestures_title" 
             android:fragment="com.superior.lab.fragments.GestureSettings"
-            android:icon="@drawable/ic_settings_sos_gestures"/>
+            android:icon="@drawable/ic_hm_sos_gestures"/>
 
         <!-- Lock Screen -->
         <Preference
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title" 
             android:fragment="com.superior.lab.fragments.LockScreenSettings"
-            android:icon="@drawable/ic_settings_lockscreens"/>
+            android:icon="@drawable/ic_hm_lockscreens"/>
 
         <!-- Power Menu -->
         <Preference
             android:key="powermenu__category"
             android:title="@string/powermenu_title" 
             android:fragment="com.superior.lab.fragments.PowerMenuSettings"
-            android:icon="@drawable/ic_settings_powermenu"/>
+            android:icon="@drawable/ic_hm_powermenu"/>
 
         <!-- Themes -->
         <Preference
             android:key="themes"
             android:fragment="com.superior.lab.fragments.ThemesSettings"
-            android:icon="@drawable/ic_settings_themes"
+            android:icon="@drawable/ic_hm_themes"
             android:title="@string/themes_title" />
 
         <!-- Notifications -->
@@ -85,13 +91,13 @@
             android:key="notifications_category"
             android:title="@string/notifications_title"
             android:fragment="com.superior.lab.fragments.NotificationSettings"
-            android:icon="@drawable/ic_settings_notifications"/>
+            android:icon="@drawable/ic_hm_notifications"/>
 
         <!-- Misc -->
         <Preference
             android:key="misc_category"
             android:title="@string/misc_title" 
             android:fragment="com.superior.lab.fragments.MiscSettings"
-            android:icon="@drawable/ic_settings_miscs"/>
+            android:icon="@drawable/ic_hm_miscs"/>
 
 </PreferenceScreen>

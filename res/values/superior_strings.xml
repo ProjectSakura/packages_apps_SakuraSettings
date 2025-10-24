@@ -47,6 +47,7 @@
 
     <!-- Categories -->
     <string name="team_title">About Team</string>
+    <string name="team_summary">Core team, Honorable mentions</string>
     <string name="button_title">Buttons</string>
     <string name="gestures_title">Gestures</string>
     <string name="lockscreen_title">Lock screen</string>
