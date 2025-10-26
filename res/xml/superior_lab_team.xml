@@ -16,7 +16,13 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/superior_lab_team">
+    android:title=" ">
+
+    <!-- Lottie Animation-->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="team_animation"
+        android:layout="@layout/lab_team"
+        android:selectable="false" />
 
 	<PreferenceCategory
             android:key="superior_dev"
