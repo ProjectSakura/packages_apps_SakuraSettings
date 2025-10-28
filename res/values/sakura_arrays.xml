@@ -227,7 +227,7 @@
     </string-array>
 
     <string-array name="status_bar_logo_style_entries" translatable="false">
-        <item>@string/status_bar_logo_style_evolution</item>
+        <item>@string/status_bar_logo_style_sakura</item>
         <item>@string/status_bar_logo_style_android</item>
         <item>@string/status_bar_logo_style_adidas</item>
         <item>@string/status_bar_logo_style_alien</item>
