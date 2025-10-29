@@ -41,4 +41,16 @@
                android:defaultValue="false" />
 
      </PreferenceCategory>
+
+     <PreferenceCategory
+          android:key="lineageos_features"
+          android:title="@string/lineageos_features_info">
+
+          <Preference
+               android:key="lineageos_statusbar"
+               android:title="@string/lineageos_statusbar_features">
+               <intent
+                   android:action="org.lineageos.lineageparts.STATUS_BAR_SETTINGS" />
+          </Preference>
+     </PreferenceCategory>
 </PreferenceScreen>

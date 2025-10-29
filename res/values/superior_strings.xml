@@ -66,12 +66,13 @@
     <string name="save">Save</string>
     <string name="general_category">General</string>
 
+    <!-- Lineageos features strings -->
+    <string name="lineageos_features_info">LineageOS features</string>
+    <string name="lineageos_statusbar_features">Statusbar</string>
+
     <!-- AOSP Gestures -->
     <string name="aosp_gesture_preference">System settings</string>
     <string name="aosp_gesture_summary">Stock gestures included with AOSP</string>
-
-    <!-- Navigation -->
-    <string name="system_navigation_summary">Configure navigation menus</string>
 
     <!-- Statusbar Items -->
     <string name="sb_icons">Statusbar Icons</string>
