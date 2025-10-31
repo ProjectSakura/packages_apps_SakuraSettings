@@ -30,9 +30,14 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/spoofing_title">
+
     <Preference
         android:key="spoofing"
         android:title="@string/spoofing_title"
         android:summary="@string/spoofing_title_summary"
         android:fragment="com.superior.lab.fragments.Spoof" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
