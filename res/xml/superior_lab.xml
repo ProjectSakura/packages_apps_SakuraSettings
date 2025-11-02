@@ -54,10 +54,8 @@
         <Preference
             android:key="buttonsettings_category"
             android:title="@string/button_title"
-            android:icon="@drawable/ic_hm_buttons">
-            <intent
-                android:action="org.lineageos.lineageparts.BUTTON_SETTINGS" />
-        </Preference>
+            android:fragment="com.superior.lab.fragments.ButtonSettings"
+            android:icon="@drawable/ic_hm_buttons"/>
 
         <!-- Navigation Bar ->
         <Preference
