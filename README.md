@@ -1,11 +1,14 @@
-What is SuperiorLab:
-------------------------
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0935b4f1-eb95-4b00-81df-add451c4f15b" alt="SuperiorLab Banner" width="600"/>
+</p>
 
-**SuperiorLab** Is The Feature Centre of **Superior OS**, This Tab Contains All The Features / Tweaks Which Are Added To Superior OS.
+## 🧪 SuperiorLab
 
-Inside **Superior Lab** U can find All Your Needed Features.
+**SuperiorLab** is the **feature center** of **SuperiorOS** —  
+a dedicated hub where you’ll find all the unique **features, tweaks, and customizations** that make SuperiorOS stand out.
 
-Credits:
--------
- * [**Max**](https://github.com/xyyx) - For the Base, tabs & drawables.
- * [**DarkNess reDefined ROM**](https://github.com/DarkNess-reDefined)
+Inside **SuperiorLab**, you can easily explore and enable the features you need — all in one place.
+
+### 💡 Credits
+- [**Max**](https://github.com/xyyx) – For the base structure, tabs, and drawables  
+- [**DarkNess reDefined ROM**](https://github.com/DarkNess-reDefined) – Inspiration and code references
