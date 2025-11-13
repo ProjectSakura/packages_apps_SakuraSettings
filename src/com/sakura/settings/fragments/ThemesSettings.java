@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.superior.lab.fragments;
+package com.sakura.settings.fragments;
 
 import static android.os.UserHandle.USER_SYSTEM;
 
@@ -58,7 +58,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
-import com.superior.support.colorpicker.ColorPickerPreference;
+import com.sakura.support.colorpicker.ColorPickerPreference;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -74,7 +74,7 @@ public class ThemesSettings extends SettingsPreferenceFragment implements OnPref
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.superior_lab_themes);
+        addPreferencesFromResource(R.xml.sakura_settings_themes);
 
         mContext = getActivity();
 
@@ -84,7 +84,7 @@ public class ThemesSettings extends SettingsPreferenceFragment implements OnPref
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.SUPERIOR;
+        return MetricsEvent.SAKURA_SETTINGS;
     }
 
     @Override

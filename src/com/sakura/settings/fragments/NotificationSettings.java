@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.superior.lab.fragments;
+package com.sakura.settings.fragments;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -23,18 +23,17 @@ import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-public class GestureSettings extends SettingsPreferenceFragment {
+public class NotificationSettings extends SettingsPreferenceFragment {
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.superior_lab_gestures);
+        addPreferencesFromResource(R.xml.sakura_settings_notifications);
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
+        return MetricsProto.MetricsEvent.SAKURA_SETTINGS;
     }
-
 }

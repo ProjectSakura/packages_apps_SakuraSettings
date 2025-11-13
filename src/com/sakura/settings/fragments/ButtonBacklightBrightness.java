@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.superior.lab.fragments;
+package com.sakura.settings.fragments;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -24,8 +24,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.preference.PreferenceManager;
 import com.android.settings.R;
 import lineageos.providers.LineageSettings;
-import com.superior.support.preferences.CustomDialogPref;
-import com.superior.lab.utils.DeviceUtils;
+import com.sakura.support.preferences.CustomDialogPref;
+import com.sakura.settings.utils.DeviceUtils;
 
 public class ButtonBacklightBrightness extends CustomDialogPref<AlertDialog>
     implements SeekBar.OnSeekBarChangeListener {

@@ -22,7 +22,7 @@
         android:title="@string/general_category">
 
     <!-- Ignore Secure Window -->
-    <com.superior.support.preferences.GlobalSettingSwitchPreference
+    <com.sakura.support.preferences.GlobalSettingSwitchPreference
         android:key="window_ignore_secure"
         android:title="@string/ignore_window_secure_title"
         android:summary="@string/ignore_window_secure_summary"
@@ -37,7 +37,7 @@
         android:key="spoofing"
         android:title="@string/spoofing_title"
         android:summary="@string/spoofing_title_summary"
-        android:fragment="com.superior.lab.fragments.Spoof" />
+        android:fragment="com.sakura.settings.fragments.Spoof" />
 
     </PreferenceCategory>
 </PreferenceScreen>

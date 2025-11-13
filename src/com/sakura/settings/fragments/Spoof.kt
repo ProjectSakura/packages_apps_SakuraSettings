@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.superior.lab.fragments;
+package com.sakura.settings.fragments;
 
 import android.app.Activity
 import android.app.AlertDialog
@@ -182,6 +182,6 @@ class Spoof : BasePreferenceFragment(R.xml.spoof) {
         private const val KEY_PIF_JSON_FILE_PREFERENCE = "pif_json_file_preference"
         private const val KEY_UPDATE_JSON_BUTTON = "update_pif_json"
         private const val PIF_JSON_URL =
-            "https://raw.githubusercontent.com/SuperiorOS/PlayIntegrityFix/refs/heads/sixteen-los/pif.json"
+            "https://raw.githubusercontent.com/ProjectSakura/PlayIntegrityFix/refs/heads/16/pif.json"
     }
 }

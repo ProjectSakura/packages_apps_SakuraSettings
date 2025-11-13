@@ -9,31 +9,33 @@
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+ * implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
 
-package com.superior.lab.fragments;
-
-import com.android.internal.logging.nano.MetricsProto;
+package com.sakura.settings.fragments;
 
 import android.os.Bundle;
+import com.android.settings.SettingsPreferenceFragment;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
 import com.android.settings.R;
 
-import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-public class NotificationSettings extends SettingsPreferenceFragment {
+public class ProjectSakuraTeam extends SettingsPreferenceFragment {
 
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
+    public void onCreate(Bundle savedInstanceState) {
+       super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.superior_lab_notifications);
+        addPreferencesFromResource(R.xml.sakura_settings_team);
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
+        return MetricsEvent.SAKURA_SETTINGS;
     }
 }

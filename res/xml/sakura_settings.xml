@@ -31,7 +31,7 @@
             android:key="team__category"
             android:title="@string/team_title" 
             android:summary="@string/team_summary"
-            android:fragment="com.superior.lab.fragments.SuperiorTeam"
+            android:fragment="com.sakura.settings.fragments.ProjectSakuraTeam"
             android:icon="@drawable/ic_hm_team"/>
 
     </PreferenceCategory>
@@ -40,28 +40,28 @@
         <Preference
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
-            android:fragment="com.superior.lab.fragments.StatusBarSettings" 
+            android:fragment="com.sakura.settings.fragments.StatusBarSettings" 
             android:icon="@drawable/ic_hm_statusbar"/>
 
         <!-- Quick Settings panel ->
         <Preference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
-            android:fragment="com.superior.lab.fragments.QuickSettings"
+            android:fragment="com.sakura.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_hm_quicksettings"/>-->
 
         <!-- Buttons -->
         <Preference
             android:key="buttonsettings_category"
             android:title="@string/button_title"
-            android:fragment="com.superior.lab.fragments.ButtonSettings"
+            android:fragment="com.sakura.settings.fragments.ButtonSettings"
             android:icon="@drawable/ic_hm_buttons"/>
 
         <!-- Navigation Bar ->
         <Preference
             android:key="navigationbar_category"
             android:title="@string/navbar_title" 
-            android:fragment="com.superior.lab.fragments.NavbarSettings"
+            android:fragment="com.sakura.settings.fragments.NavbarSettings"
             android:icon="@drawable/ic_hm_navbar"/>-->
 
         <!-- Gestures -->
@@ -76,20 +76,20 @@
         <Preference
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title" 
-            android:fragment="com.superior.lab.fragments.LockScreenSettings"
+            android:fragment="com.sakura.settings.fragments.LockScreenSettings"
             android:icon="@drawable/ic_hm_lockscreens"/>
 
         <!-- Power Menu ->
         <Preference
             android:key="powermenu__category"
             android:title="@string/powermenu_title" 
-            android:fragment="com.superior.lab.fragments.PowerMenuSettings"
+            android:fragment="com.sakura.settings.fragments.PowerMenuSettings"
             android:icon="@drawable/ic_hm_powermenu"/>-->
 
         <!-- Themes ->
         <Preference
             android:key="themes"
-            android:fragment="com.superior.lab.fragments.ThemesSettings"
+            android:fragment="com.sakura.settings.fragments.ThemesSettings"
             android:icon="@drawable/ic_hm_themes"
             android:title="@string/themes_title" />-->
 
@@ -97,14 +97,14 @@
         <Preference
             android:key="notifications_category"
             android:title="@string/notifications_title"
-            android:fragment="com.superior.lab.fragments.NotificationSettings"
+            android:fragment="com.sakura.settings.fragments.NotificationSettings"
             android:icon="@drawable/ic_hm_notifications"/>
 
         <!-- Misc -->
         <Preference
             android:key="misc_category"
             android:title="@string/misc_title" 
-            android:fragment="com.superior.lab.fragments.MiscSettings"
+            android:fragment="com.sakura.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_hm_miscs"/>
 
 </PreferenceScreen>

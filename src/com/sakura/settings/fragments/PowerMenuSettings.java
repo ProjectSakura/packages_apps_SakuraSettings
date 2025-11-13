@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.superior.lab.fragments;
+package com.sakura.settings.fragments;
 
 import static org.lineageos.internal.util.PowerMenuConstants.*;
 
@@ -37,12 +37,12 @@ import com.android.settingslib.applications.ServiceListing;
 import java.util.List;
 import lineageos.app.LineageGlobalActions;
 import org.lineageos.internal.util.PowerMenuConstants;
-import com.superior.lab.utils.TelephonyUtils;
+import com.sakura.settings.utils.TelephonyUtils;
 
 public class PowerMenuSettings extends SettingsPreferenceFragment {
   static final String TAG = "PowerMenuSettings";
 
-  private static final String CATEGORY_POWER_MENU_ITEMS = "superior_lab_power";
+  private static final String CATEGORY_POWER_MENU_ITEMS = "sakura_settings_power";
 
   private PreferenceCategory mPowerMenuItemsCategory;
 
@@ -65,7 +65,7 @@ public class PowerMenuSettings extends SettingsPreferenceFragment {
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    addPreferencesFromResource(R.xml.superior_lab_power);
+    addPreferencesFromResource(R.xml.sakura_settings_power);
     requireActivity().setTitle(R.string.power_menu_title);
     mContext = requireActivity().getApplicationContext();
     mUserManager = UserManager.get(mContext);
@@ -232,6 +232,6 @@ public class PowerMenuSettings extends SettingsPreferenceFragment {
 
   @Override
   public int getMetricsCategory() {
-    return MetricsEvent.SUPERIOR;
+    return MetricsEvent.SAKURA_SETTINGS;
   }
 }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.superior.lab;
+package com.sakura.settings;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -28,18 +28,18 @@ import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-public class SuperiorLab extends SettingsPreferenceFragment {
+public class SakuraSettings extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.superior_lab);
+        addPreferencesFromResource(R.xml.sakura_settings);
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
+        return MetricsProto.MetricsEvent.SAKURA_SETTINGS;
     }
 
     public static void lockCurrentOrientation(Activity activity) {
