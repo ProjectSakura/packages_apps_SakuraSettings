@@ -1,14 +1,21 @@
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/0935b4f1-eb95-4b00-81df-add451c4f15b" alt="SakuraSettings Banner" width="600"/>
-</p>
+-----------------------------------------------------------------------------
+<div align="center">
+<img src="https://i.imgur.com/3n4NiPo.jpg"> 
+<br>
+<br>
+<strong><i>Project Sakura based on LineageOS 23.0</i></strong>
+<br>
+<br>
+</div>
 
-## 🧪 SakuraSettings
+## ⚙️ SakuraSettings
 
-**SakuraSettings** is the **feature center** of **ProjectSakura** —  
-a dedicated hub where you’ll find all the unique **features, tweaks, and customizations** that make ProjectSakura stand out.
-
-Inside **SakuraSettings**, you can easily explore and enable the features you need — all in one place.
-
-### 💡 Credits
-- [**Max**](https://github.com/xyyx) – For the base structure, tabs, and drawables  
-- [**DarkNess reDefined ROM**](https://github.com/DarkNess-reDefined) – Inspiration and code references
+-----------------------------------------------------------------------------
+Credits:
+-------
+ * **Superior OS ROM**
+ * **Crdroid ROM** 
+ * **Max** - For the Idea about tabs & drawables.
+ * **Rohit Poroli** - For the About ROM Tab.
+ * **DarkNess reDefined ROM** - For some drawables.
+ * **EvolutionX ROM** - For some icons.
