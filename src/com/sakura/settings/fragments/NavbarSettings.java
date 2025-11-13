@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.superior.lab.fragments;
+package com.sakura.settings.fragments;
 
 import java.util.ArrayList;
 
@@ -42,7 +42,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements OnPref
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.superior_lab_navigation);
+        addPreferencesFromResource(R.xml.sakura_settings_navigation);
 
     }
 
@@ -54,6 +54,6 @@ public class NavbarSettings extends SettingsPreferenceFragment implements OnPref
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
+        return MetricsProto.MetricsEvent.SAKURA_SETTINGS;
     }
 }

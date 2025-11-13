@@ -17,7 +17,7 @@
  *
  */
 
-package com.superior.lab.fragments;
+package com.sakura.settings.fragments;
 
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON_OVERLAY;
 import static com.android.systemui.shared.recents.utilities.Utilities.isLargeScreen;
@@ -60,8 +60,8 @@ import java.util.List;
 import java.util.Set;
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
-import com.superior.lab.utils.DeviceUtils;
-import com.superior.lab.utils.TelephonyUtils;
+import com.sakura.settings.utils.DeviceUtils;
+import com.sakura.settings.utils.TelephonyUtils;
 
 @SearchIndexable
 public class ButtonSettings extends SettingsPreferenceFragment
@@ -156,7 +156,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    addPreferencesFromResource(R.xml.superior_lab_button);
+    addPreferencesFromResource(R.xml.sakura_settings_button);
 
     mHardware = LineageHardwareManager.getInstance(getActivity());
     final Resources res = getResources();
@@ -905,11 +905,11 @@ public class ButtonSettings extends SettingsPreferenceFragment
 
   @Override
   public int getMetricsCategory() {
-    return MetricsEvent.SUPERIOR;
+    return MetricsEvent.SAKURA_SETTINGS;
   }
 
   public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-      new BaseSearchIndexProvider(R.xml.superior_lab_button) {
+      new BaseSearchIndexProvider(R.xml.sakura_settings_button) {
 
         @Override
         public List<String> getNonIndexableKeys(Context context) {

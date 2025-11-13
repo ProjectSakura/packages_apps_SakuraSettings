@@ -93,7 +93,7 @@
             android:layout_alignParentEnd="true"
             android:paddingStart="10dip"
             android:paddingEnd="10dip" />
-        <com.superior.lab.fragments.BacklightTimeoutSeekBar
+        <com.sakura.settings.fragments.BacklightTimeoutSeekBar
             android:id="@+id/timeout_seekbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

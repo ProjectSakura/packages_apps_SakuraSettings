@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.superior.lab.fragments;
+package com.sakura.settings.fragments;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -49,7 +49,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.superior_lab_misc);
+        addPreferencesFromResource(R.xml.sakura_settings_misc);
 
     }
 
@@ -61,6 +61,6 @@ public class MiscSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
+        return MetricsProto.MetricsEvent.SAKURA_SETTINGS;
     }
 }

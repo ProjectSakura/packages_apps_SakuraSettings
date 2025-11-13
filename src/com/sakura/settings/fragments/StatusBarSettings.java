@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.superior.lab.fragments;
+package com.sakura.settings.fragments;
 
 import android.content.Context;
 import android.content.Intent;
@@ -36,7 +36,7 @@ import com.android.settingslib.fuelgauge.BatteryUtils;
 
 import lineageos.preference.LineageSystemSettingListPreference;
 
-import com.superior.lab.utils.DeviceUtils;
+import com.sakura.settings.utils.DeviceUtils;
 
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -66,7 +66,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.superior_lab_statusbar);
+        addPreferencesFromResource(R.xml.sakura_settings_statusbar);
 
         final Context context = getContext();
         PreferenceScreen prefScreen = getPreferenceScreen();
@@ -189,6 +189,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
+        return MetricsProto.MetricsEvent.SAKURA_SETTINGS;
     }
 }

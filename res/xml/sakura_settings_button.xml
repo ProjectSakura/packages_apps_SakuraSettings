@@ -30,7 +30,7 @@
         android:summary="@string/swap_capacitive_keys_summary"
         android:defaultValue="false" />
 
-    <com.superior.lab.fragments.ButtonBacklightBrightness
+    <com.sakura.settings.fragments.ButtonBacklightBrightness
         android:key="button_backlight"
         android:title="@string/button_backlight_title"
         android:dialogTitle="@string/button_backlight_title"
@@ -107,7 +107,7 @@
         <Preference
             android:key="power_menu"
             android:title="@string/power_menu_title"
-            android:fragment="com.superior.lab.fragments.PowerMenuSettings" />
+            android:fragment="com.sakura.settings.fragments.PowerMenuSettings" />
 
         <SwitchPreferenceCompat
             android:key="power_end_call"

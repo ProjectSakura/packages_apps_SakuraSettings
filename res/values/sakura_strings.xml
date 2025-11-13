@@ -16,7 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- App Title -->
-    <string name="superior_lab_title">Superior Lab</string>
+    <string name="sakura_settings_title">Sakura Settings</string>
 	
     <!-- Dev Info -->
     <string name="devs_header">Core Team</string>
@@ -43,7 +43,7 @@
     <string name="mentions_yash_description">Wallpaper Designer</string>
 
     <!-- Team Title -->
-    <string name="superior_lab_team">Team SuperiorOS</string>
+    <string name="sakura_settings_team">Team ProjectSakura</string>
 
     <!-- Categories -->
     <string name="team_title">About Team</string>

@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.superior.lab.fragments;
+package com.sakura.settings.fragments;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -37,7 +37,7 @@ import androidx.preference.PreferenceScreen;
 import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.util.superior.OmniJawsClient;
+import com.android.internal.util.sakura.OmniJawsClient;
 
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -50,7 +50,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.superior_lab_lockscreen);
+        addPreferencesFromResource(R.xml.sakura_settings_lockscreen);
 
         ContentResolver resolver = getActivity().getContentResolver();
         Resources resources = getResources();
@@ -84,7 +84,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
+        return MetricsProto.MetricsEvent.SAKURA_SETTINGS;
     }
 
 }

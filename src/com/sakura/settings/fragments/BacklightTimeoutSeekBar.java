@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.superior.lab.fragments;
+package com.sakura.settings.fragments;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

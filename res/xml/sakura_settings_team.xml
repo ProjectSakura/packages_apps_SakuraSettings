@@ -25,7 +25,7 @@
         android:selectable="false" />
 
 	<PreferenceCategory
-            android:key="superior_dev"
+            android:key="sakura_dev"
             android:title="@string/devs_header" >
 	</PreferenceCategory>
 
@@ -36,7 +36,7 @@
             android:summary="@string/dev1_description" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Darkstar085" />
+            android:data="https://t.me/LordShenron" />
         </Preference>
 
         <Preference
@@ -46,7 +46,7 @@
             android:summary="@string/dev2_description" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/JD1811" />
+            android:data="https://telegram.me/NotUsingTheName" />
         </Preference>
 
         <Preference
@@ -56,7 +56,7 @@
             android:summary="@string/dev3_description" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Joker_V2_0" />
+            android:data="https://telegram.me/momen_abdulrazek" />
         </Preference>
 
         <Preference
@@ -66,7 +66,7 @@
             android:summary="@string/dev4_description" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/adnan_fays" />
+            android:data="https://t.me/username" />
         </Preference>
 
         <Preference
@@ -76,7 +76,7 @@
             android:summary="@string/dev5_description" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/arc_ff5f00" />
+            android:data="https://t.me/username" />
         </Preference>
 
 	<PreferenceCategory

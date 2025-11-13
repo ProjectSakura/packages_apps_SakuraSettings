@@ -21,7 +21,7 @@
     android:title="@string/spoofing_title" >
 
         <!-- GMS spoof -->
-        <com.superior.support.preferences.SystemPropertySwitchPreference
+        <com.sakura.support.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.gms"
             android:title="@string/gms_spoof_title"
             android:summary="@string/gms_spoof_summary"
@@ -46,14 +46,14 @@
             android:dependency="persist.sys.pixelprops.gms"/>
 
         <!-- Unlimited google photos storage -->
-        <com.superior.support.preferences.SystemPropertySwitchPreference
+        <com.sakura.support.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.gphotos"
             android:title="@string/use_photos_spoof_title"
             android:summary="@string/use_photos_spoof_summary"
             android:defaultValue="true" />
 
         <!-- Games spoof -->
-        <com.superior.support.preferences.SystemPropertySwitchPreference
+        <com.sakura.support.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.gameprops.enable"
             android:title="@string/use_games_spoof_title"
             android:summary="@string/use_games_spoof_summary"
