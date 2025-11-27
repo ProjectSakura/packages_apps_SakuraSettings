@@ -72,7 +72,6 @@
 
     <!-- Statusbar Items -->
     <string name="sb_icons">Statusbar Icons</string>
-    <string name="statusbar_items_summary">Control your Statusbar Icons</string>
     <string name="statusbar_items_category">Statusbar items</string>
 
     <!-- Data disabled icon -->
@@ -149,54 +148,6 @@
     <!-- Fingerprint Ripple Effect -->
     <string name="enable_fingerprint_ripple_effect_title">Unlock animation</string>
     <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
-
-    <!-- Status bar -->
-    <string name="status_bar_icons_category">Icons</string>
-    <string name="status_bar_gestures_category">Gestures</string>
-    <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
-    <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Left</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Right</string>
-    <string name="status_bar_quick_qs_pulldown_off">Off</string>
-    <string name="status_bar_quick_qs_pulldown_left">Left</string>
-    <string name="status_bar_quick_qs_pulldown_right">Right</string>
-    <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar to turn off the display</string>
-    <string name="status_bar_system_icons_title">System icons</string>
-    <string name="status_bar_system_icons_summary">Control which status bar icons are shown</string>
-
-    <!-- Status bar - Clock -->
-    <string name="status_bar_clock_title">Clock</string>
-
-    <string name="status_bar_clock_show_seconds_title">Show seconds</string>
-    <string name="status_bar_clock_show_seconds_summary">Show hours, minutes, and seconds</string>
-
-    <string name="status_bar_clock_auto_hide_title">Auto hide</string>
-    <string name="status_bar_clock_auto_hide_summary">Hide clock if launcher is visible</string>
-
-    <string name="status_bar_clock_position_title">Clock position</string>
-    <string name="status_bar_clock_position_right">Right</string>
-    <string name="status_bar_clock_position_left">Left</string>
-    <string name="status_bar_clock_position_center">Center</string>
-
-    <string name="status_bar_am_pm_title">AM/PM style</string>
-    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
-    <string name="status_bar_am_pm_normal">Normal</string>
-    <string name="status_bar_am_pm_small">Small</string>
-    <string name="status_bar_am_pm_hidden">Hidden</string>
-
-    <!-- Status bar - Battery -->
-    <string name="status_bar_battery_title">Battery indicator</string>
-    <string name="status_bar_battery_style_title">Battery status style</string>
-    <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_text">Text</string>
-
-    <!-- Status bar - Battery percentage -->
-    <string name="status_bar_battery_percentage_title">Battery percentage</string>
-    <string name="status_bar_battery_percentage_default">Hidden</string>
-    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
-    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 
     <!-- General -->
     <string name="advanced">Advanced</string>
