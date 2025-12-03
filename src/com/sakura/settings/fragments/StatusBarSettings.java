@@ -36,14 +36,14 @@ import androidx.preference.SwitchPreferenceCompat;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.sakura.support.preferences.SystemSettingListPreference;
+import com.sakura.settings.preferences.SystemSettingListPreference;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.sakura.settings.fragments.statusbar.BatteryBar;
 import com.sakura.settings.fragments.statusbar.Clock;
 import com.sakura.settings.fragments.statusbar.NetworkTrafficSettings;
-import com.sakura.support.preferences.SystemSettingSeekBarPreference;
+import com.sakura.settings.preferences.SystemSettingSeekBarPreference;
 
 import lineageos.preference.LineageSystemSettingListPreference;
 import lineageos.providers.LineageSettings;

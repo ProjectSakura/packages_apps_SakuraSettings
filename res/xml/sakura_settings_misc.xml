@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2022 SuperiorOS
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2016-2025 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,29 +16,127 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/misc_title"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/misc_title">
 
-    <PreferenceCategory
-        android:title="@string/general_category">
+    <!-- Gaming mode -->
+    <Preference
+        android:key="gaming_mode"
+        android:icon="@drawable/ic_gaming"
+        android:title="@string/gaming_mode_title"
+        android:summary="@string/gaming_mode_summary">
 
-    <!-- Ignore Secure Window -->
-    <com.sakura.support.preferences.GlobalSettingSwitchPreference
-        android:key="window_ignore_secure"
-        android:title="@string/ignore_window_secure_title"
-        android:summary="@string/ignore_window_secure_summary"
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="io.chaldeaprjkt.gamespace"
+            android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
+    </Preference>
+
+    <!-- Google Play Integrity -->
+    <com.sakura.settings.preferences.SecureSettingSwitchPreference
+        android:key="pi_enable_spoof"
+        android:icon="@drawable/ic_google"
+        android:title="@string/pi_spoof_title"
+        android:summary="@string/pi_spoof_summary"
+        android:defaultValue="true" />
+
+    <!-- Vbmeta hash attestation -->
+    <com.sakura.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.vbmeta.update"
+        android:icon="@drawable/ic_hash"
+        android:title="@string/vbmeta_attestation_title"
+        android:summary="@string/vbmeta_attestation_summary"
+        android:defaultValue="true" />
+
+    <!-- Keybox Data -->
+    <com.sakura.settings.preferences.KeyboxDataPreference
+        android:key="keybox_data_setting"
+        android:icon="@drawable/ic_key"
+        android:title="@string/keybox_data_title"/>
+
+    <!-- Block attestation even with Keybox Data -->
+    <com.sakura.settings.preferences.SecureSettingSwitchPreference
+        android:key="pi_gms_cert_chain"
+        android:icon="@drawable/ic_key"
+        android:title="@string/pi_gmscertchain_title"
+        android:summary="@string/pi_gmscertchain_summary" />
+
+    <!-- Unlock FPS for specific games -->
+    <com.sakura.settings.preferences.SecureSettingSwitchPreference
+        android:key="pi_games_spoof"
+        android:icon="@drawable/ic_backup"
+        android:title="@string/use_games_spoof_title"
+        android:summary="@string/use_games_spoof_summary" />
+
+    <!-- Unlimited google photos storage -->
+    <com.sakura.settings.preferences.SecureSettingSwitchPreference
+        android:key="pi_photos_spoof"
+        android:icon="@drawable/ic_backup"
+        android:title="@string/use_photos_spoof_title"
+        android:summary="@string/use_photos_spoof_summary"
+        android:defaultValue="true" />
+
+    <!-- Netflix -->
+    <com.sakura.settings.preferences.SecureSettingSwitchPreference
+        android:key="pi_netflix_spoof"
+        android:icon="@drawable/ic_netflix"
+        android:title="@string/netflix_spoof_title"
+        android:summary="@string/netflix_spoof_summary"
         android:defaultValue="false" />
 
-    </PreferenceCategory>
+    <!-- Application downgrade -->
+    <com.sakura.settings.preferences.GlobalSettingSwitchPreference
+        android:key="pm_downgrade_allowed"
+        android:icon="@drawable/ic_arrow_down_box"
+        android:title="@string/app_downgrade_title"
+        android:summary="@string/app_downgrade_summary"
+        android:defaultValue="false"/>
 
-    <PreferenceCategory
-        android:title="@string/spoofing_title">
-
+    <!-- Sidebar -->
     <Preference
-        android:key="spoofing"
-        android:title="@string/spoofing_title"
-        android:summary="@string/spoofing_title_summary"
-        android:fragment="com.sakura.settings.fragments.Spoof" />
+        android:key="sidebar"
+        android:icon="@drawable/ic_floating"
+        android:title="@string/sidebar_title"
+        android:summary="@string/sidebar_summary">
 
-    </PreferenceCategory>
+        <intent
+            android:action="android.intent.action.IA_SETTINGS"
+            android:targetPackage="com.libremobileos.sidebar"
+            android:targetClass="com.libremobileos.sidebar.ui.sidebar.SidebarSettingsActivity" />
+    </Preference>
+
+    <!-- Three fingers swipe action -->
+    <ListPreference
+        android:key="three_fingers_swipe"
+        android:icon="@drawable/ic_three_finger_gesture"
+        android:dialogTitle="@string/three_fingers_swipe_title"
+        android:title="@string/three_fingers_swipe_title"
+        android:entries="@array/hardware_keys_action_entries"
+        android:entryValues="@array/hardware_keys_action_values"
+        android:persistent="false" />
+
+    <!-- Sensor block per package -->
+    <Preference
+        android:key="sensor_block_settings"
+        android:icon="@drawable/ic_remote"
+        android:title="@string/sensor_block_title"
+        android:summary="@string/sensor_block_summary"
+        android:fragment="com.sakura.settings.fragments.misc.SensorBlock"/>
+
+    <!-- Pocket Judge -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+        android:key="pocket_judge"
+        android:icon="@drawable/ic_pocket"
+        android:title="@string/pocket_judge_title"
+        android:summary="@string/pocket_judge_summary"
+        android:defaultValue="false" />
+
+    <!-- Rotation button -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+        android:key="enable_rotation_button"
+        android:icon="@drawable/ic_rotation"
+        android:title="@string/floating_rotation_button_title"
+        android:summary="@string/floating_rotation_button_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
