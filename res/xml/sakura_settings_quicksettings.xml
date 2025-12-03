@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2022 SuperiorOS
+<!--
+     Copyright (C) 2016-2025 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,7 +16,264 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/quicksettings_title"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    android:title="@string/quicksettings_title">
 
+    <PreferenceCategory
+         android:title="@string/qs_misc_category">
+
+        <!-- QS Header -->
+        <Preference
+            android:key="qs_header_image"
+            android:icon="@drawable/ic_header"
+            android:title="@string/qs_header_image_title"
+            android:summary="@string/qs_header_image_summary"
+            android:fragment="com.sakura.settings.fragments.quicksettings.QsHeaderImageSettings" />
+
+        <!-- QS clock
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="show_qs_clock"
+            android:icon="@drawable/ic_clock"
+            android:title="@string/qs_clock_title"
+            android:summary="@string/qs_clock_summary"
+            android:defaultValue="true" />
+
+        <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_header_clock_size"
+            android:icon="@drawable/ic_font"
+            android:title="@string/clock_font_size_title"
+            android:max="27"
+            settings:min="10"
+            settings:interval="1"
+            android:defaultValue="14"
+            android:dependency="show_qs_clock"
+            settings:units="@string/unit_pixels" /> -->
+
+        <!-- QS date
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="show_qs_date"
+            android:icon="@drawable/ic_calendar"
+            android:title="@string/qs_date_title"
+            android:summary="@string/qs_date_summary"
+            android:defaultValue="true" /> -->
+
+        <!-- Battery styles -->
+        <com.sakura.settings.preferences.SystemSettingListPreference
+            android:key="qs_battery_style"
+            android:icon="@drawable/ic_battery"
+            android:title="@string/status_bar_battery_style_title"
+            android:entries="@array/qs_battery_style_entries"
+            android:entryValues="@array/qs_battery_style_values"
+            android:defaultValue="-1" />
+
+        <!-- Battery percent -->
+        <com.sakura.settings.preferences.SystemSettingListPreference
+            android:key="qs_show_battery_percent"
+            android:icon="@drawable/ic_battery_alert"
+            android:title="@string/status_bar_battery_percent_title"
+            android:entries="@array/status_bar_battery_percent_entries"
+            android:entryValues="@array/status_bar_battery_percent_values"
+            android:defaultValue="2" />
+
+        <!-- Battery estimate
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_show_battery_estimate"
+            android:icon="@drawable/ic_timelapse_sak"
+            android:title="@string/battery_estimate_title"
+            android:summary="@string/battery_estimate_summary" />-->
+
+        <com.sakura.settings.preferences.SecureSettingSwitchPreference
+            android:key="enable_lockscreen_quick_settings"
+            android:icon="@drawable/ic_lock_alert"
+            android:title="@string/lockscreen_quick_settings_title"
+            android:summary="@string/lockscreen_quick_settings_summary"
+            android:defaultValue="true" />
+
+        <!--<com.sakura.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_transparency"
+            android:icon="@drawable/ic_color_bucket"
+            android:title="@string/qs_opacity_title"
+            android:summary="@string/qs_opacity_summary"
+            android:defaultValue="100"
+            settings:interval="1"
+            settings:units="%"
+            android:max="100"
+            android:min="1" /> -->
+
+        <!-- QS Bluetooth Dialog -->
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_bt_show_dialog"
+            android:icon="@drawable/ic_bt"
+            android:title="@string/qs_bt_show_dialog_title"
+            android:summary="@string/qs_bt_show_dialog_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+         android:key="qs_brightness_slider_category"
+         android:title="@string/qs_brightness_slider_category">
+
+        <lineageos.preference.LineageSecureSettingListPreference
+            android:key="qs_show_brightness_slider"
+            android:icon="@drawable/ic_brightness"
+            android:title="@string/qs_show_brightness_slider_title"
+            android:entries="@array/qs_show_brightness_slider_entries"
+            android:entryValues="@array/qs_show_brightness_slider_values"
+            android:defaultValue="1" />
+
+        <com.sakura.settings.preferences.SystemSettingListPreference
+            android:key="qs_brightness_slider_shape"
+            android:icon="@drawable/ic_shapes"
+            android:title="@string/qs_brightness_slider_shape_title"
+            android:entries="@array/qs_brightness_slider_shape_entries"
+            android:entryValues="@array/qs_brightness_slider_shape_values"
+            android:defaultValue="0" />
+
+        <lineageos.preference.LineageSecureSettingListPreference
+            android:key="qs_brightness_slider_position"
+            android:icon="@drawable/ic_brightness"
+            android:title="@string/qs_brightness_slider_position_title"
+            android:entries="@array/qs_brightness_slider_position_entries"
+            android:entryValues="@array/qs_brightness_slider_position_values"
+            android:defaultValue="0" />
+
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_brightness_slider_haptic"
+            android:icon="@drawable/ic_brightness"
+            android:title="@string/qs_brightness_slider_haptic_title"
+            android:summary="@string/qs_brightness_slider_haptic_summary" />
+
+        <lineageos.preference.LineageSecureSettingSwitchPreference
+            android:key="qs_show_auto_brightness"
+            android:icon="@drawable/ic_brightness_auto"
+            android:title="@string/qs_show_auto_brightness_title"
+            android:summary="@string/qs_show_auto_brightness_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="qs_layout_category"
+        android:title="@string/qs_layout_category_title">
+
+        <com.sakura.settings.preferences.SystemSettingListPreference
+            android:key="qs_tile_shape"
+            android:icon="@drawable/ic_shapes"
+            android:title="@string/qs_tile_shape_title"
+            android:entries="@array/qs_tile_shape_entries"
+            android:entryValues="@array/qs_tile_shape_values"
+            android:defaultValue="0" />
+
+        <!--<com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_tile_label_hide"
+            android:icon="@drawable/ic_text"
+            android:title="@string/qs_tile_label_hide_title"
+            android:summary="@string/qs_tile_label_hide_summary"
+            android:defaultValue="false" />
+
+        <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_tile_label_size"
+            android:icon="@drawable/ic_text"
+            android:title="@string/qs_tile_label_size_title"
+            android:max="15"
+            settings:min="10"
+            settings:interval="1"
+            settings:units="sp"
+            android:defaultValue="14" />-->
+
+        <Preference
+            android:key="qs_layout_columns_rows"
+            android:icon="@drawable/ic_qs_tile"
+            android:title="@string/qs_layout_columns_rows_title"
+            android:summary="@string/qs_layout_columns_rows_summary"
+            android:fragment="com.sakura.settings.fragments.quicksettings.LayoutSettings" />
+
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_tile_haptic"
+            android:icon="@drawable/ic_brightness"
+            android:title="@string/qs_brightness_slider_haptic_title"
+            android:summary="@string/qs_tile_haptic_summary" />
+
+    </PreferenceCategory>
+
+    <!--<PreferenceCategory
+        android:title="@string/qs_tile_animation_title">
+
+        <com.sakura.settings.preferences.SystemSettingListPreference
+            android:key="qs_tile_animation_style"
+            android:icon="@drawable/ic_qs_tile_animation_style"
+            android:title="@string/qs_tile_animation_style_title"
+            android:entries="@array/qs_tile_animation_style_entries"
+            android:entryValues="@array/qs_tile_animation_style_values"
+            android:defaultValue="0" />
+
+        <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_tile_animation_duration"
+            android:icon="@drawable/ic_clock"
+            android:title="@string/qs_tile_animation_duration_title"
+            android:defaultValue="1"
+            settings:interval="1"
+            settings:units="@string/unit_seconds"
+            android:max="5"
+            android:min="1" />
+
+        <com.sakura.settings.preferences.SystemSettingListPreference
+            android:key="qs_tile_animation_interpolator"
+            android:icon="@drawable/ic_qs_tile_animation_interpolator"
+            android:title="@string/qs_tile_animation_interpolator_title"
+            android:entries="@array/qs_tile_animation_interpolator_entries"
+            android:entryValues="@array/qs_tile_animation_interpolator_values"
+            android:defaultValue="0" />
+
+    </PreferenceCategory>-->
+
+    <PreferenceCategory 
+         android:title="@string/qs_footer_category">
+
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_show_data_usage"
+            android:icon="@drawable/ic_swap_vertical"
+            android:title="@string/qs_footer_datausage_title"
+            android:summary="@string/qs_footer_datausage_summary" />
+
+        <!--<com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_warnings"
+            android:icon="@drawable/ic_key"
+            android:title="@string/qs_footer_warnings_title"
+            android:summary="@string/qs_footer_warnings_summary"
+            android:defaultValue="true"/>
+
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_show_user"
+            android:icon="@drawable/ic_account"
+            android:title="@string/qs_footer_users_icon_title"
+            android:summary="@string/qs_footer_users_icon_summary"
+            android:defaultValue="true" />
+
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_show_edit"
+            android:icon="@drawable/ic_pencil"
+            android:title="@string/qs_footer_edit_icon_title"
+            android:defaultValue="true" />
+
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_show_power_menu"
+            android:icon="@drawable/ic_power"
+            android:title="@string/qs_footer_show_power_menu_title"
+            android:defaultValue="true" />
+
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_show_services"
+            android:icon="@drawable/ic_services"
+            android:title="@string/qs_footer_services_icon_title" />
+
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="notification_material_dismiss"
+            android:icon="@drawable/ic_notification_clear_all"
+            android:title="@string/notification_material_dismiss_title"
+            android:summary="@string/notification_material_dismiss_summary" />-->
+
+    </PreferenceCategory>
 </PreferenceScreen>
