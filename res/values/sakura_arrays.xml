@@ -220,6 +220,31 @@
         <item>2</item>
     </string-array>
 
+    <!-- QS battery style  -->
+    <string-array name="qs_battery_style_entries" translatable="false">
+        <item>@string/qs_use_status_bar_battery_style</item>
+        <item>@string/status_bar_battery_style_icon_portrait</item> 
+        <item>@string/status_bar_battery_style_icon_rlandscape</item> 
+        <item>@string/status_bar_battery_style_icon_landscape</item> 
+        <item>@string/status_bar_battery_style_circle</item>
+        <item>@string/status_bar_battery_style_dotted_circle</item>
+        <item>@string/status_bar_battery_style_filled_circle</item>
+        <item>@string/status_bar_battery_style_text</item>
+        <item>@string/status_bar_battery_style_hidden</item>
+    </string-array>
+
+    <string-array name="qs_battery_style_values" translatable="false">
+        <item>-1</item>
+        <item>0</item>
+        <item>6</item>
+        <item>7</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
     <!-- Network Traffic -->
     <string-array name="network_traffic_location_entries" translatable="false">
         <item>@string/network_traffic_location_disable</item>
@@ -255,6 +280,44 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+    </string-array>
+
+    <!-- QS Tiles animation style -->
+    <string-array name="qs_tile_animation_style_entries" translatable="false">
+        <item>@string/qs_tile_animation_style_off</item>
+        <item>@string/qs_tile_animation_style_rotate</item>
+        <item>@string/qs_tile_animation_style_flipx</item>
+        <item>@string/qs_tile_animation_style_flipy</item>
+    </string-array>
+
+    <string-array name="qs_tile_animation_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- QS Tiles animation interpolator -->
+    <string-array name="qs_tile_animation_interpolator_entries" translatable="false">
+        <item>@string/qs_tile_animation_interpolator_linearInterpolator</item>
+        <item>@string/qs_tile_animation_interpolator_accelerateInterpolator</item>
+        <item>@string/qs_tile_animation_interpolator_decelerateInterpolator</item>
+        <item>@string/qs_tile_animation_interpolator_accelerateDecelerateInterpolator</item>
+        <item>@string/qs_tile_animation_interpolator_bounceInterpolator</item>
+        <item>@string/qs_tile_animation_interpolator_overshootInterpolator</item>
+        <item>@string/qs_tile_animation_interpolator_anticipateInterpolator</item>
+        <item>@string/qs_tile_animation_interpolator_anticipateOvershootInterpolator</item>
+    </string-array>
+
+    <string-array name="qs_tile_animation_interpolator_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
     </string-array>
 
     <!-- Custom logo -->
@@ -386,6 +449,61 @@
         <item>comet</item>
     </string-array>
 
+    <!-- Quick Settings brightness slider -->
+    <string-array name="qs_show_brightness_slider_entries" translatable="false">
+        <item>@string/qs_show_brightness_slider_never</item>
+        <item>@string/qs_show_brightness_slider_expanded</item>
+        <item>@string/qs_show_brightness_slider_always</item>
+    </string-array>
+
+    <string-array name="qs_show_brightness_slider_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="qs_brightness_slider_position_entries" translatable="false">
+        <item>@string/qs_brightness_slider_position_top</item>
+        <item>@string/qs_brightness_slider_position_bottom</item>
+    </string-array>
+
+    <string-array name="qs_brightness_slider_position_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <!-- QS Tiles Shape -->
+    <string-array name="qs_tile_shape_entries" translatable="false">
+        <item>@string/qs_tile_shape_dynamic</item>
+        <item>@string/qs_tile_shape_rounded_square_smooth</item>
+        <item>@string/qs_tile_shape_rounded_square</item>
+        <item>@string/qs_tile_shape_square</item>
+        <item>@string/qs_tile_shape_circle</item>
+    </string-array>
+
+    <string-array name="qs_tile_shape_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!--Brightness Slider Shape -->
+    <string-array name="qs_brightness_slider_shape_entries" translatable="false">
+        <item>@string/default_value</item>
+        <item>@string/qs_tile_shape_circle</item>
+        <item>@string/qs_tile_shape_rounded_square</item>
+        <item>@string/qs_tile_shape_square</item>
+    </string-array>
+
+    <string-array name="qs_brightness_slider_shape_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
     <!-- SysUI Tuner: Labels for different types of navigation bar layouts [CHAR LIMIT=60] -->
     <string-array name="navbar_layout_entries" translatable="false">
         <item>@string/navbar_layout_normal</item>
@@ -423,6 +541,19 @@
     <string-array name="face_unlock_method_values">
         <item>0</item>
         <item>1</item>
+    </string-array>
+
+    <!-- QS Header -->
+    <string-array name="qs_header_provider_entries" translatable="false">
+        <item>@string/qs_header_daylight_provider_title</item>
+        <item>@string/qs_header_static_provider_title</item>
+        <item>@string/qs_header_file_provider_title</item>
+    </string-array>
+
+    <string-array name="qs_header_provider_values" translatable="false">
+        <item>daylight</item>
+        <item>static</item>
+        <item>file</item>
     </string-array>
 
     <!-- Hardware key rebinding -->
