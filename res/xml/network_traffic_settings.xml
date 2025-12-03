@@ -22,7 +22,7 @@
         android:key="network_traffic_enabled"
         android:title="@string/enable" />
 
-    <com.sakura.support.preferences.SystemSettingListPreference
+    <com.sakura.settings.preferences.SystemSettingListPreference
         android:key="network_traffic_mode"
         android:title="@string/network_traffic_mode_title"
         android:entries="@array/network_traffic_mode_entries"
@@ -31,14 +31,14 @@
         android:dependency="network_traffic_enabled"
         android:defaultValue="0" />
 
-    <com.sakura.support.preferences.SystemSettingSwitchPreference
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
         android:key="network_traffic_autohide"
         android:title="@string/network_traffic_autohide"
         android:summary="@string/network_traffic_autohide_summary"
         android:dependency="network_traffic_enabled"
         android:defaultValue="true" />
 
-    <com.sakura.support.preferences.SystemSettingSeekBarPreference
+    <com.sakura.settings.preferences.SystemSettingSeekBarPreference
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold"
         android:defaultValue="0"
@@ -48,7 +48,7 @@
         settings:interval="10"
         android:dependency="network_traffic_autohide" />
 
-    <com.sakura.support.preferences.SystemSettingSeekBarPreference
+    <com.sakura.settings.preferences.SystemSettingSeekBarPreference
         android:key="network_traffic_refresh_interval"
         android:title="@string/network_traffic_refresh_interval_title"
         android:summary="@string/network_traffic_refresh_interval_summary"
@@ -58,7 +58,7 @@
         settings:min="1"
         settings:units="@string/unit_seconds" />
 
-    <com.sakura.support.preferences.SystemSettingListPreference
+    <com.sakura.settings.preferences.SystemSettingListPreference
         android:key="network_traffic_units"
         android:title="@string/network_traffic_units_title"
         android:entries="@array/network_traffic_units_entries"
@@ -67,7 +67,7 @@
         android:dependency="network_traffic_enabled"
         android:defaultValue="1" />
 
-    <com.sakura.support.preferences.SystemSettingSwitchPreference
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
         android:key="network_traffic_hidearrow"
         android:title="@string/network_traffic_hidearrow"
         android:summary="@string/network_traffic_hidearrow_summary"

@@ -24,7 +24,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.preference.PreferenceManager;
 import com.android.settings.R;
 import lineageos.providers.LineageSettings;
-import com.sakura.support.preferences.CustomDialogPref;
+import com.sakura.settings.preferences.CustomDialogPref;
 import com.sakura.settings.utils.DeviceUtils;
 
 public class ButtonBacklightBrightness extends CustomDialogPref<AlertDialog>

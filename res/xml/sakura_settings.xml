@@ -86,12 +86,12 @@
             android:fragment="com.sakura.settings.fragments.PowerMenuSettings"
             android:icon="@drawable/ic_hm_powermenu"/>-->
 
-        <!-- Themes ->
+        <!-- Themes -->
         <Preference
             android:key="themes"
             android:fragment="com.sakura.settings.fragments.ThemesSettings"
             android:icon="@drawable/ic_hm_themes"
-            android:title="@string/themes_title" />-->
+            android:title="@string/themes_title" />
 
         <!-- Notifications -->
         <Preference

@@ -59,13 +59,6 @@
     <string name="statusbar_title">Status bar</string>
     <string name="notifications_title">Notifications</string>
 
-    <!-- General strings -->
-    <string name="ok">OK</string>
-    <string name="reset">Reset</string>
-    <string name="cancel">Cancel</string>
-    <string name="save">Save</string>
-    <string name="general_category">General</string>
-
     <!-- AOSP Gestures -->
     <string name="aosp_gesture_preference">System settings</string>
     <string name="aosp_gesture_summary">Stock gestures included with AOSP</string>
@@ -239,13 +232,6 @@
     <string name="statusbar_extra_padding_top_title">Top padding</string>
     <string name="statusbar_extra_padding_end_title">End padding</string>
 
-    <!-- Ignore window secure -->
-    <string name="ignore_window_secure_title">Ignore window secure flags</string>
-    <string name="ignore_window_secure_summary">This removes the screenshots and screenrecords
-        limits for all applications. Normally, special applications are replaced with black areas in
-        records. This can be convenient in some cases but may lead to privacy leaks. After changing
-        this toggle, you may need to restart applications for the change to take effect.</string>
-
     <!-- Ambient Ticker -->
     <string name="pulse_on_new_tracks_title">Music ticker</string>
     <string name="pulse_on_new_tracks_summary">Show music ticker on Ambient Display during track change or now playing song detection</string>
@@ -262,13 +248,35 @@
     <string name="notification_sound_vib_screen_on_title">Annoying Notifications</string>
     <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
 
-    <!-- GMS Spoof -->
-    <string name="gms_spoof_title">Enable GMS spoof</string>
-    <string name="gms_spoof_summary">Spoof your device to pass Google Play Attestation</string>
+    <!-- Application downgrade -->
+    <string name="app_downgrade_title">Allow app downgrade</string>
+    <string name="app_downgrade_summary">This allows you to downgrade applications. Note that this may lead to crashes and data corruption.</string>
 
-    <!-- Spoofing -->
-    <string name="spoofing_title">Spoofing</string>
-    <string name="spoofing_title_summary">Spoof as different device to unlock application features</string>
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Game space</string>
+    <string name="gaming_mode_summary">Extra features for immersive gaming experience</string>
+
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Unlock animation</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
+
+    <!-- Floating rotation button -->
+    <string name="floating_rotation_button_title">Floating rotate button</string>
+    <string name="floating_rotation_button_summary">Show a floating rotate button when device is rotated</string>
+
+    <!-- Per-app volume -->
+    <string name="app_volume">App volume</string>
+    <string name="app_volume_title">Per-app volume control</string>
+    <string name="app_volume_summary">Show per-app volume button into volume dialog</string>
+
+    <!-- Netflix Spoof -->
+    <string name="netflix_spoof_title">Netflix spoof</string>
+    <string name="netflix_spoof_summary">Spoof your device as different model for Netflix</string>
+
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
+    <string name="display_cutout_force_fullscreen_no_apps">No apps</string>
 
     <!-- Unlimited google photos storage -->
     <string name="use_photos_spoof_title">Unlimited Photos storage</string>
@@ -278,37 +286,241 @@
     <string name="use_games_spoof_title">Unlock higher FPS in games</string>
     <string name="use_games_spoof_summary">Spoof your device as different model for specific games to unlock higher FPS</string>
 
+    <!-- Google Play Integrity Spoof -->
+    <string name="pi_spoof_title">Google Play Integrity spoof</string>
+    <string name="pi_spoof_summary">Spoof your device as different model for Google Play Integrity</string>
+
     <!-- Keybox Data -->
-    <string name="keybox_data_title">Select keybox XML file</string>
-    <string name="keybox_data_summary">Choose the keybox XML file to spoof key attestation system-wide for all apps. Click the delete button to remove the keybox data and disable spoofing</string>
-    <string name="keybox_data_cleared">XML data cleared</string>
-    <string name="keybox_invalid_file">Invalid file selected</string>
-    <string name="keybox_invalid_xml">Invalid XML: missing required data</string>
-    <string name="keybox_file_loaded">XML file loaded</string>
-    <string name="keybox_file_read_failed">Failed to read XML</string>
+    <string name="keybox_data_title">Keybox attestation override</string>
+    <string name="keybox_data_summary">Load a custom keybox XML to override device key attestation</string>
+    <string name="keybox_data_loaded_summary">Custom keybox XML loaded. Delete to clear.</string>
+    <string name="keybox_delete_content_description">Clear keybox data</string>
+    <string name="keybox_toast_invalid_file_selected">Not an XML file. Choose a valid keybox XML.</string>
+    <string name="keybox_toast_missing_data">Invalid keybox XML: required fields missing</string>
+    <string name="keybox_toast_file_loaded">Keybox loaded</string>
+    <string name="keybox_toast_file_cleared">Keybox cleared</string>
 
-    <!-- Play Integrit Fix JSON Update -->
-    <string name="toast_spoofing_success">Successfully downloaded pif.json. Spoofing as %1$s for play integrity.</string>
-    <string name="toast_spoofing_failure">Failed to spoof properties.</string>
-    <string name="toast_import_success">Successfully imported pif json.</string>
-    <string name="update_pif_json_title">Update Play Integrity Fix</string>
-    <string name="update_pif_json_summary">Update PIF spoofing device, requires internet connection.</string>
-    <string name="show_pif_properties_title">Play Integrity Fix properties</string>
-    <string name="show_pif_properties_summary">Show all currently set PIF properties</string>
-    <string name="error_loading_properties">Error loading PIF properties</string>
+    <!-- Block attestation even with Keybox Data -->
+    <string name="pi_gmscertchain_title">Disable forcing strong integrity</string>
+    <string name="pi_gmscertchain_summary">When enabled, do not enforce strong integrity from valid custom keybox and depend on Google Play Integrity spoof to fix apps like Google Pay</string>
 
-    <!-- PIF spoofing -->
-    <string name="pif_spoofing_title">Select PIF JSON File</string>
-    <string name="pif_spoofing_summary">Pick PIF JSON file to be used for spoofing play integrity</string>
+    <!-- Sidebar -->
+    <string name="sidebar_title">Sidebar</string>
+    <string name="sidebar_summary">Quickly open apps in a floating window</string>
 
-    <!-- Fingerprint Ripple Effect -->
-    <string name="enable_fingerprint_ripple_effect_title">Unlock animation</string>
-    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
+    <!-- Three fingers swipe action -->
+    <string name="three_fingers_swipe_title">Three fingers swipe</string>
 
-    <!-- General -->
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
+
+    <!-- Navigation bar taskbar -->
+    <string name="navigation_bar_enable_taskbar_title">Taskbar</string>
+    <string name="navigation_bar_enable_taskbar_summary">Show taskbar with selected navigation mode</string>
+
+    <!-- AOD Schedule -->
+    <string name="always_on_display_schedule_title">Display schedule</string>
+    <string name="always_on_display_schedule_summary">Set schedule for always on display</string>
+    <string name="always_on_display_schedule_sunset">Sunset</string>
+    <string name="always_on_display_schedule_sunrise">Sunrise</string>
+    <string name="always_on_display_schedule_mixed_sunset">Turns on from sunset till a time</string>
+    <string name="always_on_display_schedule_mixed_sunrise">Turns on from a time till sunrise</string>
+
+    <!-- SystemUI restart dialog -->
+    <string name="systemui_restart_title">SystemUI restart required</string>
+    <string name="systemui_restart_message">For changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+    <string name="systemui_restart_yes">Yes</string>
+    <string name="systemui_restart_not_now">Not now</string>
+    <string name="systemui_restart_process">Restarting SystemUI to apply changes...</string>
+
+    <!-- IME button space -->
+    <string name="show_ime_space_title">Show IME button space</string>
+    <string name="show_ime_space_summary">Enable the input method quick switch feature to switch input methods or hide the on-screen keyboard from the feature bar at the bottom of the screen when typing</string>
+
+    <!-- Font style / Icon pack -->
+    <string name="theme_customization_font_title">Font style</string>
+    <string name="theme_customization_font_summary">Set system font style</string>
+    <string name="theme_customization_icon_pack_title">Icon pack</string>
+    <string name="theme_customization_icon_pack_summary">Set custom icon pack style</string>
+    <string name="theme_customization_icon_shape_title">Icon shape</string>
+    <string name="theme_customization_icon_shape_summary">Set system icon shape style</string>
+    <string name="theme_customization_signal_icon_title">Signal icon style</string>
+    <string name="theme_customization_signal_icon_summary">Set custom signal icon style</string>
+    <string name="theme_customization_wifi_icon_title">WiFi icon style</string>
+    <string name="theme_customization_wifi_icon_summary">Set custom wifi icon style</string>
+    <string name="theme_customization_navbar_title">Navbar style</string>
+    <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
+    <string name="theme_customization_lock_clock_title">Clock font style</string>
+    <string name="theme_customization_lock_clock_summary">Set lockscreen clock font style</string>
+    <string name="theme_customization_brightness_slider_title">Brightness slider style</string>
+    <string name="theme_customization_brightness_slider_summary">Set custom brightness slider style</string>
+
+    <!-- Navigation Bar -->
+    <string name="navbar_visibility_title">Navigation bar</string>
+    <string name="navbar_visibility_summary">Display navigation bar at bottom of screen</string>
+    <string name="navbar_layout_category_title">Layout</string>
+    <string name="navbar_arrow_keys_title">Show arrow keys while typing</string>
+    <string name="navbar_arrow_keys_summary">Display left and right cursor buttons while typing. Overrides IME switcher.</string>
+    <string name="navbar_layout_title">Layout</string>
+    <string name="navbar_layout_normal">Normal</string>
+    <string name="navbar_layout_compact">Compact</string>
+    <string name="navbar_layout_expanded">Expanded</string>
+    <string name="navbar_layout_leftleaning">Left-leaning</string>
+    <string name="navbar_layout_rightleaning">Right-leaning</string>
+    <string name="navbar_invert_layout_title">Invert layout</string>
+    <string name="navbar_invert_layout_summary">Inverts the layout of the navigation bar and other items, such as the IME switcher</string>
+    <string name="navbar_actions_category_title">Actions</string>
+    <string name="navbar_back_long_press_title">Back long press</string>
+    <string name="navbar_back_double_tap_title">Back double tap</string>
+    <string name="navbar_home_long_press_title">Home long press</string>
+    <string name="navbar_home_double_tap_title">Home double tap</string>
+    <string name="navbar_app_switch_long_press_title">Recents long press</string>
+    <string name="navbar_app_switch_double_tap_title">Recents double tap</string>
+    <string name="navbar_edge_long_swipe_title">Edge long swipe</string>
+    <string name="navbar_corner_long_swipe_title">Bottom corner swipe up</string>
+
+    <!-- UI settings -->
+    <string name="monet_title">Monet settings</string>
+    <string name="monet_summary">Customize Monet theme engine</string>
+
+    <!-- Monet Engine -->
+    <string name="monet_engine_custom_color_title">Accent color</string>
+    <string name="monet_engine_custom_color_summary">Choose custom color for accent</string>
+    <string name="monet_engine_custom_bgcolor_title">Background color</string>
+    <string name="monet_engine_custom_bgcolor_summary">Choose custom color for background</string>
+    <string name="monet_engine_color_override_title">Custom color</string>
+    <string name="monet_engine_luminance_factor_title">Luminance</string>
+    <string name="monet_engine_luminance_factor_summary">Higher values produce brighter colors</string>
+    <string name="monet_engine_chroma_factor_title">Chroma factor</string>
+    <string name="monet_engine_chroma_factor_summary">Higher values produce stronger colors</string>
+    <string name="monet_engine_whole_palette_title">Whole palette</string>
+    <string name="monet_engine_whole_palette_summary">Make Luminance and Chroma selection affect secondary colors as well</string>
+    <string name="monet_engine_tint_background_title">Tint background</string>
+    <string name="monet_engine_tint_background_summary">Make luminance and chroma selection affect background colors as well</string>
+    <string name="monet_engine_style_title">Theme style</string>
+    <string name="monet_engine_style_tonal_spot">Tonal Spot (Default)</string>
+    <string name="monet_engine_style_vibrant">Vibrant</string>
+    <string name="monet_engine_style_expressive">Expressive</string>
+    <string name="monet_engine_style_spritz">Spritz</string>
+    <string name="monet_engine_style_rainbow">Rainbow</string>
+    <string name="monet_engine_style_fruit_salad">Fruit Salad</string>
+    <string name="monet_engine_style_monochromatic">Monochromatic</string>
+    <string name="monet_engine_color_source_title">Color source</string>
+    <string name="monet_engine_color_source_both">Both (Default)</string>
+    <string name="monet_engine_color_source_home">Home wallpaper</string>
+    <string name="monet_engine_color_source_lock">Lock wallpaper</string>
+    <string name="monet_engine_color_source_preset">Preset</string>
+
+    <!-- Doze settings -->
+    <string name="doze_display_title">Ambient display</string>
+    <string name="doze_display_summary">Configure settings for ambient display</string>
+    <string name="doze_additional_settings_title">Additional settings</string>
+    <string name="doze_additional_settings_summary">Customize device specific ambient display settings</string>
+    <string name="doze_sensor_title">Sensor based</string>
+    <string name="raise_to_wake_title">Wake up</string>
+    <string name="raise_to_wake_summary">Wake up the device instead of pulsing notifications</string>
+    <string name="tilt_title">Tilt</string>
+    <string name="tilt_summary">Pulse notifications on tilt</string>
+    <string name="pickup_title">Pick up</string>
+    <string name="pickup_summary">Pulse notifications on pick up</string>
+    <string name="handwave_title">Hand wave</string>
+    <string name="handwave_summary">Pulse notifications on hand wave</string>
+    <string name="pocket_title">Pocket</string>
+    <string name="pocket_summary">Pulse notifications on removal from pocket</string>
+    <string name="doze_vibrate">Vibrate</string>
+    <string name="doze_vibrate_summary">Duration to vibrate when pulsing notifications</string>
+    <string name="sensor_warning_message">Settings based on sensors are subject to hardware compatibility. Enabling sensors for ambient display may increase power drain.</string>
+
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Always show when charging</string>
+    <string name="doze_on_charge_summary">Display info when device is charging</string>
+
+    <!-- Ambient Wallpaper -->
+    <string name="doze_always_on_wallpaper_title">Ambient wallpaper</string>
+    <string name="doze_always_on_wallpaper_summary">Show lockscreen wallpaper on Ambient Display</string>
+
+    <!-- Edge light -->
+    <string name="edge_light_title">Edge light</string>
+    <string name="edge_light_summary">Light up the side edges of the screen on notification pulse</string>
+    <string name="edge_light_color_mode_title">Color mode</string>
+    <string name="edge_light_pulse_count_title">Pulse count</string>
+    <string name="edge_light_pulse_count_summary">Number of pulses for edge light</string>
+    <string name="edge_light_stroke_width_title">Stroke width</string>
+    <string name="edge_light_stroke_width_summary">Set thickness for edge light bars</string>
+    <string name="edge_light_style_title">Render style</string>
+    <string name="edge_light_style_default">Default (left/right)</string>
+    <string name="edge_light_style_frame">Frame (all sides)</string>
+    <string name="edge_light_animation_effect_title">Animation effect</string>
+    <string name="edge_light_animation_effect_none">Standard</string>
+    <string name="edge_light_animation_effect_breathing">Breathing</string>
+    <string name="edge_light_animation_effect_wave">Wave</string>
+    <string name="edge_light_animation_effect_sparkle">Sparkle</string>
+    <string name="edge_light_animation_effect_chase">Chase</string>
+    <string name="edge_light_animation_effect_comet">Comet</string>
+
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_warning_text">Smart pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see improvement in battery life. Note that in some cases it can result in unresponsive areas on touch screen</string>
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Save battery by shutting off extra pixels</string>
+    <string name="smart_pixels_enable_title">Enable Smart Pixels</string>
+    <string name="smart_pixels_enable_summary">Shut off pixels to reduce power consumption</string>
+    <string name="smart_pixels_on_power_save_title">Auto-enable on battery saver</string>
+    <string name="smart_pixels_on_power_save_summary">Enable Smart Pixels when battery saver is enabled</string>
+    <string name="smart_pixels_percent">Percent of pixels to disable</string>
+    <string name="smart_pixels_shift_title">Burn-in protection</string>
+    <string name="smart_pixels_shift_summary">Prevents burn-in on OLED devices by shifting pixels every so often</string>
+
+    <!-- Sensor block per-package -->
+    <string name="sensor_block_title">Sensor block per-package</string>
+    <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
+    <string name="sensor_block_app_picker_title">Block sensors for these apps</string>
+    <string name="add_sensor_block_package_title">Add apps for Sensor block</string>
+    <string name="add_sensor_block_package_summary">Significant motion, accelerometer, linear acceleration sensors will be blocked for these apps</string>
+
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
+
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Charging animation</string>
+    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right" translatable="false">→</string>
+    <string name="arrow_down" translatable="false">↓</string>
+    <string name="hex" translatable="false">Hex:</string>
+    <string name="hex_hint" translatable="false">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+
+    <!-- General strings -->
     <string name="advanced">Advanced</string>
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="discard_changes">Discard changes</string>
+    <string name="never">Never</string>
+    <string name="always">Always</string>
+    <string name="caution">Caution</string>
+    <string name="delete">Delete</string>
+    <string name="delete_message">Remove selected item?</string>
+    <string name="choose_app">Choose app</string>
     <string name="enable">Enable</string>
     <string name="disable">Disable</string>
+    <string name="accent_color">Accent color (Default)</string>
+    <string name="notification_color">Notification color</string>
+    <string name="wallpaper_color">Wallpaper color</string>
+    <string name="rainbow_color">Rainbow color</string>
+    <string name="custom_color">Custom color</string>
+    <string name="restart_systemui">Restart SystemUI for change to take effect!</string>
+    <string name="default_value">Default</string>
+    <string name="general_category">General</string>
 
     <!-- Units -->
     <string name="unit_milliseconds">milliseconds</string>
@@ -389,7 +601,6 @@
     <!-- Navigation Bar -->
     <string name="navigation_bar_category">Navigation bar</string>
     <string name="system_navigation_summary">Configure navigation menus</string>
-    <string name="navigation_bar_enable_taskbar_title">Enable taskbar</string>
     <string name="navigation_bar_invert_layout_title">Invert layout</string>
     <string name="navigation_bar_invert_layout_summary">Inverts the layout of the navigation bar</string>
     <string name="navigation_bar_left_summary">Place the navigation bar on the left side of the screen in landscape mode</string>
@@ -447,6 +658,15 @@
     <string name="force_lte_ca">Force LTE CA</string>
     <string name="force_lte_ca_summary">Force LTE carrier aggregation to work</string>
 
+    <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Remove existing face scan and create a new scan</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Redo face scan</string>
+    <string name="face_redo_confirm_btn">Redo</string>
+    <string name="face_redo_warning_msg">Do you want to remove the existing face scan and create a new one?</string>
+    <string name="face_unlock_method_title">Allow face unlock on lock screen</string>
+    <string name="face_unlock_method_default">When the screen is turned on</string>
+    <string name="face_unlock_method_swipe">When swiping on lock screen</string>
+
     <!-- Wifi/Bluetooth auto timeout -->
     <string name="wifi_timeout">WiFi timeout</string>
     <string name="wifi_timeout_summary">Do not automatically turn off WiFi</string>
@@ -458,6 +678,31 @@
     <!-- WiFi Standard icon -->
     <string name="wifi_standard_icon_title">WiFi standard</string>
     <string name="wifi_standard_icon_summary">Display WiFi standard next to WiFi signal</string>
+
+    <!-- Custom Timeouts -->
+    <string name="custom_timeout_summary_never">Never</string>
+    <string name="custom_timeout_summary_5secs">5 seconds</string>
+    <string name="custom_timeout_summary_10secs">10 seconds</string>
+    <string name="custom_timeout_summary_15secs">15 seconds</string>
+    <string name="custom_timeout_summary_30secs">30 seconds</string>
+    <string name="custom_timeout_summary_1min">1 minute</string>
+    <string name="custom_timeout_summary_2mins">2 minutes</string>
+    <string name="custom_timeout_summary_5mins">5 minutes</string>
+    <string name="custom_timeout_summary_10mins">10 minutes</string>
+    <string name="custom_timeout_summary_20mins">20 minutes</string>
+    <string name="custom_timeout_summary_30mins">30 minutes</string>
+    <string name="custom_timeout_summary_1hour">1 hour</string>
+    <string name="custom_timeout_summary_2hours">2 hours</string>
+    <string name="custom_timeout_summary_4hours">4 hours</string>
+    <string name="custom_timeout_summary_8hours">8 hours</string>
+    <string name="custom_timeout_summary_12hours">12 hours</string>
+    <string name="custom_timeout_summary_24hours">24 hours</string>
+    <string name="custom_timeout_summary_36hours">36 hours</string>
+    <string name="custom_timeout_summary_48hours">48 hours</string>
+    <string name="custom_timeout_summary_72hours">72 hours</string>
+
+    <!-- Default Timeouts -->
+    <string name="custom_timeout_summary_1hour_def">1 hour (Default)</string>
 
     <!-- Privacy Indicator -->
     <string name="mic_camera_privacy_indicator_title">Mic and camera privacy indicator</string>
@@ -516,4 +761,8 @@
     <string name="status_bar_logo_style_tux">Tux</string>
     <string name="status_bar_logo_style_ubuntu">Ubuntu</string>
     <string name="status_bar_logo_style_mint">Linux Mint</string>
+
+    <!-- Vbmeta hash attestation -->
+    <string name="vbmeta_attestation_title">Autofix VBMeta detection</string>
+    <string name="vbmeta_attestation_summary">Perform key attestation to generate verified boot hash on boot. Requires system restart.</string>
 </resources>

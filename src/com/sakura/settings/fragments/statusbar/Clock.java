@@ -36,8 +36,8 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.sakura.support.preferences.CustomSeekBarPreference;
-import com.sakura.support.preferences.SystemSettingListPreference;
+import com.sakura.settings.preferences.CustomSeekBarPreference;
+import com.sakura.settings.preferences.SystemSettingListPreference;
 
 import java.util.Date;
 
