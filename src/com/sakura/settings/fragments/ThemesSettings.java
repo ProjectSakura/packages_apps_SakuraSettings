@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2018 SuperiorOS Project
+ * Copyright (C) 2016-2025 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,59 +16,50 @@
 
 package com.sakura.settings.fragments;
 
-import static android.os.UserHandle.USER_SYSTEM;
-
-import android.app.ActivityManagerNative;
-import android.app.UiModeManager;
-import android.content.Context;
+import android.app.Activity;
 import android.content.ContentResolver;
-import android.content.om.IOverlayManager;
-import android.content.om.OverlayInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.Color;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.os.RemoteException;
-import android.os.ServiceManager;
-import androidx.annotation.VisibleForTesting;
-import androidx.preference.Preference;
-import androidx.preference.ListPreference;
-import androidx.preference.PreferenceCategory;
-import androidx.preference.PreferenceScreen;
-import androidx.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 import android.text.TextUtils;
-import android.util.Log;
-import android.view.WindowManagerGlobal;
-import android.view.IWindowManager;
-import android.widget.Toast;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 
-import java.util.Locale;
-import android.text.TextUtils;
-import android.view.View;
-
+import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.settings.Utils;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settingslib.search.SearchIndexable;
 
-import com.sakura.support.colorpicker.ColorPickerPreference;
+import com.sakura.settings.fragments.ui.DozeSettings;
+import com.sakura.settings.fragments.ui.EdgeLightSettings;
+import com.sakura.settings.fragments.ui.SmartPixels;
+import com.sakura.settings.fragments.ui.MonetSettings;
+import com.sakura.settings.utils.TelephonyUtils;
 
-import java.util.ArrayList;
-import java.util.Comparator;
+import com.android.internal.util.sakura.ThemeUtils;
+
 import java.util.List;
 
-public class ThemesSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+@SearchIndexable
+public class ThemesSettings extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
-    private static final String TAG = "ThemesSettings";
+    public static final String TAG = "Themes";
 
-    private Context mContext;
+    private static final String KEY_FORCE_FULL_SCREEN = "display_cutout_force_fullscreen_settings";
+    private static final String SMART_PIXELS = "smart_pixels";
+
+    private static final String KEY_SIGNAL_ICON = "android.theme.customization.signal_icon";
+
+    private Preference mShowCutoutForce;
+    private Preference mSmartPixels;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -76,24 +67,84 @@ public class ThemesSettings extends SettingsPreferenceFragment implements OnPref
 
         addPreferencesFromResource(R.xml.sakura_settings_themes);
 
-        mContext = getActivity();
+        Context mContext = getActivity().getApplicationContext();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
 
-        final ContentResolver resolver = getActivity().getContentResolver();
-        final PreferenceScreen screen = getPreferenceScreen();
-    }
+	    final String displayCutout =
+            mContext.getResources().getString(com.android.internal.R.string.config_mainBuiltInDisplayCutout);
 
-    @Override
-    public int getMetricsCategory() {
-        return MetricsEvent.SAKURA_SETTINGS;
-    }
+        if (TextUtils.isEmpty(displayCutout)) {
+            mShowCutoutForce = (Preference) findPreference(KEY_FORCE_FULL_SCREEN);
+            prefScreen.removePreference(mShowCutoutForce);
+        }
 
-    @Override
-    public void onResume() {
-        super.onResume();
+        mSmartPixels = (Preference) prefScreen.findPreference(SMART_PIXELS);
+        boolean mSmartPixelsSupported = getResources().getBoolean(
+                com.android.internal.R.bool.config_supportSmartPixels);
+        if (!mSmartPixelsSupported)
+            prefScreen.removePreference(mSmartPixels);
+
+        boolean voiceCapable = TelephonyUtils.isVoiceCapable(mContext);
+        if (!voiceCapable) {
+            prefScreen.removePreference(prefScreen.findPreference(KEY_SIGNAL_ICON));
+        }
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         return false;
     }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        Settings.System.putIntForUser(resolver,
+                Settings.System.CHARGING_ANIMATION, 1, UserHandle.USER_CURRENT);
+        Settings.Secure.putIntForUser(resolver,
+                Settings.Secure.PULSE_ON_NEW_TRACKS, 0, UserHandle.USER_CURRENT);
+        Settings.Secure.putIntForUser(resolver,
+                Settings.Secure.DOZE_ALWAYS_ON_WALLPAPER_ENABLED, mContext.getResources().getBoolean(
+                com.android.internal.R.bool.config_dozeSupportsAodWallpaper) ? 1 : 0,
+                UserHandle.USER_CURRENT);
+
+        DozeSettings.reset(mContext);
+        EdgeLightSettings.reset(mContext);
+        MonetSettings.reset(mContext);
+        SmartPixels.reset(mContext);
+    }
+
+    @Override
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.SAKURA_SETTINGS;
+    }
+
+    /**
+     * For search
+     */
+    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider(R.xml.sakura_settings_themes) {
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+
+	                final String displayCutout =
+                        context.getResources().getString(com.android.internal.R.string.config_mainBuiltInDisplayCutout);
+
+                    if (TextUtils.isEmpty(displayCutout)) {
+                        keys.add(KEY_FORCE_FULL_SCREEN);
+                    }
+
+                    boolean mSmartPixelsSupported = context.getResources().getBoolean(
+                            com.android.internal.R.bool.config_supportSmartPixels);
+                    if (!mSmartPixelsSupported)
+                        keys.add(SMART_PIXELS);
+
+                    boolean voiceCapable = TelephonyUtils.isVoiceCapable(context);
+                    if (!voiceCapable) {
+                        keys.add(KEY_SIGNAL_ICON);
+                    }
+
+                    return keys;
+                }
+            };
 }
