@@ -341,6 +341,90 @@
         <item>32</item>
     </string-array>
 
+    <!-- Edge light -->
+    <string-array name="edge_light_color_mode_entries" translatable="false">
+        <item>@string/accent_color</item>
+        <item>@string/notification_color</item>
+        <item>@string/wallpaper_color</item>
+        <item>@string/rainbow_color</item>
+        <item>@string/custom_color</item>
+    </string-array>
+
+    <string-array name="edge_light_color_mode_values" translatable="false">
+        <item>accent</item>
+        <item>notification</item>
+        <item>wallpaper</item>
+        <item>rainbow</item>
+        <item>custom</item>
+    </string-array>
+
+    <string-array name="edge_light_style_entries" translatable="false">
+        <item>@string/edge_light_style_default</item>
+        <item>@string/edge_light_style_frame</item>
+    </string-array>
+
+    <string-array name="edge_light_style_values" translatable="false">
+        <item>default</item>
+        <item>rounded</item>
+    </string-array>
+
+    <string-array name="edge_light_animation_entries" translatable="false">
+        <item>@string/edge_light_animation_effect_none</item>
+        <item>@string/edge_light_animation_effect_breathing</item>
+        <item>@string/edge_light_animation_effect_wave</item>
+        <item>@string/edge_light_animation_effect_sparkle</item>
+        <item>@string/edge_light_animation_effect_chase</item>
+        <item>@string/edge_light_animation_effect_comet</item>
+    </string-array>
+
+    <string-array name="edge_light_animation_values" translatable="false">
+        <item>none</item>
+        <item>breathing</item>
+        <item>wave</item>
+        <item>sparkle</item>
+        <item>chase</item>
+        <item>comet</item>
+    </string-array>
+
+    <!-- SysUI Tuner: Labels for different types of navigation bar layouts [CHAR LIMIT=60] -->
+    <string-array name="navbar_layout_entries" translatable="false">
+        <item>@string/navbar_layout_normal</item>
+        <item>@string/navbar_layout_compact</item>
+        <!--<item>@string/navbar_layout_expanded</item>-->
+        <item>@string/navbar_layout_leftleaning</item>
+        <item>@string/navbar_layout_rightleaning</item>
+    </string-array>
+
+    <string-array name="navbar_layout_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- Screen off animation -->
+    <string-array name="screen_off_animation_entries" translatable="false">
+        <item>@string/screen_off_animation_default</item>
+        <item>@string/screen_off_animation_crt</item>
+        <item>@string/screen_off_animation_scale</item>
+    </string-array>
+
+    <string-array name="screen_off_animation_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Face Unlock -->
+    <string-array name="face_unlock_method_entries">
+        <item>@string/face_unlock_method_default</item>
+        <item>@string/face_unlock_method_swipe</item>
+    </string-array>
+    <string-array name="face_unlock_method_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
     <!-- Hardware key rebinding -->
     <string-array name="hardware_keys_action_entries" translatable="false">
         <item>@string/hardware_keys_action_nothing</item>
@@ -399,5 +483,103 @@
         <item>120</item>
         <item>300</item>
         <item>600</item>
+    </string-array>
+
+    <!-- Smart Pixels -->
+    <string-array name="smart_pixels_percent_strings" translatable="false">
+        <item>12</item>
+        <item>25</item>
+        <item>38</item>
+        <item>50</item>
+        <item>62</item>
+        <item>75</item>
+        <item>88</item>
+    </string-array>
+
+    <string-array name="smart_pixels_percent_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="smart_pixels_shift_times" translatable="false">
+        <item>@string/custom_timeout_summary_15secs</item>
+        <item>@string/custom_timeout_summary_30secs</item>
+        <item>@string/custom_timeout_summary_1min</item>
+        <item>@string/custom_timeout_summary_2mins</item>
+        <item>@string/custom_timeout_summary_5mins</item>
+        <item>@string/custom_timeout_summary_10mins</item>
+        <item>@string/custom_timeout_summary_20mins</item>
+        <item>@string/custom_timeout_summary_30mins</item>
+        <item>@string/custom_timeout_summary_1hour</item>
+    </string-array>
+
+    <string-array name="smart_pixels_shift_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <!-- Monet theme styles  -->
+    <string-array name="monet_engine_style_entries" translatable="false">
+        <item>@string/monet_engine_style_tonal_spot</item>
+        <item>@string/monet_engine_style_vibrant</item>
+        <item>@string/monet_engine_style_expressive</item>
+        <item>@string/monet_engine_style_spritz</item>
+        <item>@string/monet_engine_style_rainbow</item>
+        <item>@string/monet_engine_style_fruit_salad</item>
+        <item>@string/monet_engine_style_monochromatic</item>
+    </string-array>
+
+    <string-array name="monet_engine_style_values" translatable="false">
+        <item>TONAL_SPOT</item>
+        <item>VIBRANT</item>
+        <item>EXPRESSIVE</item>
+        <item>SPRITZ</item>
+        <item>RAINBOW</item>
+        <item>FRUIT_SALAD</item>
+        <item>MONOCHROMATIC</item>
+    </string-array>
+
+    <!-- Monet color sources  -->
+    <string-array name="monet_engine_color_source_entries" translatable="false">
+        <item>@string/monet_engine_color_source_both</item>
+        <item>@string/monet_engine_color_source_home</item>
+        <item>@string/monet_engine_color_source_lock</item>
+        <item>@string/monet_engine_color_source_preset</item>
+    </string-array>
+
+    <string-array name="monet_engine_color_source_values" translatable="false">
+        <item>both</item>
+        <item>home_wallpaper</item>
+        <item>lock_wallpaper</item>
+        <item>preset</item>
+    </string-array>
+
+    <!-- AOD Schedule -->
+    <string-array name="doze_always_on_auto_mode_entries" translatable="false">
+        <item>@string/disable</item>
+        <item>@string/night_display_auto_mode_twilight</item>
+        <item>@string/always_on_display_schedule_mixed_sunset</item>
+        <item>@string/always_on_display_schedule_mixed_sunrise</item>
+        <item>@string/night_display_auto_mode_custom</item>
+    </string-array>
+
+    <string-array name="doze_always_on_auto_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>2</item>
     </string-array>
 </resources>

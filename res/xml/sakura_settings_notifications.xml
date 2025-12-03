@@ -19,7 +19,7 @@
     android:title="@string/notifications_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.sakura.support.preferences.SystemSettingSwitchPreference
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
          android:key="notification_sound_vib_screen_on"
          android:title="@string/notification_sound_vib_screen_on_title"
          android:summary="@string/notification_sound_vib_screen_on_summary"
