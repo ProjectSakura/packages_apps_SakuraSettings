@@ -43,12 +43,12 @@
             android:fragment="com.sakura.settings.fragments.StatusBarSettings" 
             android:icon="@drawable/ic_hm_statusbar"/>
 
-        <!-- Quick Settings panel ->
+        <!-- Quick Settings panel -->
         <Preference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
             android:fragment="com.sakura.settings.fragments.QuickSettings"
-            android:icon="@drawable/ic_hm_quicksettings"/>-->
+            android:icon="@drawable/ic_hm_quicksettings"/>
 
         <!-- Buttons -->
         <Preference
