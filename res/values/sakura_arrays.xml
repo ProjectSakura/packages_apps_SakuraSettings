@@ -556,6 +556,58 @@
         <item>file</item>
     </string-array>
 
+    <!-- Lock screen album art filter -->
+    <string-array name="ls_media_art_filter_entries" translatable="false">
+        <item>@string/ls_media_art_filter_none</item>
+        <item>@string/ls_media_art_filter_blur</item>
+        <item>@string/ls_media_art_filter_grayscale</item>
+        <item>@string/ls_media_art_filter_sepia</item>
+        <item>@string/ls_media_art_filter_tint</item>
+        <item>@string/ls_media_art_filter_invert</item>
+        <item>@string/ls_media_art_filter_grayblur</item>
+    </string-array>
+
+    <string-array name="ls_media_art_filter_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <!-- Pulse music visualizer -->
+    <string-array name="pulse_color_entries" translatable="false">
+        <item>@string/pulse_color_lavalamp</item>
+        <item>@string/pulse_color_album</item>
+        <item>@string/pulse_color_accent</item>
+    </string-array>
+
+    <string-array name="pulse_color_values" translatable="false">
+        <item>lavalamp</item>
+        <item>album</item>
+        <item>accent</item>
+    </string-array>
+
+    <string-array name="pulse_renderer_entries" translatable="false">
+        <item>@string/pulse_renderer_solid</item>
+        <item>@string/pulse_renderer_fading</item>
+        <item>@string/pulse_renderer_neon_glow</item>
+        <item>@string/pulse_renderer_retro_vu_meter</item>
+        <item>@string/pulse_renderer_minimal_wave</item>
+        <item>@string/pulse_renderer_sparkle</item>
+    </string-array>
+
+    <string-array name="pulse_renderer_values" translatable="false">
+        <item>solid</item>
+        <item>fading</item>
+        <item>neon</item>
+        <item>retro</item>
+        <item>minimal</item>
+        <item>sparkle</item>
+    </string-array>
+
     <!-- Hardware key rebinding -->
     <string-array name="hardware_keys_action_entries" translatable="false">
         <item>@string/hardware_keys_action_nothing</item>
@@ -568,8 +620,15 @@
         <item>@string/hardware_keys_action_sleep</item>
         <item>@string/hardware_keys_action_last_app</item>
         <item>@string/hardware_keys_action_split_screen</item>
-        <item>@string/hardware_keys_action_kill_app</item>
+        <item>@string/hardware_keys_action_close_app</item>
         <item>@string/hardware_keys_action_play_pause_music</item>
+        <item>@string/hardware_keys_action_torch</item>
+        <item>@string/hardware_keys_action_screenshot</item>
+        <item>@string/hardware_keys_action_volume_panel</item>
+        <item>@string/hardware_keys_action_clear_all_notifications</item>
+        <item>@string/hardware_keys_action_notifications_panel</item>
+        <item>@string/hardware_keys_action_expand_qs_panel</item>
+        <item>@string/hardware_keys_action_ringer_modes</item>
     </string-array>
 
     <string-array name="hardware_keys_action_values" translatable="false">
@@ -585,6 +644,13 @@
         <item>9</item>
         <item>10</item>
         <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
     </string-array>
 
     <!-- Volume key cursor control -->
@@ -598,22 +664,6 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
-    </string-array>
-
-    <string-array name="torch_long_press_power_timeout_entries" translatable="false">
-        <item>@string/torch_long_press_power_timeout_never</item>
-        <item>@string/torch_long_press_power_timeout_1min</item>
-        <item>@string/torch_long_press_power_timeout_2min</item>
-        <item>@string/torch_long_press_power_timeout_5min</item>
-        <item>@string/torch_long_press_power_timeout_10min</item>
-    </string-array>
-
-    <string-array name="torch_long_press_power_timeout_values" translatable="false">
-        <item>0</item>
-        <item>60</item>
-        <item>120</item>
-        <item>300</item>
-        <item>600</item>
     </string-array>
 
     <!-- Smart Pixels -->
