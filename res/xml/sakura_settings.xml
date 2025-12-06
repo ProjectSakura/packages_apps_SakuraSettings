@@ -24,18 +24,6 @@
         android:layout="@layout/lab_lottie"
         android:selectable="false" />
 
-    <PreferenceCategory
-        android:layout="@layout/settingslib_preference_category_no_title">
-
-        <Preference
-            android:key="team__category"
-            android:title="@string/team_title" 
-            android:summary="@string/team_summary"
-            android:fragment="com.sakura.settings.fragments.ProjectSakuraTeam"
-            android:icon="@drawable/ic_hm_team"/>
-
-    </PreferenceCategory>
-
         <!-- Status Bar -->
         <Preference
             android:key="statusbar_category"
@@ -107,4 +95,25 @@
             android:fragment="com.sakura.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_hm_miscs"/>
 
+        
+        <PreferenceCategory
+        android:layout="@layout/settingslib_preference_category_no_title">
+        
+        <!-- About Devs -->
+        <Preference
+            android:key="dev_info"
+            android:title="@string/sakura_about_info"
+            android:summary="@string/sakura_about_info_summary_title"
+            android:fragment="com.android.settings.custom.SakuraDevsInfoFragment"
+            android:icon="@drawable/ic_hm_team"/>
+
+        <!-- About Donators -->
+        <Preference
+            android:key="donators_info"
+            android:title="@string/sakura_donator_about_info"
+            android:summary="@string/sakura_donator_about_info_summary_title"
+            android:fragment="com.android.settings.custom.SakuraDonatorsInfoFragment"
+            android:icon="@drawable/ic_hm_team"/>
+            
+    </PreferenceCategory>
 </PreferenceScreen>
