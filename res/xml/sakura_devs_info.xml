@@ -16,7 +16,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title=" ">
+    android:title="About Developers">
 
     <!-- Lottie Animation-->
     <com.android.settingslib.widget.LayoutPreference
@@ -25,9 +25,21 @@
         android:selectable="false" />
 
 	<PreferenceCategory
+              android:key="about"
+              android:title="@string/sakura_about_info" >
+
+        <Preference
+               android:summary="@string/sakura_about_info_summary" 
+               android:icon="@drawable/ic_devs_info" >
+        <intent
+               android:action="android.intent.action.VIEW"
+               android:data="https://paypal.me/LordShen" />
+        </Preference>
+</PreferenceCategory>
+
+<PreferenceCategory
             android:key="sakura_dev"
             android:title="@string/devs_header" >
-	</PreferenceCategory>
 
         <Preference
             android:key="dev1"
@@ -46,7 +58,7 @@
             android:summary="@string/dev2_description" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://telegram.me/NotUsingTheName" />
+            android:data="https://telegram.me/ReveRTX" />
         </Preference>
 
         <Preference
@@ -56,7 +68,7 @@
             android:summary="@string/dev3_description" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://telegram.me/momen_abdulrazek" />
+            android:data="https://telegram.me/NotUsingTheName" />
         </Preference>
 
         <Preference
@@ -66,7 +78,17 @@
             android:summary="@string/dev4_description" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/username" />
+            android:data="https://telegram.me/anoosragh69" />
+        </Preference>
+
+        <Preference
+            android:key="dev7"
+            android:title="@string/dev_7"
+            android:icon="@drawable/ic_code"
+            android:summary="@string/dev7_description" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://telegram.me/momen_abdulrazek" />
         </Preference>
 
         <Preference
@@ -76,52 +98,19 @@
             android:summary="@string/dev5_description" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/username" />
-        </Preference>
-
-	<PreferenceCategory
-	    android:key="honorable_mentions"
-	    android:title="@string/mentions_header">
-	</PreferenceCategory>
-
-        <Preference
-            android:key="mentions_pavan"
-            android:title="@string/mentions_pavan"
-            android:icon="@drawable/ic_devs_mention"
-            android:summary="@string/mentions_pavan_description" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Advertpavan" />
+            android:data="https://telegram.me/semisapeol" />
         </Preference>
 
         <Preference
-            android:key="mentions_sam"
-            android:title="@string/mentions_sam"
-            android:summary="@string/mentions_sam_description"
-            android:icon="@drawable/ic_devs_mention">
+            android:key="dev6"
+            android:title="@string/dev_6"
+            android:icon="@drawable/ic_code"
+            android:summary="@string/dev6_description" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Reapergod35" />
+            android:data="https://telegram.me/XelXen" />
         </Preference>
 
-        <Preference
-            android:key="mentions_iacob"
-            android:title="@string/mentions_iacob"
-            android:summary="@string/mentions_iacob_description"
-            android:icon="@drawable/ic_devs_mention">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/iacobionut" />
-        </Preference>
-
-        <Preference
-            android:key="mentions_yash"
-            android:title="@string/mentions_yash"
-            android:icon="@drawable/ic_devs_mention"
-            android:summary="@string/mentions_yash_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Introdructor" />
-    </Preference>
+</PreferenceCategory>
 
 </PreferenceScreen>
