@@ -236,9 +236,126 @@
     <string name="pulse_on_new_tracks_title">Music ticker</string>
     <string name="pulse_on_new_tracks_summary">Show music ticker on Ambient Display during track change or now playing song detection</string>
 
-    <!-- Annoying Notifications -->
-    <string name="notification_sound_vib_screen_on_title">Annoying Notifications</string>
+    <!-- Alert Slider Notifications (OnePlus devices) -->
+    <string name="alert_slider_notifications_title">Alert slider notifications</string>
+    <string name="alert_slider_notifications_summary">Display notification when changing alert slider position</string>
+
+    <!-- Blink flashlight for incoming calls -->
+    <string name="flashlight_on_call_title">Blink flashlight for incoming call</string>
+    <string name="flashlight_on_call_disabled">Disabled</string>
+    <string name="flashlight_on_call_ringer">When ringing</string>
+    <string name="flashlight_on_call_no_ringer">When ringer is silent</string>
+    <string name="flashlight_on_call_silent">When entirely silent (no ringer or vibrator)</string>
+    <string name="flashlight_on_call_always">Always</string>
+    <string name="flashlight_on_call_ignore_dnd_title">Ignore DND</string>
+    <string name="flashlight_on_call_ignore_dnd_summary">Whether to flash when Do Not Disturb mode is active</string>
+    <string name="flashlight_on_call_rate_title">Blink rate</string>
+
+    <!-- Notification channels -->
+    <string name="channel_light_settings_id" translatable="false">light_settings</string>
+    <string name="channel_light_settings_name">Light settings preview</string>
+
+    <!-- Heads-up -->
+    <string name="compact_heads_up_notifications_enabled_title">Compact heads-up</string>
+    <string name="compact_heads_up_notifications_enabled_summary">Display notifications in compact size</string>
+
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">Edit light settings</string>
+    <string name="pulse_speed_title">Pulse length and speed</string>
+    <string name="default_time">Normal</string>
+    <string name="custom_time">Custom</string>
+    <string name="brightness">Brightness level</string>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">Always on</string>
+    <string name="pulse_length_blink">Blink</string>
+    <string name="pulse_length_very_short">Very short</string>
+    <string name="pulse_length_short">Short</string>
+    <string name="pulse_length_normal">Normal</string>
+    <string name="pulse_length_long">Long</string>
+    <string name="pulse_length_very_long">Very long</string>
+    <string name="pulse_speed_very_fast">Very fast</string>
+    <string name="pulse_speed_fast">Fast</string>
+    <string name="pulse_speed_normal">Normal</string>
+    <string name="pulse_speed_slow">Slow</string>
+    <string name="pulse_speed_very_slow">Very slow</string>
+
+    <!-- Common light settings strings -->
+    <string name="light_brightness_title">Brightness levels</string>
+    <string name="light_brightness_normal">Normal</string>
+    <string name="light_brightness_zen">Do Not Disturb</string>
+
+    <!-- Battery light settings -->
+    <string name="light_brightness_category">Light brightness settings</string>
+    <string name="battery_light_title">Battery light</string>
+    <string name="battery_light_enable_title">Enable battery light</string>
+    <string name="battery_light_summary">Configure led color based on battery level and status</string>
+    <string name="battery_low_pulse_title">Pulse if battery low</string>
+    <string name="battery_light_full_charge_disabled_title">Turn off when fully charged</string>
+    <string name="battery_light_list_title">Colors</string>
+    <string name="battery_light_low_color_title">Battery low</string>
+    <string name="battery_light_medium_color_title">Charging</string>
+    <string name="battery_light_full_color_title">Nearly Charged (>90%)</string>
+    <string name="battery_light_really_full_color_title">Fully Charged (100%)</string>
+    <string name="battery_light_brightness_normal" translatable="false">@string/light_brightness_normal</string>
+    <string name="battery_light_brightness_zen" translatable="false">@string/light_brightness_zen</string>
+
+    <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_title">Notification light</string>
+    <string name="notification_light_enable_title">Enable notification light</string>
+    <string name="notification_light_summary">Configure led color for notifications</string>
+    <string name="notification_light_general_title">General</string>
+    <string name="notification_light_advanced_title">Advanced</string>
+    <string name="notification_light_applist_title">Apps</string>
+    <string name="notification_light_phonelist_title">Phone</string>
+    <string name="notification_light_use_custom">Use custom values</string>
+    <string name="notification_light_default_value">Default</string>
+    <string name="notification_light_missed_call_title">Missed call</string>
+    <string name="notification_light_voicemail_title">Voicemail</string>
+    <string name="notification_light_brightness_normal" translatable="false">@string/light_brightness_normal</string>
+    <string name="notification_light_brightness_zen" translatable="false">@string/light_brightness_zen</string>
+    <string name="notification_light_screen_on">Lights with screen on</string>
+    <string name="notification_light_zen_mode">Lights in Do Not Disturb mode</string>
+    <string name="notification_light_automagic">Choose colors automatically</string>
+    <string name="notification_light_automagic_summary">Choosing colors automatically</string>
+    <string name="notification_light_override">Override all apps</string>
+
+    <!-- Lights settings, LED notification -->
+    <string name="led_notification_title">Light settings</string>
+    <string name="led_notification_text">LED light enabled by settings</string>
+    <string name="notification_light_add_apps_empty_summary">To add per app control, activate \'%1$s\' and press \'Add\'</string>
+
+    <!-- Heads up timeout -->
+    <string name="notification_heads_up_title">Heads up</string>
+    <string name="notification_heads_up_summary">Allow pop up notifications</string>
+    <string name="notification_heads_up_timeout_title">Time out</string>
+    <string name="notification_heads_up_timeout_summary">Time to display heads up notifications</string>
+
+    <!-- Less boring heads up -->
+    <string name="less_boring_heads_up_title">Less boring</string>
+    <string name="less_boring_heads_up_summary">Display popup notifications only for alarm, dialer and messaging app</string>
+
+    <!-- Notifications while screen on -->
+    <string name="notification_sound_vib_screen_on_title">Noisy notifications</string>
     <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+
+    <!-- Notification Row -->
+    <string name="notification_row_transparency_title">Translucent notifications</string>
+    <string name="notification_row_transparency_summary">Set translucent background for notifications in QS</string>
+    <string name="notification_row_transparency_lockscreen_title">Translucent lockscreen notifications</string>
+    <string name="notification_row_transparency_lockscreen_summary">Set translucent background for notifications in lockscreen</string>
+
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Force stop button</string>
+    <string name="notification_guts_kill_app_button_summary">Show force stop button in the notification\'s longpress menu</string>
+
+    <!-- Show clipboard overlay -->
+    <string name="show_clipboard_overlay_title">Show clipboard overlay</string>
+    <string name="show_clipboard_overlay_summary">Show an overlay in the left bottom corner of the screen when something is copied to the clipboard</string>
+
+    <!-- Squiggle animation for media notification -->
+    <string name="media_squiggle_animation_title">Squiggle animation</string>
+    <string name="media_squiggle_animation_summary">Show seekbar squiggle animation in media panel when playing media</string>
 
     <!-- Application downgrade -->
     <string name="app_downgrade_title">Allow app downgrade</string>
@@ -616,9 +733,10 @@
     <string name="general_category">General</string>
 
     <!-- Units -->
+    <string name="unit_seconds">seconds</string>
     <string name="unit_milliseconds">milliseconds</string>
     <string name="unit_pixels" translatable="false">dp</string>
-    <string name="unit_seconds">seconds</string>
+    <string name="unit_hz" translatable="false">hz</string>
 
     <!-- Button settings -->
     <string name="extras_title">Extras</string>
