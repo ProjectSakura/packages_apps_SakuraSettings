@@ -16,13 +16,148 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/notifications_title"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    android:title="@string/notifications_title">
 
     <com.sakura.settings.preferences.SystemSettingSwitchPreference
-         android:key="notification_sound_vib_screen_on"
-         android:title="@string/notification_sound_vib_screen_on_title"
-         android:summary="@string/notification_sound_vib_screen_on_summary"
-         android:defaultValue="true" />
+        android:key="alert_slider_notifications"
+        android:icon="@drawable/ic_light_switch"
+        android:title="@string/alert_slider_notifications_title"
+        android:summary="@string/alert_slider_notifications_summary"
+        android:defaultValue="true" />
+
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+        android:key="notification_sound_vib_screen_on"
+        android:icon="@drawable/ic_bell_ring"
+        android:title="@string/notification_sound_vib_screen_on_title"
+        android:summary="@string/notification_sound_vib_screen_on_summary"
+        android:defaultValue="true" />
+
+    <com.sakura.settings.preferences.SecureSettingSwitchPreference
+        android:key="notification_row_transparency"
+        android:icon="@drawable/ic_chat_dashed"
+        android:title="@string/notification_row_transparency_title"
+        android:summary="@string/notification_row_transparency_summary"
+        android:defaultValue="true" />
+
+    <com.sakura.settings.preferences.SecureSettingSwitchPreference
+        android:key="notification_row_transparency_lockscreen"
+        android:icon="@drawable/ic_chat_dashed"
+        android:title="@string/notification_row_transparency_lockscreen_title"
+        android:summary="@string/notification_row_transparency_lockscreen_summary"
+        android:defaultValue="true" />
+
+    <com.sakura.settings.preferences.SecureSettingSwitchPreference
+        android:key="media_squiggle_animation"
+        android:icon="@drawable/ic_waves"
+        android:title="@string/media_squiggle_animation_title"
+        android:summary="@string/media_squiggle_animation_summary"
+        android:defaultValue="true" />
+
+    <!-- Notification guts kill app button -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+        android:key="notification_guts_kill_app_button"
+        android:icon="@drawable/ic_kill"
+        android:title="@string/notification_guts_kill_app_button_title"
+        android:summary="@string/notification_guts_kill_app_button_summary" />
+
+    <!-- Show clipboard overlay -->
+    <com.sakura.settings.preferences.SecureSettingSwitchPreference
+        android:key="show_clipboard_overlay"
+        android:icon="@drawable/ic_clipboard_alert"
+        android:title="@string/show_clipboard_overlay_title"
+        android:summary="@string/show_clipboard_overlay_summary"
+        android:defaultValue="true"/>
+
+    <PreferenceCategory
+        android:key="heads_up"
+        android:title="@string/notification_heads_up_title">
+
+        <com.sakura.settings.preferences.GlobalSettingSwitchPreference
+            android:key="heads_up_notifications_enabled"
+            android:icon="@drawable/ic_headsup"
+            android:title="@string/notification_heads_up_title"
+            android:summary="@string/notification_heads_up_summary"
+            android:defaultValue="true" />
+
+        <com.sakura.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.compact_heads_up_notification.always_show"
+            android:icon="@drawable/ic_headsup"
+            android:title="@string/compact_heads_up_notifications_enabled_title"
+            android:summary="@string/compact_heads_up_notifications_enabled_summary"
+            android:defaultValue="false"
+            android:dependency="heads_up_notifications_enabled" />
+
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="less_boring_heads_up"
+            android:icon="@drawable/ic_headsup_sleep"
+            android:title="@string/less_boring_heads_up_title"
+            android:summary="@string/less_boring_heads_up_summary"
+            android:defaultValue="false"
+            android:dependency="heads_up_notifications_enabled" />
+
+        <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+            android:key="heads_up_timeout"
+            android:icon="@drawable/ic_clock"
+            android:title="@string/notification_heads_up_timeout_title"
+            android:summary="@string/notification_heads_up_timeout_summary"
+            settings:units="@string/unit_seconds"
+            android:defaultValue="5"
+            settings:min="1"
+            android:max="10"
+            android:dependency="heads_up_notifications_enabled" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="flashlight_category"
+        android:title="@string/power_menu_torch_title">
+
+        <com.sakura.settings.preferences.SystemSettingListPreference
+            android:key="flashlight_on_call"
+            android:icon="@drawable/ic_flashlight"
+            android:title="@string/flashlight_on_call_title"
+            android:entries="@array/flashlight_on_call_entries"
+            android:entryValues="@array/flashlight_on_call_values"
+            android:defaultValue="0" />
+
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="flashlight_on_call_ignore_dnd"
+            android:icon="@drawable/ic_flashlight"
+            android:title="@string/flashlight_on_call_ignore_dnd_title"
+            android:summary="@string/flashlight_on_call_ignore_dnd_summary"
+            android:defaultValue="false" /> 
+
+        <com.sakura.settings.preferences.SystemSettingSeekBarPreference
+            android:key="flashlight_on_call_rate"
+            android:icon="@drawable/ic_flashlight"
+            android:title="@string/flashlight_on_call_rate_title"
+            android:defaultValue="1"
+            android:max="5"
+            settings:min="1"
+            settings:units="@string/unit_hz" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="light_brightness"
+        android:title="@string/light_brightness_category">
+
+        <!-- Battery light -->
+        <Preference
+            android:key="battery_lights"
+            android:icon="@drawable/ic_led_on"
+            android:title="@string/battery_light_title"
+            android:summary="@string/battery_light_summary"
+            android:fragment="com.sakura.settings.fragments.notifications.notificationlight.BatteryLightSettings" />
+
+        <!-- Notification lights -->
+        <Preference
+            android:key="notification_lights"
+            android:icon="@drawable/ic_led_on"
+            android:title="@string/notification_light_title"
+            android:summary="@string/notification_light_summary"
+            android:fragment="com.sakura.settings.fragments.notifications.notificationlight.NotificationLightSettings" />
+    </PreferenceCategory>
 
 </PreferenceScreen>
