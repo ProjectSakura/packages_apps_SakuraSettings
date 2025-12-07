@@ -825,4 +825,85 @@
         <item>4</item>
         <item>2</item>
     </string-array>
+
+    <!-- App lock timeout -->
+    <string-array name="app_lock_timeout_entries">
+        <item>@string/custom_timeout_summary_5secs</item>
+        <item>@string/custom_timeout_summary_10secs</item>
+        <item>@string/custom_timeout_summary_30secs</item>
+        <item>@string/custom_timeout_summary_1min</item>
+        <item>@string/custom_timeout_summary_5mins</item>
+        <item>@string/custom_timeout_summary_10mins</item>
+        <item>@string/custom_timeout_summary_30mins</item>
+    </string-array>
+
+    <string-array name="app_lock_timeout_values" translatable="false">
+        <item>5000</item>
+        <item>10000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+
+    <!-- Custom timeout for Wifi/Bluetooth -->
+    <string-array name="custom_timeout_entries">
+        <item>@string/custom_timeout_summary_never</item>
+        <item>@string/custom_timeout_summary_15secs</item>
+        <item>@string/custom_timeout_summary_30secs</item>
+        <item>@string/custom_timeout_summary_1min</item>
+        <item>@string/custom_timeout_summary_2mins</item>
+        <item>@string/custom_timeout_summary_5mins</item>
+        <item>@string/custom_timeout_summary_10mins</item>
+        <item>@string/custom_timeout_summary_30mins</item>
+        <item>@string/custom_timeout_summary_1hour</item>
+        <item>@string/custom_timeout_summary_2hours</item>
+        <item>@string/custom_timeout_summary_4hours</item>
+        <item>@string/custom_timeout_summary_8hours</item>
+    </string-array>
+
+    <string-array name="custom_timeout_values" translatable="false">
+        <item>0</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>7200000</item>
+        <item>14400000</item>
+        <item>28800000</item>
+    </string-array>
+
+    <!-- Custom Timeout Strings -->
+    <string name="custom_timeout_summary_never">Never</string>
+    <string name="custom_timeout_summary_5secs">5 seconds</string>
+    <string name="custom_timeout_summary_10secs">10 seconds</string>
+    <string name="custom_timeout_summary_15secs">15 seconds</string>
+    <string name="custom_timeout_summary_30secs">30 seconds</string>
+    <string name="custom_timeout_summary_1min">1 minute</string>
+    <string name="custom_timeout_summary_2mins">2 minutes</string>
+    <string name="custom_timeout_summary_5mins">5 minutes</string>
+    <string name="custom_timeout_summary_10mins">10 minutes</string>
+    <string name="custom_timeout_summary_30mins">30 minutes</string>
+    <string name="custom_timeout_summary_1hour">1 hour</string>
+    <string name="custom_timeout_summary_2hours">2 hours</string>
+    <string name="custom_timeout_summary_4hours">4 hours</string>
+    <string name="custom_timeout_summary_8hours">8 hours</string>
+
+    <!-- Wi-Fi MAC address randomization -->
+    <string-array name="wifi_privacy_entries_ext">
+        <item>@string/wifi_per_connection_random_mac_addr</item>
+        <item>@string/wifi_per_network_random_mac_addr</item>
+        <item>@string/wifi_device_mac_addr</item>
+    </string-array>
+
+    <string-array name="wifi_privacy_values_ext" translatable="false">
+        <item>100</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
 </resources>
