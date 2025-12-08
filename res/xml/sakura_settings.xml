@@ -20,8 +20,8 @@
 
     <!-- Lottie Animation-->
     <com.android.settingslib.widget.LayoutPreference
-        android:key="lab_animation"
-        android:layout="@layout/lab_lottie"
+        android:key="sakura_logo_animation"
+        android:layout="@layout/sakura_lottie"
         android:selectable="false" />
 
         <!-- Status Bar -->
