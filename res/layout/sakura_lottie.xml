@@ -15,7 +15,9 @@
         android:layout_height="135dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
+        android:scaleX="3.0"     
+        android:scaleY="3.0"
         android:scaleType="centerInside"
-        app:lottie_rawRes="@raw/lottie_lab" />
+        app:lottie_rawRes="@raw/sakura_settings" />
 
 </LinearLayout>
