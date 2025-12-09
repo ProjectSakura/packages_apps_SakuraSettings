@@ -931,8 +931,8 @@
     <string name="back_height_summary">Screen height valid for back gesture</string>
 
     <!-- Force LTE_CA -->
-    <string name="force_lte_ca">Force LTE CA</string>
-    <string name="force_lte_ca_summary">Force LTE carrier aggregation to work</string>
+    <string name="force_lte_ca_title">LTE carrier aggregation</string>
+    <string name="force_lte_ca_summary">Enhances LTE bandwidth by aggregating supported bands</string>
 
     <!-- Face Unlock -->
     <string name="security_settings_face_unlock_redo_face_scan_summary">Remove existing face scan and create a new scan</string>
