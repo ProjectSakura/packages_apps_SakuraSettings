@@ -96,13 +96,13 @@
         android:summary="@string/monet_summary"
         android:fragment="com.sakura.settings.fragments.ui.MonetSettings" />
 
-    <!-- Navbar Style -->
+    <!-- Navbar Style
     <Preference
         android:key="android.theme.customization.navbar"
         android:icon="@drawable/ic_navbar"
         android:title="@string/theme_customization_navbar_title"
         android:summary="@string/theme_customization_navbar_summary"
-        android:fragment="com.sakura.settings.fragments.ui.NavbarStyles"/>
+        android:fragment="com.sakura.settings.fragments.ui.NavbarStyles"/> -->
 
     <!-- Notification Style
     <com.sakura.settings.preferences.SystemSettingListPreference
