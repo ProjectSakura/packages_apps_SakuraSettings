@@ -140,7 +140,7 @@
     <PreferenceCategory
         android:title="@string/status_bar_battery_category_title" >
 
-         <com.sakura.settings.preferences.SystemSettingListPreference
+         <lineageos.preference.LineageSystemSettingListPreference
             android:key="status_bar_battery_style"
             android:icon="@drawable/ic_battery"
             android:title="@string/status_bar_battery_style_title"
