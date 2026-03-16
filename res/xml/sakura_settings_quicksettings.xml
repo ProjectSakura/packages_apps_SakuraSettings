@@ -101,14 +101,6 @@
             android:max="100"
             android:min="1" /> -->
 
-        <!-- QS Bluetooth Dialog -->
-        <com.sakura.settings.preferences.SystemSettingSwitchPreference
-            android:key="qs_bt_show_dialog"
-            android:icon="@drawable/ic_bt"
-            android:title="@string/qs_bt_show_dialog_title"
-            android:summary="@string/qs_bt_show_dialog_summary"
-            android:defaultValue="true" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
