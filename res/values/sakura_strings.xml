@@ -194,7 +194,18 @@
 
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">Background chip</string>
-    <string name="statusbar_clock_chip_summary">Display accented chip behind clock</string>
+    <string name="solid_accent">Solid color accent</string>
+    <string name="outline">Outline</string>
+    <string name="solid_accent_gradient">Solid color accent gradient</string>
+    <string name="solid_gradient">Solid gradient side</string>
+    <string name="solid_gradient_corner">Solid accent gradient sharp</string>
+    <string name="solid_gradient_void">Gradient void</string>
+    <string name="solid_gradient_neumorph">Neumorph gradient</string>
+    <string name="solid_gradient_stroke">Sharp gradient stroke</string>
+    <string name="solid_accent_transperent">Accent transperent</string>
+    <string name="solid_gradient_light">Gradient light</string>
+    <string name="solid_gradient_shape">Sharp gradient corner</string>
+    <string name="solid_gradient_void_light">Gradient void light</string>
     
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Battery style</string>
