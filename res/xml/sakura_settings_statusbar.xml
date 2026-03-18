@@ -131,7 +131,7 @@
             android:defaultValue="0"
             android:dependency="status_bar_logo" />
 
-        <Preference
+        <com.sakura.settings.preferences.StatusBarLogoStylePreference
             android:key="status_bar_logo_style"
             android:icon="@drawable/ic_tag"
             android:title="@string/status_bar_logo_style_title"
