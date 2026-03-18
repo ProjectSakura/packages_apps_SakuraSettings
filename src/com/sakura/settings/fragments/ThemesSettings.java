@@ -39,6 +39,7 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.sakura.settings.fragments.ui.DozeSettings;
 import com.sakura.settings.fragments.ui.EdgeLightSettings;
+import com.sakura.settings.fragments.ui.GradientSettings;
 import com.sakura.settings.fragments.ui.SmartPixels;
 import com.sakura.settings.fragments.ui.MonetSettings;
 
@@ -98,6 +99,7 @@ public class ThemesSettings extends SettingsPreferenceFragment implements
 
         DozeSettings.reset(mContext);
         EdgeLightSettings.reset(mContext);
+        GradientSettings.reset(mContext);
         MonetSettings.reset(mContext);
         SmartPixels.reset(mContext);
     }
