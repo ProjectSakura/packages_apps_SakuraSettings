@@ -170,8 +170,8 @@ public class LockScreenSettings extends SettingsPreferenceFragment
                 Settings.System.LOCKSCREEN_SHOW_CARRIER, 1, UserHandle.USER_CURRENT);
         PulseSettings.reset(mContext);
         MediaArtSettings.reset(mContext);
-        UdfpsAnimation.reset(mContext);
-        UdfpsIconPicker.reset(mContext);
+        UdfpsAnimation.Companion.reset(mContext);
+        UdfpsIconPicker.Companion.reset(mContext);
     }
 
     private void updateWeatherSettings() {
