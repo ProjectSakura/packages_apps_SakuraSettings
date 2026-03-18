@@ -58,6 +58,21 @@
         android:title="@string/gradient_settings_title"
         android:summary="@string/gradient_settings_summary"
         android:fragment="com.sakura.settings.fragments.ui.GradientSettings" />
+    
+    <!-- Font style -->
+    <com.sakura.settings.preferences.FontsPickerPreference
+        android:key="system_font"
+        android:icon="@drawable/ic_font"
+        android:title="@string/theme_customization_font_title"
+        android:summary="theme_customization_font_summary" />
+
+    <!-- Monet Theme Engine -->
+    <Preference
+        android:key="monet_engine"
+        android:icon="@drawable/ic_themes"
+        android:title="@string/monet_title"
+        android:summary="@string/monet_summary"
+        android:fragment="com.sakura.settings.fragments.ui.MonetSettings" />
 
     <!-- Charging animation -->
     <com.sakura.settings.preferences.SystemSettingSwitchPreference
@@ -96,14 +111,6 @@
         android:summary="@string/smart_pixels_summary" 
         android:fragment="com.sakura.settings.fragments.ui.SmartPixels" />
 
-    <!-- Monet Theme Engine -->
-    <Preference
-        android:key="monet_engine"
-        android:icon="@drawable/ic_themes"
-        android:title="@string/monet_title"
-        android:summary="@string/monet_summary"
-        android:fragment="com.sakura.settings.fragments.ui.MonetSettings" />
-
     <!-- Navbar Style
     <Preference
         android:key="android.theme.customization.navbar"
@@ -131,14 +138,6 @@
         android:entryValues="@array/custom_style_values"
         android:summary="%s"
         android:defaultValue="0" /> -->
-
-    <!-- Font style -->
-    <Preference
-        android:key="android.theme.customization.fonts"
-        android:icon="@drawable/ic_font"
-        android:title="@string/theme_customization_font_title"
-        android:summary="@string/theme_customization_font_summary"
-        android:fragment="com.sakura.settings.fragments.ui.FontsPicker"/>
 
     <!-- Icon pack 
     <Preference
