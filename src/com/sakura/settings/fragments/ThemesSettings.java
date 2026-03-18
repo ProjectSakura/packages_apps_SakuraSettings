@@ -99,7 +99,7 @@ public class ThemesSettings extends SettingsPreferenceFragment implements
 
         DozeSettings.reset(mContext);
         EdgeLightSettings.reset(mContext);
-        GradientSettings.reset(mContext);
+        GradientSettings.Companion.reset(mContext);
         MonetSettings.reset(mContext);
         SmartPixels.reset(mContext);
     }
