@@ -97,7 +97,7 @@
 
         
         <PreferenceCategory
-        android:layout="@layout/settingslib_preference_category_no_title">
+        android:layout="@layout/settingslib_expressive_untitled_preference_category">
         
         <!-- About Devs -->
         <Preference
