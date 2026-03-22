@@ -38,6 +38,26 @@ public class SakuraSettings extends SettingsPreferenceFragment {
     }
 
     @Override
+    public androidx.recyclerview.widget.RecyclerView onCreateRecyclerView(
+            android.view.LayoutInflater inflater, android.view.ViewGroup parent, Bundle savedInstanceState) {
+        androidx.recyclerview.widget.RecyclerView recyclerView = super.onCreateRecyclerView(inflater, parent, savedInstanceState);
+        
+        // Remove ALL AOSP grouping decorations so the cards don't get merged/squished by background drawing
+        int count = recyclerView.getItemDecorationCount();
+        for (int i = 0; i < count; i++) {
+            recyclerView.removeItemDecorationAt(0);
+        }
+
+        // Add generous padding so cards aren't cropped against the right edge
+        recyclerView.setPadding(16, 0, 16, 0);
+        recyclerView.setClipToPadding(false);
+
+        androidx.recyclerview.widget.GridLayoutManager layoutManager = new androidx.recyclerview.widget.GridLayoutManager(getActivity(), 2);
+        recyclerView.setLayoutManager(layoutManager);
+        return recyclerView;
+    }
+
+    @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.SAKURA_SETTINGS;
     }
