@@ -42,8 +42,16 @@ public class DashboardCardPreference extends Preference {
 
         View itemView = holder.itemView;
         
+        // Aggressively remove AOSP ItemDecorations from the parent RecyclerView to prevent grouped background blobs overriding our cards
+        if (itemView.getParent() instanceof androidx.recyclerview.widget.RecyclerView) {
+            androidx.recyclerview.widget.RecyclerView rv = (androidx.recyclerview.widget.RecyclerView) itemView.getParent();
+            while (rv.getItemDecorationCount() > 0) {
+                rv.removeItemDecorationAt(0);
+            }
+        }
+        
         // Remove the default preference background so the root container doesn't draw a square ripple
-        itemView.setBackground(null);
+        itemView.setBackgroundColor(0);
         
         // Remove padding from the parent layout container that Preference framework adds
         itemView.setPadding(0, 0, 0, 0);
