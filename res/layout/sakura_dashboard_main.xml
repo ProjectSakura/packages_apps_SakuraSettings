@@ -26,7 +26,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="16dp"
             app:cardElevation="2dp"
-            app:cardBackgroundColor="?attr/colorSecondaryContainer"
+            app:cardBackgroundColor="@color/sakura_card_expressive_bg"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -56,7 +56,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="16dp"
             app:cardElevation="2dp"
-            app:cardBackgroundColor="?attr/colorSecondaryContainer"
+            app:cardBackgroundColor="@color/sakura_card_expressive_bg"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -95,7 +95,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="16dp"
             app:cardElevation="2dp"
-            app:cardBackgroundColor="?attr/colorSecondaryContainer"
+            app:cardBackgroundColor="@color/sakura_card_expressive_bg"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -125,7 +125,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="16dp"
             app:cardElevation="2dp"
-            app:cardBackgroundColor="?attr/colorSecondaryContainer"
+            app:cardBackgroundColor="@color/sakura_card_expressive_bg"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -164,7 +164,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="16dp"
             app:cardElevation="2dp"
-            app:cardBackgroundColor="?attr/colorSecondaryContainer"
+            app:cardBackgroundColor="@color/sakura_card_expressive_bg"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -194,7 +194,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="16dp"
             app:cardElevation="2dp"
-            app:cardBackgroundColor="?attr/colorSecondaryContainer"
+            app:cardBackgroundColor="@color/sakura_card_expressive_bg"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -233,7 +233,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="16dp"
             app:cardElevation="2dp"
-            app:cardBackgroundColor="?attr/colorSecondaryContainer"
+            app:cardBackgroundColor="@color/sakura_card_expressive_bg"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -263,7 +263,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="16dp"
             app:cardElevation="2dp"
-            app:cardBackgroundColor="?attr/colorSecondaryContainer"
+            app:cardBackgroundColor="@color/sakura_card_expressive_bg"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -302,7 +302,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="16dp"
             app:cardElevation="2dp"
-            app:cardBackgroundColor="?attr/colorSecondaryContainer"
+            app:cardBackgroundColor="@color/sakura_card_expressive_bg"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
