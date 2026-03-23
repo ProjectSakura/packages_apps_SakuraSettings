@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="@android:color/transparent"
     android:padding="8dp">
 
     <!-- Row 1: Status Bar & Quick Settings -->
@@ -22,6 +23,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="24dp"
             app:cardElevation="2dp"
+            app:cardBackgroundColor="?android:attr/colorBackgroundFloating"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -48,6 +50,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="24dp"
             app:cardElevation="2dp"
+            app:cardBackgroundColor="?android:attr/colorBackgroundFloating"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -83,6 +86,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="24dp"
             app:cardElevation="2dp"
+            app:cardBackgroundColor="?android:attr/colorBackgroundFloating"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -109,6 +113,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="24dp"
             app:cardElevation="2dp"
+            app:cardBackgroundColor="?android:attr/colorBackgroundFloating"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -144,6 +149,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="24dp"
             app:cardElevation="2dp"
+            app:cardBackgroundColor="?android:attr/colorBackgroundFloating"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -170,6 +176,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="24dp"
             app:cardElevation="2dp"
+            app:cardBackgroundColor="?android:attr/colorBackgroundFloating"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -205,6 +212,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="24dp"
             app:cardElevation="2dp"
+            app:cardBackgroundColor="?android:attr/colorBackgroundFloating"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -231,6 +239,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="24dp"
             app:cardElevation="2dp"
+            app:cardBackgroundColor="?android:attr/colorBackgroundFloating"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -266,6 +275,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="24dp"
             app:cardElevation="2dp"
+            app:cardBackgroundColor="?android:attr/colorBackgroundFloating"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
@@ -292,6 +302,7 @@
             android:layout_weight="1"
             app:cardCornerRadius="24dp"
             app:cardElevation="2dp"
+            app:cardBackgroundColor="?android:attr/colorBackgroundFloating"
             app:strokeWidth="0dp"
             android:clickable="true"
             android:focusable="true">
