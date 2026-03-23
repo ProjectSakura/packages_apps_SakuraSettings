@@ -17,16 +17,6 @@ public class MonolithicDashboardPreference extends LayoutPreference {
 
     public MonolithicDashboardPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init();
-    }
-
-    public MonolithicDashboardPreference(Context context) {
-        super(context, R.layout.sakura_dashboard_main);
-    }
-
-    private void init() {
-        setLayoutResource(R.layout.sakura_dashboard_main);
-        setSelectable(false);
     }
 
     @Override

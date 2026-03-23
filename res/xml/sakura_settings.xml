@@ -23,6 +23,7 @@
     <!-- This custom Preference single-handedly renders the 10 manual MaterialCardViews -->
     <com.sakura.settings.preferences.MonolithicDashboardPreference
         android:key="monolithic_dashboard"
+        android:layout="@layout/sakura_dashboard_main"
         android:selectable="false" />
 
     <!-- HIDDEN BACKEND ROUTING PREFERENCES -->
