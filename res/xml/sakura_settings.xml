@@ -15,78 +15,62 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title=" " >
 
-        <!-- Status Bar -->
-        <com.sakura.settings.preferences.DashboardCardPreference
+    <!-- THE MONOLITHIC DASHBOARD GRID -->
+    <!-- This custom Preference single-handedly renders the 10 manual MaterialCardViews -->
+    <com.sakura.settings.preferences.MonolithicDashboardPreference
+        android:key="monolithic_dashboard"
+        android:selectable="false" />
+
+    <!-- HIDDEN BACKEND ROUTING PREFERENCES -->
+    <!-- We hide these visually, but keep them in the hierarchy so the Monolithic Grid can trigger their Intents/Fragments natively -->
+    <PreferenceCategory
+        android:key="hidden_backend_routers"
+        app:isPreferenceVisible="false">
+        
+        <Preference
             android:key="statusbar_category"
-            android:title="@string/statusbar_title"
-            android:fragment="com.sakura.settings.fragments.StatusBarSettings" 
-            android:icon="@drawable/ic_hm_statusbar"/>
+            android:fragment="com.sakura.settings.fragments.StatusBarSettings" />
 
-        <!-- Quick Settings panel -->
-        <com.sakura.settings.preferences.DashboardCardPreference
+        <Preference
             android:key="quicksettings_category"
-            android:title="@string/quicksettings_title"
-            android:fragment="com.sakura.settings.fragments.QuickSettings"
-            android:icon="@drawable/ic_hm_quicksettings"/>
+            android:fragment="com.sakura.settings.fragments.QuickSettings" />
 
-        <!-- Buttons -->
-        <com.sakura.settings.preferences.DashboardCardPreference
+        <Preference
             android:key="buttonsettings_category"
-            android:title="@string/button_title"
-            android:fragment="com.sakura.settings.fragments.ButtonSettings"
-            android:icon="@drawable/ic_hm_buttons"/>
+            android:fragment="com.sakura.settings.fragments.ButtonSettings" />
 
-        <!-- Gestures -->
-        <com.sakura.settings.preferences.DashboardCardPreference
+        <Preference
             android:key="gestures_category"
-            android:title="@string/gestures_title" 
             android:fragment="com.android.settings.gestures.GestureSettings"
-            settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"
-            android:icon="@drawable/ic_hm_sos_gestures"/>
+            settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController" />
 
-        <!-- Lock Screen -->
-        <com.sakura.settings.preferences.DashboardCardPreference
+        <Preference
             android:key="lockscreen_category"
-            android:title="@string/lockscreen_title" 
-            android:fragment="com.sakura.settings.fragments.LockScreenSettings"
-            android:icon="@drawable/ic_hm_lockscreens"/>
+            android:fragment="com.sakura.settings.fragments.LockScreenSettings" />
 
-        <!-- Themes -->
-        <com.sakura.settings.preferences.DashboardCardPreference
+        <Preference
             android:key="themes"
-            android:fragment="com.sakura.settings.fragments.ThemesSettings"
-            android:icon="@drawable/ic_hm_themes"
-            android:title="@string/themes_title" />
+            android:fragment="com.sakura.settings.fragments.ThemesSettings" />
 
-        <!-- Notifications -->
-        <com.sakura.settings.preferences.DashboardCardPreference
+        <Preference
             android:key="notifications_category"
-            android:title="@string/notifications_title"
-            android:fragment="com.sakura.settings.fragments.NotificationSettings"
-            android:icon="@drawable/ic_hm_notifications"/>
+            android:fragment="com.sakura.settings.fragments.NotificationSettings" />
 
-        <!-- Misc -->
-        <com.sakura.settings.preferences.DashboardCardPreference
+        <Preference
             android:key="misc_category"
-            android:title="@string/misc_title" 
-            android:fragment="com.sakura.settings.fragments.MiscSettings"
-            android:icon="@drawable/ic_hm_miscs"/>
+            android:fragment="com.sakura.settings.fragments.MiscSettings" />
 
-        <!-- About Devs -->
-        <com.sakura.settings.preferences.DashboardCardPreference
+        <Preference
             android:key="dev_info"
-            android:title="@string/sakura_about_info"
-            android:fragment="com.android.settings.custom.SakuraDevsInfoFragment"
-            android:icon="@drawable/ic_hm_team"/>
+            android:fragment="com.android.settings.custom.SakuraDevsInfoFragment" />
 
-        <!-- About Donators -->
-        <com.sakura.settings.preferences.DashboardCardPreference
+        <Preference
             android:key="donators_info"
-            android:title="@string/sakura_donator_about_info"
-            android:fragment="com.android.settings.custom.SakuraDonatorsInfoFragment"
-            android:icon="@drawable/ic_hm_team"/>
+            android:fragment="com.android.settings.custom.SakuraDonatorsInfoFragment" />
             
+    </PreferenceCategory>
 </PreferenceScreen>
