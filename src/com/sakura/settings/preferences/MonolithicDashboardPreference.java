@@ -4,13 +4,13 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 
-import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceViewHolder;
 
 import com.android.settings.R;
+import com.android.settingslib.widget.LayoutPreference;
 
-public class MonolithicDashboardPreference extends Preference {
+public class MonolithicDashboardPreference extends LayoutPreference {
 
     private PreferenceManager mManager;
 
@@ -42,17 +42,9 @@ public class MonolithicDashboardPreference extends Preference {
     @Override
     public void onBindViewHolder(PreferenceViewHolder holder) {
         super.onBindViewHolder(holder);
-        holder.itemView.setBackground(null); 
-        holder.setDividerAllowedAbove(false);
-        holder.setDividerAllowedBelow(false);
 
-        // Strip any residual Item Decorations that AOSP tries to wrap this single giant item in
-        if (holder.itemView.getParent() instanceof androidx.recyclerview.widget.RecyclerView) {
-            androidx.recyclerview.widget.RecyclerView rv = (androidx.recyclerview.widget.RecyclerView) holder.itemView.getParent();
-            while (rv.getItemDecorationCount() > 0) {
-                rv.removeItemDecorationAt(0);
-            }
-        }
+        // Native LayoutPreference avoids AOSP ItemDecorations and grouped backgrounds!
+        // No need for RecyclerView padding hacks or background stripping.
 
         // Hardcode clicks for all 10 explicit standalone cards
         setupClick(holder.itemView, "card_statusbar", "statusbar_category");
