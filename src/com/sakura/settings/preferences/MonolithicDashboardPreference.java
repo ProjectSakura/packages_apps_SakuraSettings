@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 
+import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceViewHolder;
 
@@ -14,24 +15,13 @@ public class MonolithicDashboardPreference extends LayoutPreference {
 
     private PreferenceManager mManager;
 
-    public MonolithicDashboardPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        init();
-    }
-
-    public MonolithicDashboardPreference(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-        init();
-    }
-
     public MonolithicDashboardPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
     public MonolithicDashboardPreference(Context context) {
-        super(context);
-        init();
+        super(context, R.layout.sakura_dashboard_main);
     }
 
     private void init() {
