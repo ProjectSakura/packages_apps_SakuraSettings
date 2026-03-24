@@ -97,6 +97,7 @@
     <string name="button_title">Buttons</string>
     <string name="gestures_title">Gestures</string>
     <string name="lockscreen_title">Lock screen</string>
+    <string name="sound_title">Sound</string>
     <string name="misc_title">Miscellaneous</string>
     <string name="navbar_title">Navigation bar</string>
     <string name="powermenu_title">Power menu</string>
@@ -1394,4 +1395,26 @@ The progress bar dynamically switches between media and download states, ensurin
 
     <!-- Radio Info -->
     <string name="radio_info_title">Radio info</string>
+
+    <!-- Screenshot shutter sound  -->
+    <string name="screenshot_shutter_sound_title">Screenshot sound</string>
+    <string name="screenshot_shutter_sound_summary">Play sound when screenshot is taken</string>
+
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_title">Adaptive playback</string>
+    <string name="adaptive_playback_summary">Pause media when volume is muted and resume it by increasing volume within the timeout</string>
+    <string name="adaptive_playback_intro_text">Automatically pauses media when the volume is muted and will resume automatically when volume is restored within the set time</string>
+    <string name="adaptive_playback_timeout_title">Playback timeout</string>
+
+    <!-- Volume panel -->
+    <string name="volume_panel_category">Volume panel</string>
+    <string name="volume_dialog_timeout_title">Volume panel timeout</string>
+    <string name="volume_panel_on_left_title">Volume panel on left</string>
+    <string name="volume_dialog_haptic_feedback_title">Volume panel haptics</string>
+
+    <!-- In-call feedback -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
 </resources>
