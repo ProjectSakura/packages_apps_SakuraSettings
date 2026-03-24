@@ -37,10 +37,6 @@ import androidx.preference.PreferenceCategory;
 import com.android.settings.R;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.settings.utils.HttpHandler;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -78,7 +74,6 @@ public class SakuraDevsInfoFragment extends SettingsPreferenceFragment {
     }
 
     private class parseGitIcon extends AsyncTask<Object, Preference, String> {
-        private String id;
         private Drawable image;
         private Preference preference;
         @Override
@@ -87,21 +82,37 @@ public class SakuraDevsInfoFragment extends SettingsPreferenceFragment {
         }
         @Override
         protected String doInBackground(Object... arg0) {
+            String username = arg0[0].toString();
             preference = (Preference) arg0[1];
-            HttpHandler sh = new HttpHandler();
-            String url = "https://api.github.com/users/" + arg0[0].toString();
-            String jsonStr = sh.makeServiceCall(url);
-            if (jsonStr != null) {
-                try {
-                    JSONObject jsonObj = new JSONObject(jsonStr);
-                    id = jsonObj.getString("id");
-                } catch (final JSONException ignored) {}
-            }
             try {
-                InputStream is = (InputStream) new URL("https://avatars2.githubusercontent.com/u/" + id + "?v=4").getContent();
-                image = Drawable.createFromStream(is, "src name");
-                image = new BitmapDrawable(getResources(), getCircularImage(image));
-            } catch (IOException e) {
+                Context context = getContext();
+                if (context == null) return null;
+                java.io.File cacheDir = context.getCacheDir();
+                java.io.File avatarFile = new java.io.File(cacheDir, username + "_github_avatar.png");
+                long oneHour = 60 * 60 * 1000;
+
+                if (avatarFile.exists() && (System.currentTimeMillis() - avatarFile.lastModified() < oneHour)) {
+                    image = Drawable.createFromPath(avatarFile.getAbsolutePath());
+                } else {
+                    java.net.HttpURLConnection conn = (java.net.HttpURLConnection) new java.net.URL("https://github.com/" + username + ".png").openConnection();
+                    conn.setInstanceFollowRedirects(true);
+                    java.io.InputStream is = conn.getInputStream();
+
+                    java.io.FileOutputStream fos = new java.io.FileOutputStream(avatarFile);
+                    byte[] buffer = new byte[1024];
+                    int len;
+                    while ((len = is.read(buffer)) != -1) {
+                        fos.write(buffer, 0, len);
+                    }
+                    fos.close();
+                    is.close();
+
+                    image = Drawable.createFromPath(avatarFile.getAbsolutePath());
+                }
+                if (image != null) {
+                    image = new BitmapDrawable(getResources(), getCircularImage(image));
+                }
+            } catch (Exception e) {
                 e.printStackTrace();
             }
             return null;
@@ -110,7 +121,9 @@ public class SakuraDevsInfoFragment extends SettingsPreferenceFragment {
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            preference.setIcon(image);
+            if (image != null) {
+                preference.setIcon(image);
+            }
         }
     }
 
