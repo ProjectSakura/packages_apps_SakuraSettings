@@ -82,6 +82,13 @@
             android:fragment="com.sakura.settings.fragments.NotificationSettings"
             android:icon="@drawable/ic_hm_notifications"/>
 
+        <!-- Sound -->
+        <Preference
+            android:key="sound_category"
+            android:title="@string/sound_title" 
+            android:fragment="com.sakura.settings.fragments.SoundSettings"
+            android:icon="@drawable/ic_hm_sound"/>
+        
         <!-- Misc -->
         <Preference
             android:key="misc_category"
