@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016-2025 crDroid Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/sound_title">
+
+    <!-- Screenshot Sound  -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+        android:key="screenshot_shutter_sound"
+        android:icon="@drawable/ic_cellphone_sound"
+        android:title="@string/screenshot_shutter_sound_title"
+        android:summary="@string/screenshot_shutter_sound_summary"
+        android:defaultValue="true" />
+
+    <!-- Adaptive Playback
+    <Preference
+        android:key="adaptive_playback_settings"
+        android:icon="@drawable/ic_settings_sound"
+        android:title="@string/adaptive_playback_title"
+        android:summary="@string/adaptive_playback_summary"
+        android:fragment="com.sakura.settings.fragments.sound.AdaptivePlayback" /> -->
+
+    <!-- Volume panel -->
+    <PreferenceCategory
+        android:key="volume_panel"
+        android:title="@string/volume_panel_category" >
+
+        <lineageos.preference.LineageSecureSettingSwitchPreference
+            android:key="volume_panel_on_left"
+            android:icon="@drawable/ic_settings_sound"
+            android:title="@string/volume_panel_on_left_title" />
+
+        <com.sakura.settings.preferences.SecureSettingSeekBarPreference
+            android:key="volume_dialog_dismiss_timeout"
+            android:icon="@drawable/ic_music_note"
+            android:title="@string/volume_dialog_timeout_title"
+            android:defaultValue="3000"
+            android:max="10000"
+            settings:min="1000"
+            settings:interval="500"
+            settings:units="@string/unit_milliseconds" />
+
+        <com.sakura.settings.preferences.SecureSettingSwitchPreference
+            android:key="volume_dialog_haptic_feedback"
+            android:icon="@drawable/ic_volume_vibrate"
+            android:title="@string/volume_dialog_haptic_feedback_title"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <!-- In-call feedback -->
+    <PreferenceCategory
+        android:key="incall_vib_options"
+        android:title="@string/incall_vibration_category" >
+
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="vibrate_on_connect"
+            android:icon="@drawable/ic_vibrate"
+            android:title="@string/incall_vibrate_connect_title"
+            android:defaultValue="false" />
+
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="vibrate_on_callwaiting"
+            android:icon="@drawable/ic_vibrate"
+            android:title="@string/incall_vibrate_call_wait_title"
+            android:defaultValue="false" />
+
+        <com.sakura.settings.preferences.SystemSettingSwitchPreference
+            android:key="vibrate_on_disconnect"
+            android:icon="@drawable/ic_vibrate"
+            android:title="@string/incall_vibrate_disconnect_title"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

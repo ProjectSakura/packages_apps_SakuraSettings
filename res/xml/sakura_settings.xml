@@ -62,6 +62,10 @@
             android:fragment="com.sakura.settings.fragments.NotificationSettings" />
 
         <Preference
+            android:key="sound_category"
+            android:fragment="com.sakura.settings.fragments.SoundSettings" />
+        
+        <Preference
             android:key="misc_category"
             android:fragment="com.sakura.settings.fragments.MiscSettings" />
 

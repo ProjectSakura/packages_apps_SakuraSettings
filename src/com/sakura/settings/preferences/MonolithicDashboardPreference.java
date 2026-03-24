@@ -37,6 +37,7 @@ public class MonolithicDashboardPreference extends LayoutPreference {
         setupClick(holder.itemView, "card_misc", "misc_category");
         setupClick(holder.itemView, "card_dev_info", "dev_info");
         setupClick(holder.itemView, "card_donators_info", "donators_info");
+        setupClick(holder.itemView, "card_sound", "sound_category");
     }
 
     private void setupClick(View root, String viewIdStr, String targetKey) {
