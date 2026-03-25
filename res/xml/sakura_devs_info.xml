@@ -37,6 +37,13 @@
         </Preference>
 </PreferenceCategory>
 
+    <!-- About Donators -->
+    <Preference
+            android:key="donators_info"
+            android:title="@string/sakura_donator_about_info"
+            android:summary="@string/sakura_donator_about_info_summary_title"
+            android:fragment="com.android.settings.custom.SakuraDonatorsInfoFragment"/>
+
 <PreferenceCategory
             android:key="sakura_dev"
             android:title="@string/devs_header" >
