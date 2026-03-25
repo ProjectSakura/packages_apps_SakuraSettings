@@ -72,10 +72,6 @@
         <Preference
             android:key="dev_info"
             android:fragment="com.android.settings.custom.SakuraDevsInfoFragment" />
-
-        <Preference
-            android:key="donators_info"
-            android:fragment="com.android.settings.custom.SakuraDonatorsInfoFragment" />
             
     </PreferenceCategory>
 </PreferenceScreen>
