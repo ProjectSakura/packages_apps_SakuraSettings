@@ -365,7 +365,7 @@
                 android:paddingBottom="24dp"
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp">
-                <ImageView android:layout_width="48dp" android:layout_height="48dp" android:layout_marginBottom="12dp" android:src="@drawable/ic_hm_team" />
+                <ImageView android:layout_width="48dp" android:layout_height="48dp" android:layout_marginBottom="12dp" android:src="@drawable/ic_hm_sakura" />
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:text="@string/sakura_about_info" android:textAppearance="?android:attr/textAppearanceListItem" android:textColor="?android:attr/textColorPrimary" android:textSize="16sp" android:fontFamily="sans-serif-medium" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
