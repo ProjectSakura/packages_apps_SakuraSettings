@@ -115,6 +115,13 @@
         android:entryValues="@array/hardware_keys_action_values"
         android:persistent="false" />
 
+    <!-- Shake Gesture -->
+    <Preference
+         android:key="gesture_shake_action"
+         android:title="@string/shake_gestures_enabled_title"
+         android:summary="@string/shake_gestures_enabled_summary"
+         android:fragment="com.sakura.settings.fragments.misc.ShakeGestures" />
+
     <!-- Sensor block per package -->
     <Preference
         android:key="sensor_block_settings"
