@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2022 SuperiorOS
+     Copyright (C) 2026 Project Sakura
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,106 +16,65 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title=" " >
 
-        <!-- Status Bar -->
+    <!-- Monolithic Dashboard Grid :) -->
+    <com.sakura.settings.preferences.MonolithicDashboardPreference
+        android:key="monolithic_dashboard"
+        android:layout="@layout/sakura_dashboard_main"
+        android:selectable="false" />
+
+    <!-- Monolithic Routings-->
+    <PreferenceCategory
+        android:key="hidden_backend_routers"
+        app:isPreferenceVisible="false">
+        
         <Preference
             android:key="statusbar_category"
-            android:title="@string/statusbar_title"
-            android:fragment="com.sakura.settings.fragments.StatusBarSettings" 
-            android:icon="@drawable/ic_hm_statusbar"/>
+            android:fragment="com.sakura.settings.fragments.StatusBarSettings" />
 
-        <!-- Quick Settings panel -->
         <Preference
             android:key="quicksettings_category"
-            android:title="@string/quicksettings_title"
-            android:fragment="com.sakura.settings.fragments.QuickSettings"
-            android:icon="@drawable/ic_hm_quicksettings"/>
+            android:fragment="com.sakura.settings.fragments.QuickSettings" />
 
-        <!-- Buttons -->
         <Preference
             android:key="buttonsettings_category"
-            android:title="@string/button_title"
-            android:fragment="com.sakura.settings.fragments.ButtonSettings"
-            android:icon="@drawable/ic_hm_buttons"/>
+            android:fragment="com.sakura.settings.fragments.ButtonSettings" />
 
-        <!-- Navigation Bar ->
-        <Preference
-            android:key="navigationbar_category"
-            android:title="@string/navbar_title" 
-            android:fragment="com.sakura.settings.fragments.NavbarSettings"
-            android:icon="@drawable/ic_hm_navbar"/>-->
-
-        <!-- Gestures -->
         <Preference
             android:key="gestures_category"
-            android:title="@string/gestures_title" 
             android:fragment="com.android.settings.gestures.GestureSettings"
-            settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"
-            android:icon="@drawable/ic_hm_sos_gestures"/>
+            settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController" />
 
-        <!-- Lock Screen -->
         <Preference
             android:key="lockscreen_category"
-            android:title="@string/lockscreen_title" 
-            android:fragment="com.sakura.settings.fragments.LockScreenSettings"
-            android:icon="@drawable/ic_hm_lockscreens"/>
+            android:fragment="com.sakura.settings.fragments.LockScreenSettings" />
 
-        <!-- Power Menu ->
-        <Preference
-            android:key="powermenu__category"
-            android:title="@string/powermenu_title" 
-            android:fragment="com.sakura.settings.fragments.PowerMenuSettings"
-            android:icon="@drawable/ic_hm_powermenu"/>-->
-
-        <!-- Themes -->
         <Preference
             android:key="themes"
-            android:fragment="com.sakura.settings.fragments.ThemesSettings"
-            android:icon="@drawable/ic_hm_themes"
-            android:title="@string/themes_title" />
+            android:fragment="com.sakura.settings.fragments.ThemesSettings" />
 
-        <!-- Notifications -->
         <Preference
             android:key="notifications_category"
-            android:title="@string/notifications_title"
-            android:fragment="com.sakura.settings.fragments.NotificationSettings"
-            android:icon="@drawable/ic_hm_notifications"/>
+            android:fragment="com.sakura.settings.fragments.NotificationSettings" />
 
-        <!-- Sound -->
         <Preference
             android:key="sound_category"
-            android:title="@string/sound_title" 
-            android:fragment="com.sakura.settings.fragments.SoundSettings"
-            android:icon="@drawable/ic_hm_sound"/>
+            android:fragment="com.sakura.settings.fragments.SoundSettings" />
         
-        <!-- Misc -->
         <Preference
             android:key="misc_category"
-            android:title="@string/misc_title" 
-            android:fragment="com.sakura.settings.fragments.MiscSettings"
-            android:icon="@drawable/ic_hm_miscs"/>
+            android:fragment="com.sakura.settings.fragments.MiscSettings" />
 
-        
-        <PreferenceCategory
-        android:layout="@layout/settingslib_expressive_untitled_preference_category">
-        
-        <!-- About Devs -->
         <Preference
             android:key="dev_info"
-            android:title="@string/sakura_about_info"
-            android:summary="@string/sakura_about_info_summary_title"
-            android:fragment="com.android.settings.custom.SakuraDevsInfoFragment"
-            android:icon="@drawable/ic_hm_team"/>
+            android:fragment="com.android.settings.custom.SakuraDevsInfoFragment" />
 
-        <!-- About Donators -->
         <Preference
             android:key="donators_info"
-            android:title="@string/sakura_donator_about_info"
-            android:summary="@string/sakura_donator_about_info_summary_title"
-            android:fragment="com.android.settings.custom.SakuraDonatorsInfoFragment"
-            android:icon="@drawable/ic_hm_team"/>
+            android:fragment="com.android.settings.custom.SakuraDonatorsInfoFragment" />
             
     </PreferenceCategory>
 </PreferenceScreen>
