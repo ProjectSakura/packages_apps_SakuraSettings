@@ -22,16 +22,18 @@
     <string name="sakura_about_info">About Project</string>
     <string name="sakura_about_info_summary_title">About Team</string>
     <string name="sakura_about_info_summary">A customised LineageOS. Its sole purpose is to provide a platform which is powered by Lineage and is more customisable than Lineage.</string> 
-    <!-- Dev Info -->
+    <!-- Active Developers Info -->
     <string name="devs_header">Family Members</string>
+    <!-- Non active Developers-->
+    <string name="remembering_devs_header">Non-Active Developers</string>
     <!-- The broken Lord -->
     <string name="dev_1">Shen</string>
     <string name="dev_1_git" translatable="false">LordShenron</string>
-    <string name="dev1_description">Founder/Developer</string>
+    <string name="dev1_description">Ex Project Founder/Developer</string>
     <!-- RTX in name but uses a potato PC/laptop -->
     <string name="dev_2">ReveRTX</string>
     <string name="dev_2_git" translatable="false">ReveRTX</string>
-    <string name="dev2_description">Core Developer</string>
+    <string name="dev2_description">Ex Core Developer</string>
     <!-- Motivational Speaker -->
     <string name="dev_3">ArmSM</string>
     <string name="dev_3_git" translatable="false">ArmSM</string>
@@ -39,19 +41,19 @@
     <!-- The Noob -->
     <string name="dev_4">Anoosragh</string>
     <string name="dev_4_git" translatable="false">anoosragh69</string>
-    <string name="dev4_description">Core Developer</string>
+    <string name="dev4_description">Ex Core Developer</string>
     <!-- Web Slinger -->
     <string name="dev_5">Sapan Gajjar</string>
     <string name="dev_5_git" tranlatable="false">isg32</string>
-    <string name="dev5_description">Web Developer</string>
+    <string name="dev5_description">Ex Web Developer</string>
     <!-- Leonardo Davinci -->
     <string name="dev_6">Waze</string>
     <string name="dev_6_git" tranlatable="false">xelxen</string>
-    <string name="dev6_description">Designer</string>
+    <string name="dev6_description">Ex Designer</string>
     <!-- Alpha male -->
     <string name="dev_7">Momen Abdulrazek Ali</string>
     <string name="dev_7_git" tranlatable="false">momenabdulrazek</string>
-    <string name="dev7_description">Core Developer</string>
+    <string name="dev7_description">Lead Developer</string>
 
     <!-- Donators info -->
     <string name="sakura_donator_about_info">About Donators</string>
@@ -92,6 +94,9 @@
 
     <string name="donator_10">İlhan</string>
     <string name="donator_10_git" translatable="false">ilhan-athn7</string>
+
+    <string name="donator_11">Momen Abdulrazek Ali</string>
+    <string name="donator_11_git" translatable="false">momenabdulrazek</string>
 
     <!-- Categories -->
     <string name="button_title">Buttons</string>

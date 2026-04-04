@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2022 SuperiorOS
+     Copyright (C) 2026 Project Sakura
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -43,11 +44,37 @@
             android:title="@string/sakura_donator_about_info"
             android:summary="@string/sakura_donator_about_info_summary_title"
             android:fragment="com.android.settings.custom.SakuraDonatorsInfoFragment"/>
-
+    <!-- Active Developers -->
 <PreferenceCategory
             android:key="sakura_dev"
             android:title="@string/devs_header" >
 
+        <Preference
+            android:key="dev7"
+            android:title="@string/dev_7"
+            android:icon="@drawable/ic_code"
+            android:summary="@string/dev7_description" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://telegram.me/momen_abdulrazek" />
+        </Preference>
+
+        <Preference
+            android:key="dev3"
+            android:title="@string/dev_3"
+            android:icon="@drawable/ic_code"
+            android:summary="@string/dev3_description" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://telegram.me/NotUsingTheName" />
+        </Preference>
+</PreferenceCategory>
+
+    <!-- Non-Active Developers-->
+<PreferenceCategory
+            android:key="remembering_devs"
+            android:title="@string/remembering_devs_header" >
+        
         <Preference
             android:key="dev1"
             android:title="@string/dev_1"
@@ -69,16 +96,6 @@
         </Preference>
 
         <Preference
-            android:key="dev3"
-            android:title="@string/dev_3"
-            android:icon="@drawable/ic_code"
-            android:summary="@string/dev3_description" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://telegram.me/NotUsingTheName" />
-        </Preference>
-
-        <Preference
             android:key="dev4"
             android:title="@string/dev_4"
             android:icon="@drawable/ic_code"
@@ -86,16 +103,6 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://telegram.me/anoosragh69" />
-        </Preference>
-
-        <Preference
-            android:key="dev7"
-            android:title="@string/dev_7"
-            android:icon="@drawable/ic_code"
-            android:summary="@string/dev7_description" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://telegram.me/momen_abdulrazek" />
         </Preference>
 
         <Preference
@@ -117,7 +124,5 @@
             android:action="android.intent.action.VIEW"
             android:data="https://telegram.me/XelXen" />
         </Preference>
-
 </PreferenceCategory>
-
 </PreferenceScreen>
