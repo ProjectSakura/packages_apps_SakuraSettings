@@ -43,7 +43,6 @@ import com.android.settingslib.search.SearchIndexable;
 import com.sakura.settings.fragments.statusbar.BatteryBar;
 import com.sakura.settings.fragments.statusbar.Clock;
 import com.sakura.settings.fragments.statusbar.NetworkTrafficSettings;
-import com.sakura.settings.fragments.statusbar.OngoingProgressBar;
 import com.sakura.settings.preferences.SystemSettingSeekBarPreference;
 
 import lineageos.preference.LineageSystemSettingListPreference;
@@ -163,7 +162,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         BatteryBar.reset(mContext);
         Clock.reset(mContext);
         NetworkTrafficSettings.reset(mContext);
-        OngoingProgressBar.reset(mContext);
     }
 
     private void updateQuickPulldownSummary(int value) {
