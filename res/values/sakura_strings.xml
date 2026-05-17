@@ -1698,4 +1698,6 @@
     <string name="idle_manager_clear_stats_title">Clear stats</string>
     <string name="idle_manager_clear_stats_confirm">This will permanently delete all enforcement history. The idle manager will continue running normally.</string>
     <string name="idle_manager_clear_stats_button">Clear</string>
+    <string name="idle_manager_sleep_mode_trigger_title">Trigger on Sleep Mode</string>
+    <string name="idle_manager_sleep_mode_trigger_summary">Only enforce idle rules while Sleep Mode is active</string>
 </resources>
