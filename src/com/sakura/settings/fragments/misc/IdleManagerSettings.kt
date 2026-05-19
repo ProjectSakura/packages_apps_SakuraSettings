@@ -460,7 +460,7 @@ private fun IdleManagerRoot(ctx: Context) {
                     globalEnabled = v
                     scope.launch(Dispatchers.IO) { writeEnabled(ctx, v) }
                 },
-                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 2.dp)
             )
 
             SleepModeTriggerCard(
@@ -470,7 +470,7 @@ private fun IdleManagerRoot(ctx: Context) {
                     sleepModeTrigger = v
                     scope.launch(Dispatchers.IO) { writeSleepModeTrigger(ctx, v) }
                 },
-                modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp)
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 12.dp)
             )
 
             AnimatedVisibility(visible = globalEnabled) {
