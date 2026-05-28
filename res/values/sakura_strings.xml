@@ -1615,4 +1615,9 @@
     <string name="gs_config_saved">Configuration saved</string>
     <string name="gs_loading_apps">Loading apps\u2026</string>
     <string name="gs_failed">Failed: %s</string>
+
+    <!-- AOD Peek -->
+    <string name="doze_peek_title">AOD Peek</string>
+    <string name="doze_peek_summary">Show ambient display briefly when the screen turns off</string>
+    <string name="doze_peek_duration_title">Peek duration</string>
 </resources>

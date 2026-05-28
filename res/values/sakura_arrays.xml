@@ -1072,4 +1072,16 @@
         <item>custom</item>
     </string-array>
 
+    <!-- AOD Peek -->
+    <string-array name="doze_peek_duration_entries">
+        <item>5 seconds</item>
+        <item>7 seconds</item>
+        <item>10 seconds</item>
+    </string-array>
+
+    <string-array name="doze_peek_duration_values" translatable="false">
+        <item>5</item>
+        <item>7</item>
+        <item>10</item>
+    </string-array>
 </resources>
