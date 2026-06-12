@@ -9,8 +9,14 @@ import android.content.Context
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
 import android.graphics.drawable.Drawable
+import android.net.Uri
 import android.os.Bundle
 import android.provider.Settings
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
+import android.widget.Toast
+import androidx.compose.material3.Checkbox
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.Crossfade
@@ -281,9 +287,102 @@ private fun formatElapsed(ms: Long): String {
 
 class IdleManagerSettings : Fragment() {
 
+    private val triggerExport = mutableStateOf(false)
+    private val pendingImportData = mutableStateOf<String?>(null)
+    private var jsonToExport: String? = null
+
+    private val exportLauncher = registerForActivityResult(
+        androidx.activity.result.contract.ActivityResultContracts.CreateDocument("application/json")
+    ) { uri ->
+        uri?.let {
+            val content = jsonToExport
+            if (content != null) {
+                performExport(it, content)
+            }
+        }
+    }
+
+    private val importLauncher = registerForActivityResult(
+        androidx.activity.result.contract.ActivityResultContracts.OpenDocument()
+    ) { uri ->
+        if (uri != null) {
+            try {
+                val content = readTextFromUri(uri)
+                org.json.JSONObject(content)
+                pendingImportData.value = content
+            } catch (e: Exception) {
+                Toast.makeText(
+                    requireContext(),
+                    R.string.idle_manager_backup_import_failed,
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
+    }
+
+    private fun readTextFromUri(uri: Uri): String {
+        val stringBuilder = StringBuilder()
+        requireContext().contentResolver.openInputStream(uri)?.use { inputStream ->
+            java.io.BufferedReader(java.io.InputStreamReader(inputStream)).use { reader ->
+                var line: String? = reader.readLine()
+                while (line != null) {
+                    stringBuilder.append(line)
+                    line = reader.readLine()
+                }
+            }
+        }
+        return stringBuilder.toString()
+    }
+
+    private fun performExport(uri: Uri, jsonContent: String) {
+        try {
+            requireContext().contentResolver.openOutputStream(uri)?.use { os ->
+                os.write(jsonContent.toByteArray())
+                os.flush()
+            }
+            Toast.makeText(
+                requireContext(),
+                R.string.idle_manager_backup_export_success,
+                Toast.LENGTH_SHORT
+            ).show()
+        } catch (e: Exception) {
+            Toast.makeText(
+                requireContext(),
+                R.string.idle_manager_backup_export_failed,
+                Toast.LENGTH_SHORT
+            ).show()
+        } finally {
+            jsonToExport = null
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requireActivity().title = getString(R.string.idle_manager_title)
+        setHasOptionsMenu(true)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        val importItem = menu.add(0, 1, 0, R.string.idle_manager_backup_menu_import)
+        importItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER)
+        
+        val exportItem = menu.add(0, 2, 0, R.string.idle_manager_backup_menu_export)
+        exportItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            1 -> {
+                importLauncher.launch(arrayOf("*/*"))
+                true
+            }
+            2 -> {
+                triggerExport.value = true
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     override fun onCreateView(
@@ -294,7 +393,18 @@ class IdleManagerSettings : Fragment() {
         setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
         setContent {
             SettingsTheme {
-                IdleManagerRoot(requireContext())
+                IdleManagerRoot(
+                    ctx = requireContext(),
+                    showExportDialog = triggerExport.value,
+                    onExportDismiss = { triggerExport.value = false },
+                    onExportConfirmed = { jsonStr ->
+                        triggerExport.value = false
+                        jsonToExport = jsonStr
+                        exportLauncher.launch("lunaris_idle_backup.json")
+                    },
+                    pendingImportJson = pendingImportData.value,
+                    onImportDismiss = { pendingImportData.value = null }
+                )
             }
         }
     }
@@ -302,7 +412,14 @@ class IdleManagerSettings : Fragment() {
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 @Composable
-private fun IdleManagerRoot(ctx: Context) {
+private fun IdleManagerRoot(
+    ctx: Context,
+    showExportDialog: Boolean,
+    onExportDismiss: () -> Unit,
+    onExportConfirmed: (String) -> Unit,
+    pendingImportJson: String?,
+    onImportDismiss: () -> Unit
+) {
     val pm = ctx.packageManager
     val scope = rememberCoroutineScope()
     val haptic = LocalHapticFeedback.current
@@ -380,6 +497,93 @@ private fun IdleManagerRoot(ctx: Context) {
         }
     }
 
+    fun buildExportJson(
+        exportGlobal: Boolean,
+        exportApps: Boolean,
+        selectedApps: Set<String>
+    ): String {
+        val root = JSONObject()
+        root.put("version", 1)
+        if (exportGlobal) {
+            root.put("global_enabled", globalEnabled)
+            root.put("sleep_mode_trigger", sleepModeTrigger)
+        }
+        if (exportApps) {
+            val appsArray = JSONArray()
+            configuredApps.forEach { (pkg, cfg) ->
+                if (selectedApps.contains(pkg)) {
+                    appsArray.put(JSONObject().apply {
+                        put("package", cfg.packageName)
+                        put("action", cfg.action.name)
+                    })
+                }
+            }
+            root.put("apps", appsArray)
+        }
+        return root.toString()
+    }
+
+    fun applyImport(
+        importGlobal: Boolean,
+        importApps: Boolean,
+        selectedApps: Set<String>,
+        parsedJson: JSONObject
+    ) {
+        scope.launch(Dispatchers.IO) {
+            try {
+                if (importGlobal) {
+                    if (parsedJson.has("global_enabled")) {
+                        val enabled = parsedJson.getBoolean("global_enabled")
+                        writeEnabled(ctx, enabled)
+                    }
+                    if (parsedJson.has("sleep_mode_trigger")) {
+                        val trigger = parsedJson.getBoolean("sleep_mode_trigger")
+                        writeSleepModeTrigger(ctx, trigger)
+                    }
+                }
+                if (importApps && parsedJson.has("apps")) {
+                    val appsArray = parsedJson.getJSONArray("apps")
+                    val currentConfigs = readAppConfigs(ctx)
+                    
+                    for (i in 0 until appsArray.length()) {
+                        val obj = appsArray.getJSONObject(i)
+                        val pkg = obj.getString("package")
+                        if (selectedApps.contains(pkg)) {
+                            val action = IdleAction.fromString(
+                                obj.optString("action", IdleAction.STANDBY_BUCKET_RARE.name)
+                            )
+                            currentConfigs[pkg] = IdleAppConfig(
+                                packageName = pkg,
+                                label = pkg,
+                                icon = android.graphics.drawable.ColorDrawable(0),
+                                isSystem = false,
+                                action = action
+                            )
+                        }
+                    }
+                    writeAppConfigs(ctx, currentConfigs)
+                }
+                
+                withContext(Dispatchers.Main) {
+                    loadAll()
+                    Toast.makeText(
+                        ctx,
+                        R.string.idle_manager_backup_import_success,
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            } catch (e: Exception) {
+                withContext(Dispatchers.Main) {
+                    Toast.makeText(
+                        ctx,
+                        R.string.idle_manager_backup_import_failed,
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
+        }
+    }
+
     LaunchedEffect(Unit) {
         allApps = withContext(Dispatchers.IO) {
             pm.getInstalledPackages(PackageManager.MATCH_ANY_USER)
@@ -442,6 +646,32 @@ private fun IdleManagerRoot(ctx: Context) {
                 TextButton(onClick = { showClearConfirm = false }) {
                     Text(stringResource(R.string.cancel))
                 }
+            }
+        )
+    }
+
+    if (showExportDialog) {
+        ExportConfigDialog(
+            configuredApps = configuredApps.values.toList(),
+            onDismiss = onExportDismiss,
+            onExportConfirmed = { exportGlobal, exportApps, selectedApps ->
+                val json = buildExportJson(exportGlobal, exportApps, selectedApps)
+                onExportConfirmed(json)
+            }
+        )
+    }
+
+    pendingImportJson?.let { jsonStr ->
+        ImportConfigDialog(
+            jsonString = jsonStr,
+            allApps = allApps,
+            onDismiss = onImportDismiss,
+            onImportConfirmed = { importGlobal, importApps, selectedApps ->
+                try {
+                    val parsed = JSONObject(jsonStr)
+                    applyImport(importGlobal, importApps, selectedApps, parsed)
+                } catch (e: Exception) {}
+                onImportDismiss()
             }
         )
     }
@@ -1664,4 +1894,417 @@ private fun SleepModeTriggerCard(
             }
         }
     }
+}
+
+@Composable
+private fun ExportConfigDialog(
+    configuredApps: List<IdleAppConfig>,
+    onDismiss: () -> Unit,
+    onExportConfirmed: (exportGlobal: Boolean, exportApps: Boolean, selectedApps: Set<String>) -> Unit
+) {
+    var includeGlobal by remember { mutableStateOf(true) }
+    var includeApps by remember { mutableStateOf(true) }
+    var selectedApps by remember { mutableStateOf(configuredApps.map { it.packageName }.toSet()) }
+
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(stringResource(R.string.idle_manager_backup_export_title)) },
+        text = {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(400.dp)
+                    .verticalScroll(rememberScrollState()),
+                verticalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                Text(
+                    stringResource(R.string.idle_manager_backup_export_desc),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(12.dp))
+                        .clickable { includeGlobal = !includeGlobal }
+                        .background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
+                        .padding(12.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Checkbox(
+                        checked = includeGlobal,
+                        onCheckedChange = { includeGlobal = it ?: false }
+                    )
+                    Spacer(Modifier.width(8.dp))
+                    Column(Modifier.weight(1f)) {
+                        Text(
+                            stringResource(R.string.idle_manager_backup_include_global),
+                            style = MaterialTheme.typography.titleSmall,
+                            fontWeight = FontWeight.SemiBold
+                        )
+                        Text(
+                            stringResource(R.string.idle_manager_backup_include_global_desc),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(12.dp))
+                        .clickable { includeApps = !includeApps }
+                        .background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
+                        .padding(12.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Checkbox(
+                        checked = includeApps,
+                        onCheckedChange = { includeApps = it ?: false }
+                    )
+                    Spacer(Modifier.width(8.dp))
+                    Column(Modifier.weight(1f)) {
+                        Text(
+                            stringResource(R.string.idle_manager_backup_include_apps),
+                            style = MaterialTheme.typography.titleSmall,
+                            fontWeight = FontWeight.SemiBold
+                        )
+                        Text(
+                            stringResource(R.string.idle_manager_backup_include_apps_desc),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+
+                if (includeApps && configuredApps.isNotEmpty()) {
+                    Text(
+                        stringResource(R.string.idle_manager_backup_select_apps),
+                        style = MaterialTheme.typography.labelMedium,
+                        color = MaterialTheme.colorScheme.primary,
+                        fontWeight = FontWeight.Bold,
+                        modifier = Modifier.padding(top = 8.dp)
+                    )
+                    
+                    configuredApps.forEach { app ->
+                        val isSelected = selectedApps.contains(app.packageName)
+                        val iconBmp = remember(app.packageName) {
+                            app.icon.toBitmap(80, 80).asImageBitmap()
+                        }
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clickable {
+                                    selectedApps = if (isSelected) {
+                                        selectedApps - app.packageName
+                                    } else {
+                                        selectedApps + app.packageName
+                                    }
+                                }
+                                .padding(vertical = 6.dp, horizontal = 4.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Checkbox(
+                                checked = isSelected,
+                                onCheckedChange = {
+                                    selectedApps = if (it == true) {
+                                        selectedApps + app.packageName
+                                    } else {
+                                        selectedApps - app.packageName
+                                    }
+                                }
+                            )
+                            Spacer(Modifier.width(8.dp))
+                            Image(
+                                iconBmp,
+                                null,
+                                Modifier.size(32.dp).clip(RoundedCornerShape(8.dp))
+                            )
+                            Spacer(Modifier.width(8.dp))
+                            Column(Modifier.weight(1f)) {
+                                Text(
+                                    app.label,
+                                    style = MaterialTheme.typography.bodyMedium,
+                                    fontWeight = FontWeight.SemiBold,
+                                    maxLines = 1,
+                                    overflow = TextOverflow.Ellipsis
+                                )
+                                Text(
+                                    app.packageName,
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    maxLines = 1,
+                                    overflow = TextOverflow.Ellipsis
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        confirmButton = {
+            Button(
+                onClick = { onExportConfirmed(includeGlobal, includeApps, selectedApps) },
+                enabled = includeGlobal || (includeApps && selectedApps.isNotEmpty())
+            ) {
+                Text(stringResource(R.string.idle_manager_backup_export_button))
+            }
+        },
+        dismissButton = {
+            TextButton(onClick = onDismiss) {
+                Text(stringResource(R.string.cancel))
+            }
+        }
+    )
+}
+
+@Composable
+private fun ImportConfigDialog(
+    jsonString: String,
+    allApps: List<IdleAppItem>,
+    onDismiss: () -> Unit,
+    onImportConfirmed: (importGlobal: Boolean, importApps: Boolean, selectedApps: Set<String>) -> Unit
+) {
+    val parsedJson = remember(jsonString) {
+        try {
+            JSONObject(jsonString)
+        } catch (e: Exception) {
+            null
+        }
+    }
+
+    if (parsedJson == null) {
+        LaunchedEffect(Unit) {
+            onDismiss()
+        }
+        return
+    }
+
+    var importGlobal by remember { mutableStateOf(parsedJson.has("global_enabled")) }
+    var importApps by remember { mutableStateOf(parsedJson.has("apps")) }
+
+    val backupApps = remember(parsedJson) {
+        val list = mutableListOf<Pair<String, String>>()
+        parsedJson.optJSONArray("apps")?.let { arr ->
+            for (i in 0 until arr.length()) {
+                val obj = arr.getJSONObject(i)
+                list.add(
+                    obj.getString("package") to
+                    obj.optString("action", "STANDBY_BUCKET_RARE")
+                )
+            }
+        }
+        list
+    }
+
+    val appMap = remember(allApps) { allApps.associateBy { it.packageName } }
+
+    var selectedApps by remember(backupApps) {
+        mutableStateOf(
+            backupApps.filter { appMap.containsKey(it.first) }
+                .map { it.first }
+                .toSet()
+        )
+    }
+
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(stringResource(R.string.idle_manager_backup_import_title)) },
+        text = {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(400.dp)
+                    .verticalScroll(rememberScrollState()),
+                verticalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                Text(
+                    stringResource(R.string.idle_manager_backup_import_desc),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+
+                if (parsedJson.has("global_enabled")) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clip(RoundedCornerShape(12.dp))
+                            .clickable { importGlobal = !importGlobal }
+                            .background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
+                            .padding(12.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Checkbox(
+                            checked = importGlobal,
+                            onCheckedChange = { importGlobal = it ?: false }
+                        )
+                        Spacer(Modifier.width(8.dp))
+                        Column(Modifier.weight(1f)) {
+                            Text(
+                                stringResource(R.string.idle_manager_backup_import_global),
+                                style = MaterialTheme.typography.titleSmall,
+                                fontWeight = FontWeight.SemiBold
+                            )
+                            val globEnabled = parsedJson.optBoolean("global_enabled", true)
+                            val sleepTrigger = parsedJson.optBoolean("sleep_mode_trigger", false)
+                            Text(
+                                "Enabled: ${if (globEnabled) "Yes" else "No"}, Sleep Mode Trigger: ${if (sleepTrigger) "Yes" else "No"}",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                    }
+                }
+
+                if (backupApps.isNotEmpty()) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clip(RoundedCornerShape(12.dp))
+                            .clickable { importApps = !importApps }
+                            .background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
+                            .padding(12.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Checkbox(
+                            checked = importApps,
+                            onCheckedChange = { importApps = it ?: false }
+                        )
+                        Spacer(Modifier.width(8.dp))
+                        Column(Modifier.weight(1f)) {
+                            Text(
+                                stringResource(R.string.idle_manager_backup_import_apps),
+                                style = MaterialTheme.typography.titleSmall,
+                                fontWeight = FontWeight.SemiBold
+                            )
+                            Text(
+                                "${backupApps.size} apps found in backup",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                    }
+
+                    if (importApps) {
+                        Text(
+                            stringResource(R.string.idle_manager_backup_select_import_apps),
+                            style = MaterialTheme.typography.labelMedium,
+                            color = MaterialTheme.colorScheme.primary,
+                            fontWeight = FontWeight.Bold,
+                            modifier = Modifier.padding(top = 8.dp)
+                        )
+
+                        backupApps.forEach { (pkg, action) ->
+                            val isSelected = selectedApps.contains(pkg)
+                            val localApp = appMap[pkg]
+                            val isInstalled = localApp != null
+                            val label = localApp?.label ?: pkg
+                            
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .clickable {
+                                        selectedApps = if (isSelected) {
+                                            selectedApps - pkg
+                                        } else {
+                                            selectedApps + pkg
+                                        }
+                                    }
+                                    .padding(vertical = 6.dp, horizontal = 4.dp),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Checkbox(
+                                    checked = isSelected,
+                                    onCheckedChange = {
+                                        selectedApps = if (it == true) {
+                                            selectedApps + pkg
+                                        } else {
+                                            selectedApps - pkg
+                                        }
+                                    }
+                                )
+                                Spacer(Modifier.width(8.dp))
+                                if (localApp != null) {
+                                    val iconBmp = remember(pkg) {
+                                        localApp.icon.toBitmap(80, 80).asImageBitmap()
+                                    }
+                                    Image(
+                                        iconBmp,
+                                        null,
+                                        Modifier.size(32.dp).clip(RoundedCornerShape(8.dp))
+                                    )
+                                } else {
+                                    Box(
+                                        Modifier.size(32.dp)
+                                            .clip(RoundedCornerShape(8.dp))
+                                            .background(MaterialTheme.colorScheme.surfaceVariant),
+                                        contentAlignment = Alignment.Center
+                                    ) {
+                                        Icon(Icons.Default.Apps, null, Modifier.size(16.dp))
+                                    }
+                                }
+                                Spacer(Modifier.width(8.dp))
+                                Column(Modifier.weight(1f)) {
+                                    Row(verticalAlignment = Alignment.CenterVertically) {
+                                        Text(
+                                            label,
+                                            style = MaterialTheme.typography.bodyMedium,
+                                            fontWeight = FontWeight.SemiBold,
+                                            maxLines = 1,
+                                            overflow = TextOverflow.Ellipsis,
+                                            modifier = Modifier.weight(1f, fill = false)
+                                        )
+                                        Spacer(Modifier.width(6.dp))
+                                        Box(
+                                            Modifier
+                                                .clip(RoundedCornerShape(4.dp))
+                                                .background(
+                                                    if (isInstalled)
+                                                        Color(0xFF2E7D32).copy(alpha = 0.15f)
+                                                    else
+                                                        MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.1f)
+                                                )
+                                                .padding(horizontal = 4.dp, vertical = 1.dp)
+                                        ) {
+                                            Text(
+                                                text = if (isInstalled)
+                                                    stringResource(R.string.idle_manager_backup_app_installed)
+                                                else
+                                                    stringResource(R.string.idle_manager_backup_app_not_installed),
+                                                style = MaterialTheme.typography.labelSmall,
+                                                color = if (isInstalled) Color(0xFF2E7D32) else MaterialTheme.colorScheme.onSurfaceVariant,
+                                                fontWeight = FontWeight.Bold
+                                            )
+                                        }
+                                    }
+                                    Text(
+                                        "$pkg · $action",
+                                        style = MaterialTheme.typography.bodySmall,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                        maxLines = 1,
+                                        overflow = TextOverflow.Ellipsis
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        confirmButton = {
+            Button(
+                onClick = { onImportConfirmed(importGlobal, importApps, selectedApps) },
+                enabled = importGlobal || (importApps && selectedApps.isNotEmpty())
+            ) {
+                Text(stringResource(R.string.idle_manager_backup_import_button))
+            }
+        },
+        dismissButton = {
+            TextButton(onClick = onDismiss) {
+                Text(stringResource(R.string.cancel))
+            }
+        }
+    )
 }

@@ -1700,4 +1700,28 @@
     <string name="idle_manager_clear_stats_button">Clear</string>
     <string name="idle_manager_sleep_mode_trigger_title">Trigger on Sleep Mode</string>
     <string name="idle_manager_sleep_mode_trigger_summary">Only enforce idle rules while Sleep Mode is active</string>
+
+    <!-- Idle Manager Backup & Restore -->
+    <string name="idle_manager_backup_menu_import">Import settings</string>
+    <string name="idle_manager_backup_menu_export">Export settings</string>
+    <string name="idle_manager_backup_export_title">Export Settings</string>
+    <string name="idle_manager_backup_export_desc">Select what you would like to include in the backup file:</string>
+    <string name="idle_manager_backup_include_global">Include global configurations</string>
+    <string name="idle_manager_backup_include_global_desc">Enable switch, Sleep Mode trigger, etc.</string>
+    <string name="idle_manager_backup_include_apps">Include app configurations</string>
+    <string name="idle_manager_backup_include_apps_desc">Custom timeouts and actions for selected apps</string>
+    <string name="idle_manager_backup_select_apps">Select apps to export</string>
+    <string name="idle_manager_backup_export_button">Export</string>
+    <string name="idle_manager_backup_import_title">Import Settings</string>
+    <string name="idle_manager_backup_import_desc">Select the settings and apps you want to restore from the backup:</string>
+    <string name="idle_manager_backup_import_global">Restore global configurations</string>
+    <string name="idle_manager_backup_import_apps">Restore app configurations</string>
+    <string name="idle_manager_backup_select_import_apps">Select apps to import</string>
+    <string name="idle_manager_backup_app_installed">Installed</string>
+    <string name="idle_manager_backup_app_not_installed">Not installed</string>
+    <string name="idle_manager_backup_import_button">Import</string>
+    <string name="idle_manager_backup_export_success">Settings exported successfully</string>
+    <string name="idle_manager_backup_export_failed">Export failed</string>
+    <string name="idle_manager_backup_import_success">Settings imported successfully</string>
+    <string name="idle_manager_backup_import_failed">Import failed: Invalid file</string>
 </resources>
