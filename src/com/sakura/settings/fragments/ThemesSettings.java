@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016-2025 crDroid Android Project
+ * Copyright (C) 2016-2026 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.sakura.settings.fragments;
 
 import android.app.Activity;
@@ -52,10 +51,8 @@ public class ThemesSettings extends SettingsPreferenceFragment implements
     public static final String TAG = "Themes";
 
     private static final String KEY_FORCE_FULL_SCREEN = "display_cutout_force_fullscreen_settings";
-    private static final String SMART_PIXELS = "smart_pixels";
 
     private Preference mShowCutoutForce;
-    private Preference mSmartPixels;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -73,12 +70,6 @@ public class ThemesSettings extends SettingsPreferenceFragment implements
             mShowCutoutForce = (Preference) findPreference(KEY_FORCE_FULL_SCREEN);
             prefScreen.removePreference(mShowCutoutForce);
         }
-
-        mSmartPixels = (Preference) prefScreen.findPreference(SMART_PIXELS);
-        boolean mSmartPixelsSupported = getResources().getBoolean(
-                com.android.internal.R.bool.config_supportSmartPixels);
-        if (!mSmartPixelsSupported)
-            prefScreen.removePreference(mSmartPixels);
     }
 
     @Override
@@ -125,11 +116,6 @@ public class ThemesSettings extends SettingsPreferenceFragment implements
                     if (TextUtils.isEmpty(displayCutout)) {
                         keys.add(KEY_FORCE_FULL_SCREEN);
                     }
-
-                    boolean mSmartPixelsSupported = context.getResources().getBoolean(
-                            com.android.internal.R.bool.config_supportSmartPixels);
-                    if (!mSmartPixelsSupported)
-                        keys.add(SMART_PIXELS);
 
                     return keys;
                 }
