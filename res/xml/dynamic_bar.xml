@@ -66,7 +66,7 @@
             android:key="event_call"
             android:title="@string/dynamic_bar_event_call"
             android:summary="@string/dynamic_bar_event_call_summary"
-            android:icon="@drawable/ic_call_ring"
+            android:icon="@drawable/ic_answer_call"
             android:defaultValue="true" />
 
         <SwitchPreferenceCompat
