@@ -61,39 +61,45 @@ public class CustomClockPreview extends SettingsPreferenceFragment {
     private ThemeUtils mThemeUtils;
     private Handler mHandler = new Handler();
 
+    // IMPORTANT: This array must stay index-for-index identical to CLOCK_LAYOUTS
+    // in frameworks/base/packages/SystemUI/src/com/android/systemui/clocks/ClockStyle.kt
+    // for every index it covers (0-33). Indices 2 and 3 use the default layout as a
+    // placeholder since their real layouts need SlateForOnePlus fonts not present here.
     private static final int[] CLOCK_LAYOUTS = {
-            R.layout.keyguard_clock_default,
-            R.layout.keyguard_clock_oos, // 1
-            R.layout.keyguard_clock_ios, // 2
-            R.layout.keyguard_clock_simple, // 3
-            R.layout.keyguard_clock_miui, // 4
-            R.layout.keyguard_clock_ide,  // 5
-            R.layout.keyguard_clock_moto, // 6
-            R.layout.keyguard_clock_stylish, // 7
-            R.layout.keyguard_clock_stylish2, //8
-            R.layout.keyguard_clock_stylish3, // 9
-            R.layout.keyguard_clock_stylish4, // 10
-            R.layout.keyguard_clock_stylish5, // 11
-            R.layout.keyguard_clock_stylish6, // 12
-            R.layout.keyguard_clock_stylish7, // 13
-            R.layout.keyguard_clock_stylish8, // 14
-            R.layout.keyguard_clock_stylish9, // 15
-            R.layout.keyguard_clock_stylish10, // 16
-            R.layout.keyguard_clock_word, // 17
-            R.layout.keyguard_clock_life, // 18
-            R.layout.keyguard_clock_a9, // 19
-            R.layout.keyguard_clock_nos1, // 20
-            R.layout.keyguard_clock_nos2, // 21
-            R.layout.keyguard_clock_num, // 22
-            R.layout.keyguard_clock_accent, // 23
-            R.layout.keyguard_clock_analog, // 24
-            R.layout.keyguard_clock_block, // 25
-            R.layout.keyguard_clock_bubble, // 26
-            R.layout.keyguard_clock_label, // 27
-            R.layout.keyguard_clock_taden, // 28
-            R.layout.keyguard_clock_mont, // 29
-            R.layout.keyguard_clock_encode, // 30
-            R.layout.keyguard_clock_nos3 // 31
+            R.layout.keyguard_clock_default,      // 0  Default Clock
+            R.layout.keyguard_clock_oos,            // 1  OnePlus Clock
+            R.layout.keyguard_clock_default,        // 2  OnePlus Clock 2 (placeholder - needs SlateForOnePlus fonts)
+            R.layout.keyguard_clock_default,        // 3  Center Clock (placeholder - verify asset deps first)
+            R.layout.keyguard_clock_simple,          // 4  Simple Clock
+            R.layout.keyguard_clock_miui,            // 5  MIUI Clock
+            R.layout.keyguard_clock_ide,              // 6  IDE Clock
+            R.layout.keyguard_clock_moto,            // 7  Moto Clock
+            R.layout.keyguard_clock_stylish,          // 8  Stylish Clock
+            R.layout.keyguard_clock_stylish2,        // 9  Stylish Clock 2
+            R.layout.keyguard_clock_stylish3,        // 10 Stylish Clock 3
+            R.layout.keyguard_clock_stylish4,        // 11 Stylish Clock 4
+            R.layout.keyguard_clock_stylish5,        // 12 Stylish Clock 5
+            R.layout.keyguard_clock_stylish6,        // 13 Stylish Clock 6
+            R.layout.keyguard_clock_stylish7,        // 14 Stylish Clock 7
+            R.layout.keyguard_clock_stylish8,        // 15 Stylish Clock 8
+            R.layout.keyguard_clock_stylish9,        // 16 Stylish Clock 9
+            R.layout.keyguard_clock_stylish10,      // 17 Stylish Clock 10
+            R.layout.keyguard_clock_word,            // 18 Text Clock
+            R.layout.keyguard_clock_life,            // 19 LifeStyle Clock
+            R.layout.keyguard_clock_a9,              // 20 Android 9 Vibe
+            R.layout.keyguard_clock_nos1,            // 21 NothingOS 1 Clock
+            R.layout.keyguard_clock_nos2,            // 22 NothingOS 2 Clock
+            R.layout.keyguard_clock_num,              // 23 Stacked Clock
+            R.layout.keyguard_clock_accent,          // 24 X Factor
+            R.layout.keyguard_clock_analog,          // 25 Simple Analog
+            R.layout.keyguard_clock_block,            // 26 Block
+            R.layout.keyguard_clock_bubble,          // 27 Bubble
+            R.layout.keyguard_clock_label,            // 28 Label Clock
+            R.layout.keyguard_clock_ios,              // 29 IOS Clock
+            R.layout.keyguard_clock_taden,            // 30 Taden Clock
+            R.layout.keyguard_clock_mont,              // 31 Mont Clock
+            R.layout.keyguard_clock_encode,          // 32 Encode Clock
+            R.layout.keyguard_clock_nos3              // 33 NOS Clock 3
     };
 
     @Override
@@ -175,11 +181,14 @@ public class CustomClockPreview extends SettingsPreferenceFragment {
         updateClockName(mClockPosition);
     }
 
+    // IMPORTANT: This array must stay index-for-index identical to CLOCK_LAYOUTS above
+    // and to ClockStyle.kt's CLOCK_LAYOUTS in SystemUI for indices 0-33.
     private void updateClockName(int position) {
         String[] clockNames = {
             "Default Clock",
             "OnePlus Clock",
-            "IOS Clock",
+            "OnePlus Clock 2",
+            "Center Clock",
             "Simple Clock",
             "MIUI Clock",
             "IDE Clock",
@@ -205,6 +214,7 @@ public class CustomClockPreview extends SettingsPreferenceFragment {
             "Block",
             "Bubble",
             "Label Clock",
+            "IOS Clock",
             "Taden Clock",
             "Mont Clock",
             "Encode Clock",
