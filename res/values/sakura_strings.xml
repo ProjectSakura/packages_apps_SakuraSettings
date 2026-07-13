@@ -1630,6 +1630,10 @@
     <string name="display_engine_default">Default</string>
     <string name="display_engine_mode_footer_text">Inspired by Sony\'s Bravia/X-Reality engine, the Display Engine features Vivid mode for enhanced brightness and color saturation, X-Reality mode for improved detail and color accuracy, and Triluminous mode for a wider color range.</string>
 
+    <!-- Screen-on memory reclaim -->
+    <string name="screen_on_memory_reclaim_title">Screen-on memory reclaim</string>
+    <string name="screen_on_memory_reclaim_summary">Kill cached background apps shortly after the screen turns on to free memory</string>
+
     <!-- Power menu styles -->
     <string name="power_menu_compose_style_title">Power menu style</string>
     <string name="power_menu_compose_style_legacy">Legacy</string>

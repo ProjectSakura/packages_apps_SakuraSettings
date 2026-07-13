@@ -131,4 +131,11 @@
         android:title="@string/hide_screen_capture_status_title"
         android:summary="@string/hide_screen_capture_status_summary"
         android:defaultValue="false"/>	    
+
+    <!-- Screen-on memory reclaim -->
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
+        android:key="screen_on_memory_reclaim"
+        android:title="@string/screen_on_memory_reclaim_title"
+        android:summary="@string/screen_on_memory_reclaim_summary"
+        android:defaultValue="true" />
 </PreferenceScreen>
