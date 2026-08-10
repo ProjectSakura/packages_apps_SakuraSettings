@@ -1099,4 +1099,16 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+
+    <string-array name="power_menu_compose_style_entries">
+        <item>@string/power_menu_compose_style_legacy</item>
+        <item>@string/power_menu_compose_style_grid</item>
+        <item>@string/power_menu_compose_style_slider</item>
+    </string-array>
+
+    <string-array name="power_menu_compose_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>
